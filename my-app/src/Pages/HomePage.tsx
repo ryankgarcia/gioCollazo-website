@@ -1,5 +1,10 @@
 
 
 export function HomePage(){
-    return <h2>Home Page</h2>
+    return (
+        <div className="home-container">
+         <h2>Home Page</h2>
+         <img className="home-image" src='/src/assets/daytrip-outdoor.jpg' />
+        </div>
+    )
 }

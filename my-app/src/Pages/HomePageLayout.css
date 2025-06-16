@@ -1,3 +1,11 @@
 h2 {
     color: blue;
 }
+
+.home-container {
+    width: 100%
+}
+
+.home-image{
+    height: 350px;
+}

@@ -3,8 +3,9 @@ h2 {
     align-items: center;
     justify-content: center;
     font-family: "Dancing Script", cursive;
-    font-size: 5rem;
-
+    @media (width >= 475px) {
+        font-size: 5rem;
+    }
 }
 
 .navBar {
@@ -12,4 +13,5 @@ h2 {
     color: white;
     height: 100px;
     width: 100%;
+
 }
