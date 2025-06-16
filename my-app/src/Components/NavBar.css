@@ -1,0 +1,16 @@
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Dancing Script", cursive;
+    @media (width >= 475px) {
+        font-size: 5rem;
+    }
+}
+
+.navBar {
+    background-color: #623295;
+    color: white;
+    height: 100px;
+    width: 100%;
+}

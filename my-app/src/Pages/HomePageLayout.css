@@ -1,3 +1,17 @@
 h2 {
-    color: blue;
+    color: black;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.home-container {
+    max-width: 50%
+}
+
+.home-image {
+    display: flex;
+    padding-left: 30%;
+    justify-content: center;
+    width: 250px;
+    padding-bottom: 2rem;
 }
