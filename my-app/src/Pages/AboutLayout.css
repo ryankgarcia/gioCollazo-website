@@ -12,3 +12,10 @@ h2 {
     height: 100px;
     width: 100%;
 }
+
+.aboutMe-image {
+    display: flex;
+    justify-content: center;
+    padding-left: 15%;
+    width: 70%;
+}
