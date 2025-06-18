@@ -5,12 +5,14 @@ import './NavBar.css';
 export function NavBar() {
     return (
         <div>
-     <h2 className='navBar'> <IoIosBowtie />  Styled By Gio  <IoIosBowtie /> </h2>
+     <h2 className='navBarHeader h2'> <IoIosBowtie />  StyledByGio  <IoIosBowtie /> </h2>
      <NavLink to='/' className={({ isActive }) =>
-    isActive ? 'nav-link active' : 'nav-link'}><span>Home</span>
+    isActive ? 'nav-link active' : 'nav-link'}><span className="home-link">Home</span>
      </NavLink >
      <NavLink to='/about' className={({ isActive }) => 
-     isActive ? 'nav-link active': 'nav-link'}><span>About Me</span></NavLink>
+     isActive ? 'nav-link active': 'nav-link'}><span className="aboutMe-link">About Me</span></NavLink>
+     <NavLink to='/testimonials' className={({ isActive }) => 
+     isActive ? 'nav-link active': 'nav-link'}><span className="testimonials-link">Testimonials</span></NavLink>
      <Outlet />
      </div>
     )    
