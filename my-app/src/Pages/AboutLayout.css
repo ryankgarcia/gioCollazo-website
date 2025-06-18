@@ -19,3 +19,13 @@ h2 {
     padding-left: 15%;
     width: 70%;
 }
+
+.about-container {
+    margin: 0 auto;
+    max-width: 370px;
+    
+    @media (width > 480px){
+        max-width: 1200px;
+
+    }
+}

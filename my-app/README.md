@@ -7,6 +7,7 @@ This is a website I have built for a friend of mine. He is a Stylist in the Grea
 ## Technologies Used
 
 - CSS3
+- React.js
 
 ## Preview
 
