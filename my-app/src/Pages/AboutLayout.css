@@ -1,9 +1,12 @@
-h2 {
+.imGio-header {
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Dancing Script", cursive;
     font-size: 2rem;
+     color: #FBFBFB;
+    @media (width >= 475px) {
+        font-size: 3.5rem;
+    }
 }
 
 .navBar {
