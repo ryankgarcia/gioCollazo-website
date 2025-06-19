@@ -1,17 +1,28 @@
-h2 {
-    color: black;
-    display: inline-flex;
+.clients-styled {
+    color: #FBFBFB;
+    display: flex;
     justify-content: center;
 }
 
 .home-container {
-    max-width: 50%
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .home-image {
     display: flex;
-    padding-left: 30%;
     justify-content: center;
+    border-radius: 3px;
     width: 250px;
-    padding-bottom: 2rem;
+    margin-left: 20%;
+    margin-bottom: 1.5rem;
+    transition: transform .3s;
+    @media (width >= 480px){
+        margin-left: 30%;
+        margin-bottom: 2rem;
+    }
+}
+
+.home-image:hover {
+    transform: translateY(-1.5rem) scale(1.03);
 }
