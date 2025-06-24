@@ -9,6 +9,16 @@
     margin: 0 auto;
 }
 
+.top-third {
+    max-width: 60%;
+    justify-content: flex-start;
+}
+
+.bottom-third {
+    max-width: 60%;
+    justify-content: flex-end;
+}
+
 .home-image {
     display: flex;
     justify-content: center;
