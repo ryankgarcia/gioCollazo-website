@@ -1,7 +1,17 @@
 .workWMe-header {
-    display: flex;
-    color: #FBFBFB;
-    font-family: "Dancing Script", cursive;
-    justify-content: center;
-    font-size: 2rem;
+  display: flex;
+  color: #fbfbfb;
+  font-family: 'Dancing Script', cursive;
+  justify-content: center;
+  font-size: 5rem;
+}
+
+.second-header {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+
+.form-container {
+  max-width: 1200px;
 }

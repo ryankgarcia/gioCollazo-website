@@ -1,6 +1,20 @@
-.starting-point {
-    color: white;
-    font-size: 4rem;
-    display: flex;
-    justify-content: center;
+.contactPage-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-row {
+  display: flex;
+}
+
+.contact-column-full {
+  flex-basis: 100%;
+}
+
+.contact-column-half {
+  flex-basis: 50%;
+}
+
+.contact-column-third {
+  flex-basis: calc(100% / 3);
 }

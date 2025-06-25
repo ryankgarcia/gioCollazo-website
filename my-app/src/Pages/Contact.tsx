@@ -3,9 +3,16 @@ import './Contact.css';
 
 export function ContactPage() {
   return (
-    <div>
-      <h2 className="starting-point">This is the Contact Me page . . .</h2>
-      <WorkWithMe />
+    <div className="contactPage-container">
+      <img
+        src="/gio-hotel-flex.jpg"
+        alt="Giovanny Collazo Professional Stylist image"
+      />
+      <div className="contact-row">
+        <div className="contact-column-full">
+          <WorkWithMe />
+        </div>
+      </div>
     </div>
   );
 }
