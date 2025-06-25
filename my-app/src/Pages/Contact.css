@@ -1,10 +1,14 @@
 .contactPage-container {
-  display: flex;
-  justify-content: center;
+  max-width: 1700px;
+  margin: 0 auto;
 }
 
 .contact-row {
   display: flex;
+}
+
+.stylist-image-container {
+  flex-basis: 50%;
 }
 
 .contact-column-full {
@@ -17,4 +21,24 @@
 
 .contact-column-third {
   flex-basis: calc(100% / 3);
+}
+
+.contact-gio-collazo-image {
+  margin: 8px;
+  height: 500px;
+  border-radius: 4px;
+  /* transition: transform 0.8s ease-in-out; */
+  transition:
+    transform 0.8s ease,
+    box-shadow 0.8s ease;
+  box-shadow:
+    4px 4px #8720e8,
+    -1em 0 0.5em gold;
+  cursor: pointer;
+}
+
+.contact-gio-collazo-image:hover {
+  /* transform: translateY(-1.5rem) scale(1.03); */
+  transform: translateY(-1.5rem) scale(1.03) rotateZ(-1deg);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }

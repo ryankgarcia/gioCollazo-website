@@ -6,6 +6,14 @@
   font-size: 5rem;
 }
 
+.workWMe-row {
+  display: flex;
+}
+
+.workWMe-column-half {
+  flex-basis: 50%;
+}
+
 .second-header {
   display: flex;
   justify-content: center;
@@ -14,4 +22,39 @@
 
 .form-container {
   max-width: 1200px;
+}
+
+.form-button-column-full {
+  flex-basis: 100%;
+}
+
+.form-submit-button {
+  background-color: #610ad1;
+  color: #fbfbfb;
+  border-radius: 22px;
+  width: 100px;
+  height: 50px;
+  font-size: 1.5rem;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.form-submit-button:hover {
+  color: #610ad1;
+  background-color: #fbfbfb;
+}
+
+.input-field {
+  width: 22rem;
+  height: 1.5rem;
+  margin-bottom: 3.5rem;
+  margin-right: 3rem;
+}
+
+#LN-label-spacing-left {
+  padding-left: 22%;
+}
+
+.phone-number-label {
+  padding-left: 15rem;
 }

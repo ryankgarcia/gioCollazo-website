@@ -3,28 +3,45 @@ import './WorkWithMe.css';
 export function WorkWithMe() {
   return (
     <>
-      <h2 className="workWMe-header">Hello. Welcome.</h2>
-      <h3 className="second-header">
-        Please enter your information below to receive a phone call so we can
-        discuss how I can help you.
-      </h3>
       <form className="form-container">
-        <label htmlFor="first-name">First Name (required)</label>
-        <input id="first-name" type="text" required />
+        <div className="workWMe-row">
+          <label htmlFor="first-name">First Name (required)</label>
+          <label htmlFor="last-name" id="LN-label-spacing-left">
+            Last Name
+          </label>
+        </div>
+        <div className="workWMe-row">
+          <input id="first-name" type="text" className="input-field" required />
+          <input id="last-name" type="text" className="input-field" />
+        </div>
+        <div className="workWMe-row">
+          <label htmlFor="email">Email (required)</label>
+          <label htmlFor="phone-number" className="phone-number-label">
+            Phone Number (required)
+          </label>
+        </div>
+        <div className="workWMe-row">
+          <input id="email" type="email" className="input-field" required />
+          <input
+            id="phone-number"
+            type="text"
+            className="input-field"
+            required
+          />
+        </div>
 
-        <label htmlFor="last-name">Last Name</label>
-        <input id="last-name" type="text" />
+        <div className="workWMe-row">
+          <label htmlFor="message">Message</label>
+        </div>
+        <div className="workWMe-row">
+          <input id="message" type="textbox" className="input-field" />
+        </div>
 
-        <label htmlFor="email">Email (required)</label>
-        <input id="email" type="email" required />
-
-        <label htmlFor="phone-number">Phone Number (required)</label>
-        <input id="phone-number" type="text" required />
-
-        <label htmlFor="message">Message</label>
-        <input id="message" type="textbox" />
-
-        <button>Submit</button>
+        <div className="workWMe-row">
+          <div className="workWMe-column-half">
+            <button className="form-submit-button">Submit</button>
+          </div>
+        </div>
       </form>
     </>
   );
