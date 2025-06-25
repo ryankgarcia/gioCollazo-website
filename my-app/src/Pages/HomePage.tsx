@@ -20,5 +20,6 @@ export function HomePage(){
          <h2 className='clients-styled'>Brands I've Worked With</h2>
          </div>
         </div>
+         
     )
 }

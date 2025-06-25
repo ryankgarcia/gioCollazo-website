@@ -15,8 +15,8 @@ export function NavBar() {
      isActive ? 'nav-link active': 'nav-link'}><span className="aboutMe-link">About Me</span></NavLink>
      <NavLink to='/testimonials' className={({ isActive }) => 
      isActive ? 'nav-link active': 'nav-link'}><span className="testimonials-link">Testimonials</span></NavLink>
-     <NavLink to='/workwithme' className={({ isActive }) => 
-     isActive ? 'nav-link active': 'nav-link'}><span className="workWithMe-link">Work With Me</span></NavLink>
+     <NavLink to='/contact' className={({ isActive }) => 
+     isActive ? 'nav-link active': 'nav-link'}><span className="contact-link">Contact</span></NavLink>
      </div>
      <Outlet />
      </div>
