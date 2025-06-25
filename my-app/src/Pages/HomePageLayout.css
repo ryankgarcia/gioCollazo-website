@@ -1,12 +1,15 @@
-.clients-styled {
-    color: #FBFBFB;
-    display: flex;
-    justify-content: center;
-}
-
 .home-container {
     max-width: 100%;
     margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+.column-third {
+    max-width: 60%;
+    justify-content: flex-start;
 }
 
 .home-image {
@@ -17,12 +20,28 @@
     margin-left: 20%;
     margin-bottom: 1.5rem;
     transition: transform .3s;
-    @media (width >= 480px){
+    @media (min-width: 480px){
         margin-left: 30%;
         margin-bottom: 2rem;
     }
 }
 
+.image-card {
+    border-radius: 3px;
+    margin-left: 20%;
+    margin-bottom: 1.5rem;
+    width: 250px;
+    height: 275px;
+    box-shadow: 5px 5px #FBFBFB,
+    -1em 0 .4em  #623295;
+}
+
 .home-image:hover {
     transform: translateY(-1.5rem) scale(1.03);
+}
+
+.clients-styled {
+    color: #FBFBFB;
+    display: flex;
+    justify-content: center;
 }

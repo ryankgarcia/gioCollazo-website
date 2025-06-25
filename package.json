@@ -1,6 +1,7 @@
 {
+  "homepage": "https://ryankgarcia.github.io/gioCollazo-website",
   "devDependencies": {
     "gh-pages": "^6.3.0",
-    "homepage": "https://ryankgarcia.github.io/gioCollazo-website"
+    "prettier": "^3.6.1"
   }
 }

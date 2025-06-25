@@ -1,10 +1,9 @@
-
 import { Route, Routes } from 'react-router-dom'
+import { NavBar } from './Components/NavBar'
 import { HomePage } from './Pages/HomePage'
 import { AboutMe } from './Pages/AboutMe'
 import { Testimonials } from './Pages/Testimonials'
-import { WorkWithMe } from './Pages/WorkWithMe'
-import { NavBar } from './Components/NavBar'
+import { ContactPage } from './Pages/Contact'
 import './index.css'
 
 
@@ -16,7 +15,7 @@ function App() {
         <Route index element={<HomePage />}/>
         <Route path='/about' element={<AboutMe />}/>
         <Route path='/testimonials' element={<Testimonials />}/>
-        <Route path='/workwithme' element={<WorkWithMe />}/>
+        <Route path='/contact' element={<ContactPage />}/>
         </Route>
     </Routes>
   )
