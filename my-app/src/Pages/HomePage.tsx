@@ -9,20 +9,16 @@ export function HomePage() {
         </div>
       </div>
       <div className="home-row">
-        <div className="home-image-card">
-          <img
-            className="home-image"
-            src="/daytrip-outdoor.jpg"
-            alt="styled-woman"
-          />
-        </div>
-        <div className="home-image-card">
-          <img
-            className="home-image"
-            src="/LC-pink-fit.jpg"
-            alt="stylist-woman"
-          />
-        </div>
+        <img
+          className="home-image-left"
+          src="/daytrip-outdoor.jpg"
+          alt="styled-woman"
+        />
+        <img
+          className="home-image-right"
+          src="/LC-pink-fit.jpg"
+          alt="stylist-woman"
+        />
       </div>
       <div className="home-column-third">
         <h2 className="home-clients-styled">Brands I've Worked With</h2>
