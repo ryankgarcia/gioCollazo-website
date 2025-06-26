@@ -24,7 +24,7 @@ export function NavBar() {
             isActive ? 'nav-link active' : 'nav-link'
           }
         >
-          <span className="aboutMe-link">About Me</span>
+          <span className="aboutMe-link">About</span>
         </NavLink>
         <NavLink
           to="/testimonials"
