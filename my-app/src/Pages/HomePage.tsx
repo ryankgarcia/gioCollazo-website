@@ -3,20 +3,20 @@ import './HomePageLayout.css';
 export function HomePage() {
   return (
     <div className="home-container">
-      <div className="row">
-        <div className="column-third">
-          <h2 className="clients-styled">Client's I've Styled</h2>
+      <div className="home-row">
+        <div className="home-column-third">
+          <h2 className="home-clients-styled">Client's I've Styled</h2>
         </div>
       </div>
-      <div className="row">
-        <div className="image-card">
+      <div className="home-row">
+        <div className="home-image-card">
           <img
             className="home-image"
             src="/daytrip-outdoor.jpg"
             alt="styled-woman"
           />
         </div>
-        <div className="image-card">
+        <div className="home-image-card">
           <img
             className="home-image"
             src="/LC-pink-fit.jpg"
@@ -24,8 +24,8 @@ export function HomePage() {
           />
         </div>
       </div>
-      <div className="column-third">
-        <h2 className="clients-styled">Brands I've Worked With</h2>
+      <div className="home-column-third">
+        <h2 className="home-clients-styled">Brands I've Worked With</h2>
       </div>
     </div>
   );
