@@ -1,44 +1,60 @@
 .contactPage-container {
-  max-width: 1700px;
-  margin: 0 auto;
+  @media (min-width: 320px) {
+    max-width: 320px;
+  }
+
+  @media (min-width: 961px) {
+    max-width: 1700px;
+    margin: 0 auto;
+  }
 }
 
 .contact-row {
-  display: flex;
+  @media (min-width: 961px) {
+    display: flex;
+  }
 }
 
 .stylist-image-container {
-  flex-basis: 50%;
+  @media (min-width: 961px) {
+    flex-basis: 50%;
+  }
 }
 
 .contact-column-full {
-  flex-basis: 100%;
+  @media (min-width: 961px) {
+    flex-basis: 100%;
+  }
 }
 
 .contact-column-half {
-  flex-basis: 50%;
+  @media (min-width: 961px) {
+    flex-basis: 50%;
+  }
 }
 
 .contact-column-third {
-  flex-basis: calc(100% / 3);
+  @media (min-width: 961px) {
+    flex-basis: calc(100% / 3);
+  }
 }
 
 .contact-gio-collazo-image {
+  cursor: pointer;
   margin: 8px;
   height: 500px;
   border-radius: 4px;
-  /* transition: transform 0.8s ease-in-out; */
-  transition:
-    transform 0.8s ease,
-    box-shadow 0.8s ease;
-  box-shadow:
-    4px 4px #8720e8,
-    -1em 0 0.5em gold;
-  cursor: pointer;
+  @media (min-width: 961px) {
+    transition:
+      transform 0.8s ease,
+      box-shadow 0.8s ease;
+    box-shadow:
+      4px 4px #8720e8,
+      -1em 0 0.5em gold;
+  }
 }
 
 .contact-gio-collazo-image:hover {
-  /* transform: translateY(-1.5rem) scale(1.03); */
   transform: translateY(-1.5rem) scale(1.03) rotateZ(-1deg);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
