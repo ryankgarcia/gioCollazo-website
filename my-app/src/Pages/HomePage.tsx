@@ -4,6 +4,26 @@ export function HomePage() {
   return (
     <div className="home-container">
       <div className="home-row">
+        <img
+          className="home-GC-mainCoverImage"
+          src="/gio-purple.JPG"
+          alt="Giovanny Collazo Professional Stylist"
+        />
+      </div>
+      <div className="home-row">
+        <div className="home-column-full">
+          <div className="home-GC-introduction">
+            <p>Giovanny Collazo</p>
+            <p>Personal Stylist</p>
+            <p>Styling men & women since 2015</p>
+            <p>
+              Bringing the best out of YOU. Focusing on what is comfortable,
+              fashionable, and makes you feel amazing in the clothes you're in.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="home-row">
         <div className="home-column-third">
           <h2 className="home-clients-styled">Client's I've Styled</h2>
         </div>

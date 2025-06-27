@@ -14,6 +14,10 @@
   justify-content: flex-start;
 }
 
+.home-column-full {
+  flex-basis: 100%;
+}
+
 .home-image-left {
   display: flex;
   justify-content: center;
@@ -30,6 +34,27 @@
     margin-left: 30%;
     margin-bottom: 2rem;
   }
+}
+
+.home-GC-introduction {
+  display: flex;
+  justify-content: center;
+}
+
+.home-GC-mainCoverImage {
+  display: flex;
+  justify-content: center;
+  width: 265px;
+  margin-left: 20%;
+  margin-bottom: 1.2rem;
+  transition: transform 0.5s;
+}
+
+.home-GC-mainCoverImage:hover {
+  transform: translateY(-1.1rem) scale(1.04);
+  box-shadow:
+    4px 4px #a37fbd,
+    -1em 0 0.5em #a37fbd;
 }
 
 .home-image-left:hover {
