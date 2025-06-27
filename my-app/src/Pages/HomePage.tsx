@@ -10,14 +10,54 @@ export function HomePage() {
       </div>
       <div className="home-row">
         <img
+          className="home-image-right"
+          src="/LC-pink-fit.jpg"
+          alt="woman-outdoor-styledByGio-image2"
+        />
+        <img
           className="home-image-left"
-          src="/daytrip-outdoor.jpg"
-          alt="styled-woman"
+          src="/elegant-redDress.jpg"
+          alt="woman-outdoor-styledByGio-image3"
         />
         <img
           className="home-image-right"
-          src="/LC-pink-fit.jpg"
-          alt="stylist-woman"
+          src="/black-redBlazer.jpg"
+          alt="man-outdoor-styledByGio-image4"
+        />
+        <img
+          className="home-image-left"
+          src="/daytrip-outdoor.jpg"
+          alt="woman-outdoor-styledByGio-image1"
+        />
+        <img
+          className="home-image-left"
+          src="/green-sun-skirt-whiteTop.jpg"
+          alt="woman-indoor-styledByGio-image5"
+        />
+        <img
+          className="home-image-right"
+          src="/matching-couple.jpg"
+          alt="matchingCouple-styledByGio-image6"
+        />
+        <img
+          className="home-image-left"
+          src="/tealDress-blondeWoman.jpg"
+          alt="woman-indoor-styledByGio-image7"
+        />
+        <img
+          className="home-image-right"
+          src="/ryan-edc-2.jpg"
+          alt="man-outdoor-styledByGio-image8"
+        />
+        <img
+          className="home-image-left"
+          src="/redBlazer-professional.jpg"
+          alt="woman-indoor-styledByGio-image9"
+        />
+        <img
+          className="home-image-right"
+          src="/redCarpet-turqoiseDress.jpg"
+          alt="woman-redCarpet-styledByGio-image10"
         />
       </div>
       <div className="home-column-third">
