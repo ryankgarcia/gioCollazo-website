@@ -3,9 +3,19 @@ h2 {
   color: white;
 }
 
+.testimonial-container {
+  /* margin-left: 5%;
+  margin-right: 5%; */
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 100%;
+}
+
 .testimonial-row {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
   /* remove justify content later, for now just testing */
 }
 
@@ -13,19 +23,14 @@ h2 {
   flex-basis: 100%;
 }
 
-.testimonial-container {
-  /* max-width: 90%; */
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-/* .image-width-wrapper {
-  height: 250px;
-} */
-
 .testimonial-portrait-img {
-  border-radius: 50px;
-  border: 2px black solid;
   width: 100%;
-  /* width: 250px; */
+  /* max-width: 375px; */
+  /* aspect-ratio: 3 / 4; */
+  /* object-fit: contain; */
+  border-radius: 50px;
+  /* border-radius: 1.5rem; */
+  display: block;
+  /* margin: 0 auto 1rem; */
+  border: 2px black solid;
 }
