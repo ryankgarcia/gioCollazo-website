@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './AboutLayout.css';
 
 export function AboutMe() {
@@ -29,6 +30,13 @@ export function AboutMe() {
         alt="StylistGio-sunglasses"
         src="/gio-purple.JPG"
       />
+      <div className="about-row">
+        <div className="about-column-full">
+          <Link className="about-button" to="/services">
+            Learn More. . .
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

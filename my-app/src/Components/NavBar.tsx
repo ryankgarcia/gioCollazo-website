@@ -6,26 +6,39 @@ export function NavBar() {
   return (
     <div>
       <h2 className="navBarHeader h2">
-        {' '}
         <IoIosBowtie /> StyledByGio <IoIosBowtie />{' '}
       </h2>
       <div className="allLinks">
-        <NavLink
-          to="/"
-          className={({ isActive }) =>
-            isActive ? 'nav-link active' : 'nav-link'
-          }
-        >
-          <span className="home-link">Home</span>
-        </NavLink>
-        <NavLink
-          to="/about"
-          className={({ isActive }) =>
-            isActive ? 'nav-link active' : 'nav-link'
-          }
-        >
-          <span className="aboutMe-link">About Me</span>
-        </NavLink>
+        <div className="nav-row">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? 'nav-link active' : 'nav-link'
+            }
+          >
+            <span className="home-link">Home</span>
+          </NavLink>
+        </div>
+        <div className="nav-row">
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive ? 'nav-link active' : 'nav-link'
+            }
+          >
+            <span className="aboutMe-link">About</span>
+          </NavLink>
+        </div>
+        <div className="nav-row">
+          <NavLink
+            to="/services"
+            className={({ isActive }) =>
+              isActive ? 'nav-link active' : 'nav-link'
+            }
+          >
+            <span className="aboutMe-link">Services</span>
+          </NavLink>
+        </div>
         <NavLink
           to="/testimonials"
           className={({ isActive }) =>
@@ -34,14 +47,16 @@ export function NavBar() {
         >
           <span className="testimonials-link">Testimonials</span>
         </NavLink>
-        <NavLink
-          to="/contact"
-          className={({ isActive }) =>
-            isActive ? 'nav-link active' : 'nav-link'
-          }
-        >
-          <span className="contact-link">Contact</span>
-        </NavLink>
+        <div className="nav-row">
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive ? 'nav-link active' : 'nav-link'
+            }
+          >
+            <span className="contact-link">Contact</span>
+          </NavLink>
+        </div>
       </div>
       <Outlet />
     </div>

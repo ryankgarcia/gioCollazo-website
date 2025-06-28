@@ -16,6 +16,7 @@ export function ContactPage() {
             can discuss how I can help you.
           </h3>
         </div>
+        <WorkWithMe />
       </div>
       <div className="contact-row">
         <div className="stylist-image-container">
@@ -25,7 +26,6 @@ export function ContactPage() {
             className="contact-gio-collazo-image"
           />
         </div>
-        <WorkWithMe />
       </div>
     </div>
   );

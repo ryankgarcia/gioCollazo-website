@@ -1,46 +1,49 @@
-
 .h2 {
-    font-family: oswald;
-    font-size: 3.1rem;
-    display: flex;
-    justify-content: space-around;
-    @media (width >= 475px) {
-        font-size: 5rem;
-    }
+  font-family: oswald;
+  font-size: 3.1rem;
+  display: flex;
+  justify-content: space-around;
+  @media (width >= 475px) {
+    font-size: 5rem;
+  }
 }
 
 h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Dancing Script", cursive;
-    color: #FBFBFB;
-    @media (width >= 475px) {
-        font-size: 5rem;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Dancing Script', cursive;
+  color: #fbfbfb;
+  @media (width >= 475px) {
+    font-size: 5rem;
+  }
+}
+
+.nav-row {
+  display: flex;
 }
 
 .navBarHeader {
-    background-color: #610AD1;
-    color: #FBFBFB;
-    height: 100px;
-    width: 100%;
+  background-color: #610ad1;
+  color: #fbfbfb;
+  height: 100px;
+  width: 100%;
 }
 
 .aboutMe-link,
 .home-link,
 .testimonials-link,
 .contact-link {
-    /* color: #610AD1; */
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
-    padding-left: 5%;
+  /* color: #610AD1; */
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
+  padding-left: 0.8rem;
 }
 
 .allLinks {
-    padding-left: 1%;
-    @media (width >= 480px){
-        padding-left: 25%;
-    }
+  padding-left: 1%;
+  @media (min-width: 481px) {
+    padding-left: 25%;
+  }
 }

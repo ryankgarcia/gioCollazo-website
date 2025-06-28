@@ -1,4 +1,36 @@
 h2 {
-    font-size: 1.5rem;
-    color: black;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.testimonial-container {
+  /* margin-left: 5%;
+  margin-right: 5%; */
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 100%;
+}
+
+.testimonial-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* remove justify content later, for now just testing */
+}
+
+.testimonial-column-full {
+  flex-basis: 100%;
+}
+
+.testimonial-portrait-img {
+  width: 100%;
+  /* max-width: 375px; */
+  /* aspect-ratio: 3 / 4; */
+  /* object-fit: contain; */
+  border-radius: 50px;
+  /* border-radius: 1.5rem; */
+  display: block;
+  /* margin: 0 auto 1rem; */
+  border: 2px black solid;
 }
