@@ -9,6 +9,10 @@
   }
 }
 
+.home-text {
+  font-size: 1.5rem;
+}
+
 .home-column-third {
   max-width: 60%;
   justify-content: flex-start;

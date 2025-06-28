@@ -1,34 +1,54 @@
 .imGio-header {
-    display: flex;
-    justify-content: center;
-    font-family: "Dancing Script", cursive;
-    font-size: 2rem;
-     color: #FBFBFB;
-    @media (min-width: 480px) {
-        font-size: 3.5rem;
-    }
+  /* display: flex; */
+  /* justify-content: center; */
+  /* font-family: 'Dancing Script', cursive; */
+  font-size: 2.1rem;
+  color: #fbfbfb;
+  @media (min-width: 480px) {
+    font-size: 3.5rem;
+  }
+}
+
+.about-row {
+  display: flex;
+}
+
+.about-column-full {
+  flex-basis: 100%;
+}
+
+.about-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  width: 200px;
+  height: 100px;
+  color: black;
+  font-size: 2rem;
+  border-radius: 3rem;
 }
 
 .navBar {
-    background-color: #623295;
-    color: white;
-    height: 100px;
-    width: 100%;
+  /* background-color: #623295; */
+  /* color: white; */
+  /* height: 100px; */
+  /* width: 100%; */
 }
 
 .aboutMe-image {
-    display: flex;
-    justify-content: center;
-    padding-left: 15%;
-    width: 70%;
+  /* display: flex; */
+  /* justify-content: center; */
+  padding-left: 15%;
+  width: 70%;
 }
 
 .about-container {
-    margin: 0 auto;
-    max-width: 370px;
-    
-    @media (min-width: 480px){
-        max-width: 1200px;
-
-    }
+  margin: 0 auto;
+  max-width: 370px;
+  font-size: 1.3rem;
+  @media (min-width: 481px) {
+    font-size: 2rem;
+    max-width: 1200px;
+  }
 }
