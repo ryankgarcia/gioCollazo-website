@@ -19,6 +19,10 @@ h2 {
   }
 }
 
+.nav-row {
+  display: flex;
+}
+
 .navBarHeader {
   background-color: #610ad1;
   color: #fbfbfb;

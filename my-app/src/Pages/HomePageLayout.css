@@ -52,6 +52,7 @@
   margin-left: 20%;
   margin-bottom: 1.2rem;
   transition: transform 0.5s;
+  padding-top: 1rem;
 }
 
 .home-GC-mainCoverImage:hover {

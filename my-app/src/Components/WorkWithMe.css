@@ -31,11 +31,15 @@
 .form-submit-button {
   background-color: #610ad1;
   color: #fbfbfb;
-  border-radius: 22px;
-  width: 100px;
-  height: 50px;
-  font-size: 1.5rem;
   transition: transform 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  width: 12rem;
+  height: 4rem;
+  font-size: 2rem;
+  border-radius: 3rem;
   cursor: pointer;
 }
 
@@ -49,6 +53,9 @@
   height: 1.5rem;
   margin-bottom: 3.5rem;
   margin-right: 3rem;
+  @media (min-width: 481px) {
+    height: 3rem;
+  }
 }
 
 #LN-label-spacing-left {
@@ -57,4 +64,11 @@
 
 .phone-number-label {
   padding-left: 15rem;
+}
+
+label {
+  font-size: 1.2rem;
+  @media (min-width: 481px) {
+    font-size: 2rem;
+  }
 }
