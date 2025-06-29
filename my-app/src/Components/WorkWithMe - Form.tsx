@@ -1,7 +1,17 @@
+// import { useState, type FormEvent } from 'react';
 import './WorkWithMe.css';
 
 export function WorkWithMe() {
-  // const []
+  // const [firstName, setFirstName] = useState('');
+  // const [lastName, setLastName] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [phoneNumber, setPhoneNumber] = useState('');
+  // const [message, setMessage] = useState('');
+
+  // function handleSubmit(event: FormEvent<HTMLFormElement>): void {
+  //   console.log('button clicked!!');
+  //   event.preventDefault();
+  // }
 
   return (
     <>

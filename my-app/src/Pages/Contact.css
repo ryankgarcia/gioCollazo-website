@@ -1,7 +1,7 @@
 .contactPage-container {
-  @media (min-width: 320px) {
+  /* @media (min-width: 320px) {
     max-width: 320px;
-  }
+  } */
 
   @media (min-width: 961px) {
     max-width: 1700px;
@@ -10,7 +10,7 @@
 }
 
 .contact-row {
-  @media (min-width: 961px) {
+  @media (min-width: 481px) {
     display: flex;
   }
 }
