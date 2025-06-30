@@ -49,18 +49,17 @@
   display: flex;
   justify-content: center;
   width: 265px;
-  margin-left: 20%;
+  margin-left: 18%;
   margin-bottom: 1.2rem;
-  /* transition: transform 0.5s; */
-  padding-top: 1rem;
+  transition: transform 0.5s ease-in-out;
+  /* padding-top: 1rem; */
+  border-radius: 8px;
 }
 
-/* .home-GC-mainCoverImage:hover {
-  transform: translateY(-1.1rem) scale(1.04);
-  box-shadow:
-    4px 4px #a37fbd,
-    -1em 0 0.5em #a37fbd;
-} */
+.home-GC-mainCoverImage:hover {
+  /* cursor: zoom-in; */
+  transform: scale(1.2);
+}
 
 .home-image-left:hover {
   transform: translateY(-1.2rem) scale(1.03) rotateZ(-3deg);

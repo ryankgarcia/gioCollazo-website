@@ -4,7 +4,8 @@ import './AboutLayout.css';
 export function AboutMe() {
   return (
     <div className="about-container">
-      <h2 className="imGio-header">Hello, I'm Giovanny Collazo!</h2>
+      <h2 className="imGio-header">Hello.</h2>
+      <h2 className="imGio-header"> I'm Giovanny Collazo!</h2>
       <p>
         Born and raised in Los Angeles, Giovanny Collazo is a proud Latino
         personal stylist whose passion for fashion was ignited in the early
@@ -25,11 +26,13 @@ export function AboutMe() {
         to help people look, and <em>feel</em>, like the best version of
         themselves.
       </p>
-      <img
-        className="aboutMe-image"
-        alt="StylistGio-sunglasses"
-        src="/gio-purple.JPG"
-      />
+      <div className="aboutMe-imageWrapper">
+        <img
+          className="aboutMe-image"
+          src="/gio-purple-about-page.jpeg"
+          alt="Professional Stylist - Giovanny Collazo - StyledByGio"
+        />
+      </div>
       <div className="about-row">
         <div className="about-column-full">
           <Link className="about-button" to="/services">

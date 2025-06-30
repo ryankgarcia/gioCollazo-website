@@ -6,9 +6,14 @@ export function HomePage() {
       <div className="home-row">
         <img
           className="home-GC-mainCoverImage"
-          src="/gio-purple.JPG"
+          src="/gio-purple-closeup.jpeg"
           alt="Giovanny Collazo Professional Stylist"
         />
+        {/* <img
+          className="home-GC-mainCoverImage"
+          src="/gio-purple.JPG"
+          alt="Giovanny Collazo Professional Stylist"
+        /> */}
       </div>
       <div className="home-row">
         <div className="home-column-full">
@@ -46,13 +51,7 @@ export function HomePage() {
           <h2 className="home-clients-styled">Client's I've Styled</h2>
         </div>
       </div>
-      <div className="home-row">
-        <img
-          className="home-image-right"
-          src="/LC-pink-fit.jpg"
-          alt="woman-outdoor-styledByGio-image2"
-        />
-      </div>
+      <div className="home-row"></div>
       <img
         className="home-image-left"
         src="/elegant-redDress.jpg"
@@ -64,9 +63,9 @@ export function HomePage() {
         alt="man-outdoor-styledByGio-image4"
       />
       <img
-        className="home-image-left"
-        src="/daytrip-outdoor.jpg"
-        alt="woman-outdoor-styledByGio-image1"
+        className="home-image-right"
+        src="/LC-pink-fit.jpg"
+        alt="woman-outdoor-styledByGio-image2"
       />
       <img
         className="home-image-left"
@@ -95,13 +94,28 @@ export function HomePage() {
       />
       <img
         className="home-image-right"
+        src="/pinkStyled.jpg"
+        alt="woman-indoor-styledByGio-image10"
+      />
+      <img
+        className="home-image-right"
         src="/redCarpet-turqoiseDress.jpg"
         alt="woman-redCarpet-styledByGio-image10"
+      />
+      <img
+        className="home-image-right"
+        src="/blackDress-dressingRoom.jpg"
+        alt="woman-indoor-styledByGio-image10"
       />
       <img
         className="home-image-left"
         src="/redCarpet-tropicalDress.jpg"
         alt="woman-redCarpet-styledByGio-image11"
+      />
+      <img
+        className="home-image-left"
+        src="/daytrip-outdoor.jpg"
+        alt="woman-outdoor-styledByGio-image1"
       />
       <img
         className="home-image-right"
@@ -112,6 +126,11 @@ export function HomePage() {
         className="home-image-left"
         src="/redStussyShirt-longBoots.jpg"
         alt="woman-outdoor-styledByGio-image13"
+      />
+      <img
+        className="home-image-left"
+        src="/starWars-themed.jpg"
+        alt="matchingCouple-styledByGio-image13"
       />
       <img
         className="home-image-right"
