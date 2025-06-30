@@ -16,7 +16,9 @@
 }
 
 .stylist-image-container {
-  @media (min-width: 961px) {
+  flex-basis: 100%;
+
+  @media (min-width: 481px) {
     flex-basis: 50%;
   }
 }
@@ -42,7 +44,7 @@
 .contact-gio-collazo-image {
   cursor: pointer;
   margin: 8px;
-  height: 500px;
+  height: 320px;
   border-radius: 4px;
   @media (min-width: 961px) {
     transition:

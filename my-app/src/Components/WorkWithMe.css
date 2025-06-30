@@ -63,13 +63,6 @@
   }
 }
 
-#LN-label-spacing-left {
-  padding-left: 1rem;
-  @media (min-width: 961px) {
-    padding-left: 15%;
-  }
-}
-
 .phone-number-label {
   /* padding-left: 22rem; */
 

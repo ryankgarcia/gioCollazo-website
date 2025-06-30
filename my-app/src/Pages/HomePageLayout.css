@@ -22,24 +22,6 @@
   flex-basis: 100%;
 }
 
-.home-image-left {
-  display: flex;
-  justify-content: center;
-  padding-right: 2.1rem;
-  border-radius: 3px;
-  width: 250px;
-  margin-left: 20%;
-  margin-bottom: 1.5rem;
-  transition: transform 0.3s;
-  /* box-shadow:
-    5px 5px #fbfbfb,
-    -1em 0 0.4em #623295; */
-  @media (min-width: 480px) {
-    margin-left: 30%;
-    margin-bottom: 2rem;
-  }
-}
-
 .home-GC-introduction {
   display: flex;
   justify-content: center;
@@ -52,20 +34,52 @@
   margin-left: 18%;
   margin-bottom: 1.2rem;
   transition: transform 0.5s ease-in-out;
-  /* padding-top: 1rem; */
   border-radius: 8px;
 }
 
 .home-GC-mainCoverImage:hover {
-  /* cursor: zoom-in; */
   transform: scale(1.2);
+}
+
+.home-image-left {
+  display: flex;
+  justify-content: center;
+  padding-right: 2.1rem;
+  border-radius: 3px;
+  width: 250px;
+  margin-left: 20%;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s;
+  @media (min-width: 480px) {
+    margin-left: 30%;
+    margin-bottom: 2rem;
+  }
 }
 
 .home-image-left:hover {
   transform: translateY(-1.2rem) scale(1.03) rotateZ(-3deg);
-  /* box-shadow:
-    5px 5px #fbfbfb,
-    -1em 0 0.4em #623295; */
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes shake {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(30%);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .home-image {
+    animation: shake infinite 20s linear;
+  }
 }
 
 .home-image-right {
@@ -77,9 +91,6 @@
   margin-left: 20%;
   margin-bottom: 1.5rem;
   transition: transform 0.3s;
-  /* box-shadow:
-    5px 5px #fbfbfb,
-    -1em 0 0.4em #623295; */
   @media (min-width: 480px) {
     margin-left: 30%;
     margin-bottom: 2rem;
@@ -88,10 +99,8 @@
 
 .home-image-right:hover {
   transform: translateY(-1.2rem) scale(1.03) rotateZ(3deg);
-  /* box-shadow:
-    5px 5px #fbfbfb,
-    -1em 0 0.4em #623295; */
 }
+
 .home-clients-styled {
   color: #fbfbfb;
   display: flex;

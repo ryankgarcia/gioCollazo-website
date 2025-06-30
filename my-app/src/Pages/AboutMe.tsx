@@ -5,7 +5,7 @@ export function AboutMe() {
   return (
     <div className="about-container">
       <h2 className="imGio-header">Hello.</h2>
-      <h2 className="imGio-header"> I'm Giovanny Collazo!</h2>
+      <h2 className="imGio-header-2"> I'm Giovanny Collazo!</h2>
       <p>
         Born and raised in Los Angeles, Giovanny Collazo is a proud Latino
         personal stylist whose passion for fashion was ignited in the early

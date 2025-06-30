@@ -38,7 +38,7 @@ export function Testimonials() {
             and look your best, Gio is your guy.
           </p>
           <p>Louie - Husband, Father, Business Owner</p>
-          <p>Los Angeles, CA</p>
+          <p>Los Angeles, California</p>
         </div>
       </div>
       <div className="testimonial-row">
@@ -63,7 +63,7 @@ export function Testimonials() {
             does.
           </p>
           <p>Sophia - DJ, Business Owner, Socialite</p>
-          <p>Los Angeles, CA</p>
+          <p>Los Angeles, California</p>
         </div>
       </div>
       <div className="testimonial-row">
@@ -85,7 +85,7 @@ export function Testimonials() {
             overdone. <em> Can’t recommend him enough.</em>
           </p>
           <p>Alex - DJ, Producer, Socialite</p>
-          <p>Los Angeles, CA</p>
+          <p>Los Angeles, California</p>
         </div>
       </div>
       <div className="testimonial-row">
@@ -128,7 +128,7 @@ export function Testimonials() {
             adjustments to make it feel “just right”.
           </p>
           <p>Ryan - Software Developer</p>
-          <p>Orange County, CA</p>
+          <p>Orange County, California</p>
         </div>
       </div>
     </div>

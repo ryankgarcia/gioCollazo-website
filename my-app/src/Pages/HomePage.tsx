@@ -1,3 +1,5 @@
+// import { Footer } from '../Components/Footer';
+import { Footer } from '../Components/Footer';
 import './HomePageLayout.css';
 
 export function HomePage() {
@@ -143,6 +145,7 @@ export function HomePage() {
       <div className="home-column-third">
         <h2 className="home-clients-styled">Behind The Scenes</h2>
       </div>
+      <Footer />
     </div>
   );
 }
