@@ -5,13 +5,13 @@ export function Testimonials() {
     <div className="testimonial-container">
       <div className="testimonial-row">
         <div className="testimonial-column-full">
-          <h2>Testimonials Page ! ! !</h2>
+          <h2 className="testimonials-header">Testimonials</h2>
         </div>
       </div>
       <div className="testimonial-row">
         <div className="testimonial-column-full">
           <img
-            src="/testimonials-images/louie-portrait-image.jpeg"
+            src="/testimonials-images/louie-portrait-closeUp.jpeg"
             alt="Louie-testimonial1"
             className="testimonial-portrait-img"
           />
@@ -69,7 +69,7 @@ export function Testimonials() {
       <div className="testimonial-row">
         <div className="testimonial-column-full">
           <img
-            src="/testimonials-images/alex-portrait-image.jpeg"
+            src="/testimonials-images/alex-portrait-closeUp.jpeg"
             alt="Alex-testimonial3"
             className="testimonial-portrait-img"
           />
@@ -91,7 +91,7 @@ export function Testimonials() {
       <div className="testimonial-row">
         <div className="testimonial-column-full">
           <img
-            src="/testimonials-images/nicole-portrait-image.jpeg"
+            src="/testimonials-images/nicole-portrait-closeUp.jpeg"
             alt="Nicole-testimonial4"
             className="testimonial-portrait-img"
           />
@@ -111,7 +111,7 @@ export function Testimonials() {
       <div className="testimonial-row">
         <div className="testimonial-column-full">
           <img
-            src="/testimonials-images/ryan-portrait-image.PNG"
+            src="/testimonials-images/ryan-portrait-closeUp.jpg"
             alt="Ryan-testimonial5"
             className="testimonial-portrait-img"
           />
