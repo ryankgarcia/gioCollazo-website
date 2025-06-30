@@ -1,3 +1,4 @@
+import { Footer } from '../Components/Footer';
 import './Testimonials.css';
 
 export function Testimonials() {
@@ -131,6 +132,7 @@ export function Testimonials() {
           <p>Orange County, California</p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

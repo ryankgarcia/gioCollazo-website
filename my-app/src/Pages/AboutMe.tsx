@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import './AboutLayout.css';
+import { Footer } from '../Components/Footer';
 
 export function AboutMe() {
   return (
@@ -40,6 +41,7 @@ export function AboutMe() {
           </Link>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

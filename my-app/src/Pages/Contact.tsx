@@ -1,3 +1,4 @@
+import { Footer } from '../Components/Footer';
 import { WorkWithMe } from '../Components/WorkWithMe - Form';
 import './Contact.css';
 
@@ -27,6 +28,7 @@ export function ContactPage() {
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
