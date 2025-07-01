@@ -70,7 +70,7 @@ export function Testimonials() {
       <div className="testimonial-row">
         <div className="testimonial-column-full">
           <img
-            src="/testimonials-images/alex-portrait-closeUp.jpeg"
+            src="/testimonials-images/Alex-portrait-closeUp-main.jpeg"
             alt="Alex-testimonial3"
             className="testimonial-portrait-img"
           />

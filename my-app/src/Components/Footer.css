@@ -8,10 +8,15 @@ p {
 }
 
 .footer-row {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
 }
 
 .footer-container {
   width: 100%;
+}
+
+.link-group {
+  display: flex;
+  justify-content: space-evenly;
 }
