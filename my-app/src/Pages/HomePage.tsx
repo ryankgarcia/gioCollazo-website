@@ -1,3 +1,4 @@
+import { Footer } from '../Components/Footer';
 import './HomePageLayout.css';
 
 export function HomePage() {
@@ -6,9 +7,14 @@ export function HomePage() {
       <div className="home-row">
         <img
           className="home-GC-mainCoverImage"
-          src="/gio-purple.JPG"
+          src="/gio-purple-closeup.jpeg"
           alt="Giovanny Collazo Professional Stylist"
         />
+        {/* <img
+          className="home-GC-mainCoverImage"
+          src="/gio-purple.JPG"
+          alt="Giovanny Collazo Professional Stylist"
+        /> */}
       </div>
       <div className="home-row">
         <div className="home-column-full">
@@ -41,18 +47,20 @@ export function HomePage() {
           </div>
         </div>
       </div>
+      <div className="home-column-third">
+        <h2 className="home-clients-styled">Behind The Scenes</h2>
+        <div className="video-container">
+          <video autoPlay muted loop playsInline>
+            <source src="styledByGio-behindTheScenes.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
       <div className="home-row">
         <div className="home-column-third">
           <h2 className="home-clients-styled">Client's I've Styled</h2>
         </div>
       </div>
-      <div className="home-row">
-        <img
-          className="home-image-right"
-          src="/LC-pink-fit.jpg"
-          alt="woman-outdoor-styledByGio-image2"
-        />
-      </div>
+      <div className="home-row"></div>
       <img
         className="home-image-left"
         src="/elegant-redDress.jpg"
@@ -65,18 +73,13 @@ export function HomePage() {
       />
       <img
         className="home-image-left"
-        src="/daytrip-outdoor.jpg"
-        alt="woman-outdoor-styledByGio-image1"
-      />
-      <img
-        className="home-image-left"
         src="/green-sun-skirt-whiteTop.jpg"
         alt="woman-indoor-styledByGio-image5"
       />
       <img
         className="home-image-right"
-        src="/matching-couple.jpg"
-        alt="matchingCouple-styledByGio-image6"
+        src="/LC-pink-fit.jpg"
+        alt="woman-outdoor-styledByGio-image2"
       />
       <img
         className="home-image-left"
@@ -85,8 +88,8 @@ export function HomePage() {
       />
       <img
         className="home-image-right"
-        src="/ryan-edc-2.jpg"
-        alt="man-outdoor-styledByGio-image8"
+        src="/matching-couple.jpg"
+        alt="matchingCouple-styledByGio-image6"
       />
       <img
         className="home-image-left"
@@ -95,13 +98,33 @@ export function HomePage() {
       />
       <img
         className="home-image-right"
-        src="/redCarpet-turqoiseDress.jpg"
-        alt="woman-redCarpet-styledByGio-image10"
+        src="/ryan-edc-2.jpg"
+        alt="man-outdoor-styledByGio-image8"
       />
       <img
         className="home-image-left"
         src="/redCarpet-tropicalDress.jpg"
         alt="woman-redCarpet-styledByGio-image11"
+      />
+      <img
+        className="home-image-right"
+        src="/pinkStyled.jpg"
+        alt="woman-indoor-styledByGio-image10"
+      />
+      <img
+        className="home-image-left"
+        src="/redCarpet-turqoiseDress.jpg"
+        alt="woman-redCarpet-styledByGio-image10"
+      />
+      <img
+        className="home-image-right"
+        src="/blackDress-dressingRoom.jpg"
+        alt="woman-indoor-styledByGio-image10"
+      />
+      <img
+        className="home-image-left"
+        src="/daytrip-outdoor.jpg"
+        alt="woman-outdoor-styledByGio-image1"
       />
       <img
         className="home-image-right"
@@ -118,12 +141,16 @@ export function HomePage() {
         src="/longRedDress-whiteCoat.jpg"
         alt="woman-styledByGio-image14"
       />
+      <img
+        className="home-image-left"
+        src="/starWars-themed.jpg"
+        alt="matchingCouple-styledByGio-image13"
+      />
       <div className="home-column-third">
         <h2 className="home-clients-styled">Brands I've Worked With</h2>
       </div>
-      <div className="home-column-third">
-        <h2 className="home-clients-styled">Behind The Scenes</h2>
-      </div>
+
+      <Footer />
     </div>
   );
 }

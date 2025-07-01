@@ -1,6 +1,18 @@
 .imGio-header {
-  font-size: 2.1rem;
+  font-size: 3.5rem;
   color: #fbfbfb;
+  display: flex;
+  justify-content: center;
+  @media (min-width: 481px) {
+    font-size: 3.5rem;
+  }
+}
+
+.imGio-header-2 {
+  font-size: 2.7rem;
+  color: #fbfbfb;
+  display: flex;
+  justify-content: center;
   @media (min-width: 481px) {
     font-size: 3.5rem;
   }
@@ -20,10 +32,11 @@
   align-items: center;
   background-color: #610ad1;
   color: white;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
+  margin: 0.5rem;
   width: 22rem;
   height: 6rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   border-radius: 3rem;
   text-decoration: none;
   cursor: pointer;
@@ -36,8 +49,15 @@
 }
 
 .aboutMe-image {
-  padding-left: 15%;
-  width: 70%;
+  max-width: 100%;
+  /* max-width: 70%; */
+  border-radius: 12px;
+}
+
+.aboutMe-imageWrapper {
+  /* padding-left: 15%; */
+  display: flex;
+  justify-content: center;
 }
 
 .about-container {

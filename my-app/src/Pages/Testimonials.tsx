@@ -1,3 +1,4 @@
+import { Footer } from '../Components/Footer';
 import './Testimonials.css';
 
 export function Testimonials() {
@@ -5,13 +6,13 @@ export function Testimonials() {
     <div className="testimonial-container">
       <div className="testimonial-row">
         <div className="testimonial-column-full">
-          <h2>Testimonials Page ! ! !</h2>
+          <h2 className="testimonials-header">Testimonials</h2>
         </div>
       </div>
       <div className="testimonial-row">
         <div className="testimonial-column-full">
           <img
-            src="/testimonials-images/louie-portrait-image.jpeg"
+            src="/testimonials-images/louie-portrait-closeUp.jpeg"
             alt="Louie-testimonial1"
             className="testimonial-portrait-img"
           />
@@ -38,7 +39,7 @@ export function Testimonials() {
             and look your best, Gio is your guy.
           </p>
           <p>Louie - Husband, Father, Business Owner</p>
-          <p>Los Angeles, CA</p>
+          <p>Los Angeles, California</p>
         </div>
       </div>
       <div className="testimonial-row">
@@ -63,13 +64,13 @@ export function Testimonials() {
             does.
           </p>
           <p>Sophia - DJ, Business Owner, Socialite</p>
-          <p>Los Angeles, CA</p>
+          <p>Los Angeles, California</p>
         </div>
       </div>
       <div className="testimonial-row">
         <div className="testimonial-column-full">
           <img
-            src="/testimonials-images/alex-portrait-image.jpeg"
+            src="/testimonials-images/Alex-portrait-closeUp-main.jpeg"
             alt="Alex-testimonial3"
             className="testimonial-portrait-img"
           />
@@ -85,13 +86,13 @@ export function Testimonials() {
             overdone. <em> Can’t recommend him enough.</em>
           </p>
           <p>Alex - DJ, Producer, Socialite</p>
-          <p>Los Angeles, CA</p>
+          <p>Los Angeles, California</p>
         </div>
       </div>
       <div className="testimonial-row">
         <div className="testimonial-column-full">
           <img
-            src="/testimonials-images/nicole-portrait-image.jpeg"
+            src="/testimonials-images/nicole-portrait-closeUp.jpeg"
             alt="Nicole-testimonial4"
             className="testimonial-portrait-img"
           />
@@ -111,7 +112,7 @@ export function Testimonials() {
       <div className="testimonial-row">
         <div className="testimonial-column-full">
           <img
-            src="/testimonials-images/ryan-portrait-image.PNG"
+            src="/testimonials-images/ryan-portrait-closeUp.jpg"
             alt="Ryan-testimonial5"
             className="testimonial-portrait-img"
           />
@@ -128,9 +129,10 @@ export function Testimonials() {
             adjustments to make it feel “just right”.
           </p>
           <p>Ryan - Software Developer</p>
-          <p>Orange County, CA</p>
+          <p>Orange County, California</p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

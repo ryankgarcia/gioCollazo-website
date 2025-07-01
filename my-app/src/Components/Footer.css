@@ -1,0 +1,22 @@
+p {
+  font-size: 1.3rem;
+}
+
+.insta-logo,
+.mail-logo {
+  font-size: 3.5rem;
+}
+
+.footer-row {
+  /* display: flex; */
+  justify-content: center;
+}
+
+.footer-container {
+  width: 100%;
+}
+
+.link-group {
+  display: flex;
+  justify-content: space-evenly;
+}

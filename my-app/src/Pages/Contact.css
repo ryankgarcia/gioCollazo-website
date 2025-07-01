@@ -1,7 +1,7 @@
 .contactPage-container {
-  @media (min-width: 320px) {
+  /* @media (min-width: 320px) {
     max-width: 320px;
-  }
+  } */
 
   @media (min-width: 961px) {
     max-width: 1700px;
@@ -10,13 +10,16 @@
 }
 
 .contact-row {
-  @media (min-width: 961px) {
+  @media (min-width: 481px) {
     display: flex;
   }
 }
 
 .stylist-image-container {
-  @media (min-width: 961px) {
+  /* flex-basis: 100%; */
+  display: flex;
+  justify-content: center;
+  @media (min-width: 481px) {
     flex-basis: 50%;
   }
 }
@@ -40,10 +43,13 @@
 }
 
 .contact-gio-collazo-image {
+  /* padding-top: 4rem; */
+  /* padding-bottom: 4rem; */
   cursor: pointer;
   margin: 8px;
-  height: 500px;
-  border-radius: 4px;
+  height: 320px;
+  border-radius: 8px;
+  animation: wiggle 4s ease-in-out infinite;
   @media (min-width: 961px) {
     transition:
       transform 0.8s ease,
@@ -54,7 +60,22 @@
   }
 }
 
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(3deg);
+  }
+
+  75% {
+    transform: rotate(-3deg);
+  }
+}
+
 .contact-gio-collazo-image:hover {
-  transform: translateY(-1.5rem) scale(1.03) rotateZ(-1deg);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  animation: wiggle 4s ease-in-out infinite;
+  /* transform: translateY(-1.5rem) scale(1.03) rotateZ(-1deg);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); */
 }

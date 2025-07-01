@@ -7,11 +7,15 @@
 }
 
 .workWMe-row {
-  display: flex;
+  @media (min-width: 481px) {
+    display: flex;
+  }
 }
 
 .workWMe-column-half {
-  flex-basis: 50%;
+  @media (min-width: 481px) {
+    flex-basis: 50%;
+  }
 }
 
 .second-header {
@@ -35,7 +39,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  margin: 2rem;
   width: 12rem;
   height: 4rem;
   font-size: 2rem;
@@ -54,16 +58,17 @@
   margin-bottom: 3.5rem;
   margin-right: 3rem;
   @media (min-width: 481px) {
+    font-size: 1.4rem;
     height: 3rem;
   }
 }
 
-#LN-label-spacing-left {
-  padding-left: 22%;
-}
-
 .phone-number-label {
-  padding-left: 15rem;
+  /* padding-left: 22rem; */
+
+  @media (min-width: 961px) {
+    padding-left: 24%;
+  }
 }
 
 label {
