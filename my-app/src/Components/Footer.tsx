@@ -1,14 +1,22 @@
 import { PiInstagramLogo } from 'react-icons/pi';
 import { CgMail } from 'react-icons/cg';
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
 export function Footer() {
   return (
     <div className="footer-container">
-      {/* <h2>Footer Starter Element ! !</h2> */}
+      <h2 className="footer-h2">Quick Links</h2>
+      <Link to="/contact" className="contact-button">
+        Contact
+      </Link>
+      <Link to="/FAQ" className="FAQ-button">
+        FAQ
+      </Link>
       <div className="footer-row">
         <div className="link-group">
           <a
+            className="circle-icon"
             href="https://www.instagram.com/styledbygio?igsh=MTJwa2w4em1tZm84Zg=="
             target="_blank"
           >
@@ -18,9 +26,16 @@ export function Footer() {
         domain name. Ex: giovanny@styledbygio.com.
         for example purposes this will do, but it must change once
         the domain has been claimed*/}
-          <a href="mailto:styledbygio4@gmail.com">
+          <a className="circle-icon" href="mailto:styledbygio4@gmail.com">
             <CgMail className="mail-logo" />
           </a>
+        </div>
+
+        <div className="footer-row">
+          <p className="copyright-footer">
+            © 2025 <em>Giovanny Collazo</em>. All Rights Reserved. Website
+            Design by <em>Ryan Garcia</em>.
+          </p>
         </div>
       </div>
     </div>

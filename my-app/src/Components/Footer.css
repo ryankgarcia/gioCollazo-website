@@ -20,3 +20,36 @@ p {
   display: flex;
   justify-content: space-evenly;
 }
+
+.circle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: whitesmoke;
+  border-radius: 32px;
+}
+
+.copyright-footer {
+  font-size: 0.9rem;
+  padding-top: 0.5rem;
+}
+
+em {
+  text-decoration: underline;
+}
+
+.footer-h2 {
+  font-size: 1.8rem;
+}
+
+.contact-button,
+.FAQ-button {
+  width: 4rem;
+  height: 1rem;
+  color: blueviolet;
+  background-color: white;
+  text-decoration: none;
+  font-size: 1.6rem;
+}

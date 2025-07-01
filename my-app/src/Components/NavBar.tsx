@@ -1,5 +1,4 @@
 import { NavLink, Outlet } from 'react-router-dom';
-// import { IoIosBowtie } from 'react-icons/io';
 import { BiMenu } from 'react-icons/bi';
 import './NavBar.css';
 import { useState } from 'react';
@@ -16,10 +15,6 @@ export function NavBar() {
       <div onClick={handleOpen} className="navBarHeader h2">
         <BiMenu /> StyledByGio
       </div>
-      {/* <h2 className="navBarHeader h2">
-        <IoIosBowtie /> StyledByGio <IoIosBowtie />{' '}
-      </h2> */}
-      {/* {isOpen && ( */}
       <div className={`allLinks ${isOpen ? 'open' : ''}`}>
         <div className="nav-row">
           <NavLink to="/">
@@ -45,7 +40,6 @@ export function NavBar() {
           </NavLink>
         </div>
       </div>
-      {/* )} */}
       <Outlet />
     </div>
   );
