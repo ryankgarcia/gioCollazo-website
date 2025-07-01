@@ -7,13 +7,20 @@ export function Footer() {
   return (
     <div className="footer-container">
       <h2 className="footer-h2">Quick Links</h2>
-      <Link to="/contact" className="contact-button">
-        Contact
-      </Link>
-      <Link to="/FAQ" className="FAQ-button">
-        FAQ
-      </Link>
+      <div className="quick-linksGroup">
+        <div className="footer-row">
+          <Link to="/contact" className="contact-button">
+            Contact
+          </Link>
+        </div>
+        <div className="footer-row">
+          <Link to="/FAQ" className="FAQ-button">
+            FAQ
+          </Link>
+        </div>
+      </div>
       <div className="footer-row">
+        <h2 className="footer-h2">Stay Connected</h2>
         <div className="link-group">
           <a
             className="circle-icon"
