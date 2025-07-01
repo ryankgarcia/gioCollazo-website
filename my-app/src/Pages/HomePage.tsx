@@ -10,11 +10,6 @@ export function HomePage() {
           src="/gio-purple-closeup.jpeg"
           alt="Giovanny Collazo Professional Stylist"
         />
-        {/* <img
-          className="home-GC-mainCoverImage"
-          src="/gio-purple.JPG"
-          alt="Giovanny Collazo Professional Stylist"
-        /> */}
       </div>
       <div className="home-row">
         <div className="home-column-full">
@@ -39,24 +34,20 @@ export function HomePage() {
       </div>
       <div className="home-row">
         <div className="home-column-full">
-          <div className="home-GC-introduction">
-            <p className="home-text">
-              Bringing the best out of YOU. Focusing on what is comfortable,
-              fashionable, and makes you feel amazing in the clothes you're in.
-            </p>
-          </div>
+          <p className="home-text">
+            Bringing the best out of YOU. Focusing on what is comfortable,
+            fashionable, and makes you feel amazing in the clothes you're in.
+          </p>
         </div>
       </div>
-      <div className="home-column-third">
+      <div className="home-column-full">
         <h2 className="home-clients-styled">Behind The Scenes</h2>
-        <div className="video-container">
-          <video autoPlay muted loop playsInline>
-            <source src="styledByGio-behindTheScenes.mp4" type="video/mp4" />
-          </video>
-        </div>
+        <video autoPlay muted loop playsInline>
+          <source src="styledByGio-behindTheScenes.mp4" type="video/mp4" />
+        </video>
       </div>
       <div className="home-row">
-        <div className="home-column-third">
+        <div className="home-column-full">
           <h2 className="home-clients-styled">Client's I've Styled</h2>
         </div>
       </div>
@@ -146,10 +137,7 @@ export function HomePage() {
         src="/starWars-themed.jpg"
         alt="matchingCouple-styledByGio-image13"
       />
-      <div className="home-column-third">
-        <h2 className="home-clients-styled">Brands I've Worked With</h2>
-      </div>
-
+      <h2 className="home-clients-styled">Brands I've Worked With</h2>
       <Footer />
     </div>
   );
