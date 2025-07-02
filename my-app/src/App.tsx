@@ -5,6 +5,7 @@ import { AboutMe } from './Pages/AboutMe';
 import { Testimonials } from './Pages/Testimonials';
 import { ContactPage } from './Pages/Contact';
 import { Services } from './Pages/Services';
+import { FAQ } from './Pages/FAQ';
 import './index.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/FAQ" element={<FAQ />} />
       </Route>
     </Routes>
   );
