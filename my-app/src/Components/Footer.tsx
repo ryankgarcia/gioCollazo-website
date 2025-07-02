@@ -15,6 +15,11 @@ export function Footer() {
           </Link>
         </div>
         <div className="footer-row">
+          <Link to="/gallery" className="gallery-button">
+            Gallery
+          </Link>
+        </div>
+        <div className="footer-row">
           <Link to="/FAQ" className="FAQ-button">
             FAQ
           </Link>

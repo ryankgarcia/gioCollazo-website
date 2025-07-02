@@ -51,7 +51,8 @@ em {
 }
 
 .contact-button,
-.FAQ-button {
+.FAQ-button,
+.gallery-button {
   width: 4rem;
   height: 1rem;
   color: whitesmoke;

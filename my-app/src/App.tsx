@@ -6,6 +6,7 @@ import { Testimonials } from './Pages/Testimonials';
 import { ContactPage } from './Pages/Contact';
 import { Services } from './Pages/Services';
 import { FAQ } from './Pages/FAQ';
+import { Gallery } from './Pages/Gallery';
 import './index.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/FAQ" element={<FAQ />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Route>
     </Routes>
   );
