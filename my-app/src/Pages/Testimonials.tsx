@@ -9,11 +9,87 @@ export function Testimonials() {
           <h2 className="testimonials-header">Testimonials</h2>
         </div>
       </div>
+
+      <div className="testimonial-row">
+        <div className="testimonial-column-full">
+          <img
+            src="/testimonials-images/Sophia-portrait-image.jpeg"
+            alt="Sophia-testimonial1"
+            className="testimonial-portrait-img"
+          />
+          <p>
+            I’ve been working with Gio for years, and he’s come through for me
+            in so many clutch moments — even last-minute fittings before major
+            events. He’s not only flexible and kind, but he truly listens.
+            Whether I need a look that fits a specific vibe, flatters a certain
+            area, or aligns with the energy of the venue, he gets it and makes
+            it happen without pushback.
+          </p>
+          <p>
+            As part of a DJ duo, I love that he curates outfits that complement
+            both me and Alex — stylish, cohesive, but never too matchy. Gio
+            genuinely cares about his clients and it shows in everything he
+            does.
+          </p>
+          <p>Sophia - DJ, Business Owner, Socialite</p>
+          <p>Los Angeles, California</p>
+        </div>
+      </div>
+      <div className="testimonial-row">
+        <div className="testimonial-column-full">
+          <img
+            src="/testimonials-images/Alex-portrait-closeUp-main.jpeg"
+            alt="Alex-testimonial2"
+            className="testimonial-portrait-img"
+          />
+          <p>
+            Working with Gio has been a game-changer. He’s created custom looks
+            for both Sophia and me that hit the vibe perfectly every time — from
+            high-energy performances to more elevated, themed events. He’s easy
+            to work with, thoughtful, and really pays attention to detail.
+          </p>
+          <p>
+            We always feel confident and comfortable in his pieces, and he finds
+            that sweet spot where we coordinate well without looking too
+            overdone. <em> Can’t recommend him enough.</em>
+          </p>
+          <p>Alex - DJ, Producer, Socialite</p>
+          <p>Los Angeles, California</p>
+        </div>
+      </div>
+      <div className="testimonial-row">
+        <div className="testimonial-column-full">
+          <img
+            src="/testimonials-images/LC-portrait-closeUp.jpeg"
+            alt="LC-testimonial4"
+            className="testimonial-portrait-img"
+          />
+          <p>
+            Gio is a fabulous stylist and does more than styling. He’s always
+            willing to listen to his customer and understand the “vision” they
+            want when it comes to dressing up for any occasion. I’ve learned so
+            much about myself and dressing myself all thanks to him. He’s
+            attentive, suggests ideas, open minded, and super helpful. Also he
+            knows how to pivot and is professional & proactive during my
+            fittings. He has helped me pack and organize all items from
+            accessories, shoes, and fits.
+          </p>
+          <p>
+            If I had to pick one favorite festival fit it would be every
+            Coachella! From festivals, weddings, birthdays etc he’s done it all
+            for me. He has been styling me since 2022 and will definitely keep
+            going back to him. Book him for your next event, job interview,
+            brunch, rave fit… he does it all.
+          </p>
+          <p>LC - Entrepreneur, Influencer, Socialite </p>
+          <p>Downey, California</p>
+        </div>
+      </div>
       <div className="testimonial-row">
         <div className="testimonial-column-full">
           <img
             src="/testimonials-images/louie-portrait-closeUp.jpeg"
-            alt="Louie-testimonial1"
+            alt="Louie-testimonial5"
             className="testimonial-portrait-img"
           />
           <p>
@@ -39,61 +115,14 @@ export function Testimonials() {
             and look your best, Gio is your guy.
           </p>
           <p>Louie - Husband, Father, Business Owner</p>
-          <p>Los Angeles, California</p>
-        </div>
-      </div>
-      <div className="testimonial-row">
-        <div className="testimonial-column-full">
-          <img
-            src="/testimonials-images/Sophia-portrait-image.jpeg"
-            alt="Sophia-testimonial2"
-            className="testimonial-portrait-img"
-          />
-          <p>
-            I’ve been working with Gio for years, and he’s come through for me
-            in so many clutch moments — even last-minute fittings before major
-            events. He’s not only flexible and kind, but he truly listens.
-            Whether I need a look that fits a specific vibe, flatters a certain
-            area, or aligns with the energy of the venue, he gets it and makes
-            it happen without pushback.
-          </p>
-          <p>
-            As part of a DJ duo, I love that he curates outfits that complement
-            both me and Alex — stylish, cohesive, but never too matchy. Gio
-            genuinely cares about his clients and it shows in everything he
-            does.
-          </p>
-          <p>Sophia - DJ, Business Owner, Socialite</p>
-          <p>Los Angeles, California</p>
-        </div>
-      </div>
-      <div className="testimonial-row">
-        <div className="testimonial-column-full">
-          <img
-            src="/testimonials-images/Alex-portrait-closeUp-main.jpeg"
-            alt="Alex-testimonial3"
-            className="testimonial-portrait-img"
-          />
-          <p>
-            Working with Gio has been a game-changer. He’s created custom looks
-            for both Sophia and me that hit the vibe perfectly every time — from
-            high-energy performances to more elevated, themed events. He’s easy
-            to work with, thoughtful, and really pays attention to detail.
-          </p>
-          <p>
-            We always feel confident and comfortable in his pieces, and he finds
-            that sweet spot where we coordinate well without looking too
-            overdone. <em> Can’t recommend him enough.</em>
-          </p>
-          <p>Alex - DJ, Producer, Socialite</p>
-          <p>Los Angeles, California</p>
+          <p>North Orange County, California</p>
         </div>
       </div>
       <div className="testimonial-row">
         <div className="testimonial-column-full">
           <img
             src="/testimonials-images/nicole-portrait-closeUp.jpeg"
-            alt="Nicole-testimonial4"
+            alt="Nicole-testimonial6"
             className="testimonial-portrait-img"
           />
           <p>
@@ -113,7 +142,7 @@ export function Testimonials() {
         <div className="testimonial-column-full">
           <img
             src="/testimonials-images/ryan-portrait-closeUp.jpg"
-            alt="Ryan-testimonial5"
+            alt="Ryan-testimonial7"
             className="testimonial-portrait-img"
           />
           <p>
