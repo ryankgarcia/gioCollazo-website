@@ -108,16 +108,14 @@ video {
 }
 
 .brand-circle {
-  /* width: 5rem; */
   width: 15rem;
-  /* height: 25%; */
-  /* background-color: white; */
+  margin-top: 0.3rem;
+  margin-bottom: 1.3rem;
 }
 
 .brand-image {
   border-radius: 50%;
   width: 100%;
   margin-left: 25%;
-  /* display: block; */
   border: 7px #610ad1 solid;
 }

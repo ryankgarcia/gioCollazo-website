@@ -160,7 +160,7 @@ export function HomePage() {
           <div className="brand-circle">
             <img
               className="brand-image"
-              src="/Brands-Gio-has-worked-with/couture-logo.png"
+              src="/Brands-Gio-has-worked-with/couture-logo-cut.jpg"
               alt="Couture-brand-logo"
             />
           </div>
