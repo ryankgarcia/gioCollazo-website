@@ -40,6 +40,16 @@ export function HomePage() {
           </p>
         </div>
       </div>
+      <div className="home-row">
+        <div className="home-column-full">
+          <p lang="es" className="home-text">
+            Hablo español y ofrezco mis servicios desde WhatsApp. Si gustas mas
+            información, puedes traducir la página al español y/o mandarme un
+            mensaje de WhatsApp. Al mero fin de la pagina busca el icono de
+            WhatsApp para conectarnos.
+          </p>
+        </div>
+      </div>
       <div className="home-column-full">
         <h2 className="home-clients-styled">Behind The Scenes</h2>
         <video autoPlay muted loop playsInline>
