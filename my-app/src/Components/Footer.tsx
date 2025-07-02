@@ -32,7 +32,7 @@ export function Footer() {
           </a>
           <a
             className="circle-icon"
-            href="https://wa.me/18186338346?text=Hi%20Giovanny%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20professional%20styling%20services."
+            href="https://wa.me/18186338346?text=Hola%20Giovanny%2C%20miré%20tu%20página%20de%20web.%20Envíame%20información%20sobre%20tus%20servicios%20profesionales."
             target="_blank"
             rel="noopener noreferrer"
           >
