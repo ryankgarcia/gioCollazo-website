@@ -1,24 +1,28 @@
-import { useState, type FormEvent } from 'react';
+import { useState } from 'react';
+import { PopUp } from './PopUp-FormSubmission';
 import './WorkWithMe.css';
 
 export function WorkWithMe() {
-  const [firstName, setFirstName] = useState('');
+  // const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [message, setMessage] = useState('');
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>): void {
-    event.preventDefault();
-    console.log({ firstName, lastName, email, phoneNumber, message });
+  function handleSubmit(): void {
+    // console.output({ firstName, lastName, email, phoneNumber, message });
+    // right here will be a React Pop up that shows the user the form was successfully submitted
+    // and show Gio's confidentiality agreement
+    // alert('Thank you for submitting your information :)');
+    <PopUp />;
   }
 
   return (
     <>
       <form
         method="POST"
-        data-email=""
-        action=""
+        data-email="ryangar1995@gmail.com"
+        action="https://script.google.com/macros/s/AKfycbwMiMOWj_N4ImKdiJ8wv_J2WMAZfdMTrG2RndWO0D1SF4jTnTi46LWVxUFa0uEx-3JIWg/exec"
         className="gform form-container"
         onSubmit={handleSubmit}
       >
@@ -30,8 +34,8 @@ export function WorkWithMe() {
               type="text"
               name="firstName"
               className="input-field"
-              value={firstName}
-              onChange={(e) => setFirstName(e.target.value)}
+              // value={firstName}
+              // onChange={(e) => setFirstName(e.target.value)}
               required
             />
           </label>
@@ -80,9 +84,8 @@ export function WorkWithMe() {
         <div className="workWMe-row">
           <label htmlFor="message">
             Message
-            <input
+            <textarea
               id="message"
-              type="textbox"
               name="message"
               className="input-field"
               value={message}
