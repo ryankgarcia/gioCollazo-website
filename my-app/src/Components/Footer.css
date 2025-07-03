@@ -12,6 +12,11 @@ p {
   color: #1d96f1;
 }
 
+.whatsapp-logo {
+  font-size: 3rem;
+  color: #53ed71;
+}
+
 .footer-container {
   width: 100%;
 }
@@ -46,7 +51,8 @@ em {
 }
 
 .contact-button,
-.FAQ-button {
+.FAQ-button,
+.gallery-button {
   width: 4rem;
   height: 1rem;
   color: whitesmoke;

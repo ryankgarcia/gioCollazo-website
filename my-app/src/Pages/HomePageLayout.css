@@ -52,9 +52,6 @@
     transform: scale(1.08);
   }
 }
-/* 
-.home-GC-mainCoverImage:hover {
-} */
 
 .home-image-left {
   display: flex;
@@ -108,4 +105,17 @@ video {
 
 .video-container {
   width: 80vw;
+}
+
+.brand-circle {
+  width: 15rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1.3rem;
+}
+
+.brand-image {
+  border-radius: 50%;
+  width: 100%;
+  margin-left: 25%;
+  border: 7px #610ad1 solid;
 }

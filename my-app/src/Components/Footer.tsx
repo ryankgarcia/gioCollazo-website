@@ -2,6 +2,7 @@ import { PiInstagramLogo } from 'react-icons/pi';
 import { CgMail } from 'react-icons/cg';
 import './Footer.css';
 import { Link } from 'react-router-dom';
+import { FaSquareWhatsapp } from 'react-icons/fa6';
 
 export function Footer() {
   return (
@@ -11,6 +12,11 @@ export function Footer() {
         <div className="footer-row">
           <Link to="/contact" className="contact-button">
             Contact
+          </Link>
+        </div>
+        <div className="footer-row">
+          <Link to="/gallery" className="gallery-button">
+            Gallery
           </Link>
         </div>
         <div className="footer-row">
@@ -28,6 +34,14 @@ export function Footer() {
             target="_blank"
           >
             <PiInstagramLogo className="insta-logo" />
+          </a>
+          <a
+            className="circle-icon"
+            href="https://wa.me/18186338346?text=Hola%20Giovanny%2C%20miré%20tu%20página%20de%20web.%20Envíame%20información%20sobre%20tus%20servicios%20profesionales."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaSquareWhatsapp className="whatsapp-logo" />
           </a>
           {/* this mailto link must change to the name of
         domain name. Ex: giovanny@styledbygio.com.

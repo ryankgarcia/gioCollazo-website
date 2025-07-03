@@ -1,5 +1,8 @@
+// import { lazy } from 'react';
 import { Footer } from '../Components/Footer';
 import './HomePageLayout.css';
+
+// const LazyLoadImgs = lazy(() => import('./HomeImage.js'));
 
 export function HomePage() {
   return (
@@ -37,6 +40,16 @@ export function HomePage() {
           <p className="home-text">
             Bringing the best out of YOU. Focusing on what is comfortable,
             fashionable, and makes you feel amazing in the clothes you're in.
+          </p>
+        </div>
+      </div>
+      <div className="home-row">
+        <div className="home-column-full">
+          <p lang="es" className="home-text">
+            Hablo español y ofrezco mis servicios desde WhatsApp. Si gustas mas
+            información, puedes traducir la página al español y/o mandarme un
+            mensaje de WhatsApp. Al fin de la pagina encontraras el icono de
+            WhatsApp para conectarnos.
           </p>
         </div>
       </div>
@@ -138,6 +151,122 @@ export function HomePage() {
         alt="matchingCouple-styledByGio-image13"
       />
       <h2 className="home-clients-styled">Brands I've Worked With</h2>
+      <div className="home-row">
+        <div className="home-column-full">
+          <div className="brand-circle">
+            <img
+              className="brand-image"
+              src="/Brands-Gio-has-worked-with/clubmaverick-logo.jpeg"
+              alt="ClubMaverick-brand-logo"
+            />
+          </div>
+          <div className="brand-circle">
+            <img
+              className="brand-image"
+              src="/Brands-Gio-has-worked-with/couture-logo-cut.jpg"
+              alt="Couture-brand-logo"
+            />
+          </div>
+          <div className="brand-circle">
+            <img
+              className="brand-image"
+              src="/Brands-Gio-has-worked-with/cynthiaBach-logo-redone.jpg"
+              alt="CynthiaBach-brand-logo"
+            />
+          </div>
+          <div className="brand-circle">
+            <img
+              className="brand-image"
+              src="/Brands-Gio-has-worked-with/dolls-logo.png"
+              alt="Dolls-Kill-brand-logo"
+            />
+          </div>
+          <div className="brand-circle">
+            <img
+              className="brand-image"
+              src="/Brands-Gio-has-worked-with/fashion-nova-logo.jpeg"
+              alt="Fashion-Nova-brand-logo"
+            />
+          </div>
+          <div className="brand-circle">
+            <img
+              className="brand-image"
+              src="/Brands-Gio-has-worked-with/gq-germany-logo.jpeg"
+              alt="GQ-Germany-brand-logo"
+            />
+          </div>
+          <div className="brand-circle">
+            <img
+              className="brand-image"
+              src="/Brands-Gio-has-worked-with/h-m-logo.png"
+              alt="H&M-brand-logo"
+            />
+          </div>
+          <div className="brand-circle">
+            <img
+              className="brand-image"
+              src="/Brands-Gio-has-worked-with/la-llama-viajera-logo.png"
+              alt="La-Llama-Viajera-brand-logo"
+            />
+          </div>
+          <div className="brand-circle">
+            <img
+              className="brand-image"
+              src="/Brands-Gio-has-worked-with/loveSlapRecording-logo.jpeg"
+              alt="Love-Slap-Recordings-brand-logo"
+            />
+          </div>
+          <div className="brand-circle">
+            <img
+              className="brand-image"
+              src="/Brands-Gio-has-worked-with/mother-plucker-logo.jpeg"
+              alt="MotherPluckerFeatherCompanyInc-brand-logo"
+            />
+          </div>
+          <div className="brand-circle">
+            <img
+              className="brand-image"
+              src="/Brands-Gio-has-worked-with/neiman-marcus-logo.jpeg"
+              alt="NeimanMarcus-brand-logo"
+            />
+          </div>
+          <div className="brand-circle">
+            <img
+              className="brand-image"
+              src="/Brands-Gio-has-worked-with/out-logo.png"
+              alt="Out-brand-logo"
+            />
+          </div>
+          <div className="brand-circle">
+            <img
+              className="brand-image"
+              src="/Brands-Gio-has-worked-with/pia-gladys-perey-logo.png"
+              alt="PiaGladysPerey-brand-logo"
+            />
+          </div>
+          <div className="brand-circle">
+            <img
+              className="brand-image"
+              src="/Brands-Gio-has-worked-with/teen-vogue-logo.jpeg"
+              alt="TeenVogue-brand-logo"
+            />
+          </div>
+          <div className="brand-circle">
+            <img
+              className="brand-image"
+              src="/Brands-Gio-has-worked-with/viv-vitals-logo.jpeg"
+              alt="VivVitals-brand-logo"
+            />
+          </div>
+          <div className="brand-circle">
+            <img
+              className="brand-image"
+              src="/Brands-Gio-has-worked-with/zara-logo-circle.jpg"
+              alt="Zara-brand-logo"
+            />
+          </div>
+        </div>
+      </div>
       <Footer />
     </div>
   );
