@@ -1,5 +1,8 @@
+// import { lazy } from 'react';
 import { Footer } from '../Components/Footer';
 import './HomePageLayout.css';
+
+// const LazyLoadImgs = lazy(() => import('./HomeImage.js'));
 
 export function HomePage() {
   return (
@@ -167,7 +170,7 @@ export function HomePage() {
           <div className="brand-circle">
             <img
               className="brand-image"
-              src="/Brands-Gio-has-worked-with/cynthiaBach-logo.jpeg"
+              src="/Brands-Gio-has-worked-with/cynthiaBach-logo-redone.jpg"
               alt="CynthiaBach-brand-logo"
             />
           </div>
@@ -258,7 +261,7 @@ export function HomePage() {
           <div className="brand-circle">
             <img
               className="brand-image"
-              src="/Brands-Gio-has-worked-with/zara-logo.jpeg"
+              src="/Brands-Gio-has-worked-with/zara-logo-circle.jpg"
               alt="Zara-brand-logo"
             />
           </div>
