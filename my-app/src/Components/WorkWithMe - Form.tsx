@@ -1,5 +1,4 @@
-// import { useState } from 'react';
-import { useState } from 'react';
+import { useState, type FormEvent } from 'react';
 import './WorkWithMe.css';
 
 export function WorkWithMe() {
@@ -9,7 +8,39 @@ export function WorkWithMe() {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [message, setMessage] = useState('');
 
-  function handleSubmit(): void {
+  const [error, setError] = useState('');
+
+  function handleSubmit(e: FormEvent<HTMLFormElement>): void {
+    e.preventDefault();
+    e.stopPropagation();
+    fetch('https://formcarry.com/s/q1fwXBoBDSA', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        firstName,
+        lastName,
+        email,
+        phoneNumber,
+        message,
+      }),
+    })
+      .then((response) => response.json())
+      .then((response) => {
+        if (response.code === 200) {
+          alert('We received your submission, thank you!');
+        } else if (response.code === 422) {
+          setError(response.message);
+        } else {
+          setError(response.message);
+        }
+      })
+      .catch((error) => {
+        setError(error.message ? error.message : error);
+      });
+    // line of separation
     console.log({ firstName, lastName, email, phoneNumber, message });
     // right here will be a React Pop up that shows the user the form was successfully submitted
     // and show Gio's confidentiality agreement
@@ -34,7 +65,7 @@ export function WorkWithMe() {
         </div>
         <div className="workWMe-row">
           <label htmlFor="last-name" id="LN-label-spacing-left">
-            Last Name
+            Last Name (required)
             <input
               id="last-name"
               type="text"
@@ -42,6 +73,7 @@ export function WorkWithMe() {
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
               className="input-field"
+              required
             />
           </label>
         </div>
@@ -93,6 +125,7 @@ export function WorkWithMe() {
           </div>
         </div>
       </form>
+      {error && <div className="form-error">{error}</div>}
     </>
   );
 }
