@@ -1,0 +1,9 @@
+.image-wrapper {
+  width: 250px;
+  margin-left: 20%;
+  margin-bottom: 1.5rem;
+  border-radius: 3px;
+  padding-right: 2.1rem;
+  display: flex;
+  justify-content: center;
+}
