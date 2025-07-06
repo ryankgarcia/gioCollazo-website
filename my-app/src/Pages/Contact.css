@@ -25,6 +25,9 @@
 }
 
 .contact-column-full {
+  @media (min-width: 481px) {
+    flex-basis: 100%;
+  }
   @media (min-width: 961px) {
     flex-basis: 100%;
   }
