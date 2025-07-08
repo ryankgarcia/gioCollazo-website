@@ -37,3 +37,5 @@ export function Top10Looks() {
     </div>
   );
 }
+
+export default Top10Looks;

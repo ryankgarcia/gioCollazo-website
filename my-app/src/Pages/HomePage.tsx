@@ -1,9 +1,9 @@
-// import { lazy } from 'react';
+import { lazy, Suspense } from 'react';
 import { Footer } from '../Components/Footer';
-import { Top10Looks } from '../Components/Top10Looks';
+import Loading from '../Components/LoadingImage';
 import './HomePage.css';
 
-// const LazyLoadImgs = lazy(() => import('./HomeImage.js'));
+const LazyLoadImgs = lazy(() => import('../Components/Top10Looks'));
 
 export function HomePage() {
   return (
@@ -66,7 +66,11 @@ export function HomePage() {
         </div>
       </div>
       <div className="home-row">
-        <Top10Looks />
+        {
+          <Suspense fallback={<Loading />}>
+            <LazyLoadImgs />
+          </Suspense>
+        }
       </div>
       {/* <img
         className="home-image-left"
