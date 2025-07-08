@@ -54,7 +54,7 @@ export function Footer() {
 
         <div className="footer-row">
           <p className="copyright-footer">
-            © 2025 <em> Giovanny Collazo </em>. All Rights Reserved. Website
+            © 2025 <em> Giovanny Collazo</em>. All Rights Reserved. Website
             Design by <em>Ryan Garcia</em>.
           </p>
         </div>

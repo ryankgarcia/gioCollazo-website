@@ -83,3 +83,33 @@
   /* transform: translateY(-1.5rem) scale(1.03) rotateZ(-1deg);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); */
 }
+
+.workWMe-header {
+  font-size: 4rem;
+  @media (min-width: 481px) {
+    font-size: 3.5rem;
+  }
+
+  @media (min-width: 482px) and (max-width: 960px) {
+    font-size: 8rem;
+  }
+
+  @media (min-width: 961px) {
+    font-size: 7rem;
+  }
+}
+
+.second-header {
+  font-size: 1.5rem;
+  @media (min-width: 481px) {
+    font-size: 1.4rem;
+  }
+
+  @media (min-width: 482px) and (max-width: 960px) {
+    font-size: 2rem;
+  }
+
+  @media (min-width: 961px) {
+    font-size: 2.3rem;
+  }
+}
