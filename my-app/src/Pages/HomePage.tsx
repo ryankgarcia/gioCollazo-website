@@ -1,6 +1,7 @@
 // import { lazy } from 'react';
 import { Footer } from '../Components/Footer';
-import './HomePageLayout.css';
+import { Top10Looks } from '../Components/Top10Looks';
+import './HomePage.css';
 
 // const LazyLoadImgs = lazy(() => import('./HomeImage.js'));
 
@@ -64,8 +65,10 @@ export function HomePage() {
           <h2 className="home-clients-styled">Client's I've Styled</h2>
         </div>
       </div>
-      <div className="home-row"></div>
-      <img
+      <div className="home-row">
+        <Top10Looks />
+      </div>
+      {/* <img
         className="home-image-left"
         src="/elegant-redDress.jpg"
         alt="woman-outdoor-styledByGio-image3"
@@ -149,7 +152,7 @@ export function HomePage() {
         className="home-image-left"
         src="/starWars-themed.jpg"
         alt="matchingCouple-styledByGio-image13"
-      />
+      /> */}
       <h2 className="home-clients-styled">Brands I've Worked With</h2>
       <div className="home-row">
         <div className="home-column-full">
