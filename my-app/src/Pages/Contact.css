@@ -1,8 +1,4 @@
 .contactPage-container {
-  /* @media (min-width: 320px) {
-    max-width: 320px;
-  } */
-
   @media (min-width: 961px) {
     max-width: 1700px;
     margin: 0 auto;
@@ -13,10 +9,15 @@
   @media (min-width: 481px) {
     display: flex;
   }
+  @media (min-width: 482px) and (max-width: 960px) {
+    display: block;
+  }
+  @media (min-width: 961px) {
+    display: block;
+  }
 }
 
 .stylist-image-container {
-  /* flex-basis: 100%; */
   display: flex;
   justify-content: center;
   @media (min-width: 481px) {

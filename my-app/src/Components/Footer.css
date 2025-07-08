@@ -17,9 +17,9 @@ p {
   color: #53ed71;
 }
 
-.footer-container {
+/* .footer-container {
   width: 100%;
-}
+} */
 
 .link-group {
   display: flex;
@@ -40,6 +40,20 @@ p {
   font-size: 0.9rem;
   padding-top: 0.5rem;
   display: block;
+
+  @media (min-width: 481px) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media (min-width: 482px) and (max-width: 960px) {
+    font-size: 1.3rem;
+  }
+
+  @media (min-width: 961px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 em {
