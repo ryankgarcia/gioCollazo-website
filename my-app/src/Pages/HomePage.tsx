@@ -56,13 +56,18 @@ export function HomePage() {
       </div>
       <div className="home-column-full">
         <h2 className="home-clients-styled">Behind The Scenes</h2>
-        <video autoPlay muted loop playsInline>
+        <video controls muted>
+          {/* <video autoPlay muted loop playsInline> */}
           <source src="styledByGio-behindTheScenes.mp4" type="video/mp4" />
+        </video>
+        <video controls muted>
+          {/* <video autoPlay muted loop playsInline> */}
+          <source src="gio-redcarpet-spanish.interview.mp4" type="video/mp4" />
         </video>
       </div>
       <div className="home-row">
         <div className="home-column-full">
-          <h2 className="home-clients-styled">Client's I've Styled</h2>
+          <h2 className="home-clients-styled">Top 10 Looks</h2>
         </div>
       </div>
       <div className="home-row">
