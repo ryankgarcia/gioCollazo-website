@@ -5,7 +5,9 @@ import './HomePage.css';
 
 const LazyLoadTop10Looks = lazy(() => import('../Components/Top10Looks'));
 
-const LazyLoadImageElement = lazy(() => import('../Components/ImageElement'));
+const LazyLoadBTS = lazy(() => import('../Components/BehindTheScenes'));
+
+const LazyLoadBrands = lazy(() => import('../Components/BrandsWorkedWith'));
 
 export function HomePage() {
   return (
@@ -63,11 +65,24 @@ export function HomePage() {
       <div className="home-column-full">
         <h2 className="home-clients-styled">Behind The Scenes</h2>
         <video controls muted>
-          <source src="styledByGio-behindTheScenes.mp4" type="video/mp4" />
+          <source
+            src="styledByGio-behindTheScenes.mp4"
+            type="video/mp4"
+            className="bts-video"
+          />
         </video>
         <video controls muted>
-          <source src="gio-redcarpet-spanish.interview.mp4" type="video/mp4" />
+          <source
+            src="gio-redcarpet-spanish.interview.mp4"
+            type="video/mp4"
+            className="bts-video"
+          />
         </video>
+        {
+          <Suspense fallback={<Loading />}>
+            <LazyLoadBTS />
+          </Suspense>
+        }
       </div>
       <div className="home-row">
         <div className="home-column-full">
@@ -167,15 +182,17 @@ export function HomePage() {
         alt="matchingCouple-styledByGio-image13"
       /> */}
       <h2 className="home-clients-styled">Brands I've Worked With</h2>
+      {/* <div className="home-row"> */}
+      {/* <div className="home-column-full"> */}
       <div className="home-row">
-        <div className="home-column-full">
-          <div className="brand-circle">
-            {
-              <Suspense fallback={<Loading />}>
-                <LazyLoadImageElement />
-              </Suspense>
-            }
-            {/* <img
+        <div className="brand-circle">
+          {
+            <Suspense fallback={<Loading />}>
+              <LazyLoadBrands />
+            </Suspense>
+          }
+        </div>
+        {/* <img
               className="brand-image"
               src="/Brands-Gio-has-worked-with/clubmaverick-logo.jpeg"
               alt="ClubMaverick-brand-logo"
@@ -285,8 +302,8 @@ export function HomePage() {
               src="/Brands-Gio-has-worked-with/zara-logo-circle.jpg"
               alt="Zara-brand-logo"
             /> */}
-          </div>
-        </div>
+        {/* </div> */}
+        {/* </div> */}
       </div>
       <Footer />
     </div>
