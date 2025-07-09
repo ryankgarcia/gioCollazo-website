@@ -4,6 +4,8 @@ interface topLooks {
   id: number;
   src: string;
   alt: string;
+  // className: string; // add the proper className attribute to each of these based on what was current
+  // at the time of the last deployed version
 }
 
 export function Top10Looks() {
@@ -28,7 +30,7 @@ export function Top10Looks() {
             key={image.id}
             src={image.src}
             alt={image.alt}
-            className="image-wrapper"
+            // className="image-wrapper"
           />
         ))
       ) : (
