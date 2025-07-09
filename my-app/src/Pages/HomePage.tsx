@@ -1,8 +1,13 @@
-// import { lazy } from 'react';
+import { lazy, Suspense } from 'react';
 import { Footer } from '../Components/Footer';
-import './HomePageLayout.css';
+import Loading from '../Components/LoadingImage';
+import './HomePage.css';
 
-// const LazyLoadImgs = lazy(() => import('./HomeImage.js'));
+const LazyLoadTop10Looks = lazy(() => import('../Components/Top10Looks'));
+
+const LazyLoadBTS = lazy(() => import('../Components/BehindTheScenes'));
+
+const LazyLoadBrands = lazy(() => import('../Components/BrandsWorkedWith'));
 
 export function HomePage() {
   return (
@@ -37,35 +42,61 @@ export function HomePage() {
       </div>
       <div className="home-row">
         <div className="home-column-full">
-          <p className="home-text">
-            Bringing the best out of YOU. Focusing on what is comfortable,
-            fashionable, and makes you feel amazing in the clothes you're in.
-          </p>
+          <div className="home-GC-introduction">
+            <p className="home-text">
+              Bringing the best out of YOU. Focusing on what is comfortable,
+              fashionable, and makes you feel amazing in the clothes you're in.
+            </p>
+          </div>
         </div>
       </div>
       <div className="home-row">
         <div className="home-column-full">
-          <p lang="es" className="home-text">
-            Hablo español y ofrezco mis servicios desde WhatsApp. Si gustas mas
-            información, puedes traducir la página al español y/o mandarme un
-            mensaje de WhatsApp. Al fin de la pagina encontraras el icono de
-            WhatsApp para conectarnos.
-          </p>
+          <div className="home-GC-introduction">
+            <p lang="es" className="home-text">
+              Hablo español y ofrezco mis servicios desde WhatsApp. Si gustas
+              mas información, puedes traducir la página al español y/o mandarme
+              un mensaje de WhatsApp. Al fin de la pagina encontraras el icono
+              de WhatsApp para conectarnos.
+            </p>
+          </div>
         </div>
       </div>
       <div className="home-column-full">
         <h2 className="home-clients-styled">Behind The Scenes</h2>
-        <video autoPlay muted loop playsInline>
-          <source src="styledByGio-behindTheScenes.mp4" type="video/mp4" />
+        <video controls muted>
+          <source
+            src="styledByGio-behindTheScenes.mp4"
+            type="video/mp4"
+            className="bts-video"
+          />
         </video>
+        <video controls muted>
+          <source
+            src="gio-redcarpet-spanish.interview.mp4"
+            type="video/mp4"
+            className="bts-video"
+          />
+        </video>
+        {
+          <Suspense fallback={<Loading />}>
+            <LazyLoadBTS />
+          </Suspense>
+        }
       </div>
       <div className="home-row">
         <div className="home-column-full">
-          <h2 className="home-clients-styled">Client's I've Styled</h2>
+          <h2 className="home-clients-styled">Top 10 Looks</h2>
         </div>
       </div>
-      <div className="home-row"></div>
-      <img
+      <div className="home-row">
+        {
+          <Suspense fallback={<Loading />}>
+            <LazyLoadTop10Looks />
+          </Suspense>
+        }
+      </div>
+      {/* <img
         className="home-image-left"
         src="/elegant-redDress.jpg"
         alt="woman-outdoor-styledByGio-image3"
@@ -149,12 +180,19 @@ export function HomePage() {
         className="home-image-left"
         src="/starWars-themed.jpg"
         alt="matchingCouple-styledByGio-image13"
-      />
+      /> */}
       <h2 className="home-clients-styled">Brands I've Worked With</h2>
+      {/* <div className="home-row"> */}
+      {/* <div className="home-column-full"> */}
       <div className="home-row">
-        <div className="home-column-full">
-          <div className="brand-circle">
-            <img
+        <div className="brand-circle">
+          {
+            <Suspense fallback={<Loading />}>
+              <LazyLoadBrands />
+            </Suspense>
+          }
+        </div>
+        {/* <img
               className="brand-image"
               src="/Brands-Gio-has-worked-with/clubmaverick-logo.jpeg"
               alt="ClubMaverick-brand-logo"
@@ -263,9 +301,9 @@ export function HomePage() {
               className="brand-image"
               src="/Brands-Gio-has-worked-with/zara-logo-circle.jpg"
               alt="Zara-brand-logo"
-            />
-          </div>
-        </div>
+            /> */}
+        {/* </div> */}
+        {/* </div> */}
       </div>
       <Footer />
     </div>

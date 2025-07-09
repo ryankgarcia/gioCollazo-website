@@ -12,9 +12,14 @@
 .navBarHeader {
   background-color: #610ad1;
   color: #fbfbfb;
-  height: 100px;
   width: 100%;
   padding-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  @media (min-width: 961px) {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
 h2 {

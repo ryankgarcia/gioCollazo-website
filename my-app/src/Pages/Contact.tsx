@@ -17,7 +17,11 @@ export function ContactPage() {
             can discuss how I can help you.
           </h3>
         </div>
-        <WorkWithMe />
+        <div className="contact-row">
+          <div className="contact-column-full">
+            <WorkWithMe />
+          </div>
+        </div>
       </div>
       <div className="contact-row">
         <div className="stylist-image-container">
