@@ -3,7 +3,7 @@ import { Footer } from '../Components/Footer';
 import Loading from '../Components/LoadingImage';
 import './HomePage.css';
 
-const LazyLoadImgs = lazy(() => import('../Components/Top10Looks'));
+const LazyLoadTop10Looks = lazy(() => import('../Components/Top10Looks'));
 
 export function HomePage() {
   return (
@@ -57,11 +57,9 @@ export function HomePage() {
       <div className="home-column-full">
         <h2 className="home-clients-styled">Behind The Scenes</h2>
         <video controls muted>
-          {/* <video autoPlay muted loop playsInline> */}
           <source src="styledByGio-behindTheScenes.mp4" type="video/mp4" />
         </video>
         <video controls muted>
-          {/* <video autoPlay muted loop playsInline> */}
           <source src="gio-redcarpet-spanish.interview.mp4" type="video/mp4" />
         </video>
       </div>
@@ -73,7 +71,7 @@ export function HomePage() {
       <div className="home-row">
         {
           <Suspense fallback={<Loading />}>
-            <LazyLoadImgs />
+            <LazyLoadTop10Looks />
           </Suspense>
         }
       </div>
