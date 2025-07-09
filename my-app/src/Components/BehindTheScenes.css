@@ -1,0 +1,17 @@
+.brand-image {
+  border-radius: 50%;
+  width: 100%;
+  margin-left: 25%;
+  border: 7px #610ad1 solid;
+}
+
+.bts-image {
+  border-radius: 3px;
+  width: 250px;
+  margin-left: 20%;
+  margin-bottom: 1.5rem;
+  @media (min-width: 481px) {
+    /* margin-left: 30%; */
+    margin-bottom: 2rem;
+  }
+}

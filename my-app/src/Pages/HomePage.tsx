@@ -5,6 +5,8 @@ import './HomePage.css';
 
 const LazyLoadTop10Looks = lazy(() => import('../Components/Top10Looks'));
 
+const LazyLoadImageElement = lazy(() => import('../Components/ImageElement'));
+
 export function HomePage() {
   return (
     <div className="home-container">
@@ -38,20 +40,24 @@ export function HomePage() {
       </div>
       <div className="home-row">
         <div className="home-column-full">
-          <p className="home-text">
-            Bringing the best out of YOU. Focusing on what is comfortable,
-            fashionable, and makes you feel amazing in the clothes you're in.
-          </p>
+          <div className="home-GC-introduction">
+            <p className="home-text">
+              Bringing the best out of YOU. Focusing on what is comfortable,
+              fashionable, and makes you feel amazing in the clothes you're in.
+            </p>
+          </div>
         </div>
       </div>
       <div className="home-row">
         <div className="home-column-full">
-          <p lang="es" className="home-text">
-            Hablo español y ofrezco mis servicios desde WhatsApp. Si gustas mas
-            información, puedes traducir la página al español y/o mandarme un
-            mensaje de WhatsApp. Al fin de la pagina encontraras el icono de
-            WhatsApp para conectarnos.
-          </p>
+          <div className="home-GC-introduction">
+            <p lang="es" className="home-text">
+              Hablo español y ofrezco mis servicios desde WhatsApp. Si gustas
+              mas información, puedes traducir la página al español y/o mandarme
+              un mensaje de WhatsApp. Al fin de la pagina encontraras el icono
+              de WhatsApp para conectarnos.
+            </p>
+          </div>
         </div>
       </div>
       <div className="home-column-full">
@@ -164,7 +170,12 @@ export function HomePage() {
       <div className="home-row">
         <div className="home-column-full">
           <div className="brand-circle">
-            <img
+            {
+              <Suspense fallback={<Loading />}>
+                <LazyLoadImageElement />
+              </Suspense>
+            }
+            {/* <img
               className="brand-image"
               src="/Brands-Gio-has-worked-with/clubmaverick-logo.jpeg"
               alt="ClubMaverick-brand-logo"
@@ -273,7 +284,7 @@ export function HomePage() {
               className="brand-image"
               src="/Brands-Gio-has-worked-with/zara-logo-circle.jpg"
               alt="Zara-brand-logo"
-            />
+            /> */}
           </div>
         </div>
       </div>
