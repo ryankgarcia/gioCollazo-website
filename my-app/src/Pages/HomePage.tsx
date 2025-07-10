@@ -2,6 +2,7 @@ import { lazy, Suspense } from 'react';
 import { Footer } from '../Components/Footer';
 import Loading from '../Components/LoadingImage';
 import './HomePage.css';
+import { Link } from 'react-router-dom';
 
 const LazyLoadTop10Looks = lazy(() => import('../Components/Top10Looks'));
 
@@ -80,6 +81,9 @@ export function HomePage() {
           </Suspense>
         }
       </div>
+      <Link to="/about" className="learn-more">
+        Learn more...
+      </Link>
       <div className="home-row">
         <div className="home-column-full">
           <h2 className="home-clients-styled">Style Highlights</h2>
@@ -92,6 +96,7 @@ export function HomePage() {
           </Suspense>
         }
       </div>
+
       {/* <img
         className="home-image-left"
         src="/elegant-redDress.jpg"
