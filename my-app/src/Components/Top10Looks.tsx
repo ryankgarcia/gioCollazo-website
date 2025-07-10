@@ -17,7 +17,7 @@ export function Top10Looks() {
     },
     {
       id: 2,
-      src: '/indoor-pinkDress-whitebkgd.jpg',
+      src: '/elegant-redDress.jpg',
       alt: 'topLooksImage2',
       className: 'image-wrapper',
     },
@@ -29,7 +29,7 @@ export function Top10Looks() {
     },
     {
       id: 4,
-      src: '/LC-indoor-coachella-fit3.jpg',
+      src: '/redCarpet-redQueen-longDress.jpg',
       alt: 'topLooksImage4',
       className: 'image-wrapper',
     },
@@ -53,7 +53,7 @@ export function Top10Looks() {
     },
     {
       id: 8,
-      src: '/LC-yeehaw.jpg',
+      src: '/LC-edc-fit.jpg',
       alt: 'topLooksImage8',
       className: 'image-wrapper',
     },

@@ -86,7 +86,7 @@ export function HomePage() {
       </div>
       <div className="home-row">
         <div className="home-column-full">
-          <h2 className="home-clients-styled">Top 10 Looks</h2>
+          <h2 className="home-clients-styled">Style Highlights</h2>
         </div>
       </div>
       <div className="home-row">
