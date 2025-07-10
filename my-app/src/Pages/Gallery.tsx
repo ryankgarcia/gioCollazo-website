@@ -1,12 +1,19 @@
 import { Footer } from '../Components/Footer';
 import './Gallery.css';
 
+// lazy loading will be done here at the top level
+
 export function Gallery() {
   return (
     <>
       <h2 className="gallery-h2">Gallery</h2>
       <div className="gallery-row">
         <div className="gallery-column-full">
+          <img
+            src="/BTS-LC-Gio.jpg"
+            alt="gallery-image"
+            className="gallery-image-L"
+          />
           <img
             src="/LC-bratGirlSummer.jpg"
             alt="gallery-image"
@@ -28,6 +35,7 @@ export function Gallery() {
             alt="gallery-image"
             className="gallery-image-L"
           />
+
           {/* </div> */}
           <img
             src="/gio-w-shades.jpg"
@@ -64,6 +72,15 @@ export function Gallery() {
               alt="gallery-image"
               className="gallery-image-L"
             />
+          </div>
+          <div>
+            <video controls muted>
+              <source
+                src="gio-redcarpet-spanish.interview.mp4"
+                type="video/mp4"
+                className="bts-video"
+              />
+            </video>
           </div>
         </div>
       </div>

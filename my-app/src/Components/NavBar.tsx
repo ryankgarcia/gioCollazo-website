@@ -1,7 +1,7 @@
 import { NavLink, Outlet } from 'react-router-dom';
 import { BiMenu } from 'react-icons/bi';
-import './NavBar.css';
 import { useState } from 'react';
+import './NavBar.css';
 
 export function NavBar() {
   const [isOpen, setIsOpen] = useState(false);

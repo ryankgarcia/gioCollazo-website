@@ -71,13 +71,6 @@ export function HomePage() {
             className="bts-video"
           />
         </video>
-        <video controls muted>
-          <source
-            src="gio-redcarpet-spanish.interview.mp4"
-            type="video/mp4"
-            className="bts-video"
-          />
-        </video>
         {
           <Suspense fallback={<Loading />}>
             <LazyLoadBTS />

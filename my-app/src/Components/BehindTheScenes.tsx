@@ -52,7 +52,6 @@ export function BehindTheScenes() {
       alt: 'BTSImage7',
       className: 'bts-image',
     },
-    { id: 8, src: '/BTS-LC-Gio.jpg', alt: 'BTSImage8', className: 'bts-image' },
   ];
 
   return (
