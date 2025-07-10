@@ -1,7 +1,8 @@
 import { Footer } from '../Components/Footer';
 import './Gallery.css';
 
-// lazy loading will be done here at the top level
+// lazy loading will be done here at the top level and imported
+// then call it, with the fallback, in the return statement of this component
 
 export function Gallery() {
   return (
@@ -73,6 +74,11 @@ export function Gallery() {
               className="gallery-image-L"
             />
           </div>
+          <img
+            src="/LC-yeehaw.jpeg"
+            alt="gallery-image"
+            className="gallery-image-R"
+          />
           <div>
             <video controls muted>
               <source

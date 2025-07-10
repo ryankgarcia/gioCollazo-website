@@ -52,6 +52,18 @@ export function BehindTheScenes() {
       alt: 'BTSImage7',
       className: 'bts-image',
     },
+    {
+      id: 8,
+      src: '/bts-LC-Gio-BlackDress.JPEG',
+      alt: 'BTSImage8',
+      className: 'bts-image',
+    },
+    {
+      id: 9,
+      src: '/bts-shoppingExp.JPG',
+      alt: 'BTSImage9',
+      className: 'bts-image',
+    },
   ];
 
   return (

@@ -71,6 +71,9 @@ export function HomePage() {
             className="bts-video"
           />
         </video>
+        <video controls muted>
+          <source src="/bts-gioSprayPainting.mp4" type="video/mp4" />
+        </video>
         {
           <Suspense fallback={<Loading />}>
             <LazyLoadBTS />
