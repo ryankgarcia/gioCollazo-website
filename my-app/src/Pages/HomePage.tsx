@@ -64,7 +64,7 @@ export function HomePage() {
         </div>
       </div>
       <div className="home-column-full">
-        <h2 className="home-clients-styled">Behind The Scenes</h2>
+        <h2 className="home-bts-header">Behind The Scenes</h2>
         <video controls muted>
           <source
             src="styledByGio-behindTheScenes.mp4"
@@ -86,7 +86,7 @@ export function HomePage() {
       </Link>
       <div className="home-row">
         <div className="home-column-full">
-          <h2 className="home-clients-styled">Style Highlights</h2>
+          <h2 className="home-style-highlights">Style Highlights</h2>
         </div>
       </div>
       <div className="home-row">

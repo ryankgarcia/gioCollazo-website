@@ -28,7 +28,7 @@ export function Services() {
       <p>
         <span className="emoji-large">✅</span>
       </p>
-      <Link to="/contact" className="book-me">
+      <Link to="/contact" className="book-session">
         Book Your Session
       </Link>
       <h3 className="service-subheader">🛍️ Shopping with Gio</h3>
@@ -38,8 +38,8 @@ export function Services() {
         curated looks designed for your body type, lifestyle, and goals.
       </p>
       <p>
-        We’ll shop smarter—not harder—and you’ll leave knowing how to dress with
-        confidence. (2 hour-minimum)
+        We’ll shop smarter, not harder, and you’ll leave knowing how to dress
+        with confidence. (2 hour-minimum)
       </p>
       <p>Includes:</p>
       <p>
@@ -49,14 +49,14 @@ export function Services() {
         <span className="emoji-large">✅</span> Styling tips as we shop
       </p>
       <p>
-        <span className="emoji-large">✅</span> Outfit building in real time
+        <span className="emoji-large">✅</span> Outfit building in real-time
       </p>
       <p>
         <span className="emoji-large">✅</span> Feel-good vibes all day
       </p>
       <p>Ready for your wardrobe glow-up? </p> <p>Let's make it personal.</p>
       <p>Let's make it fashion. 💅</p>
-      <Link to="/contact" className="book-me">
+      <Link to="/contact" className="book-session">
         Book Your Session
       </Link>
       <h3 className="service-subheader">✈️ Trips & Events 💃</h3>
@@ -85,7 +85,7 @@ export function Services() {
       <p>
         <span className="emoji-large">✅</span>
       </p>
-      <Link to="/contact" className="book-me">
+      <Link to="/contact" className="book-session">
         Book Your Session
       </Link>
       <Footer />

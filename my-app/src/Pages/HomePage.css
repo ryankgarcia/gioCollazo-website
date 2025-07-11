@@ -91,10 +91,12 @@
   transform: translateY(-1.2rem) scale(1.03) rotateZ(3deg);
 }
 
-.home-clients-styled {
+.home-style-highlights,
+.home-bts-header {
   color: #fbfbfb;
   display: flex;
   justify-content: center;
+  font-size: 3rem;
 }
 
 video {
@@ -113,13 +115,6 @@ video {
   margin-bottom: 1.3rem;
 }
 
-/* .brand-image {
-  border-radius: 50%;
-  width: 100%;
-  margin-left: 25%;
-  border: 7px #610ad1 solid;
-} */
-
 .bts-video {
   width: 45%;
   margin-left: 20%;
@@ -136,14 +131,15 @@ video {
   align-items: center;
   background-color: #610ad1;
   color: white;
-  width: 22rem;
-  height: 6rem;
-  font-size: 1.8rem;
+  width: 15rem;
+  height: 5rem;
+  font-size: 1.4rem;
   border-radius: 3rem;
   text-decoration: none;
+  margin-left: 15%;
+  margin-top: 10%;
+  margin-bottom: 15%;
   cursor: pointer;
-  margin-top: 5rem;
-  margin-left: 0.5rem;
 }
 
 .learn-more:hover {
