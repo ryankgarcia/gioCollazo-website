@@ -1,6 +1,7 @@
 .contactPage-container {
+  margin: 2%;
   @media (min-width: 961px) {
-    max-width: 1700px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }
@@ -85,7 +86,11 @@
 }
 
 .workWMe-header {
+  display: flex;
+  justify-content: center;
   font-size: 4rem;
+  margin-top: 10%;
+  margin-bottom: 0%;
   @media (min-width: 481px) {
     font-size: 3.5rem;
   }
