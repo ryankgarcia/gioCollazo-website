@@ -17,7 +17,18 @@
 .home-row {
   @media (min-width: 961px) {
     display: flex;
-    /* justify-content: center; */
+  }
+}
+
+.gio-intro-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  @media (min-width: 961px) {
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-optical-sizing: auto;
   }
 }
 
@@ -102,13 +113,42 @@
   }
 }
 
-video {
+.video-H {
   width: 100%;
   height: auto;
   object-fit: cover;
   @media (min-width: 961px) {
-    width: 50%;
+    /* width: 50%; */
   }
+}
+
+.video-V {
+  /* margin-top: 3rem;
+  padding-bottom: 3rem;
+  height: 100%;
+  width: auto;
+  object-fit: cover; */
+  /* @media (min-width: 961px) {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 100%;
+  } */
+}
+
+.video-container {
+  /* padding-top: 5rem; */
+  /* padding-bottom: 5rem; */
+  @media (min-width: 961px) {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 100%;
+  }
+}
+
+.bts-photos-padding {
+  padding-top: 5rem;
 }
 
 /* .brand-circle {
@@ -117,26 +157,24 @@ video {
   margin-bottom: 1.3rem;
 } */
 
-.bts-video-horizontal {
+/* .bts-video-horizontal {
   width: 15%;
   margin-left: 20%;
   margin-bottom: 1.5rem;
 
   @media (min-width: 481px) {
-    /* margin-left: 30%; */
     margin-bottom: 2rem;
   }
-}
+} */
 
-.bts-video-vertical {
+/* .bts-video-vertical {
   width: 35%;
   margin-left: 20%;
   margin-bottom: 1.5rem;
   @media (min-width: 481px) {
-    /* margin-left: 30%; */
     margin-bottom: 2rem;
   }
-}
+} */
 
 .learn-more {
   display: flex;
@@ -149,7 +187,6 @@ video {
   font-size: 1.4rem;
   border-radius: 3rem;
   text-decoration: none;
-  margin-left: 15%;
   margin-top: 10%;
   margin-bottom: 15%;
   cursor: pointer;
@@ -159,4 +196,11 @@ video {
   transition-property: unset;
   background-color: white;
   color: #610ad1;
+}
+
+.home-center-button {
+  @media (min-width: 961px) {
+    display: flex;
+    justify-content: center;
+  }
 }

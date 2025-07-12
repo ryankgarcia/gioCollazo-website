@@ -21,13 +21,12 @@ export function HomePage() {
         />
         <div className="home-intro-row">
           <div className="home-column-full">
-            <p className="home-text">Giovanny Collazo</p>
-            <p className="home-text">Personal Stylist</p>
-            <p className="home-text">Styling men & women since 2015</p>
+            <p className="gio-intro-text">Giovanny Collazo</p>
+            <p className="gio-intro-text">Personal Stylist</p>
+            <p className="gio-intro-text">Styling men & women since 2015</p>
           </div>
         </div>
       </div>
-
       <p className="home-text">
         Bringing the best out of YOU. Focusing on what is comfortable,
         fashionable, and makes you feel amazing in the clothes you're in.
@@ -39,24 +38,46 @@ export function HomePage() {
         WhatsApp para conectarnos.
       </p>
       <h2 className="home-bts-header">Behind The Scenes</h2>
-      <video controls muted>
-        <source
-          src="styledByGio-behindTheScenes.mp4"
-          type="video/mp4"
-          className="bts-video-horizontal"
-        />
-      </video>
-      <video controls muted>
-        <source src="/bts-gioSprayPainting.mp4" type="video/mp4" />
-      </video>
-      {
-        <Suspense fallback={<Loading />}>
-          <LazyLoadBTS />
-        </Suspense>
-      }
-      <Link to="/about" className="learn-more">
-        Learn more...
-      </Link>
+      <div className="home-row">
+        <div className="home-column-full">
+          <video className="video-H" controls muted>
+            <source
+              src="styledByGio-behindTheScenes.mp4"
+              type="video/mp4"
+              className="bts-video-horizontal"
+            />
+          </video>
+        </div>
+      </div>
+      <div className="home-row">
+        <div className="home-column-full">
+          <div className="video-container">
+            <video className="video-V" controls muted>
+              <source src="/bts-gioSprayPainting.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+      <div className="home-row">
+        <div className="home-column-full">
+          <div className="bts-photos-padding">
+            {
+              <Suspense fallback={<Loading />}>
+                <LazyLoadBTS />
+              </Suspense>
+            }
+          </div>
+        </div>
+      </div>
+      <div className="home-row">
+        <div className="home-column-full">
+          <div className="home-center-button">
+            <Link to="/about" className="learn-more">
+              Learn more...
+            </Link>
+          </div>
+        </div>
+      </div>
       <h2 className="home-style-highlights">Style Highlights</h2>
       {
         <Suspense fallback={<Loading />}>
