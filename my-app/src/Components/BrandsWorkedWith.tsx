@@ -111,20 +111,22 @@ export function BrandsWorkedWith() {
   ];
 
   return (
-    <>
+    <div>
       {workedWithBrands.length > 0 ? (
         workedWithBrands.map((image) => (
-          <img
-            key={image.id}
-            src={image.src}
-            alt={image.alt}
-            className="brand-image"
-          />
+          <div className="brand-circle">
+            <img
+              key={image.id}
+              src={image.src}
+              alt={image.alt}
+              className="brand-image"
+            />
+          </div>
         ))
       ) : (
         <p>No images have loaded...</p>
       )}
-    </>
+    </div>
   );
 }
 

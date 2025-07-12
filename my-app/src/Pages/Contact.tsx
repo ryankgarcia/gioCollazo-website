@@ -5,11 +5,8 @@ import './Contact.css';
 export function ContactPage() {
   return (
     <div className="contactPage-container">
-      <div className="contact-row">
-        <div className="contact-column-full">
-          <h2 className="workWMe-header">Hello. Welcome.</h2>
-        </div>
-      </div>
+      <h2 className="workWMe-header">Hello.</h2>
+      <h2 className="workWMe-header">Welcome.</h2>
       <div className="contact-row">
         <div className="contact-column-full">
           <h3 className="second-header">

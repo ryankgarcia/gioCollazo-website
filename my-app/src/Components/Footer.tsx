@@ -6,7 +6,7 @@ import './Footer.css';
 
 export function Footer() {
   return (
-    <div className="footer-container">
+    <>
       <h2 className="footer-h2">Quick Links</h2>
       <div className="quick-linksGroup">
         <div className="footer-row">
@@ -25,40 +25,40 @@ export function Footer() {
           </Link>
         </div>
       </div>
-      <div className="footer-row">
-        <h2 className="footer-h2">Stay Connected</h2>
-        <div className="link-group">
-          <a
-            className="circle-icon"
-            href="https://www.instagram.com/styledbygio?igsh=MTJwa2w4em1tZm84Zg=="
-            target="_blank"
-          >
-            <PiInstagramLogo className="insta-logo" />
-          </a>
-          <a
-            className="circle-icon"
-            href="https://wa.me/18186338346?text=Hola%20Giovanny%2C%20miré%20tu%20página%20de%20web.%20Envíame%20información%20sobre%20tus%20servicios%20profesionales."
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaSquareWhatsapp className="whatsapp-logo" />
-          </a>
-          {/* this mailto link must change to the name of
+      {/* <div className="footer-row"> */}
+      <h2 className="footer-h2">Stay Connected</h2>
+      <div className="link-group">
+        <a
+          className="circle-icon"
+          href="https://www.instagram.com/styledbygio?igsh=MTJwa2w4em1tZm84Zg=="
+          target="_blank"
+        >
+          <PiInstagramLogo className="insta-logo" />
+        </a>
+        <a
+          className="circle-icon"
+          href="https://wa.me/18186338346?text=Hola%20Giovanny%2C%20miré%20tu%20página%20de%20web.%20Envíame%20información%20sobre%20tus%20servicios%20profesionales."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaSquareWhatsapp className="whatsapp-logo" />
+        </a>
+        {/* this mailto link must change to the name of
         domain name. Ex: giovanny@styledbygio.com.
         for example purposes this will do, but it must change once
         the domain has been claimed*/}
-          <a className="circle-icon" href="mailto:styledbygio4@gmail.com">
-            <CgMail className="mail-logo" />
-          </a>
-        </div>
-
-        <div className="footer-row">
-          <p className="copyright-footer">
-            © 2025 <em> Giovanny Collazo</em>. All Rights Reserved. Website
-            Design by <em>Ryan Garcia</em>.
-          </p>
-        </div>
+        <a className="circle-icon" href="mailto:styledbygio4@gmail.com">
+          <CgMail className="mail-logo" />
+        </a>
       </div>
-    </div>
+
+      {/* <div className="footer-row"> */}
+      <p className="copyright-footer">
+        © 2025 <em> Giovanny Collazo</em>. All Rights Reserved. Website Design
+        by <em>Ryan Garcia</em>.
+      </p>
+    </>
+    // </div>
+    // </div>
   );
 }

@@ -36,9 +36,11 @@ export function AboutMe() {
       </div>
       <div className="about-row">
         <div className="about-column-full">
-          <Link className="about-button" to="/services">
-            Learn More. . .
-          </Link>
+          <div className="about-button-center">
+            <Link className="about-button" to="/services">
+              Learn More. . .
+            </Link>
+          </div>
         </div>
       </div>
       <Footer />
