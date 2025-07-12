@@ -5,3 +5,9 @@
   border: 7px #610ad1 solid;
   margin-bottom: 2rem;
 }
+
+.brand-circle {
+  width: 15rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1.3rem;
+}

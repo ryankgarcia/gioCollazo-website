@@ -111,7 +111,7 @@ export function BrandsWorkedWith() {
   ];
 
   return (
-    <>
+    <div className="brand-circle">
       {workedWithBrands.length > 0 ? (
         workedWithBrands.map((image) => (
           <img
@@ -124,7 +124,7 @@ export function BrandsWorkedWith() {
       ) : (
         <p>No images have loaded...</p>
       )}
-    </>
+    </div>
   );
 }
 

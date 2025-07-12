@@ -17,10 +17,6 @@ p {
   color: #53ed71;
 }
 
-/* .footer-container {
-  width: 100%;
-} */
-
 .link-group {
   display: flex;
   justify-content: space-evenly;
@@ -51,6 +47,7 @@ p {
   }
 
   @media (min-width: 961px) {
+    font-size: 1.3rem;
     display: flex;
     justify-content: center;
   }
