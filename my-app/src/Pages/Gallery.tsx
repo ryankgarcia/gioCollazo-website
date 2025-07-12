@@ -17,7 +17,7 @@ export function Gallery() {
             </Suspense>
           }
           <div>
-            <video controls muted>
+            <video className="video-H" controls muted>
               <source
                 src="gio-redcarpet-spanish.interview.mp4"
                 type="video/mp4"

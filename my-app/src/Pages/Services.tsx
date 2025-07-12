@@ -28,9 +28,11 @@ export function Services() {
       <p>
         <span className="emoji-large">✅</span>
       </p>
-      <Link to="/contact" className="book-session">
-        Book Your Session
-      </Link>
+      <div className="services-center-button">
+        <Link to="/contact" className="book-session">
+          Book Your Session
+        </Link>
+      </div>
       <h3 className="service-subheader">🛍️ Shopping with Gio</h3>
       <p>
         Your budget. Your vibe. Your glow-up. Whether it’s a full style overhaul
@@ -56,9 +58,11 @@ export function Services() {
       </p>
       <p>Ready for your wardrobe glow-up? </p> <p>Let's make it personal.</p>
       <p>Let's make it fashion. 💅</p>
-      <Link to="/contact" className="book-session">
-        Book Your Session
-      </Link>
+      <div className="services-center-button">
+        <Link to="/contact" className="book-session">
+          Book Your Session
+        </Link>
+      </div>
       <h3 className="service-subheader">✈️ Trips & Events 💃</h3>
       <p>
         Getting ready to travel somewhere new? Going to a special event and want
@@ -85,9 +89,11 @@ export function Services() {
       <p>
         <span className="emoji-large">✅</span>
       </p>
-      <Link to="/contact" className="book-session">
-        Book Your Session
-      </Link>
+      <div className="services-center-button">
+        <Link to="/contact" className="book-session">
+          Book Your Session
+        </Link>
+      </div>
       <Footer />
     </div>
   );

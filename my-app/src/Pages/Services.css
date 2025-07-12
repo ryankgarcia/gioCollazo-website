@@ -39,7 +39,6 @@ h2 {
   font-size: 1.4rem;
   border-radius: 3rem;
   text-decoration: none;
-  margin-left: 15%;
   margin-top: 15%;
   margin-bottom: 25%;
   cursor: pointer;
@@ -49,4 +48,9 @@ h2 {
   transition-property: unset;
   background-color: white;
   color: #610ad1;
+}
+
+.services-center-button {
+  display: flex;
+  justify-content: center;
 }

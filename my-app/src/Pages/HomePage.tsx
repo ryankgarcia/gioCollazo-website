@@ -41,17 +41,14 @@ export function HomePage() {
       <div className="home-row">
         <div className="home-column-full">
           <video className="video-H" controls muted>
-            <source
-              src="styledByGio-behindTheScenes.mp4"
-              type="video/mp4"
-              className="bts-video-horizontal"
-            />
+            <source src="styledByGio-behindTheScenes.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
       <div className="home-row">
         <div className="home-column-full">
           <div className="video-container">
+            {/* adjust the vertical video to fit inside the container on mobile & desktop */}
             <video className="video-V" controls muted>
               <source src="/bts-gioSprayPainting.mp4" type="video/mp4" />
             </video>
@@ -85,11 +82,14 @@ export function HomePage() {
         </Suspense>
       }
       <h2 className="home-brandsWorkedW">Brands I've Worked With</h2>
-      {
-        <Suspense fallback={<Loading />}>
-          <LazyLoadBrands />
-        </Suspense>
-      }
+      <div className="home-row">
+        {
+          <Suspense fallback={<Loading />}>
+            <LazyLoadBrands />
+          </Suspense>
+        }
+      </div>
+
       {/* <img
               className="brand-image"
               src="/Brands-Gio-has-worked-with/clubmaverick-logo.jpeg"

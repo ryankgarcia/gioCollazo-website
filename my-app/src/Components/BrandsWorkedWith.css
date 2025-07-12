@@ -1,13 +1,13 @@
-.brand-image {
-  border-radius: 50%;
-  width: 100%;
-  margin-left: 25%;
-  border: 7px #610ad1 solid;
-  margin-bottom: 2rem;
-}
-
 .brand-circle {
   width: 15rem;
   margin-top: 0.3rem;
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.brand-image {
+  border-radius: 50%;
+  width: 100%;
+  margin-left: 22%;
+  border: 7px #610ad1 solid;
+  margin-bottom: 1.5rem;
 }
