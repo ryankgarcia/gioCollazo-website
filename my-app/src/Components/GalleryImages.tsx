@@ -161,6 +161,36 @@ export function GalleryImages() {
       alt: 'galleryImage25',
       className: 'gallery-image',
     },
+    {
+      id: 26,
+      src: '/maniquin-strapless.jpg',
+      alt: 'galleryImage26',
+      className: 'gallery-image',
+    },
+    {
+      id: 27,
+      src: '/duo-styled-couple.jpg',
+      alt: 'galleryImage27',
+      className: 'gallery-image',
+    },
+    {
+      id: 28,
+      src: '/outdoor-man-redcarpet.jpg',
+      alt: 'galleryImage28',
+      className: 'gallery-image',
+    },
+    {
+      id: 29,
+      src: '/clubMaverick-partyFit.jpg',
+      alt: 'galleryImage29',
+      className: 'gallery-image',
+    },
+    {
+      id: 30,
+      src: '/July 8 Images/sophia-outdoor2.jpg',
+      alt: 'galleryImage30',
+      className: 'gallery-image',
+    },
   ];
 
   // any new images will be added to this array of objects above here
