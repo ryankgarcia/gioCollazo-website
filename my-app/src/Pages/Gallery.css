@@ -1,3 +1,13 @@
+.gallery-container {
+  margin: 0 auto;
+  max-width: 370px;
+  font-size: 1.3rem;
+  @media (min-width: 481px) {
+    max-width: 1200px;
+    font-size: 2rem;
+  }
+}
+
 .gallery-row {
   display: flex;
 }

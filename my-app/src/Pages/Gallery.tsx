@@ -7,7 +7,7 @@ const LazyLoadGalleryImages = lazy(() => import('../Components/GalleryImages'));
 
 export function Gallery() {
   return (
-    <>
+    <div className="gallery-container">
       <h2 className="gallery-h2">Gallery</h2>
       <div className="gallery-row">
         <div className="gallery-column-full">
@@ -28,6 +28,6 @@ export function Gallery() {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
