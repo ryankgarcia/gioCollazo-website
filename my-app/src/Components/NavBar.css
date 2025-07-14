@@ -38,6 +38,16 @@ h2 {
   display: flex;
 }
 
+.nav-column-full {
+  display: flex;
+  justify-content: center;
+  flex-basis: 100%;
+}
+
+.nav-column-quarter {
+  flex-basis: 5%;
+}
+
 .aboutMe-link,
 .home-link,
 .testimonials-link,
