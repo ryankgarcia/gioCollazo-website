@@ -127,7 +127,6 @@
 
 .video-container {
   padding-top: 3rem;
-  /* padding-bottom: 5rem; */
   @media (min-width: 961px) {
   }
 }
@@ -143,31 +142,6 @@
   gap: 2rem;
 }
 
-/* .brand-circle {
-  width: 15rem;
-  margin-top: 0.3rem;
-  margin-bottom: 1.3rem;
-} */
-
-/* .bts-video-horizontal {
-  width: 15%;
-  margin-left: 20%;
-  margin-bottom: 1.5rem;
-
-  @media (min-width: 481px) {
-    margin-bottom: 2rem;
-  }
-} */
-
-/* .bts-video-vertical {
-  width: 35%;
-  margin-left: 20%;
-  margin-bottom: 1.5rem;
-  @media (min-width: 481px) {
-    margin-bottom: 2rem;
-  }
-} */
-
 .learn-more {
   display: flex;
   justify-content: center;
@@ -179,8 +153,6 @@
   font-size: 1.4rem;
   border-radius: 3rem;
   text-decoration: none;
-  /* margin-top: 10%;
-  margin-bottom: 15%; */
   cursor: pointer;
 }
 

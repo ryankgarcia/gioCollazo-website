@@ -1,3 +1,11 @@
 h2 {
   font-size: 2rem;
 }
+
+.FAQ-container {
+  margin: 2%;
+  @media (min-width: 961px) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

@@ -11,13 +11,14 @@ export function Testimonials() {
       </div>
 
       <div className="testimonial-row">
-        {/* <div className="testimonial-column-full"> */}
-        <div className="testimonial-wrapper">
-          <img
-            src="/testimonials-images/Sophia-portrait-image.jpeg"
-            alt="Sophia-testimonial1"
-            className="testimonial-portrait-img"
-          />
+        <div className="testimonial-column-flex-start">
+          <div className="testimonial-wrapper">
+            <img
+              src="/testimonials-images/Sophia-portrait-image.jpeg"
+              alt="Sophia-testimonial1"
+              className="testimonial-portrait-img"
+            />
+          </div>
         </div>
         <p>
           I’ve been working with Gio for years, and he’s come through for me in
@@ -34,16 +35,16 @@ export function Testimonials() {
         </p>
         <p>Sophia - DJ, Business Owner, Socialite</p>
         <p>Los Angeles, California</p>
-        {/* </div> */}
       </div>
       <div className="testimonial-row">
-        {/* <div className="testimonial-column-full"> */}
-        <div className="testimonial-wrapper">
-          <img
-            src="/testimonials-images/Alex-portrait-closeUp-main.jpeg"
-            alt="Alex-testimonial2"
-            className="testimonial-portrait-img"
-          />
+        <div className="testimonial-column-flex-end">
+          <div className="testimonial-wrapper">
+            <img
+              src="/testimonials-images/Alex-portrait-closeUp-main.jpeg"
+              alt="Alex-testimonial2"
+              className="testimonial-portrait-img"
+            />
+          </div>
         </div>
         <p>
           Working with Gio has been a game-changer. He’s created custom looks
@@ -58,16 +59,16 @@ export function Testimonials() {
         </p>
         <p>Alex - DJ, Producer, Socialite</p>
         <p>Los Angeles, California</p>
-        {/* </div> */}
       </div>
       <div className="testimonial-row">
-        {/* <div className="testimonial-column-full"> */}
-        <div className="testimonial-wrapper">
-          <img
-            src="/testimonials-images/LC-portrait-closeUp.jpeg"
-            alt="LC-testimonial4"
-            className="testimonial-portrait-img"
-          />
+        <div className="testimonial-column-flex-start">
+          <div className="testimonial-wrapper">
+            <img
+              src="/testimonials-images/LC-portrait-closeUp.jpeg"
+              alt="LC-testimonial4"
+              className="testimonial-portrait-img"
+            />
+          </div>
         </div>
         <p>
           Gio is a fabulous stylist and does more than styling. He’s always
@@ -89,15 +90,15 @@ export function Testimonials() {
         <p>LC - Entrepreneur, Influencer, Socialite </p>
         <p>Downey, California</p>
       </div>
-      {/* </div> */}
       <div className="testimonial-row">
-        {/* <div className="testimonial-column-full"> */}
-        <div className="testimonial-wrapper">
-          <img
-            src="/testimonials-images/louie-portrait-closeUp.jpeg"
-            alt="Louie-testimonial5"
-            className="testimonial-portrait-img"
-          />
+        <div className="testimonial-column-flex-end">
+          <div className="testimonial-wrapper">
+            <img
+              src="/testimonials-images/louie-portrait-closeUp.jpeg"
+              alt="Louie-testimonial5"
+              className="testimonial-portrait-img"
+            />
+          </div>
         </div>
         <p>
           Working with Gio has been nothing short of amazing. I’ve had the
@@ -124,15 +125,15 @@ export function Testimonials() {
         <p>Louie - Husband, Father, Business Owner</p>
         <p>North Orange County, California</p>
       </div>
-      {/* </div> */}
       <div className="testimonial-row">
-        {/* <div className="testimonial-column-full"> */}
-        <div className="testimonial-wrapper">
-          <img
-            src="/testimonials-images/nicole-portrait-closeUp.jpeg"
-            alt="Nicole-testimonial6"
-            className="testimonial-portrait-img"
-          />
+        <div className="testimonial-column-flex-start">
+          <div className="testimonial-wrapper">
+            <img
+              src="/testimonials-images/nicole-portrait-closeUp.jpeg"
+              alt="Nicole-testimonial6"
+              className="testimonial-portrait-img"
+            />
+          </div>
         </div>
         <p>
           I have worked with Gio a few times for vacations I was taking. Every
@@ -144,16 +145,16 @@ export function Testimonials() {
         </p>
         <p>Nicole - Model, Entrepreneur, Make up Artist</p>
         <p>Dallas, Texas</p>
-        {/* </div> */}
       </div>
       <div className="testimonial-row">
-        {/* <div className="testimonial-column-full"> */}
-        <div className="testimonial-wrapper">
-          <img
-            src="/testimonials-images/ryan-portrait-closeUp.jpg"
-            alt="Ryan-testimonial7"
-            className="testimonial-portrait-img"
-          />
+        <div className="testimonial-column-flex-end">
+          <div className="testimonial-wrapper">
+            <img
+              src="/testimonials-images/ryan-portrait-closeUp.jpg"
+              alt="Ryan-testimonial7"
+              className="testimonial-portrait-img"
+            />
+          </div>
         </div>
         <p>
           Gio styled me for EDC weekend and I felt like the star of the show!
@@ -169,7 +170,6 @@ export function Testimonials() {
         </p>
         <p>Ryan - Software Developer</p>
         <p>Orange County, California</p>
-        {/* </div> */}
       </div>
       <Footer />
     </div>
