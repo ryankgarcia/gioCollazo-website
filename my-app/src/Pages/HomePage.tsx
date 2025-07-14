@@ -82,13 +82,11 @@ export function HomePage() {
         </Suspense>
       }
       <h2 className="home-brandsWorkedW">Brands I've Worked With</h2>
-      <div className="home-row">
-        {
-          <Suspense fallback={<Loading />}>
-            <LazyLoadBrands />
-          </Suspense>
-        }
-      </div>
+      {
+        <Suspense fallback={<Loading />}>
+          <LazyLoadBrands />
+        </Suspense>
+      }
 
       {/* <img
               className="brand-image"
