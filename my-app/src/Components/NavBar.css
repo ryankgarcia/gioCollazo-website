@@ -3,7 +3,6 @@
   font-size: 3.1rem;
   display: flex;
   justify-content: space-evenly;
-  /* justify-content: space-around; */
   @media (min-width: 481px) {
     font-size: 5rem;
   }
@@ -42,6 +41,11 @@ h2 {
   display: flex;
   justify-content: center;
   flex-basis: 100%;
+  font-family: oswald;
+  font-size: 3.1rem;
+  @media (min-width: 481px) {
+    font-size: 5rem;
+  }
 }
 
 .nav-column-quarter {

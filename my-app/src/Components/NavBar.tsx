@@ -13,12 +13,8 @@ export function NavBar() {
   return (
     <div>
       <div onClick={handleOpen} className="navBarHeader h2">
-        <div className="nav-row">
-          <div className="nav-column-full">
-            <BiMenu />
-            <h2 className="nav-column-full">StyledByGio</h2>
-          </div>
-        </div>
+        <BiMenu />
+        <div className="nav-column-full"> StyledByGio</div>
       </div>
       <div className={`allLinks ${isOpen ? 'open' : ''}`}>
         <div className="nav-row">
