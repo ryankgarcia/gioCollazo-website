@@ -106,7 +106,9 @@
   font-size: 3rem;
 }
 
-.home-column-brands {
+.home-column-brands,
+.home-column-bts,
+.home-column-styleHighlights {
   display: flex;
   flex-wrap: wrap;
 }

@@ -70,12 +70,9 @@ export function BehindTheScenes() {
     <>
       {behindTheScenesImage.length > 0 ? (
         behindTheScenesImage.map((image) => (
-          <img
-            key={image.id}
-            src={image.src}
-            alt={image.alt}
-            className="bts-image"
-          />
+          <div className="bts-container" key={image.id}>
+            <img src={image.src} alt={image.alt} className="bts-wrapper" />
+          </div>
         ))
       ) : (
         <p>No images have loaded...</p>

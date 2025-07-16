@@ -120,13 +120,8 @@ export function BrandsWorkedWith() {
     <>
       {workedWithBrands.length > 0 ? (
         workedWithBrands.map((image) => (
-          <div className="brand-circle">
-            <img
-              key={image.id}
-              src={image.src}
-              alt={image.alt}
-              className="brand-image"
-            />
+          <div className="brand-circle" key={image.id}>
+            <img src={image.src} alt={image.alt} className="brand-image" />
           </div>
         ))
       ) : (

@@ -1,4 +1,4 @@
-import './Top10Looks.css';
+import './StyleHighlights.css';
 
 interface topLooks {
   id: number;
@@ -7,7 +7,7 @@ interface topLooks {
   className: string; // add the proper className attribute to each of these based on what was current
 }
 
-export function Top10Looks() {
+export function StyleHighlights() {
   const top10Picks: topLooks[] = [
     {
       id: 1,
@@ -72,21 +72,18 @@ export function Top10Looks() {
   ];
 
   return (
-    <div>
+    <>
       {top10Picks.length > 0 ? (
         top10Picks.map((image) => (
-          <img
-            key={image.id}
-            src={image.src}
-            alt={image.alt}
-            className="image-wrapper"
-          />
+          <div className="image-container" key={image.id}>
+            <img src={image.src} alt={image.alt} className="image-wrapper" />
+          </div>
         ))
       ) : (
         <p>No images found . . .</p>
       )}
-    </div>
+    </>
   );
 }
 
-export default Top10Looks;
+export default StyleHighlights;

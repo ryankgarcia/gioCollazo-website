@@ -4,7 +4,9 @@ import Loading from '../Components/LoadingImage';
 import { Link } from 'react-router-dom';
 import './HomePage.css';
 
-const LazyLoadTop10Looks = lazy(() => import('../Components/Top10Looks'));
+const LazyLoadStyleHighlights = lazy(
+  () => import('../Components/StyleHighlights'),
+);
 
 const LazyLoadBTS = lazy(() => import('../Components/BehindTheScenes'));
 
@@ -58,14 +60,12 @@ export function HomePage() {
         </div>
       </div>
       <div className="home-row">
-        <div className="home-column-full">
-          <div className="bts-photos-padding">
-            {
-              <Suspense fallback={<Loading />}>
-                <LazyLoadBTS />
-              </Suspense>
-            }
-          </div>
+        <div className="home-column-bts">
+          {
+            <Suspense fallback={<Loading />}>
+              <LazyLoadBTS />
+            </Suspense>
+          }
         </div>
       </div>
       <div className="home-row">
@@ -78,11 +78,15 @@ export function HomePage() {
         </div>
       </div>
       <h2 className="home-style-highlights">Style Highlights</h2>
-      {
-        <Suspense fallback={<Loading />}>
-          <LazyLoadTop10Looks />
-        </Suspense>
-      }
+      <div className="home-row">
+        <div className="home-column-styleHighlights">
+          {
+            <Suspense fallback={<Loading />}>
+              <LazyLoadStyleHighlights />
+            </Suspense>
+          }
+        </div>
+      </div>
       <h2 className="home-brandsWorkedW">Brands I've Worked With</h2>
       <div className="home-row">
         <div className="home-column-brands">
