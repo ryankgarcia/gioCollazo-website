@@ -11,6 +11,8 @@ const LazyLoadBTS = lazy(() => import('../Components/BehindTheScenes'));
 const LazyLoadBrands = lazy(() => import('../Components/BrandsWorkedWith'));
 
 export function HomePage() {
+  //import the useFadeInOnScroll custom Hook here...
+
   return (
     <div className="home-container">
       <div className="home-row">
@@ -82,11 +84,15 @@ export function HomePage() {
         </Suspense>
       }
       <h2 className="home-brandsWorkedW">Brands I've Worked With</h2>
-      {
-        <Suspense fallback={<Loading />}>
-          <LazyLoadBrands />
-        </Suspense>
-      }
+      <div className="home-row">
+        <div className="home-column-brands">
+          {
+            <Suspense fallback={<Loading />}>
+              <LazyLoadBrands />
+            </Suspense>
+          }
+        </div>
+      </div>
 
       {/* <img
               className="brand-image"
