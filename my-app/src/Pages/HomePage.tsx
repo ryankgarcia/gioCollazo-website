@@ -44,14 +44,16 @@ export function HomePage() {
       <h2 className="home-bts-header">Behind The Scenes</h2>
       <div className="home-row">
         <div className="home-column-full">
-          <video className="video-H" controls muted>
-            <source src="styledByGio-behindTheScenes.mp4" type="video/mp4" />
-          </video>
+          <div className="video-container-H">
+            <video className="video-H" controls muted>
+              <source src="styledByGio-behindTheScenes.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
       </div>
       <div className="home-row">
         <div className="home-column-full">
-          <div className="video-container">
+          <div className="video-container-V">
             {/* adjust the vertical video to fit inside the container on mobile & desktop */}
             <video className="video-V" controls muted>
               <source src="/bts-gioSprayPainting.mp4" type="video/mp4" />
