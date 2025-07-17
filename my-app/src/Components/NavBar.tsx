@@ -13,7 +13,8 @@ export function NavBar() {
   return (
     <div>
       <div onClick={handleOpen} className="navBarHeader h2">
-        <BiMenu /> StyledByGio
+        <BiMenu />
+        <div className="nav-column-full"> StyledByGio</div>
       </div>
       <div className={`allLinks ${isOpen ? 'open' : ''}`}>
         <div className="nav-row">
@@ -31,9 +32,11 @@ export function NavBar() {
             <span className="aboutMe-link">Services</span>
           </NavLink>
         </div>
-        <NavLink to="/testimonials">
-          <span className="testimonials-link">Testimonials</span>
-        </NavLink>
+        <div className="nav-row">
+          <NavLink to="/testimonials">
+            <span className="testimonials-link">Testimonials</span>
+          </NavLink>
+        </div>
         <div className="nav-row">
           <NavLink to="/contact">
             <span className="contact-link">Contact</span>

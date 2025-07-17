@@ -1,3 +1,13 @@
+.about-container {
+  margin: 0 auto;
+  max-width: 370px;
+  font-size: 1.3rem;
+  @media (min-width: 481px) {
+    max-width: 1200px;
+    font-size: 2rem;
+  }
+}
+
 .imGio-header {
   font-size: 3.5rem;
   color: #fbfbfb;
@@ -66,14 +76,4 @@
   padding-top: 3rem;
   display: flex;
   justify-content: center;
-}
-
-.about-container {
-  margin: 0 auto;
-  max-width: 370px;
-  font-size: 1.3rem;
-  @media (min-width: 481px) {
-    max-width: 1200px;
-    font-size: 2rem;
-  }
 }

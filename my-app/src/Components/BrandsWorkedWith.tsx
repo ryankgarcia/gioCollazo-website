@@ -26,84 +26,90 @@ export function BrandsWorkedWith() {
     },
     {
       id: 3,
+      src: '/Brands-Gio-has-worked-with/Cyclone-Pictures.png',
+      alt: 'Cyclone Pictures Logo',
+      className: 'brand-image',
+    },
+    {
+      id: 4,
       src: '/Brands-Gio-has-worked-with/cynthiaBach-logo-redone.jpg',
       alt: 'Cynthia Bach Logo',
       className: 'brand-image',
     },
     {
-      id: 4,
+      id: 5,
       src: '/Brands-Gio-has-worked-with/dolls-logo.png',
       alt: 'Dolls Kill Logo',
       className: 'brand-image',
     },
     {
-      id: 5,
+      id: 6,
       src: '/Brands-Gio-has-worked-with/fashion-nova-logo.jpeg',
       alt: 'Fashion Nova Logo',
       className: 'brand-image',
     },
     {
-      id: 6,
+      id: 7,
       src: '/Brands-Gio-has-worked-with/gq-germany-logo.jpeg',
       alt: 'GQ Germany Logo',
       className: 'brand-image',
     },
     {
-      id: 7,
+      id: 8,
       src: '/Brands-Gio-has-worked-with/h-m-logo.png',
       alt: 'H&M Logo',
       className: 'brand-image',
     },
     {
-      id: 8,
+      id: 9,
       src: '/Brands-Gio-has-worked-with/la-llama-viajera-logo.png',
       alt: 'La Llama Viajera Logo',
       className: 'brand-image',
     },
     {
-      id: 9,
+      id: 10,
       src: '/Brands-Gio-has-worked-with/loveSlapRecording-logo.jpeg',
       alt: 'LoveSlap Recordings Logo',
       className: 'brand-image',
     },
     {
-      id: 10,
+      id: 11,
       src: '/Brands-Gio-has-worked-with/mother-plucker-logo.jpeg',
       alt: 'Mother Plucker Feather Company, Inc. Logo',
       className: 'brand-image',
     },
     {
-      id: 11,
+      id: 12,
       src: '/Brands-Gio-has-worked-with/neiman-marcus-logo.jpeg',
       alt: 'Neiman Marcus Logo',
       className: 'brand-image',
     },
     {
-      id: 12,
+      id: 13,
       src: '/Brands-Gio-has-worked-with/out-logo.png',
       alt: 'Out Logo',
       className: 'brand-image',
     },
     {
-      id: 13,
+      id: 14,
       src: '/Brands-Gio-has-worked-with/pia-gladys-perey-logo.png',
       alt: 'Pia Gladys Perey Logo',
       className: 'brand-image',
     },
     {
-      id: 14,
+      id: 15,
       src: '/Brands-Gio-has-worked-with/teen-vogue-logo.jpeg',
       alt: 'Teen Vogue Logo',
       className: 'brand-image',
     },
     {
-      id: 15,
+      id: 16,
       src: '/Brands-Gio-has-worked-with/viv-vitals-logo.jpeg',
       alt: 'Viv Vitals Logo',
       className: 'brand-image',
     },
     {
-      id: 16,
+      id: 17,
       src: '/Brands-Gio-has-worked-with/zara-logo-circle.jpg',
       alt: 'Zara Logo',
       className: 'brand-image',
@@ -111,22 +117,17 @@ export function BrandsWorkedWith() {
   ];
 
   return (
-    <div>
+    <>
       {workedWithBrands.length > 0 ? (
         workedWithBrands.map((image) => (
-          <div className="brand-circle">
-            <img
-              key={image.id}
-              src={image.src}
-              alt={image.alt}
-              className="brand-image"
-            />
+          <div className="brand-circle" key={image.id}>
+            <img src={image.src} alt={image.alt} className="brand-image" />
           </div>
         ))
       ) : (
         <p>No images have loaded...</p>
       )}
-    </div>
+    </>
   );
 }
 

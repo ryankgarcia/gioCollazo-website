@@ -4,13 +4,17 @@ import Loading from '../Components/LoadingImage';
 import { Link } from 'react-router-dom';
 import './HomePage.css';
 
-const LazyLoadTop10Looks = lazy(() => import('../Components/Top10Looks'));
+const LazyLoadStyleHighlights = lazy(
+  () => import('../Components/StyleHighlights'),
+);
 
 const LazyLoadBTS = lazy(() => import('../Components/BehindTheScenes'));
 
 const LazyLoadBrands = lazy(() => import('../Components/BrandsWorkedWith'));
 
 export function HomePage() {
+  //import the useFadeInOnScroll custom Hook here...
+
   return (
     <div className="home-container">
       <div className="home-row">
@@ -40,14 +44,16 @@ export function HomePage() {
       <h2 className="home-bts-header">Behind The Scenes</h2>
       <div className="home-row">
         <div className="home-column-full">
-          <video className="video-H" controls muted>
-            <source src="styledByGio-behindTheScenes.mp4" type="video/mp4" />
-          </video>
+          <div className="video-container-H">
+            <video className="video-H" controls muted>
+              <source src="styledByGio-behindTheScenes.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
       </div>
       <div className="home-row">
         <div className="home-column-full">
-          <div className="video-container">
+          <div className="video-container-V">
             {/* adjust the vertical video to fit inside the container on mobile & desktop */}
             <video className="video-V" controls muted>
               <source src="/bts-gioSprayPainting.mp4" type="video/mp4" />
@@ -56,14 +62,12 @@ export function HomePage() {
         </div>
       </div>
       <div className="home-row">
-        <div className="home-column-full">
-          <div className="bts-photos-padding">
-            {
-              <Suspense fallback={<Loading />}>
-                <LazyLoadBTS />
-              </Suspense>
-            }
-          </div>
+        <div className="home-column-bts">
+          {
+            <Suspense fallback={<Loading />}>
+              <LazyLoadBTS />
+            </Suspense>
+          }
         </div>
       </div>
       <div className="home-row">
@@ -76,18 +80,24 @@ export function HomePage() {
         </div>
       </div>
       <h2 className="home-style-highlights">Style Highlights</h2>
-      {
-        <Suspense fallback={<Loading />}>
-          <LazyLoadTop10Looks />
-        </Suspense>
-      }
+      <div className="home-row">
+        <div className="home-column-styleHighlights">
+          {
+            <Suspense fallback={<Loading />}>
+              <LazyLoadStyleHighlights />
+            </Suspense>
+          }
+        </div>
+      </div>
       <h2 className="home-brandsWorkedW">Brands I've Worked With</h2>
       <div className="home-row">
-        {
-          <Suspense fallback={<Loading />}>
-            <LazyLoadBrands />
-          </Suspense>
-        }
+        <div className="home-column-brands">
+          {
+            <Suspense fallback={<Loading />}>
+              <LazyLoadBrands />
+            </Suspense>
+          }
+        </div>
       </div>
 
       {/* <img

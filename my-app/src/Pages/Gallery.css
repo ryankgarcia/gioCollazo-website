@@ -1,14 +1,24 @@
+.gallery-container {
+  margin: 0 auto;
+  max-width: 370px;
+  font-size: 1.3rem;
+  @media (min-width: 481px) {
+    max-width: 1200px;
+    font-size: 2rem;
+  }
+}
+
 .gallery-row {
   display: flex;
 }
 
 .gallery-column-full {
-  flex-direction: column;
-  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .gallery-h2 {
-  font-size: 2.5rem;
+  font-size: 5rem;
 }
 
 .video-H {
