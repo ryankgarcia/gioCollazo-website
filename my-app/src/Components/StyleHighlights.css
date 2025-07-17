@@ -2,13 +2,28 @@
   width: 250px;
   height: 350px;
   margin: 0 auto;
+  /* margin-left: 10%; */
   margin-left: 15%;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 /* write the css for the card hover (flip) here */
 
-.image-wrapper {
+.image-wrapper-1 {
+  box-shadow: 2px 4px 32px #610ad1;
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @media (min-width: 481px) {
+    /* margin-left: 30%; */
+    margin-bottom: 2rem;
+  }
+}
+
+.image-wrapper-2 {
+  box-shadow: 2px 4px 32px #900fbf;
   border-radius: 3px;
   width: 100%;
   height: 100%;
