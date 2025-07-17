@@ -15,13 +15,6 @@ export function NavBar() {
       <div onClick={handleOpen} className="navBarHeader h2">
         <BiMenu />
         <div className="nav-column-full"> StyledByGio</div>
-        {/* <div className="nav-column-flex-end ">
-          <img
-            src="/StyledByGio-logo.jpg"
-            alt="StyledByGio Brand Logo"
-            className="nav-logo-container"
-          />
-        </div> */}
       </div>
       <div className={`allLinks ${isOpen ? 'open' : ''}`}>
         <div className="nav-row">
