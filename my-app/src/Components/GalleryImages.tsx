@@ -193,15 +193,11 @@ export function GalleryImages() {
     },
   ];
 
-  // any new images will be added to this array of objects above here
-
-  // in the return statement find out how to make the photo's have alternating classnames
   return (
     <>
       {images.length > 0 ? (
         images.map((photo) => (
           <div className="gallery-image-container" key={photo.id}>
-            {/* this div element is what the comment above is referring to */}
             <img src={photo.src} alt={photo.alt} className={photo.className} />
           </div>
         ))

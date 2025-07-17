@@ -9,9 +9,9 @@
 }
 
 .navBarHeader {
-  background-color: #610ad1;
+  /* background-color: #610ad1; */
   /* original color is 610ad1*/
-  /* background-color: #900fbf; */
+  background-color: #900fbf;
   /* background-color: #ebcff8; */
   /* background-color: #996cb7; */
   /* background-color: #8256d0; */
@@ -79,7 +79,8 @@ h2 {
   padding: 0 12px;
   max-height: 0;
   overflow: hidden;
-  background-color: #610ad1;
+  background-color: #900fbf;
+  /* background-color: #610ad1; */
   border-bottom: 8px solid white;
   transform: translateY(-20px);
   opacity: 0;
