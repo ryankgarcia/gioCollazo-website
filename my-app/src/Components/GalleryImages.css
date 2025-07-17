@@ -6,7 +6,7 @@ h2 {
   width: 250px;
   height: 350px;
   margin: 0 auto;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   @media (min-width: 961px) {
     margin-left: 5%;
   }
@@ -46,23 +46,12 @@ h2 {
 
 @keyframes spin {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(0deg) scale(1.05);
   }
   25% {
-    transform: rotate(270deg);
+    transform: rotate(360deg) scale(1.8);
   }
   75% {
-    transform: rotate(-360deg);
+    transform: rotate(-720deg) scale(1.2);
   }
-}
-
-.purple-bkgd-1 {
-  padding-top: 8%;
-  width: 275px;
-  background-color: #6208d0;
-}
-
-.purple-bkgd-2 {
-  width: 275px;
-  background-color: #6208d0;
 }
