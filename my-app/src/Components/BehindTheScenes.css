@@ -13,6 +13,9 @@
   margin: 0 auto;
   margin-left: 15%;
   margin-bottom: 4.5rem;
+  @media (min-width: 961px) {
+    margin-left: 10%;
+  }
 }
 
 /* make a duplicate of this CSS class and make these changes with as few
