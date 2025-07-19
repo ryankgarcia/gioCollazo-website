@@ -9,12 +9,19 @@
 
 /* write the css for the card hover (flip) here */
 
+.image-object-cover {
+  object-fit: cover;
+}
+
+.image-object-fill {
+  object-fit: fill;
+}
+
 .image-wrapper-1 {
   box-shadow: 2px 4px 32px #610ad1;
   border-radius: 3px;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 
   @media (min-width: 481px) {
     /* margin-left: 30%; */
@@ -27,7 +34,6 @@
   border-radius: 3px;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 
   @media (min-width: 481px) {
     /* margin-left: 30%; */
