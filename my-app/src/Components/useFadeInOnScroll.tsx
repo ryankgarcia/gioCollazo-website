@@ -7,6 +7,9 @@ export const useFadeInOnScroll = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+
+    const node = ref.current;
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -22,7 +25,7 @@ export const useFadeInOnScroll = () => {
     if (ref.current) observer.observe(ref.current);
 
     return () => {
-      if (ref.current) observer.unobserve(ref.current);
+      if (node) observer.unobserve(node);
     };
   }, []);
 

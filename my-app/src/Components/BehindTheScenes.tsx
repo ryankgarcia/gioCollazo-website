@@ -1,14 +1,17 @@
+// import { useFadeInOnScroll } from '../Components/useFadeInOnScroll';
 import './BehindTheScenes.css';
 
 interface imageElement {
   id: number;
   src: string;
   alt: string;
-  className: string; // the className must be added to specify which class the image will hold
-  // for the className, look at what you have commented out on the homePage component
+  className: string;
 }
 
 export function BehindTheScenes() {
+  // const { ref, isVisible } = useFadeInOnScroll();
+  // use this useFadeIn correctly in the return statement, for now this is just the outlined idea
+
   const behindTheScenesImage: imageElement[] = [
     {
       id: 1,
@@ -71,7 +74,13 @@ export function BehindTheScenes() {
       {behindTheScenesImage.length > 0 ? (
         behindTheScenesImage.map((image) => (
           <div className="bts-container" key={image.id}>
-            <img src={image.src} alt={image.alt} className={image.className} />
+            <img
+              // ref={ref as React.RefObject<HTMLImageElement>}
+              // change the ref and className attributes on this image element and
+              src={image.src}
+              alt={image.alt}
+              className={image.className}
+            />
           </div>
         ))
       ) : (
