@@ -20,13 +20,20 @@
 
 /* make a duplicate of this CSS class and make these changes with as few
 changes as possible with object-fill: cover, object-fill: unset, object-fit: unset, etc*/
+
+.bts-object-fill {
+  object-fit: fill;
+}
+
+.bts-object-cover {
+  object-fit: cover;
+}
+
 .bts-wrapper-1 {
   box-shadow: 2px 4px 32px #d7b8ec;
   border-radius: 3px;
   width: 100%;
   height: 100%;
-  object-fit: fill;
-  /* object-fit: cover; */
 
   @media (min-width: 481px) {
     margin-bottom: 2rem;
@@ -38,8 +45,6 @@ changes as possible with object-fill: cover, object-fill: unset, object-fit: uns
   border-radius: 3px;
   width: 100%;
   height: 100%;
-  object-fit: fill;
-  /* object-fit: cover; */
 
   @media (min-width: 481px) {
     margin-bottom: 2rem;
