@@ -1,4 +1,4 @@
-// import { useFadeInOnScroll } from '../Components/useFadeInOnScroll';
+import { useEffect, useRef, useState } from 'react';
 import './BehindTheScenes.css';
 
 interface imageElement {
@@ -9,9 +9,6 @@ interface imageElement {
 }
 
 export function BehindTheScenes() {
-  // const { ref, isVisible } = useFadeInOnScroll();
-  // use this useFadeIn correctly in the return statement, for now this is just the outlined idea
-
   const behindTheScenesImage: imageElement[] = [
     {
       id: 1,
@@ -69,17 +66,49 @@ export function BehindTheScenes() {
     },
   ];
 
+  const imageRefs = useRef<(HTMLImageElement | null)[]>([]);
+  const [visibleStates, setVisibleStates] = useState<boolean[]>(
+    new Array(behindTheScenesImage.length).fill(false),
+  );
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const index = imageRefs.current.findIndex(
+            (element) => element === entry.target,
+          );
+          if (entry.isIntersecting && index !== -1) {
+            setVisibleStates((prev) => {
+              const updated = [...prev];
+              updated[index] = true;
+              return updated;
+            });
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 },
+    );
+    imageRefs.current.forEach((element) => {
+      if (element) observer.observe(element);
+    });
+    return () => observer.disconnect();
+  }, []);
   return (
     <>
       {behindTheScenesImage.length > 0 ? (
-        behindTheScenesImage.map((image) => (
+        behindTheScenesImage.map((image, index) => (
           <div className="bts-container" key={image.id}>
             <img
-              // ref={ref as React.RefObject<HTMLImageElement>}
-              // change the ref and className attributes on this image element and
+              ref={(element) => {
+                imageRefs.current[index] = element;
+              }}
               src={image.src}
               alt={image.alt}
-              className={image.className}
+              className={`${image.className} ${
+                visibleStates[index] ? 'bts-fade-in' : 'bts-hidden'
+              }`}
             />
           </div>
         ))

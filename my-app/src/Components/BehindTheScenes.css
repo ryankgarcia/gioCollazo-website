@@ -18,9 +18,6 @@
   }
 }
 
-/* make a duplicate of this CSS class and make these changes with as few
-changes as possible with object-fill: cover, object-fill: unset, object-fit: unset, etc*/
-
 .bts-object-fill {
   object-fit: fill;
 }
@@ -49,4 +46,17 @@ changes as possible with object-fill: cover, object-fill: unset, object-fit: uns
   @media (min-width: 481px) {
     margin-bottom: 2rem;
   }
+}
+
+.bts-fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
+}
+
+.bts-hidden {
+  opacity: 0;
+  transform: translateY(20px);
 }
