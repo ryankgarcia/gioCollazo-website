@@ -52,11 +52,11 @@
   opacity: 1;
   transform: translateY(0);
   transition:
-    opacity 1s ease,
-    transform 1s ease;
+    opacity 1.3s ease-out,
+    transform 1.5s ease-out;
 }
 
 .bts-hidden {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(100px);
 }
