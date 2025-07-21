@@ -1,16 +1,18 @@
+import { useIntersectionVisibleStates } from '../Hooks/GradientScroll';
 import './BrandsWorkedWith.css';
 
 interface imageElement {
   id: number;
   src: string;
   alt: string;
-  className: string; // the className must be added to specify which class the image will hold
-  // for the className, look at what you have commented out on the homePage component
+  className: string;
 }
 
-// brands Gio has worked with
-
 export function BrandsWorkedWith() {
+  const { imageRefs, visibleStates } = useIntersectionVisibleStates(
+    BrandsWorkedWith.length,
+  );
+
   const workedWithBrands: imageElement[] = [
     {
       id: 1,
@@ -122,9 +124,16 @@ export function BrandsWorkedWith() {
   return (
     <>
       {workedWithBrands.length > 0 ? (
-        workedWithBrands.map((image) => (
+        workedWithBrands.map((image, index) => (
           <div className="brand-circle" key={image.id}>
-            <img src={image.src} alt={image.alt} className={image.className} />
+            <img
+              ref={(element) => {
+                imageRefs.current[index] = element;
+              }}
+              src={image.src}
+              alt={image.alt}
+              className={`${image.className} ${visibleStates[index] ? 'brands-fade-in' : 'brands-hidden'}`}
+            />
           </div>
         ))
       ) : (

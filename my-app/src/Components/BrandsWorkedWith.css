@@ -25,3 +25,16 @@
 .brand-image-cover {
   object-fit: cover;
 }
+
+.brands-fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 1.3s ease-out,
+    transform 1.5s ease-out;
+}
+
+.brands-hidden {
+  opacity: 0;
+  transform: translateY(100px);
+}
