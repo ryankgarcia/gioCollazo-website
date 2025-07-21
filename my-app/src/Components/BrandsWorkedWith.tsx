@@ -5,7 +5,7 @@ interface imageElement {
   id: number;
   src: string;
   alt: string;
-  className: string;
+  className: string; // this component still requires the object-fit: fill or cover in CSS
 }
 
 export function BrandsWorkedWith() {

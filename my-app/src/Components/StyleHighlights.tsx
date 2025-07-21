@@ -1,3 +1,4 @@
+import { useIntersectionVisibleStates } from '../Hooks/GradientScroll';
 import './StyleHighlights.css';
 
 interface topLooks {
@@ -8,6 +9,10 @@ interface topLooks {
 }
 
 export function StyleHighlights() {
+  const { imageRefs, visibleStates } = useIntersectionVisibleStates(
+    StyleHighlights.length,
+  );
+
   const top10Picks: topLooks[] = [
     {
       id: 1,
@@ -74,9 +79,20 @@ export function StyleHighlights() {
   return (
     <>
       {top10Picks.length > 0 ? (
-        top10Picks.map((image) => (
+        top10Picks.map((image, index) => (
           <div className="image-container" key={image.id}>
-            <img src={image.src} alt={image.alt} className={image.className} />
+            <img
+              ref={(element) => {
+                imageRefs.current[index] = element;
+              }}
+              src={image.src}
+              alt={image.alt}
+              className={`${image.className} ${
+                visibleStates[index]
+                  ? 'style-highlights-fade-in'
+                  : 'style-highlights-hidden'
+              }`}
+            />
           </div>
         ))
       ) : (

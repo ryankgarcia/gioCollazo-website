@@ -40,3 +40,16 @@
     margin-bottom: 2rem;
   }
 }
+
+.style-highlights-fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 1.3s ease-out,
+    transform 1.5s ease-out;
+}
+
+.style-highlights-hidden {
+  opacity: 0;
+  transform: translateY(100px);
+}
