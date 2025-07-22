@@ -84,6 +84,19 @@
   justify-content: center;
 }
 
+.home-GC-coverImage2 {
+  width: 265px;
+  margin-left: 15%;
+  margin-bottom: 1.2rem;
+  border-radius: 8px;
+  margin-top: 1.4rem;
+  @media (min-width: 961px) {
+    display: flex;
+    justify-content: center;
+    margin-left: 0%;
+  }
+}
+
 .home-GC-mainCoverImage {
   width: 265px;
   margin-left: 15%;
