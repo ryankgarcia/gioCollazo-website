@@ -1,22 +1,26 @@
+import { useIntersectionVisibleStates } from '../Hooks/GradientScroll';
 import './BrandsWorkedWith.css';
 
 interface imageElement {
   id: number;
   src: string;
   alt: string;
-  className: string; // the className must be added to specify which class the image will hold
-  // for the className, look at what you have commented out on the homePage component
+  className: string; // this component still requires the object-fit: fill or cover in CSS
 }
 
-// brands Gio has worked with
-
 export function BrandsWorkedWith() {
+  const { imageRefs, visibleStates } = useIntersectionVisibleStates(
+    BrandsWorkedWith.length,
+  );
+
   const workedWithBrands: imageElement[] = [
     {
       id: 1,
       src: '/Brands-Gio-has-worked-with/clubmaverick-logo.jpeg',
       alt: 'Club Maverick Logo',
       className: 'brand-image',
+      // add brand-image-fit or brand-image cover to make the aspect ratio better for this and
+      // all other elements on this page
     },
     {
       id: 2,
@@ -29,10 +33,11 @@ export function BrandsWorkedWith() {
       src: '/Brands-Gio-has-worked-with/Cyclone-Pictures.png',
       alt: 'Cyclone Pictures Logo',
       className: 'brand-image',
+      // brand-image-fill  add this add a class to the images that look better with either cover or fill
     },
     {
       id: 4,
-      src: '/Brands-Gio-has-worked-with/cynthiaBach-logo-redone.jpg',
+      src: '/Brands-Gio-has-worked-with/cynthia-Bach.png',
       alt: 'Cynthia Bach Logo',
       className: 'brand-image',
     },
@@ -110,7 +115,7 @@ export function BrandsWorkedWith() {
     },
     {
       id: 17,
-      src: '/Brands-Gio-has-worked-with/zara-logo-circle.jpg',
+      src: '/Brands-Gio-has-worked-with/zara.png',
       alt: 'Zara Logo',
       className: 'brand-image',
     },
@@ -119,9 +124,16 @@ export function BrandsWorkedWith() {
   return (
     <>
       {workedWithBrands.length > 0 ? (
-        workedWithBrands.map((image) => (
+        workedWithBrands.map((image, index) => (
           <div className="brand-circle" key={image.id}>
-            <img src={image.src} alt={image.alt} className="brand-image" />
+            <img
+              ref={(element) => {
+                imageRefs.current[index] = element;
+              }}
+              src={image.src}
+              alt={image.alt}
+              className={`${image.className} ${visibleStates[index] ? 'brands-fade-in' : 'brands-hidden'}`}
+            />
           </div>
         ))
       ) : (

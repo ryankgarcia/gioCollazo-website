@@ -11,9 +11,6 @@
   }
 }
 
-/* .testimonial-row {
-} */
-
 @media (min-width: 961px) {
   .testimonial-row {
     display: flex;

@@ -13,8 +13,28 @@
   margin-left: 11%;
   border: 7px #610ad1 solid;
   margin-bottom: 1.5rem;
-  object-fit: fill;
   @media (min-width: 961px) {
     margin-left: 25%;
   }
+}
+
+.brand-image-fill {
+  object-fit: fill;
+}
+
+.brand-image-cover {
+  object-fit: cover;
+}
+
+.brands-fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 1.3s ease-out,
+    transform 1.5s ease-out;
+}
+
+.brands-hidden {
+  opacity: 0;
+  transform: translateY(100px);
 }
