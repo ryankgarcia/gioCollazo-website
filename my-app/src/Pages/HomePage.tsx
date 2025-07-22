@@ -13,8 +13,6 @@ const LazyLoadBTS = lazy(() => import('../Components/BehindTheScenes'));
 const LazyLoadBrands = lazy(() => import('../Components/BrandsWorkedWith'));
 
 export function HomePage() {
-  //import the useFadeInOnScroll custom Hook here...
-
   return (
     <div className="home-container">
       <div className="home-row">
@@ -25,8 +23,8 @@ export function HomePage() {
         />
         <div className="home-intro-row">
           <div className="home-column-full">
-            <p className="gio-intro-text">Giovanny Collazo</p>
-            <p className="gio-intro-text">Personal Stylist</p>
+            <p className="gio-intro-name">Giovanny Collazo</p>
+            <p className="gio-intro-title">Personal Stylist</p>
             <p className="gio-intro-text">Styling men & women since 2015</p>
           </div>
         </div>
@@ -99,22 +97,6 @@ export function HomePage() {
           }
         </div>
       </div>
-
-      {/* <img
-              className="brand-image"
-              src="/Brands-Gio-has-worked-with/clubmaverick-logo.jpeg"
-              alt="ClubMaverick-brand-logo"
-            />
-          </div>
-          <div className="brand-circle">
-            <img
-              className="brand-image"
-              src="/Brands-Gio-has-worked-with/couture-logo-cut.jpg"
-              alt="Couture-brand-logo"
-            />
-          </div>
-           */}
-
       <Footer />
     </div>
   );
