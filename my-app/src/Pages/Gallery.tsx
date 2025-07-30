@@ -6,6 +6,7 @@ import './Gallery.css';
 const LazyLoadGalleryImages = lazy(() => import('../Components/GalleryImages'));
 
 export function Gallery() {
+   
   return (
     <div className="gallery-container">
       <h2 className="gallery-h2">Gallery</h2>

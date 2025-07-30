@@ -1,4 +1,5 @@
 import './GalleryImages.css';
+import { useIntersectionVisibleStates } from '../Hooks/GradientScroll';
 
 interface galleryImage {
   id: number;
@@ -9,6 +10,9 @@ interface galleryImage {
 
 export function GalleryImages() {
   // this is where the array of images will be stored for the gallery
+const { imageRefs, visibleStates } = useIntersectionVisibleStates(
+      GalleryImages.length,
+    );
 
   const images: galleryImage[] = [
     {
@@ -196,9 +200,14 @@ export function GalleryImages() {
   return (
     <>
       {images.length > 0 ? (
-        images.map((photo) => (
+        images.map((photo, index) => (
           <div className="gallery-image-container" key={photo.id}>
-            <img src={photo.src} alt={photo.alt} className={photo.className} />
+            <img ref={(element) => {
+              imageRefs.current[index] = element;
+            }}
+            src={photo.src} alt={photo.alt} className={`${photo.className} ${
+              visibleStates[index] ? 'gallery-img-fade-in' : 'gallery-img-hidden'}`} 
+            />
           </div>
         ))
       ) : (
