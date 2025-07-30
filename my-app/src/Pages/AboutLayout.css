@@ -1,10 +1,8 @@
 .about-container {
-  margin: 0 auto;
-  max-width: 370px;
-  font-size: 1.3rem;
-  @media (min-width: 481px) {
+  margin: 2%;
+  @media (min-width: 961px) {
     max-width: 1200px;
-    font-size: 2rem;
+    margin: 0 auto;
   }
 }
 
@@ -28,12 +26,14 @@
   }
 }
 
-.about-row {
-  display: flex;
-}
+@media (min-width: 961px) {
+  .about-row {
+    display: flex;
+  }
 
-.about-column-full {
-  flex-basis: 100%;
+  .about-column-full {
+    flex-basis: 100%;
+  }
 }
 
 .about-button-center {
@@ -69,11 +69,16 @@
 .aboutMe-image {
   height: 700px;
   border-radius: 12px;
+  @media (min-width: 961px) {
+    margin-right: 5%;
+  }
 }
 
 .aboutMe-imageWrapper {
   width: 100%;
   padding-top: 3rem;
-  display: flex;
-  justify-content: center;
+  @media (min-width: 961px) {
+    display: flex;
+    justify-content: center;
+  }
 }
