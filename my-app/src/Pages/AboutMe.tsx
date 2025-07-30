@@ -28,25 +28,29 @@ export function AboutMe() {
         themselves.
       </p>
       <div className="about-row">
-        <div className="about-column-full">
-          <div className="aboutMe-imageWrapper">
-            <img
-              className="aboutMe-image"
-              src="/gio-purple-about-page.jpeg"
-              alt="Professional Stylist - Giovanny Collazo - StyledByGio - image 1"
-            />
-            <img
-              className="aboutMe-image"
-              src="/Gio-stylist-bluebackground.jpg"
-              alt="Professional Stylist - Giovanny Collazo - StyledByGio - image 2"
-            />
-            <img
-              className="aboutMe-image"
-              src="/gio-w-shades-cropped.jpg"
-              alt="Professional Stylist - Giovanny Collazo - StyledByGio - image 3"
-            />
-          </div>
+        {/* <div className="about-column-full"> */}
+        <div className="aboutMe-imageWrapper">
+          <img
+            className="aboutMe-image"
+            src="/gio-purple-about-page.jpeg"
+            alt="Professional Stylist - Giovanny Collazo - StyledByGio - image 1"
+          />
         </div>
+        <div className="aboutMe-imageWrapper">
+          <img
+            className="aboutMe-image"
+            src="/Gio-stylist-bluebackground.jpg"
+            alt="Professional Stylist - Giovanny Collazo - StyledByGio - image 2"
+          />
+        </div>
+        <div className="aboutMe-imageWrapper">
+          <img
+            className="aboutMe-image"
+            src="/gio-w-shades-cropped.jpg"
+            alt="Professional Stylist - Giovanny Collazo - StyledByGio - image 3"
+          />
+        </div>
+        {/* </div> */}
       </div>
       <div className="about-row">
         <div className="about-column-full">
