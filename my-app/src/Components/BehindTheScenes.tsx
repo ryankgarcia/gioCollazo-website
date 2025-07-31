@@ -141,7 +141,7 @@ export function BehindTheScenes() {
                     }}
                     src={image.src}
                     alt={image.alt}
-                    className={` bts-image ${image.fitStyle}`}
+                    className={`${image.fitStyle}`}
                   />
                 </div>
                 <div className="bts-card-back">
