@@ -47,7 +47,7 @@ export function StyleHighlights() {
       alt: 'styleHighlights3',
       // className: 'image-wrapper-2 image-object-fill',
       className: 'styleHighlights-card',
-      backsideText: 'Fitting for a rave',
+      backsideText: 'Rave Fitting',
       linkTo: '/services',
       button: 'backside-btn',
       fitStyle: 'image-object-fill',
@@ -136,7 +136,7 @@ export function StyleHighlights() {
       {top10Picks.length > 0 ? (
         top10Picks.map((image, index) => {
           const shadowClass =
-            index % 2 === 0
+            index % 4 === 0 || index % 4 === 3
               ? 'styleHighlights-shade-dark'
               : 'styleHighlights-shade-light';
           return (
