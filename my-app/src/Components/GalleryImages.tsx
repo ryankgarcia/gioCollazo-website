@@ -1,5 +1,5 @@
-import './GalleryImages.css';
 import { useIntersectionVisibleStates } from '../Hooks/GradientScroll';
+import './GalleryImages.css';
 
 interface galleryImage {
   id: number;
@@ -9,10 +9,9 @@ interface galleryImage {
 }
 
 export function GalleryImages() {
-  // this is where the array of images will be stored for the gallery
-const { imageRefs, visibleStates } = useIntersectionVisibleStates(
-      GalleryImages.length,
-    );
+  const { imageRefs, visibleStates } = useIntersectionVisibleStates(
+    GalleryImages.length,
+  );
 
   const images: galleryImage[] = [
     {
@@ -29,19 +28,19 @@ const { imageRefs, visibleStates } = useIntersectionVisibleStates(
     },
     {
       id: 3,
-      src: '/indoor-pinkDress-whitebkgd.jpg',
+      src: '/outdoor-man-redcarpet.jpg',
       alt: 'galleryImage3',
       className: 'gallery-image-wrapper-1 gallery-image-object-fill',
     },
     {
       id: 4,
-      src: '/outdoor-man-blackshirt-greypants.jpg',
+      src: '/weddingDressed.jpg',
       alt: 'galleryImage4',
       className: 'gallery-image-wrapper-2 gallery-image-object-fill',
     },
     {
       id: 5,
-      src: '/weddingDressed.jpg',
+      src: '/outdoor-man-blackshirt-greypants.jpg',
       alt: 'galleryImage5',
       className: 'gallery-image-wrapper-1 gallery-image-object-fill',
     },
@@ -53,19 +52,20 @@ const { imageRefs, visibleStates } = useIntersectionVisibleStates(
     },
     {
       id: 7,
-      src: '/DJ-styled.jpg',
+      src: '/ryan-edc-outfit-1.png',
       alt: 'galleryImage7',
       className: 'gallery-image-wrapper-1 gallery-image-object-cover',
     },
     {
       id: 8,
-      src: '/gio-w-shades.jpg',
+      src: '/DJ-styled.jpg',
       alt: 'galleryImage8',
       className: 'gallery-image-wrapper-2 gallery-image-object-cover',
     },
     {
       id: 9,
-      src: '/ryan-edc-outfit-1.png',
+      src: '/matching-couple.jpg',
+      // src: '/gio-w-shades.jpg', // replace this image with another one that is not of Gio
       alt: 'galleryImage9',
       className: 'gallery-image-wrapper-1 gallery-image-object-cover',
     },
@@ -149,7 +149,8 @@ const { imageRefs, visibleStates } = useIntersectionVisibleStates(
     },
     {
       id: 23,
-      src: '/Gio-stylist-bluebackground.jpg',
+      // src: '/Gio-stylist-bluebackground.jpg', // replace this image with another one that is not of Gio
+      src: '/ryan-edc-2.jpg',
       alt: 'galleryImage23',
       className: 'gallery-image-wrapper-1 gallery-image-object-fill',
     },
@@ -179,9 +180,9 @@ const { imageRefs, visibleStates } = useIntersectionVisibleStates(
     },
     {
       id: 28,
-      src: '/outdoor-man-redcarpet.jpg',
-      alt: 'galleryImage28',
-      className: 'gallery-image-wrapper-2 gallery-image-object-fill',
+      src: '/indoor-pinkDress-whitebkgd.jpg',
+      alt: 'galleryImage3',
+      className: 'gallery-image-wrapper-1 gallery-image-object-fill',
     },
     {
       id: 29,
@@ -195,6 +196,114 @@ const { imageRefs, visibleStates } = useIntersectionVisibleStates(
       alt: 'galleryImage30',
       className: 'gallery-image-wrapper-2 gallery-image-object-fill',
     },
+    {
+      id: 31,
+      src: '',
+      alt: 'galleryImage31',
+      className: 'gallery-image-wrapper-1 gallery-image-object-fill',
+    },
+    {
+      id: 32,
+      src: '',
+      alt: 'galleryImage32',
+      className: 'gallery-image-wrapper-1 gallery-image-object-fill',
+    },
+    {
+      id: 33,
+      src: '',
+      alt: 'galleryImage33',
+      className: 'gallery-image-wrapper-2 gallery-image-object-fill',
+    },
+    {
+      id: 34,
+      src: '',
+      alt: 'galleryImage34',
+      className: 'gallery-image-wrapper-1 gallery-image-object-fill',
+    },
+    {
+      id: 35,
+      src: '',
+      alt: 'galleryImage35',
+      className: 'gallery-image-wrapper-1 gallery-image-object-fill',
+    },
+    {
+      id: 36,
+      src: '',
+      alt: 'galleryImage36',
+      className: 'gallery-image-wrapper-2 gallery-image-object-fill',
+    },
+    {
+      id: 37,
+      src: '',
+      alt: 'galleryImage37',
+      className: 'gallery-image-wrapper-1 gallery-image-object-fill',
+    },
+    {
+      id: 38,
+      src: '',
+      alt: 'galleryImage38',
+      className: 'gallery-image-wrapper-1 gallery-image-object-fill',
+    },
+    {
+      id: 39,
+      src: '',
+      alt: 'galleryImage39',
+      className: 'gallery-image-wrapper-2 gallery-image-object-fill',
+    },
+    {
+      id: 40,
+      src: '',
+      alt: 'galleryImage40',
+      className: 'gallery-image-wrapper-1 gallery-image-object-fill',
+    },
+    {
+      id: 41,
+      src: '',
+      alt: 'galleryImage41',
+      className: 'gallery-image-wrapper-1 gallery-image-object-fill',
+    },
+    {
+      id: 42,
+      src: '',
+      alt: 'galleryImage42',
+      className: 'gallery-image-wrapper-2 gallery-image-object-fill',
+    },
+    {
+      id: 43,
+      src: '',
+      alt: 'galleryImage43',
+      className: 'gallery-image-wrapper-1 gallery-image-object-fill',
+    },
+    {
+      id: 44,
+      src: '',
+      alt: 'galleryImage44',
+      className: 'gallery-image-wrapper-1 gallery-image-object-fill',
+    },
+    {
+      id: 45,
+      src: '',
+      alt: 'galleryImage45',
+      className: 'gallery-image-wrapper-2 gallery-image-object-fill',
+    },
+    {
+      id: 46,
+      src: '',
+      alt: 'galleryImage46',
+      className: 'gallery-image-wrapper-1 gallery-image-object-fill',
+    },
+    {
+      id: 47,
+      src: '',
+      alt: 'galleryImage47',
+      className: 'gallery-image-wrapper-1 gallery-image-object-fill',
+    },
+    {
+      id: 48,
+      src: '',
+      alt: 'galleryImage48',
+      className: 'gallery-image-wrapper-2 gallery-image-object-fill',
+    },
   ];
 
   return (
@@ -202,11 +311,17 @@ const { imageRefs, visibleStates } = useIntersectionVisibleStates(
       {images.length > 0 ? (
         images.map((photo, index) => (
           <div className="gallery-image-container" key={photo.id}>
-            <img ref={(element) => {
-              imageRefs.current[index] = element;
-            }}
-            src={photo.src} alt={photo.alt} className={`${photo.className} ${
-              visibleStates[index] ? 'gallery-img-fade-in' : 'gallery-img-hidden'}`} 
+            <img
+              ref={(element) => {
+                imageRefs.current[index] = element;
+              }}
+              src={photo.src}
+              alt={photo.alt}
+              className={`${photo.className} ${
+                visibleStates[index]
+                  ? 'gallery-img-fade-in'
+                  : 'gallery-img-hidden'
+              }`}
             />
           </div>
         ))
