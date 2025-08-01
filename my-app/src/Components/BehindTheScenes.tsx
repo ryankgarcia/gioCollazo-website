@@ -6,7 +6,7 @@ interface imageElement {
   id: number;
   src: string;
   alt: string;
-  className: 'bts-card' | 'bts-card';
+  className: string;
   backsideText: string;
   linkTo: string;
   button: string;

@@ -1,45 +1,138 @@
-.image-container {
+/* .image-container {
   width: 250px;
   height: 350px;
   margin: 0 auto;
-  /* margin-left: 10%; */
+  margin-left: 10%;
   margin-left: 15%;
   margin-bottom: 4rem;
+} */
+
+.styleHighlights-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* write the css for the card hover (flip) here */
+.styleHighlights-column-full {
+  flex-basis: 100%;
+  padding: 3rem;
+}
+
+.backside-btn {
+  border-radius: 3rem;
+  font-size: 1.3rem;
+  background-color: white;
+  color: purple;
+  width: 10rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.backside-btn:hover {
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+}
+
+.styleHighlights-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.styleHighlights-card:hover .styleHighlights-card-inner {
+  transform: rotateY(180deg);
+}
+
+.styleHighlights-card-front,
+.styleHighlights-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+.styleHighlights-card-front {
+  z-index: 2;
+}
 
 .image-object-cover {
-  object-fit: cover;
+   object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .image-object-fill {
   object-fit: fill;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
-.image-wrapper-1 {
+.styleHighlights-card {
+  /* perspective: 1000px; */
+  /* margin: 2rem auto; */
+  width: 250px;
+  height: 350px;
+  margin: 0 auto;
+  margin-left: 15%;
+  margin-bottom: 4.5rem;
+  @media (min-width: 961px) {
+    margin-left: 10%;
+  }
+}
+
+.styleHighlights-shade-dark {
+  /* change this color to the one below in image wrapper 1 | 2 */
+  box-shadow: 2px 4px 32px #610ad1;
+}
+
+.styleHighlights-shade-light {
+  /* change this color to the one below in image wrapper 1 | 2 */
+  box-shadow: 2px 4px 32px #900fbf;
+}
+
+.styleHighlights-card-back {
+  transform: rotateY(180deg);
+  background-image: linear-gradient(to right bottom, #986bb5, #900fbf);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* .image-wrapper-1 {
   box-shadow: 2px 4px 32px #610ad1;
   border-radius: 3px;
   width: 100%;
   height: 100%;
 
   @media (min-width: 481px) {
-    /* margin-left: 30%; */
     margin-bottom: 2rem;
   }
-}
+} */
 
-.image-wrapper-2 {
+/* .image-wrapper-2 {
   box-shadow: 2px 4px 32px #900fbf;
   border-radius: 3px;
   width: 100%;
   height: 100%;
 
   @media (min-width: 481px) {
-    /* margin-left: 30%; */
     margin-bottom: 2rem;
   }
-}
+} */
 
 .style-highlights-fade-in {
   opacity: 1;
