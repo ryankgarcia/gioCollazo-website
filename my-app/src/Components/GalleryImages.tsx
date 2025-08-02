@@ -236,7 +236,7 @@ export function GalleryImages() {
       id: 37,
       src: '/blackTop-redNike.jpg', // crop this image later
       alt: 'galleryImage37',
-      className: 'gallery-image-wrapper-1 gallery-image-object-fill',
+      className: 'gallery-image-wrapper-1 gallery-image-object-cover',
     },
     {
       id: 38,
@@ -298,12 +298,12 @@ export function GalleryImages() {
       alt: 'galleryImage47',
       className: 'gallery-image-wrapper-1 gallery-image-object-fill',
     },
-    // {
-    //   id: 48,
-    //   src: '',
-    //   alt: 'galleryImage48',
-    //   className: 'gallery-image-wrapper-2 gallery-image-object-fill',
-    // },
+    {
+      id: 48,
+      src: '/sophia-Gio-redBike.jpg',
+      alt: 'galleryImage48',
+      className: 'gallery-image-wrapper-2 gallery-image-object-fill',
+    },
   ];
 
   return (
