@@ -46,7 +46,7 @@ export function GalleryImages() {
     },
     {
       id: 6,
-      src: '/LC-bratGirlSummer.jpg',
+      src: '/LC-bratGirlSummer-resize.jpeg',
       alt: 'galleryImage6',
       className: 'gallery-image-wrapper-2 gallery-image-object-fill',
     },
@@ -71,9 +71,9 @@ export function GalleryImages() {
     },
     {
       id: 10,
-      src: '/LC-yeehaw.jpeg',
+      src: '/LC-yeehaw-Cowgirl-cropped.jpeg',
       alt: 'galleryImage10',
-      className: 'gallery-image-wrapper-2 gallery-image-object-cover',
+      className: 'gallery-image-wrapper-2 gallery-image-object-fill',
     },
     {
       id: 11,
