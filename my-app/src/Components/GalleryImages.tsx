@@ -22,7 +22,7 @@ export function GalleryImages() {
     },
     {
       id: 2,
-      src: '/outdoor-woman-colorfulMatchingFit.jpg',
+      src: '/outdoor-woman-colorfulMatchingFit-crop.jpeg',
       alt: 'galleryImage2',
       className: 'gallery-image-wrapper-2 gallery-image-object-fill',
     },
@@ -46,7 +46,7 @@ export function GalleryImages() {
     },
     {
       id: 6,
-      src: '/LC-allWhiteBratGirlSummer-3.jpeg',
+      src: '',
       //resize image first, then crop if necessary
       alt: 'galleryImage6',
       className: 'gallery-image-wrapper-2 gallery-image-object-fill',
