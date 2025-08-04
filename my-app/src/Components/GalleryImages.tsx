@@ -46,7 +46,8 @@ export function GalleryImages() {
     },
     {
       id: 6,
-      src: '/LC-bratGirlSummer-resize.jpeg',
+      src: '/LC-allWhiteBratGirlSummer-3.jpeg',
+      //resize image first, then crop if necessary
       alt: 'galleryImage6',
       className: 'gallery-image-wrapper-2 gallery-image-object-fill',
     },
@@ -228,7 +229,7 @@ export function GalleryImages() {
     },
     {
       id: 36,
-      src: '/July 8 Images/man-black-flowerpattern.jpg',
+      src: '/man-black-flowerpattern.jpg',
       alt: 'galleryImage36',
       className: 'gallery-image-wrapper-2 gallery-image-object-fill',
     },
@@ -236,7 +237,7 @@ export function GalleryImages() {
       id: 37,
       src: '/blackTop-redNike.jpg', // crop this image later
       alt: 'galleryImage37',
-      className: 'gallery-image-wrapper-1 gallery-image-object-cover',
+      className: 'gallery-image-wrapper-1 gallery-image-object-fill',
     },
     {
       id: 38,
@@ -264,13 +265,13 @@ export function GalleryImages() {
     },
     {
       id: 42,
-      src: '/July 8 Images/sophia-captain.jpg',
+      src: '/sophia-captain-preResize.jpeg',
       alt: 'galleryImage42',
-      className: 'gallery-image-wrapper-2 gallery-image-object-cover',
+      className: 'gallery-image-wrapper-2 gallery-image-object-fill',
     },
     {
       id: 43,
-      src: '/July 8 Images/sophia-alex-purple.jpg',
+      src: '/sophia-alex-purple-cropped.jpeg',
       alt: 'galleryImage43',
       className: 'gallery-image-wrapper-1 gallery-image-object-cover',
     },
