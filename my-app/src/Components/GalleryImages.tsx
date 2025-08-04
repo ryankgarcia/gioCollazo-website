@@ -46,7 +46,7 @@ export function GalleryImages() {
     },
     {
       id: 6,
-      src: '',
+      src: '/LC-allWhiteBGS-1.jpeg',
       //resize image first, then crop if necessary
       alt: 'galleryImage6',
       className: 'gallery-image-wrapper-2 gallery-image-object-fill',
