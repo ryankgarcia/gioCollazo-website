@@ -43,7 +43,7 @@ export function StyleHighlights() {
     },
     {
       id: 3,
-      src: '/LC-black-and-yellow.jpg',
+      src: '/LC-EDC-BlacknYellow-1.jpeg',
       alt: 'styleHighlights3',
       // className: 'image-wrapper-2 image-object-fill',
       className: 'styleHighlights-card',
@@ -98,7 +98,7 @@ export function StyleHighlights() {
     },
     {
       id: 8,
-      src: '/LC-edc-fit.jpg',
+      src: '/LC-purple-EDC-fit-cropped.jpeg',
       alt: 'styleHighlights8',
       // className: 'image-wrapper-1 image-object-fill',
       className: 'styleHighlights-card',
@@ -109,7 +109,7 @@ export function StyleHighlights() {
     },
     {
       id: 9,
-      src: '/pinkStyled.jpg',
+      src: '/Nicole-pinkStyled-cropped.jpeg',
       alt: 'styleHighlights9',
       // className: 'image-wrapper-1 image-object-fill',
       className: 'styleHighlights-card',
