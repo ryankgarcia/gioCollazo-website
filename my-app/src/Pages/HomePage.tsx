@@ -13,20 +13,18 @@ const LazyLoadBTS = lazy(() => import('../Components/BehindTheScenes'));
 const LazyLoadBrands = lazy(() => import('../Components/BrandsWorkedWith'));
 
 export function HomePage() {
-  //import the useFadeInOnScroll custom Hook here...
-
   return (
     <div className="home-container">
       <div className="home-row">
         <img
-          src="/gio-purple-closeup.jpeg"
+          src="/gio-white-squaredImage.jpeg"
           alt="Giovanny Collazo Professional Stylist"
           className="home-GC-mainCoverImage"
         />
         <div className="home-intro-row">
           <div className="home-column-full">
-            <p className="gio-intro-text">Giovanny Collazo</p>
-            <p className="gio-intro-text">Personal Stylist</p>
+            <p className="gio-intro-name">Giovanny Collazo</p>
+            <p className="gio-intro-title">Personal Stylist</p>
             <p className="gio-intro-text">Styling men & women since 2015</p>
           </div>
         </div>
@@ -41,6 +39,13 @@ export function HomePage() {
         mensaje de WhatsApp. Al fin de la pagina encontraras el icono de
         WhatsApp para conectarnos.
       </p>
+      <div className="home-img-row">
+        <img
+          src="/gio-pink-suit-cropped.jpeg"
+          alt="Giovanny Collazo Professional Stylist Image 2"
+          className="home-GC-coverImage2"
+        />
+      </div>
       <h2 className="home-bts-header">Behind The Scenes</h2>
       <div className="home-row">
         <div className="home-column-full">
@@ -99,22 +104,6 @@ export function HomePage() {
           }
         </div>
       </div>
-
-      {/* <img
-              className="brand-image"
-              src="/Brands-Gio-has-worked-with/clubmaverick-logo.jpeg"
-              alt="ClubMaverick-brand-logo"
-            />
-          </div>
-          <div className="brand-circle">
-            <img
-              className="brand-image"
-              src="/Brands-Gio-has-worked-with/couture-logo-cut.jpg"
-              alt="Couture-brand-logo"
-            />
-          </div>
-           */}
-
       <Footer />
     </div>
   );

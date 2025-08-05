@@ -1,3 +1,4 @@
+import { useIntersectionVisibleStates } from '../Hooks/GradientScroll';
 import './GalleryImages.css';
 
 interface galleryImage {
@@ -8,7 +9,9 @@ interface galleryImage {
 }
 
 export function GalleryImages() {
-  // this is where the array of images will be stored for the gallery
+  const { imageRefs, visibleStates } = useIntersectionVisibleStates(
+    GalleryImages.length,
+  );
 
   const images: galleryImage[] = [
     {
@@ -19,57 +22,59 @@ export function GalleryImages() {
     },
     {
       id: 2,
-      src: '/outdoor-woman-colorfulMatchingFit.jpg',
+      src: '/outdoor-woman-colorfulMatchingFit-crop.jpeg',
       alt: 'galleryImage2',
       className: 'gallery-image-wrapper-2 gallery-image-object-fill',
     },
     {
       id: 3,
-      src: '/indoor-pinkDress-whitebkgd.jpg',
+      src: '/outdoor-man-redcarpet.jpg',
       alt: 'galleryImage3',
       className: 'gallery-image-wrapper-1 gallery-image-object-fill',
     },
     {
       id: 4,
-      src: '/outdoor-man-blackshirt-greypants.jpg',
+      src: '/weddingDressed.jpg',
       alt: 'galleryImage4',
       className: 'gallery-image-wrapper-2 gallery-image-object-fill',
     },
     {
       id: 5,
-      src: '/weddingDressed.jpg',
+      src: '/outdoor-man-blackshirt-greypants.jpg',
       alt: 'galleryImage5',
       className: 'gallery-image-wrapper-1 gallery-image-object-fill',
     },
     {
       id: 6,
-      src: '/LC-bratGirlSummer.jpg',
+      src: '/LC-allWhiteBGS-1.jpeg',
+      //resize image first, then crop if necessary
       alt: 'galleryImage6',
       className: 'gallery-image-wrapper-2 gallery-image-object-fill',
     },
     {
       id: 7,
-      src: '/DJ-styled.jpg',
+      src: '/ryan-edc-outfit-1.png',
       alt: 'galleryImage7',
       className: 'gallery-image-wrapper-1 gallery-image-object-cover',
     },
     {
       id: 8,
-      src: '/gio-w-shades.jpg',
+      src: '/DJ-styled.jpg',
       alt: 'galleryImage8',
       className: 'gallery-image-wrapper-2 gallery-image-object-cover',
     },
     {
       id: 9,
-      src: '/ryan-edc-outfit-1.png',
+      src: '/matching-couple.jpg',
+      // src: '/gio-w-shades.jpg', // replace this image with another one that is not of Gio
       alt: 'galleryImage9',
       className: 'gallery-image-wrapper-1 gallery-image-object-cover',
     },
     {
       id: 10,
-      src: '/LC-yeehaw.jpeg',
+      src: '/LC-yeehaw-Cowgirl-cropped.jpeg',
       alt: 'galleryImage10',
-      className: 'gallery-image-wrapper-2 gallery-image-object-cover',
+      className: 'gallery-image-wrapper-2 gallery-image-object-fill',
     },
     {
       id: 11,
@@ -145,7 +150,8 @@ export function GalleryImages() {
     },
     {
       id: 23,
-      src: '/Gio-stylist-bluebackground.jpg',
+      // src: '/Gio-stylist-bluebackground.jpg', // replace this image with another one that is not of Gio
+      src: '/ryan-edc-2.jpg',
       alt: 'galleryImage23',
       className: 'gallery-image-wrapper-1 gallery-image-object-fill',
     },
@@ -175,8 +181,8 @@ export function GalleryImages() {
     },
     {
       id: 28,
-      src: '/outdoor-man-redcarpet.jpg',
-      alt: 'galleryImage28',
+      src: '/indoor-pinkDress-whitebkgd.jpg',
+      alt: 'galleryImage3',
       className: 'gallery-image-wrapper-2 gallery-image-object-fill',
     },
     {
@@ -191,14 +197,133 @@ export function GalleryImages() {
       alt: 'galleryImage30',
       className: 'gallery-image-wrapper-2 gallery-image-object-fill',
     },
+    {
+      id: 31,
+      src: '/redDress-whiteCoatOver.jpg',
+      alt: 'galleryImage31',
+      className: 'gallery-image-wrapper-1 gallery-image-object-cover',
+    },
+    {
+      id: 32,
+      src: '/maniquin-sparklingCoat-goldDress.jpg',
+      alt: 'galleryImage32',
+      className: 'gallery-image-wrapper-2 gallery-image-object-fill',
+    },
+    {
+      id: 33,
+      src: '/redStussyShirt-longBoots.jpg',
+      alt: 'galleryImage33',
+      className: 'gallery-image-wrapper-1 gallery-image-object-cover',
+    },
+    {
+      id: 34,
+      src: '/redBlazer-professional.jpg',
+      alt: 'galleryImage34',
+      className: 'gallery-image-wrapper-2 gallery-image-object-cover',
+    },
+    {
+      id: 35,
+      src: '/LC-indoor-halloween.jpg',
+      alt: 'galleryImage35',
+      className: 'gallery-image-wrapper-1 gallery-image-object-cover',
+    },
+    {
+      id: 36,
+      src: '/man-black-flowerpattern.jpg',
+      alt: 'galleryImage36',
+      className: 'gallery-image-wrapper-2 gallery-image-object-fill',
+    },
+    {
+      id: 37,
+      src: '/blackTop-redNike.jpg', // crop this image later
+      alt: 'galleryImage37',
+      className: 'gallery-image-wrapper-1 gallery-image-object-fill',
+    },
+    {
+      id: 38,
+      src: '/gio-FlowerPedals.jpg', // crop this image so it fits better in frame
+      alt: 'galleryImage38',
+      className: 'gallery-image-wrapper-2 gallery-image-object-fill',
+    },
+    {
+      id: 39,
+      src: '/gio-outdoor-photoshoot.jpg',
+      alt: 'galleryImage39',
+      className: 'gallery-image-wrapper-1 gallery-image-object-cover',
+    },
+    {
+      id: 40,
+      src: '/gio-handHoldingWoman.jpg',
+      alt: 'galleryImage40',
+      className: 'gallery-image-wrapper-2 gallery-image-object-fill',
+    },
+    {
+      id: 41,
+      src: '/July 8 Images/sophia-bunny-costume.jpg',
+      alt: 'galleryImage41',
+      className: 'gallery-image-wrapper-1 gallery-image-object-fill',
+    },
+    {
+      id: 42,
+      src: '/sophia-captain-preResize.jpeg',
+      alt: 'galleryImage42',
+      className: 'gallery-image-wrapper-2 gallery-image-object-fill',
+    },
+    {
+      id: 43,
+      src: '/sophia-alex-purple-cropped.jpeg',
+      alt: 'galleryImage43',
+      className: 'gallery-image-wrapper-1 gallery-image-object-cover',
+    },
+    {
+      id: 44,
+      src: '/longRedDress-whiteCoat.jpg',
+      alt: 'galleryImage44',
+      className: 'gallery-image-wrapper-2 gallery-image-object-cover',
+    },
+    {
+      id: 45,
+      src: '/redCarpet-turqoiseDress.jpg',
+      alt: 'galleryImage45',
+      className: 'gallery-image-wrapper-1 gallery-image-object-cover',
+    },
+    {
+      id: 46,
+      src: '/starWars-themed.jpg',
+      alt: 'galleryImage46',
+      className: 'gallery-image-wrapper-2 gallery-image-object-fill',
+    },
+    {
+      id: 47,
+      src: '/gio-holdingDress-turquoise.jpg',
+      alt: 'galleryImage47',
+      className: 'gallery-image-wrapper-1 gallery-image-object-fill',
+    },
+    {
+      id: 48,
+      src: '/sophia-Gio-redBike.jpg',
+      alt: 'galleryImage48',
+      className: 'gallery-image-wrapper-2 gallery-image-object-fill',
+    },
   ];
 
   return (
     <>
       {images.length > 0 ? (
-        images.map((photo) => (
+        images.map((photo, index) => (
           <div className="gallery-image-container" key={photo.id}>
-            <img src={photo.src} alt={photo.alt} className={photo.className} />
+            <img
+              ref={(element) => {
+                imageRefs.current[index] = element;
+              }}
+              src={photo.src}
+              alt={photo.alt}
+              className={`${photo.className} ${
+                visibleStates[index]
+                  ? 'gallery-img-fade-in'
+                  : 'gallery-img-hidden'
+              }`}
+            />
           </div>
         ))
       ) : (

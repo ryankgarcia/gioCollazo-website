@@ -14,15 +14,52 @@
   }
 }
 
+.home-img-row {
+  @media (min-width: 961px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .home-row {
   @media (min-width: 961px) {
     display: flex;
   }
 }
 
+.gio-intro-name {
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  @media (min-width: 961px) {
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-optical-sizing: auto;
+  }
+}
+
+.gio-intro-title {
+  font-size: 2.3rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  @media (min-width: 961px) {
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-optical-sizing: auto;
+  }
+}
+
 .gio-intro-text {
   font-size: 1.4rem;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
   @media (min-width: 961px) {
     font-size: 2rem;
     font-family: 'Inter', sans-serif;
@@ -52,6 +89,19 @@
 .home-GC-introduction {
   display: flex;
   justify-content: center;
+}
+
+.home-GC-coverImage2 {
+  width: 265px;
+  margin-left: 15%;
+  margin-bottom: 1.2rem;
+  border-radius: 8px;
+  margin-top: 1.4rem;
+  @media (min-width: 961px) {
+    display: flex;
+    justify-content: center;
+    margin-left: 0%;
+  }
 }
 
 .home-GC-mainCoverImage {
@@ -149,6 +199,7 @@
   width: 300px;
   height: 500px;
   object-fit: fill;
+  margin: 3.5rem 3.5rem;
 }
 
 .bts-photos-padding {

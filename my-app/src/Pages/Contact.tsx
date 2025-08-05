@@ -10,8 +10,8 @@ export function ContactPage() {
       <div className="contact-row">
         <div className="contact-column-full">
           <h3 className="second-header">
-            Please enter your information below to receive a phone call so we
-            can discuss how I can help you.
+            Please enter your information below so we can discuss how I can
+            help.
           </h3>
         </div>
         <div className="contact-row">

@@ -16,8 +16,8 @@ h2 {
   /* box-shadow: 10px 5px 25px #d7b8ec; */
   box-shadow: 2px 4px 32px #d7b8ec;
   border-radius: 3px;
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
   transition: transform 0.3s;
   animation: spin 3s linear 7s;
   animation-iteration-count: 1;
@@ -31,8 +31,8 @@ h2 {
   /* box-shadow: 10px 5px 35px #900fbf; original */
   box-shadow: 2px 4px 32px #900fbf;
   border-radius: 3px;
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
   transition: transform 0.3s;
   animation: spin 3s linear 7s;
   animation-iteration-count: 1;
@@ -56,8 +56,27 @@ h2 {
 
 .gallery-image-object-fill {
   object-fit: fill;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .gallery-image-object-cover {
   object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.gallery-img-fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 1.3s ease-out,
+    transform 1.5s ease-out;
+}
+
+.gallery-img-hidden {
+  opacity: 0;
+  transform: translateY(100px);
 }
