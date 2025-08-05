@@ -17,6 +17,8 @@ export function HomePage() {
     <div className="home-container">
       <div className="home-row">
         <img
+          // delete this relative path image when finalizing project if its
+          // ends up not being in the final version /public/gio-purple-closeup.jpeg
           src="/gio-white-squaredImage.jpeg"
           alt="Giovanny Collazo Professional Stylist"
           className="home-GC-mainCoverImage"

@@ -94,7 +94,7 @@ export function Testimonials() {
         <div className="testimonial-column-flex-end">
           <div className="testimonial-wrapper">
             <img
-              src="/testimonials-images/louie-portrait-closeUp.jpeg"
+              src="/testimonials-images/Louie-portrait-closeUp.jpeg"
               alt="Louie-testimonial5"
               className="testimonial-portrait-img"
             />
@@ -129,7 +129,7 @@ export function Testimonials() {
         <div className="testimonial-column-flex-start">
           <div className="testimonial-wrapper">
             <img
-              src="/testimonials-images/nicole-portrait-closeUp.jpeg"
+              src="/testimonials-images/Nicole-portrait-closeUp.jpeg"
               alt="Nicole-testimonial6"
               className="testimonial-portrait-img"
             />
@@ -150,7 +150,7 @@ export function Testimonials() {
         <div className="testimonial-column-flex-end">
           <div className="testimonial-wrapper">
             <img
-              src="/testimonials-images/ryan-portrait-closeUp.jpg"
+              src="/testimonials-images/Ryan-portrait-closeUp.jpg"
               alt="Ryan-testimonial7"
               className="testimonial-portrait-img"
             />
