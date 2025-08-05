@@ -46,7 +46,10 @@ export function StyleHighlights() {
       src: '/LC-EDC-BlacknYellow-1.jpeg',
       alt: 'styleHighlights3',
       // className: 'image-wrapper-2 image-object-fill',
-      className: 'styleHighlights-card',
+      // add in a class with object-position set to top.
+      // make sure this individual card element does not have
+      // object-fit: cover or fill
+      className: 'styleHighlights-card object-position-top',
       backsideText: 'Rave Fitting',
       linkTo: '/services',
       button: 'backside-btn',

@@ -29,7 +29,7 @@ export function NavBar() {
         </div>
         <div className="nav-row">
           <NavLink to="/services">
-            <span className="aboutMe-link">Services</span>
+            <span className="services-link">Services</span>
           </NavLink>
         </div>
         <div className="nav-row">

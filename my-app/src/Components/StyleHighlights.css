@@ -13,6 +13,10 @@
   align-items: center;
 }
 
+.object-position-top {
+  object-position: top;
+}
+
 .styleHighlights-column-full {
   flex-basis: 100%;
   padding: 3rem;
