@@ -19,7 +19,7 @@ export function HomePage() {
         <img
           // delete this relative path image when finalizing project if its
           // ends up not being in the final version /public/gio-purple-closeup.jpeg
-          src="/gio-white-squaredImage.jpeg"
+          src="/Gio-white-squaredImage.jpeg"
           alt="Giovanny Collazo Professional Stylist"
           className="home-GC-mainCoverImage"
         />
@@ -43,7 +43,7 @@ export function HomePage() {
       </p>
       <div className="home-img-row">
         <img
-          src="/gio-pink-suit-cropped.jpeg"
+          src="/Gio-pink-suit.jpeg"
           alt="Giovanny Collazo Professional Stylist Image 2"
           className="home-GC-coverImage2"
         />
@@ -53,7 +53,7 @@ export function HomePage() {
         <div className="home-column-full">
           <div className="video-container-H">
             <video className="video-H" controls muted>
-              <source src="styledByGio-behindTheScenes.mp4" type="video/mp4" />
+              <source src="/BTS-stylingForVideoShoot.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
@@ -63,7 +63,7 @@ export function HomePage() {
           <div className="video-container-V">
             {/* adjust the vertical video to fit inside the container on mobile & desktop */}
             <video className="video-V" controls muted>
-              <source src="/bts-gioSprayPainting.mp4" type="video/mp4" />
+              <source src="/BTS-gioSprayPainting.mp4" type="video/mp4" />
             </video>
           </div>
         </div>

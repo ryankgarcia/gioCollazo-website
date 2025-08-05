@@ -24,26 +24,26 @@ export function BrandsWorkedWith() {
     },
     {
       id: 2,
-      src: '/Brands-Gio-has-worked-with/couture-logo-cut.jpg',
+      src: '/Brands-Gio-has-worked-with/couture-logo.jpg',
       alt: 'Couture Logo',
       className: 'brand-image',
     },
     {
       id: 3,
-      src: '/Brands-Gio-has-worked-with/Cyclone-Pictures.png',
+      src: '/Brands-Gio-has-worked-with/Cyclone-Pictures-logo.png',
       alt: 'Cyclone Pictures Logo',
       className: 'brand-image',
       // brand-image-fill  add this add a class to the images that look better with either cover or fill
     },
     {
       id: 4,
-      src: '/Brands-Gio-has-worked-with/cynthia-Bach.png',
+      src: '/Brands-Gio-has-worked-with/cynthia-Bach-logo.png',
       alt: 'Cynthia Bach Logo',
       className: 'brand-image',
     },
     {
       id: 5,
-      src: '/Brands-Gio-has-worked-with/dolls-logo.png',
+      src: '/Brands-Gio-has-worked-with/dolls-kill-logo.png',
       alt: 'Dolls Kill Logo',
       className: 'brand-image',
     },
@@ -61,7 +61,7 @@ export function BrandsWorkedWith() {
     },
     {
       id: 8,
-      src: '/Brands-Gio-has-worked-with/h-m-logo.png',
+      src: '/Brands-Gio-has-worked-with/hm-logo.png',
       alt: 'H&M Logo',
       className: 'brand-image',
     },
@@ -115,7 +115,7 @@ export function BrandsWorkedWith() {
     },
     {
       id: 17,
-      src: '/Brands-Gio-has-worked-with/zara.png',
+      src: '/Brands-Gio-has-worked-with/zara-logo.png',
       alt: 'Zara Logo',
       className: 'brand-image',
     },

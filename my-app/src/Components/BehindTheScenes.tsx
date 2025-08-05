@@ -21,7 +21,7 @@ export function BehindTheScenes() {
   const behindTheScenesImage: imageElement[] = [
     {
       id: 1,
-      src: '/BTS - outdoor-man-burgundy.jpg',
+      src: '/BTS-outdoor-man-burgundy.jpg',
       alt: 'BTSImage1',
       className: 'bts-card',
       backsideText: 'Red Carpet Independent Viewing',
@@ -31,7 +31,7 @@ export function BehindTheScenes() {
     },
     {
       id: 2,
-      src: '/BTS - photoshoot.jpg',
+      src: '/BTS-teenVogue-photoshoot.jpg',
       alt: 'BTSImage2',
       className: 'bts-card',
       // className: 'bts-wrapper-2 bts-object-cover', // the commented out className's are the original before the flip effect
@@ -42,7 +42,7 @@ export function BehindTheScenes() {
     },
     {
       id: 3,
-      src: '/BTS - quince-outside.jpg',
+      src: '/BTS-quince-outside.jpg',
       alt: 'BTSImage3',
       className: 'bts-card',
       // className: 'bts-wrapper-1 bts-object-fill',
@@ -53,7 +53,7 @@ export function BehindTheScenes() {
     },
     {
       id: 4,
-      src: '/BTS - quince.jpg',
+      src: '/BTS-quince.jpg',
       alt: 'BTSImage4',
       className: 'bts-card',
       // className: 'bts-wrapper-2 bts-object-fill',
@@ -97,7 +97,7 @@ export function BehindTheScenes() {
     },
     {
       id: 8,
-      src: '/bts-LC-Gio-BlackDress.JPEG',
+      src: '/BTS-LC-Gio-BlackDress.JPEG',
       alt: 'BTSImage8',
       className: 'bts-card',
       // className: 'bts-wrapper-2 bts-object-fill',
@@ -108,7 +108,7 @@ export function BehindTheScenes() {
     },
     {
       id: 9,
-      src: '/bts-shoppingExp.JPG',
+      src: '/BTS-shoppingExp.JPG',
       alt: 'BTSImage9',
       className: 'bts-card',
       // className: 'bts-wrapper-1 bts-object-fill',

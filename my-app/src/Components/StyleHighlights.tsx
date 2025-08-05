@@ -21,7 +21,7 @@ export function StyleHighlights() {
   const top10Picks: topLooks[] = [
     {
       id: 1,
-      src: '/blackDress-dressingRoom.jpg',
+      src: '/BlackDress-dressingRoom.jpg',
       alt: 'styleHighlights1',
       // className: 'image-wrapper-1 image-object-fill',
       className: 'styleHighlights-card',
@@ -32,7 +32,7 @@ export function StyleHighlights() {
     },
     {
       id: 2,
-      src: '/elegant-redDress.jpg',
+      src: '/Elegant-redDress.jpg',
       alt: 'styleHighlights2',
       // className: 'image-wrapper-2 image-object-fill',
       className: 'styleHighlights-card',
@@ -57,7 +57,7 @@ export function StyleHighlights() {
     },
     {
       id: 4,
-      src: '/redCarpet-redQueen-longDress.jpg',
+      src: '/RedCarpet-redQueen-longDress.jpg',
       alt: 'styleHighlights4',
       // className: 'image-wrapper-1 image-object-fill',
       className: 'styleHighlights-card',
@@ -68,7 +68,7 @@ export function StyleHighlights() {
     },
     {
       id: 5,
-      src: '/tealDress-blondeWoman.jpeg',
+      src: '/TealDress-blondeWoman.jpeg',
       alt: 'styleHighlights5',
       // className: 'image-wrapper-1 image-object-cover',
       className: 'styleHighlights-card',
@@ -79,7 +79,7 @@ export function StyleHighlights() {
     },
     {
       id: 6,
-      src: '/black-redBlazer.jpg',
+      src: '/Louie-black-redBlazer.jpg',
       alt: 'styleHighlights6',
       // className: 'image-wrapper-2 image-object-fill',
       className: 'styleHighlights-card',
@@ -90,7 +90,7 @@ export function StyleHighlights() {
     },
     {
       id: 7,
-      src: '/club-maverick-red-on-black.jpg',
+      src: '/ClubMaverick-red-on-black.jpg',
       alt: 'styleHighlights7',
       // className: 'image-wrapper-2 image-object-cover',
       className: 'styleHighlights-card',
@@ -101,7 +101,7 @@ export function StyleHighlights() {
     },
     {
       id: 8,
-      src: '/LC-purple-EDC-fit-cropped.jpeg',
+      src: '/LC-purple-EDC-fit.jpeg',
       alt: 'styleHighlights8',
       // className: 'image-wrapper-1 image-object-fill',
       className: 'styleHighlights-card',
@@ -112,7 +112,7 @@ export function StyleHighlights() {
     },
     {
       id: 9,
-      src: '/Nicole-pinkStyled-cropped.jpeg',
+      src: '/Nicole-pinkStyled.jpeg',
       alt: 'styleHighlights9',
       // className: 'image-wrapper-1 image-object-fill',
       className: 'styleHighlights-card',
@@ -123,7 +123,7 @@ export function StyleHighlights() {
     },
     {
       id: 10,
-      src: '/redCarpet-tropicalDress.jpg',
+      src: '/RedCarpet-tropicalDress.jpg',
       alt: 'styleHighlights10',
       // className: 'image-wrapper-2 image-object-fill',
       className: 'styleHighlights-card',
