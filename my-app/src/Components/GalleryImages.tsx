@@ -22,7 +22,7 @@ export function GalleryImages() {
     },
     {
       id: 2,
-      src: '/Outdoor-woman-colorfulMatchingFit-crop.jpeg',
+      src: '/Outdoor-woman-colorfulMatchingFit.jpeg',
       alt: 'galleryImage2',
       className: 'gallery-image-wrapper-2 gallery-image-object-fill',
     },
@@ -133,7 +133,7 @@ export function GalleryImages() {
     },
     {
       id: 20,
-      src: '/Sophia-dressFlair.gif',
+      src: '/Sophia-dressFlair.gif', // add in this gif from the library
       alt: 'galleryImage20',
       className: 'gallery-image-wrapper-2 gallery-image-object-fill',
     },
@@ -219,7 +219,7 @@ export function GalleryImages() {
     },
     {
       id: 34,
-      src: '/RedBlazer-professional.jpg',
+      src: '/RedBlazer-woman-professional.jpg',
       alt: 'galleryImage34',
       className: 'gallery-image-wrapper-2 gallery-image-object-cover',
     },

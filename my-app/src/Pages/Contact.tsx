@@ -23,8 +23,8 @@ export function ContactPage() {
       <div className="contact-row">
         <div className="stylist-image-container">
           <img
-            src="/gio-hotel-flex.jpg"
-            alt="Giovanny Collazo Professional Stylist image"
+            src="/Gio-hotel-seated.jpg"
+            alt="Giovanny Collazo - Professional Wardrobe Stylist"
             className="contact-gio-collazo-image"
           />
         </div>

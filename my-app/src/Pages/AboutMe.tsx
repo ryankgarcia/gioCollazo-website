@@ -32,7 +32,7 @@ export function AboutMe() {
         <div className="aboutMe-imageWrapper">
           <img
             className="aboutMe-image"
-            src="/gio-purple-about-page.jpeg"
+            src="/Gio-purple-about-page.jpeg"
             alt="Professional Stylist - Giovanny Collazo - StyledByGio - image 1"
           />
         </div>
@@ -46,7 +46,7 @@ export function AboutMe() {
         <div className="aboutMe-imageWrapper">
           <img
             className="aboutMe-image"
-            src="/gio-w-shades-cropped.jpg"
+            src="/Gio-w-shades.jpg"
             alt="Professional Stylist - Giovanny Collazo - StyledByGio - image 3"
           />
         </div>
