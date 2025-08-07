@@ -103,7 +103,7 @@ export function GalleryImages() {
     },
     {
       id: 15,
-      src: '/Nicole-blackTop-tanBottoms.JPG',
+      src: '/Nicole-blackTop-tanBottoms.jpeg',
       alt: 'galleryImage15',
       className: 'gallery-image-wrapper-1 gallery-image-object-cover',
     },
@@ -133,7 +133,7 @@ export function GalleryImages() {
     },
     {
       id: 20,
-      src: '/Sophia-dressFlair.gif', // add in this gif from the library
+      src: '/Sophia-dressFlair.gif',
       alt: 'galleryImage20',
       className: 'gallery-image-wrapper-2 gallery-image-object-fill',
     },
@@ -182,10 +182,9 @@ export function GalleryImages() {
     },
     {
       id: 28,
-      // this image can be cropped down to a smaller size (try it then delete the unused img element)
-      src: '/Indoor-pinkDress-whitebkgd.jpg',
+      src: '/Indoor-pinkDress-whitebkgd.jpeg',
       alt: 'galleryImage3',
-      className: 'gallery-image-wrapper-2 gallery-image-object-fill',
+      className: 'gallery-image-wrapper-2 gallery-image-object-cover',
     },
     {
       id: 29,
