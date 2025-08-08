@@ -34,7 +34,6 @@ export function BehindTheScenes() {
       src: '/BTS-teenVogue-photoshoot.jpg',
       alt: 'BTSImage2',
       className: 'bts-card',
-      // className: 'bts-wrapper-2 bts-object-cover', // the commented out className's are the original before the flip effect
       backsideText: 'Teen Vogue Photo Shoot',
       linkTo: '/services',
       button: 'backside-btn',
@@ -45,7 +44,6 @@ export function BehindTheScenes() {
       src: '/BTS-quince-outside.jpg',
       alt: 'BTSImage3',
       className: 'bts-card',
-      // className: 'bts-wrapper-1 bts-object-fill',
       backsideText: 'Quinceñera Photo Shoot',
       linkTo: '/services',
       button: 'backside-btn',
@@ -56,7 +54,6 @@ export function BehindTheScenes() {
       src: '/BTS-quince.jpg',
       alt: 'BTSImage4',
       className: 'bts-card',
-      // className: 'bts-wrapper-2 bts-object-fill',
       backsideText: 'Quinceñera Photo Shoot',
       linkTo: '/services',
       button: 'backside-btn',
@@ -67,7 +64,6 @@ export function BehindTheScenes() {
       src: '/BTS-Gio-at-photoshoot.jpg',
       alt: 'BTSImage5',
       className: 'bts-card',
-      // className: 'bts-wrapper-1 bts-object-fill',
       backsideText: 'Featured Home Magazine',
       linkTo: '/services',
       button: 'backside-btn',
@@ -78,7 +74,6 @@ export function BehindTheScenes() {
       src: '/BTS-Gio-desert-outdoor.jpg',
       alt: 'BTSImage6',
       className: 'bts-card',
-      // className: 'bts-wrapper-2 bts-object-cover',
       backsideText: 'On a movie set',
       linkTo: '/services',
       button: 'backside-btn',
@@ -89,7 +84,6 @@ export function BehindTheScenes() {
       src: '/BTS-Gio-shoeReveal.jpg',
       alt: 'BTSImage7',
       className: 'bts-card',
-      // className: 'bts-wrapper-1 bts-object-fill',
       backsideText: 'Wedding Fitting',
       linkTo: '/services',
       button: 'backside-btn',
@@ -100,7 +94,6 @@ export function BehindTheScenes() {
       src: '/BTS-LC-Gio-BlackDress.JPEG',
       alt: 'BTSImage8',
       className: 'bts-card',
-      // className: 'bts-wrapper-2 bts-object-fill',
       backsideText: 'Rave Outfit Fitting',
       linkTo: '/services',
       button: 'backside-btn',
@@ -111,7 +104,6 @@ export function BehindTheScenes() {
       src: '/BTS-shoppingExp.JPG',
       alt: 'BTSImage9',
       className: 'bts-card',
-      // className: 'bts-wrapper-1 bts-object-fill',
       backsideText: 'Personal Shopping Experience',
       linkTo: '/services',
       button: 'backside-btn',
@@ -146,7 +138,7 @@ export function BehindTheScenes() {
                 </div>
                 <div className="bts-card-back">
                   <div className="bts-row">
-                    <div className="bts-column-full">
+                    <div className="bts-text-padding">
                       <p>{image.backsideText}</p>
                     </div>
                     <Link to={image.linkTo} className={image.button}>
