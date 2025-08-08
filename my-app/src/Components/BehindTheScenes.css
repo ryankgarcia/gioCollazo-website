@@ -8,7 +8,6 @@
   padding: 3rem;
 }
 
-/* left off code review here... */
 .backside-btn {
   border-radius: 3rem;
   font-size: 1.3rem;
@@ -54,12 +53,6 @@
 .bts-card-front {
   z-index: 2;
 }
-
-/* .bts-image {
-  width: 100%;
-  height: 100%;
-  display: block;
-} */
 
 .bts-object-fill {
   object-fit: fill;

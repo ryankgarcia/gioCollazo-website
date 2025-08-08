@@ -14,9 +14,10 @@ interface imageElement {
 }
 
 export function BehindTheScenes() {
-  const { imageRefs, visibleStates } = useIntersectionVisibleStates(
-    BehindTheScenes.length,
-  );
+  // const { imageRefs, visibleStates } = useIntersectionVisibleStates(
+  //   BehindTheScenes.length,
+  // );
+  
 
   const behindTheScenesImage: imageElement[] = [
     {
@@ -110,6 +111,8 @@ export function BehindTheScenes() {
       fitStyle: 'bts-object-fill',
     },
   ];
+
+  const { imageRefs, visibleStates } = useIntersectionVisibleStates(behindTheScenesImage.length);
 
   return (
     <>
