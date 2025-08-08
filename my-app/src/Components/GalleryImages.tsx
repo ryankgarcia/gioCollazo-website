@@ -47,7 +47,6 @@ export function GalleryImages() {
     {
       id: 6,
       src: '/LC-allWhiteBGS-1.jpeg',
-      //resize image first, then crop if necessary
       alt: 'galleryImage6',
       className: 'gallery-image-wrapper-2 gallery-image-object-fill',
     },
@@ -66,7 +65,6 @@ export function GalleryImages() {
     {
       id: 9,
       src: '/Matching-couple.jpg',
-      // src: '/gio-w-shades.jpg', // replace this image with another one that is not of Gio
       alt: 'galleryImage9',
       className: 'gallery-image-wrapper-1 gallery-image-object-cover',
     },
@@ -84,10 +82,9 @@ export function GalleryImages() {
     },
     {
       id: 12,
-      // this image can be cropped to a better ratio, then delete the unused img element
-      src: '/LC-red-romper.jpg',
+      src: '/LC-red-romper-clean.png',
       alt: 'galleryImage12',
-      className: 'gallery-image-wrapper-2 gallery-image-object-fill',
+      className: 'gallery-image-wrapper-2 gallery-image-object-cover',
     },
     {
       id: 13,
@@ -151,7 +148,6 @@ export function GalleryImages() {
     },
     {
       id: 23,
-      // src: '/Gio-stylist-bluebackground.jpg', // replace this image with another one that is not of Gio
       src: '/Ryan-edc-2.jpg',
       alt: 'galleryImage23',
       className: 'gallery-image-wrapper-1 gallery-image-object-fill',
