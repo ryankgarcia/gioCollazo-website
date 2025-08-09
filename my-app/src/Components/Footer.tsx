@@ -1,8 +1,8 @@
+import './Footer.css';
 import { PiInstagramLogo } from 'react-icons/pi';
 import { CgMail } from 'react-icons/cg';
 import { Link } from 'react-router-dom';
 import { FaSquareWhatsapp } from 'react-icons/fa6';
-import './Footer.css';
 
 // the last thing to complete before the site 'goes live' on the web,
 // the mailto should change to a more legitimate email (with the domain after the @ symbol)
@@ -54,8 +54,10 @@ export function Footer() {
         </a>
       </div>
       <p className="copyright-footer">
-        © 2025 <em> Giovanny Collazo</em>. All Rights Reserved. Website Design
-        by <em>Ryan Garcia</em>.
+        <span>
+          © 2025 <em> Giovanny Collazo</em>. All Rights Reserved. Website
+          Design by <em>Ryan Garcia</em>.
+        </span>
       </p>
     </>
   );
