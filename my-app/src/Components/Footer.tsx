@@ -8,6 +8,7 @@ import { FaSquareWhatsapp } from 'react-icons/fa6';
 // the mailto should change to a more legitimate email (with the domain after the @ symbol)
 
 export function Footer() {
+  console.log('[Footer] render');
   return (
     <>
       <h2 className="footer-h2">Quick Links</h2>
@@ -54,10 +55,8 @@ export function Footer() {
         </a>
       </div>
       <p className="copyright-footer">
-        <span>
-          © 2025 <em> Giovanny Collazo</em>. All Rights Reserved. Website
-          Design by <em>Ryan Garcia</em>.
-        </span>
+        © 2025 <em> Giovanny Collazo</em>. All Rights Reserved. Website Design
+        by <em>Ryan Garcia</em>.
       </p>
     </>
   );
