@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 import { FaSquareWhatsapp } from 'react-icons/fa6';
 import './Footer.css';
 
+// the last thing to complete before the site 'goes live' on the web,
+// the mailto should change to a more legitimate email (with the domain after the @ symbol)
+
 export function Footer() {
   return (
     <>
@@ -25,7 +28,6 @@ export function Footer() {
           </Link>
         </div>
       </div>
-      {/* <div className="footer-row"> */}
       <h2 className="footer-h2">Stay Connected</h2>
       <div className="link-group">
         <a
@@ -51,14 +53,10 @@ export function Footer() {
           <CgMail className="mail-logo" />
         </a>
       </div>
-
-      {/* <div className="footer-row"> */}
       <p className="copyright-footer">
         © 2025 <em> Giovanny Collazo</em>. All Rights Reserved. Website Design
         by <em>Ryan Garcia</em>.
       </p>
     </>
-    // </div>
-    // </div>
   );
 }

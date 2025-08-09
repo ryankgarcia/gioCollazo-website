@@ -1,0 +1,7 @@
+:root {
+  /* Mobile-first design breakpoints */
+  --bp-tablet: 600px;
+  --bp-sm-desktop: 900px;
+  --bp-desktop: 1200px;
+  --bp-lg-desktop: 1536px;
+}

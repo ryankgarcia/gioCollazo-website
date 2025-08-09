@@ -1,7 +1,3 @@
-p {
-  font-size: 1.3rem;
-}
-
 .insta-logo {
   font-size: 3.5rem;
   color: #e1446a;
@@ -33,20 +29,40 @@ p {
 }
 
 .copyright-footer {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   padding-top: 0.5rem;
   display: block;
+}
 
-  @media (min-width: 481px) {
+@media (min-width: var(--bp-tablet)) {
+  .copyright-footer {
+    font-size: 7rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
   }
+}
 
-  @media (min-width: 482px) and (max-width: 960px) {
+@media (min-width: var(--bp-sm-desktop)) {
+  .copyright-footer {
     font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
   }
+}
 
-  @media (min-width: 961px) {
+@media (min-width: var(--bp-desktop)) {
+  .copyright-footer {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: var(--bp-lg-desktop)) {
+  .copyright-footer {
     font-size: 1.3rem;
     display: flex;
     justify-content: center;
