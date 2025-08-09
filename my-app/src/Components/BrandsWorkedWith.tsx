@@ -9,10 +9,7 @@ interface imageElement {
 }
 
 export function BrandsWorkedWith() {
-  const { imageRefs, visibleStates } = useIntersectionVisibleStates(
-    BrandsWorkedWith.length,
-  );
-
+  
   const workedWithBrands: imageElement[] = [
     {
       id: 1,
@@ -120,6 +117,10 @@ export function BrandsWorkedWith() {
       className: 'brand-image',
     },
   ];
+
+  const { imageRefs, visibleStates } = useIntersectionVisibleStates(
+    workedWithBrands.length,
+  );
 
   return (
     <>
