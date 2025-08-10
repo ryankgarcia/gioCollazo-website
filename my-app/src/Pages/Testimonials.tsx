@@ -9,13 +9,33 @@ export function Testimonials() {
           <h2 className="testimonials-header">Testimonials</h2>
         </div>
       </div>
-
       <div className="testimonial-row">
         <div className="testimonial-column-flex-start">
           <div className="testimonial-wrapper">
             <img
+              src="/testimonials-images/Jim-Mathews-Cynthia-Bach.jpeg"
+              alt="Jim-Cynthia-testimonial1"
+              className="testimonial-portrait-img"
+            />
+          </div>
+        </div>
+        <p>
+          Having worked with Gio for over a decade, I can confidently say he has
+          an exceptional eye for style and a natural flair for fashion. His
+          talent for layering and putting looks together allows him to create
+          distinctive, personalized styles that truly bring out the
+          individuality of each client.
+        </p>
+        <p>Jim Mathews & Cynthia Bach</p>
+        <p>Jewelry Designers</p>
+        <p>Los Angeles, California</p>
+      </div>
+      <div className="testimonial-row">
+        <div className="testimonial-column-flex-end">
+          <div className="testimonial-wrapper">
+            <img
               src="/testimonials-images/Sophia-portrait-image.jpeg"
-              alt="Sophia-testimonial1"
+              alt="Sophia-testimonial2"
               className="testimonial-portrait-img"
             />
           </div>
@@ -37,11 +57,11 @@ export function Testimonials() {
         <p>Los Angeles, California</p>
       </div>
       <div className="testimonial-row">
-        <div className="testimonial-column-flex-end">
+        <div className="testimonial-column-flex-start">
           <div className="testimonial-wrapper">
             <img
               src="/testimonials-images/Alex-portrait-closeUp-main.jpeg"
-              alt="Alex-testimonial2"
+              alt="Alex-testimonial3"
               className="testimonial-portrait-img"
             />
           </div>
@@ -61,7 +81,7 @@ export function Testimonials() {
         <p>Los Angeles, California</p>
       </div>
       <div className="testimonial-row">
-        <div className="testimonial-column-flex-start">
+        <div className="testimonial-column-flex-end">
           <div className="testimonial-wrapper">
             <img
               src="/testimonials-images/LC-portrait-closeUp.jpeg"
@@ -85,13 +105,13 @@ export function Testimonials() {
           Coachella! From festivals, weddings, birthdays etc he’s done it all
           for me. He has been styling me since 2022 and will definitely keep
           going back to him. Book him for your next event, job interview,
-          brunch, rave fit… he does it all.
+          brunch, rave fit…he does it all.
         </p>
         <p>LC - Entrepreneur, Influencer, Socialite </p>
         <p>Downey, California</p>
       </div>
       <div className="testimonial-row">
-        <div className="testimonial-column-flex-end">
+        <div className="testimonial-column-flex-start">
           <div className="testimonial-wrapper">
             <img
               src="/testimonials-images/Louie-portrait-closeUp.jpeg"
@@ -126,7 +146,7 @@ export function Testimonials() {
         <p>North Orange County, California</p>
       </div>
       <div className="testimonial-row">
-        <div className="testimonial-column-flex-start">
+        <div className="testimonial-column-flex-end">
           <div className="testimonial-wrapper">
             <img
               src="/testimonials-images/Nicole-portrait-closeUp.jpeg"
@@ -147,7 +167,7 @@ export function Testimonials() {
         <p>Dallas, Texas</p>
       </div>
       <div className="testimonial-row">
-        <div className="testimonial-column-flex-end">
+        <div className="testimonial-column-flex-start">
           <div className="testimonial-wrapper">
             <img
               src="/testimonials-images/Ryan-portrait-closeUp.jpg"
