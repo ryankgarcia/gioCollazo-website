@@ -1,57 +1,106 @@
 .home-container {
+  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   margin: 2%;
-  @media (min-width: 961px) {
-    max-width: 1200px;
+
+  /* this class simulates: iPad Mini, Galaxy Tab S8 */
+  @media (--tablet) {
+    margin: 5%;
+  }
+
+  /* this class simulates: iPad Pro */
+  @media (--sm-desktop) {
+    max-width: 800px;
     margin: 0 auto;
+  }
+
+  /* this class simulates: MacBook Air 13" */
+  @media (--desktop) {
+    max-width: 1200px;
+    margin: 2% auto;
+  }
+
+  /* this class simulates: iMac 24" */
+  @media (--lg-desktop) {
+    max-width: 1500px;
   }
 }
 
 .home-intro-row {
-  @media (min-width: 961px) {
-    display: flex;
-    padding-left: 15%;
+  /* this class simulates: iPad Pro */
+  @media (--sm-desktop) {
+    padding-left: 5%;
+  }
+
+  /* this class simulates: MacBook Air 13" */
+  @media (--desktop) {
+    /* display: flex; */
+    padding-left: 20%;
     margin-top: 50px;
   }
 }
 
 .home-img-row {
-  @media (min-width: 961px) {
-    display: flex;
-    justify-content: center;
-  }
+  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
+  display: flex;
+  justify-content: center;
 }
 
 .home-row {
-  @media (min-width: 961px) {
+  /* this class simulates: iPad Pro */
+  @media (--sm-desktop) {
     display: flex;
   }
 }
 
 .gio-intro-name {
+  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   font-size: 2rem;
   font-weight: bold;
   display: flex;
   justify-content: center;
-  @media (min-width: 961px) {
-    font-size: 2rem;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-optical-sizing: auto;
+
+  /* this class simulates: iPad Mini, Galaxy Tab S8 */
+  @media (--tablet) {
+    font-size: 2.3rem;
+  }
+
+  /* this class simulates: iPad Pro */
+  @media (--sm-desktop) {
+    font-size: 2.5rem;
+  }
+
+  /* this class simulates: MacBook Air 13" */
+  @media (--desktop) {
+    font-size: 2.7rem;
+  }
+
+  /* this class simulates: iMac 24" */
+  @media (--lg-desktop) {
+    font-size: 3rem;
   }
 }
 
 .gio-intro-title {
+  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   font-size: 2.3rem;
   font-weight: bold;
   display: flex;
   justify-content: center;
-  @media (min-width: 961px) {
-    font-size: 2rem;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-optical-sizing: auto;
+
+  /* this class simulates: iPad Mini, Galaxy Tab S8 */
+  @media (--tablet) {
+  }
+
+  /* this class simulates: iPad Pro */
+  @media (--sm-desktop) {
+  }
+
+  /* this class simulates: MacBook Air 13" */
+  @media (--desktop) {
+  }
+
+  /* this class simulates: iMac 24" */
+  @media (--lg-desktop) {
   }
 }
 
@@ -93,7 +142,7 @@
 
 .home-GC-coverImage2 {
   width: 265px;
-  margin-left: 15%;
+  /* margin-left: 15%; */
   margin-bottom: 1.2rem;
   border-radius: 8px;
   margin-top: 1.4rem;
@@ -240,3 +289,21 @@
   @media (min-width: 961px) {
   }
 }
+
+/* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro
+
+  this class simulates: iPad Mini, Galaxy Tab S8
+  @media (--tablet) {
+  }
+
+  this class simulates: iPad Pro
+  @media (--sm-desktop) {
+  }
+
+  this class simulates: MacBook Air 13"
+  @media (--desktop) {
+  }
+
+  this class simulates: iMac 24"
+  @media (--lg-desktop) {
+  } */
