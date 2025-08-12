@@ -9,7 +9,6 @@ interface imageElement {
 }
 
 export function BrandsWorkedWith() {
-  
   const workedWithBrands: imageElement[] = [
     {
       id: 1,
