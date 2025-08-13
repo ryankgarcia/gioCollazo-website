@@ -1,13 +1,13 @@
-import { Link } from 'react-router-dom';
 import './AboutLayout.css';
+import { Link } from 'react-router-dom';
 import { Footer } from '../Components/Footer';
 
 export function AboutMe() {
   return (
     <div className="about-container">
-      <h2 className="imGio-header">Hello.</h2>
-      <h2 className="imGio-header-2"> I'm Giovanny Collazo!</h2>
-      <p>
+      <h2 className="hello-header">Hello.</h2>
+      <h2 className="imGio-header"> I'm Giovanny Collazo!</h2>
+      <p className="about-text">
         Born and raised in Los Angeles, Giovanny Collazo is a proud Latino
         personal stylist whose passion for fashion was ignited in the early
         2000s, inspired by iconic trendsetters like Nicole Richie, Paris Hilton,
@@ -17,7 +17,7 @@ export function AboutMe() {
         bold, neon-infused aesthetic began to take shape—mixing streetwear with
         high-fashion edge and futuristic flair.
       </p>
-      <p>
+      <p className="about-text">
         In 2015, Giovanny graduated from the renowned “School of Style,” where
         he gained the foundation to launch a successful career in fashion. After
         interning with several top stylists, he carved his own path as a
@@ -28,7 +28,6 @@ export function AboutMe() {
         themselves.
       </p>
       <div className="about-row">
-        {/* <div className="about-column-full"> */}
         <div className="aboutMe-imageWrapper">
           <img
             className="aboutMe-image"
@@ -50,7 +49,6 @@ export function AboutMe() {
             alt="Professional Stylist - Giovanny Collazo - StyledByGio - image 3"
           />
         </div>
-        {/* </div> */}
       </div>
       <div className="about-row">
         <div className="about-column-full">

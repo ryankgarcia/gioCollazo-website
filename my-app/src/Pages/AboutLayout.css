@@ -1,32 +1,57 @@
 .about-container {
+  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   margin: 2%;
-  @media (min-width: 961px) {
-    max-width: 1200px;
+
+  /* this class simulates: iPad Mini, Galaxy Tab S8 */
+  @media (--tablet) {
+    margin: 5%;
+  }
+
+  /* this class simulates: iPad Pro */
+  @media (--sm-desktop) {
+    max-width: 800px;
     margin: 0 auto;
+  }
+
+  /* this class simulates: MacBook Air 13" */
+  @media (--desktop) {
+    max-width: 1200px;
+    margin: 2% auto;
+  }
+
+  /* this class simulates: iMac 24" */
+  @media (--lg-desktop) {
+    max-width: 1500px;
+  }
+}
+
+.hello-header {
+  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
+  font-size: 4rem;
+  color: #fbfbfb;
+  display: flex;
+  justify-content: center;
+
+  /* this class simulates: iPad Mini, Galaxy Tab S8 */
+  @media (--tablet) {
+    font-size: 5rem;
   }
 }
 
 .imGio-header {
-  font-size: 3.5rem;
-  color: #fbfbfb;
-  display: flex;
-  justify-content: center;
-  @media (min-width: 481px) {
-    font-size: 3.5rem;
-  }
-}
-
-.imGio-header-2 {
+  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   font-size: 2.7rem;
   color: #fbfbfb;
   display: flex;
   justify-content: center;
-  @media (min-width: 481px) {
-    font-size: 3.5rem;
+
+  /* this class simulates: iPad Mini, Galaxy Tab S8 */
+  @media (--tablet) {
+    font-size: 4.5rem;
   }
 }
 
-@media (min-width: 961px) {
+@media (--sm-desktop) {
   .about-row {
     display: flex;
   }
@@ -42,6 +67,7 @@
 }
 
 .about-button {
+  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,23 +78,29 @@
   font-size: 1.4rem;
   border-radius: 3rem;
   text-decoration: none;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 20%;
+  margin-bottom: 20%;
   cursor: pointer;
-  @media (min-width: 961px) {
-    margin-top: 5%;
+
+  /* this class simulates: iPad Mini, Galaxy Tab S8 */
+  @media (--tablet) {
+    width: 16rem;
+    height: 5.5rem;
+    font-size: 1.6rem;
+    margin-top: 15%;
+    margin-bottom: 15%;
   }
 }
 
 .about-button:hover {
-  transition-property: unset;
   background-color: white;
   color: #610ad1;
 }
 
 .aboutMe-imageWrapper {
   width: 100%;
-  padding-top: 1rem;
+  height: 800px;
+  padding-top: 3rem;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -82,15 +114,45 @@
   display: block;
 }
 
-@media (min-width: 961px) {
+@media (--sm-desktop) {
   .aboutMe-imageWrapper {
-    justify-content: flex-start;
-    padding-left: 5%;
+    /* justify-content: flex-start; */
+    justify-content: center;
+    padding-left: 2%;
   }
 
   .aboutMe-image {
     max-width: 700px;
     margin-right: 5%;
     object-fit: cover;
+  }
+}
+
+.about-text {
+/* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
+  font-size: 1.4rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  /* font-optical-sizing: auto; */
+
+  /* this class simulates: iPad Mini, Galaxy Tab S8 */
+  @media (--tablet) {
+    font-size: 1.6rem;
+  }
+
+  /* this class simulates: iPad Pro */
+  @media (--sm-desktop) {
+    font-size: 1.8rem;
+  }
+
+  /* this class simulates: MacBook Air 13" */
+  @media (--desktop) {
+    font-size: 2.1rem;
+  }
+
+  /* this class simulates: iMac 24" */
+  @media (--lg-desktop) {
+    font-size: 2.5rem;
   }
 }
