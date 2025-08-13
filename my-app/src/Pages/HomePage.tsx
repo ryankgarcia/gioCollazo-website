@@ -24,12 +24,12 @@ export function HomePage() {
           className="home-GC-mainCoverImage"
         />
         <div className="home-intro-row">
-          <div className="home-column-full">
-            <p className="gio-intro-name">Giovanny Collazo</p>
-            <p className="gio-intro-title">Personal Stylist</p>
-            <p className="gio-intro-text">Styling men & women since 2015</p>
-          </div>
+          {/* <div className="home-column-full"> */}
+          <p className="gio-intro-name">Giovanny Collazo</p>
+          <p className="gio-intro-title">Personal Stylist</p>
+          <p className="gio-intro-est-2015">Styling men & women since 2015</p>
         </div>
+        {/* </div> */}
       </div>
       <p className="home-text">
         Bringing the best out of YOU. Focusing on what is comfortable,
@@ -50,12 +50,12 @@ export function HomePage() {
       </div>
       <h2 className="home-bts-header">Behind The Scenes</h2>
       <div className="home-row">
-        <div className="home-column-full">
-          <div className="video-container-H">
-            <video className="video-H" controls muted>
-              <source src="/BTS-stylingForVideoShoot.mp4" type="video/mp4" />
-            </video>
-          </div>
+        {/* <div className="home-column-full"> */}
+        <div className="video-container-H">
+          <video className="video-H" controls muted>
+            <source src="/BTS-stylingForVideoShoot.mp4" type="video/mp4" />
+          </video>
+          {/* </div> */}
         </div>
       </div>
       <div className="home-row">

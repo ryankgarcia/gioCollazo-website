@@ -89,71 +89,116 @@
 
   /* this class simulates: iPad Mini, Galaxy Tab S8 */
   @media (--tablet) {
+    font-size: 2.6rem;
   }
 
   /* this class simulates: iPad Pro */
   @media (--sm-desktop) {
+    font-size: 2.8rem;
   }
 
   /* this class simulates: MacBook Air 13" */
   @media (--desktop) {
+    font-size: 3rem;
   }
 
   /* this class simulates: iMac 24" */
   @media (--lg-desktop) {
+    font-size: 3.5rem;
   }
 }
 
-.gio-intro-text {
+.gio-intro-est-2015 {
+  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   font-size: 1.4rem;
   font-weight: bold;
   display: flex;
   justify-content: center;
-  @media (min-width: 961px) {
+
+  /* this class simulates: iPad Mini, Galaxy Tab S8 */
+  @media (--tablet) {
+    font-size: 1.7rem;
+  }
+
+  /* this class simulates: iPad Pro */
+  @media (--sm-desktop) {
     font-size: 2rem;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-optical-sizing: auto;
+  }
+
+  /* this class simulates: MacBook Air 13" */
+  @media (--desktop) {
+    font-size: 2.2rem;
+  }
+
+  /* this class simulates: iMac 24" */
+  @media (--lg-desktop) {
+    font-size: 2.5rem;
   }
 }
 
 .home-text {
+  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   font-size: 1.4rem;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-optical-sizing: auto;
-}
+  /* font-optical-sizing: auto; */
 
-.home-column-third {
-  max-width: 60%;
-  justify-content: flex-start;
+  /* this class simulates: iPad Mini, Galaxy Tab S8 */
+  @media (--tablet) {
+    font-size: 1.6rem;
+  }
+
+  /* this class simulates: iPad Pro */
+  @media (--sm-desktop) {
+    font-size: 1.8rem;
+  }
+
+  /* this class simulates: MacBook Air 13" */
+  @media (--desktop) {
+    font-size: 2.1rem;
+  }
+
+  /* this class simulates: iMac 24" */
+  @media (--lg-desktop) {
+    font-size: 2.5rem;
+  }
 }
 
 .home-column-full {
   flex-basis: 100%;
 }
 
-.home-GC-introduction {
-  display: flex;
-  justify-content: center;
-}
-
 .home-GC-coverImage2 {
+  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   width: 265px;
-  /* margin-left: 15%; */
+  margin-top: 1.4rem;
   margin-bottom: 1.2rem;
   border-radius: 8px;
-  margin-top: 1.4rem;
-  @media (min-width: 961px) {
-    display: flex;
-    justify-content: center;
-    margin-left: 0%;
+
+  /* this class simulates: iPad Mini, Galaxy Tab S8 */
+  @media (--tablet) {
+    width: 300px;
+  }
+
+  /* this class simulates: iPad Pro */
+  @media (--sm-desktop) {
+    width: 345px;
+  }
+
+  /* this class simulates: MacBook Air 13" */
+  @media (--desktop) {
+    width: 375px;
+  }
+
+  /* this class simulates: iMac 24" */
+  @media (--lg-desktop) {
+    width: 425px;
   }
 }
 
 .home-GC-mainCoverImage {
+  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   width: 265px;
   margin-left: 15%;
   margin-bottom: 1.2rem;
@@ -161,10 +206,28 @@
   border-radius: 8px;
   margin-top: 1.4rem;
   animation: breathe 4.5s ease-in-out infinite;
-  @media (min-width: 961px) {
-    display: flex;
-    justify-content: center;
+
+  /* this class simulates: iPad Mini, Galaxy Tab S8 */
+  @media (--tablet) {
+    width: 275px;
+    margin-left: 30%;
+  }
+
+  /* this class simulates: iPad Pro */
+  @media (--sm-desktop) {
     margin-left: 0%;
+  }
+
+  /* this class simulates: MacBook Air 13" */
+  @media (--desktop) {
+    width: 325px;
+    margin-left: 2.5%;
+  }
+
+  /* this class simulates: iMac 24" */
+  @media (--lg-desktop) {
+    width: 400px;
+    margin-left: 5%;
   }
 }
 
@@ -178,31 +241,26 @@
   }
 }
 
-.home-image-left {
-  display: flex;
-  justify-content: center;
-  padding-right: 2.1rem;
-  border-radius: 3px;
-  width: 250px;
-  margin-left: 20%;
-  margin-bottom: 1.5rem;
-  transition: transform 0.3s;
-  @media (min-width: 480px) {
-    margin-left: 30%;
-    margin-bottom: 2rem;
-  }
-}
-
-.home-image-left:hover {
-  transform: translateY(-1.2rem) scale(1.03) rotateZ(-3deg);
-}
-
 .home-style-highlights,
 .home-bts-header {
+  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   color: #fbfbfb;
-  display: flex;
-  justify-content: center;
   font-size: 3rem;
+
+  /* this class simulates: iPad Mini, Galaxy Tab S8 */
+  @media (--tablet) {
+    font-size: 4rem;
+  }
+
+  /* this class simulates: iPad Pro */
+  @media (--sm-desktop) {
+    font-size: 6.5rem;
+  }
+
+  /* this class simulates: iMac 24" */
+  @media (--lg-desktop) {
+    font-size: 8rem;
+  }
 }
 
 .home-column-brands,
@@ -213,34 +271,47 @@
 }
 
 .home-brandsWorkedW {
+  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   font-size: 2.2rem;
-  @media (min-width: 961px) {
-    font-size: 3.5rem;
+
+  /* this class simulates: iPad Mini, Galaxy Tab S8 */
+  @media (--tablet) {
+    font-size: 4rem;
+  }
+
+  /* this class simulates: iPad Pro */
+  @media (--sm-desktop) {
+    font-size: 5rem;
+  }
+
+  /* this class simulates: MacBook Air 13" */
+  @media (--desktop) {
+    font-size: 6.5rem;
+  }
+
+  /* this class simulates: iMac 24" */
+  @media (--lg-desktop) {
+    font-size: 8rem;
   }
 }
 
 .video-container-H {
-  padding-top: 3rem;
-  @media (min-width: 961px) {
-  }
+  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
+  padding-top: 2rem;
 }
 
 .video-H {
+  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
 .video-container-V {
-  padding-top: 3rem;
-  margin-top: 0.3rem;
+  padding-top: 2rem;
   margin-bottom: 1.5rem;
-  flex: 0 0 50%;
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
-  @media (min-width: 961px) {
-  }
 }
 
 .video-V {
@@ -248,20 +319,22 @@
   height: 500px;
   object-fit: fill;
   margin: 3.5rem 3.5rem;
-}
 
-.bts-photos-padding {
-  padding-top: 5rem;
-}
+  /* this class simulates: iPad Mini, Galaxy Tab S8 */
+  @media (--tablet) {
+    width: 350px;
+    height: 700px;
+  }
 
-.home-brands-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+  /* this class simulates: iPad Pro */
+  @media (--sm-desktop) {
+    width: 450px;
+    height: 900px;
+  }
 }
 
 .learn-more {
+  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -273,37 +346,49 @@
   border-radius: 3rem;
   text-decoration: none;
   cursor: pointer;
+
+  /* this class simulates: iPad Mini, Galaxy Tab S8 */
+  @media (--tablet) {
+    width: 16rem;
+    height: 5.5rem;
+    font-size: 1.6rem;
+  }
+
+  /* this class simulates: iPad Pro */
+  @media (--sm-desktop) {
+    width: 18rem;
+    height: 6.5rem;
+    font-size: 1.8rem;
+    border-radius: 3.5rem;
+  }
+
+  /* this class simulates: MacBook Air 13" */
+  @media (--desktop) {
+    width: 21rem;
+    height: 7.5rem;
+    border-radius: 4rem;
+    font-size: 2.2rem;
+  }
+
+  /* this class simulates: iMac 24" */
+  @media (--lg-desktop) {
+  }
 }
 
 .learn-more:hover {
-  transition-property: unset;
   background-color: white;
   color: #610ad1;
 }
 
 .home-center-button {
+  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   margin-top: 7%;
-  margin-bottom: 7%;
+  margin-bottom: 17%;
   display: flex;
   justify-content: center;
-  @media (min-width: 961px) {
+
+  /* this class simulates: iPad Pro */
+  @media (--sm-desktop) {
+    margin-bottom: 5%;
   }
 }
-
-/* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro
-
-  this class simulates: iPad Mini, Galaxy Tab S8
-  @media (--tablet) {
-  }
-
-  this class simulates: iPad Pro
-  @media (--sm-desktop) {
-  }
-
-  this class simulates: MacBook Air 13"
-  @media (--desktop) {
-  }
-
-  this class simulates: iMac 24"
-  @media (--lg-desktop) {
-  } */
