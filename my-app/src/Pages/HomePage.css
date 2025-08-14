@@ -1,30 +1,3 @@
-.home-container {
-  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
-  margin: 2%;
-
-  /* this class simulates: iPad Mini, Galaxy Tab S8 */
-  @media (--tablet) {
-    margin: 5%;
-  }
-
-  /* this class simulates: iPad Pro */
-  @media (--sm-desktop) {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  /* this class simulates: MacBook Air 13" */
-  @media (--desktop) {
-    max-width: 1200px;
-    margin: 2% auto;
-  }
-
-  /* this class simulates: iMac 24" */
-  @media (--lg-desktop) {
-    max-width: 1500px;
-  }
-}
-
 .home-intro-row {
   /* this class simulates: iPad Pro */
   @media (--sm-desktop) {
@@ -300,13 +273,6 @@
   padding-top: 2rem;
 }
 
-.video-H {
-  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
 .video-container-V {
   padding-top: 2rem;
   margin-bottom: 1.5rem;
@@ -376,12 +342,10 @@
   color: #610ad1;
 }
 
-.home-center-button {
+.home-button-margin {
   /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   margin-top: 7%;
   margin-bottom: 17%;
-  display: flex;
-  justify-content: center;
 
   /* this class simulates: iPad Pro */
   @media (--sm-desktop) {

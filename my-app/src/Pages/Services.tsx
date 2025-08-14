@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 import { Footer } from '../Components/Footer';
+import './PagesCssInCommon.css';
 import './Services.css';
 
 export function Services() {
   return (
-    <div className="services-container">
+    <div className="page-container">
       <h3 className="service-headerMain">A La Carte</h3>
       <p></p>
       <p></p>
@@ -28,7 +29,7 @@ export function Services() {
       <p>
         <span className="emoji-large">✅</span>
       </p>
-      <div className="services-center-button">
+      <div className="button-center">
         <Link to="/contact" className="book-session">
           Book Your Session
         </Link>
@@ -58,7 +59,7 @@ export function Services() {
       </p>
       <p>Ready for your wardrobe glow-up? </p> <p>Let's make it personal.</p>
       <p>Let's make it fashion. 💅</p>
-      <div className="services-center-button">
+      <div className="button-center">
         <Link to="/contact" className="book-session">
           Book Your Session
         </Link>
@@ -89,7 +90,7 @@ export function Services() {
       <p>
         <span className="emoji-large">✅</span>
       </p>
-      <div className="services-center-button">
+      <div className="button-center">
         <Link to="/contact" className="book-session">
           Book Your Session
         </Link>

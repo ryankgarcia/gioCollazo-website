@@ -1,10 +1,11 @@
+import './PagesCssInCommon.css';
 import './AboutLayout.css';
 import { Link } from 'react-router-dom';
 import { Footer } from '../Components/Footer';
 
 export function AboutMe() {
   return (
-    <div className="about-container">
+    <div className="page-container">
       <h2 className="hello-header">Hello.</h2>
       <h2 className="imGio-header"> I'm Giovanny Collazo!</h2>
       <p className="about-text">
@@ -52,7 +53,7 @@ export function AboutMe() {
       </div>
       <div className="about-row">
         <div className="about-column-full">
-          <div className="about-button-center">
+          <div className="button-center">
             <Link className="about-button" to="/services">
               Learn More. . .
             </Link>

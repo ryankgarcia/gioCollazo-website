@@ -2,6 +2,7 @@ import { lazy, Suspense } from 'react';
 import { Footer } from '../Components/Footer';
 import Loading from '../Components/LoadingImage';
 import { Link } from 'react-router-dom';
+import './PagesCssInCommon.css';
 import './HomePage.css';
 
 const LazyLoadStyleHighlights = lazy(
@@ -14,7 +15,7 @@ const LazyLoadBrands = lazy(() => import('../Components/BrandsWorkedWith'));
 
 export function HomePage() {
   return (
-    <div className="home-container">
+    <div className="page-container">
       <div className="home-row">
         <img
           // delete this relative path image when finalizing project if its
@@ -79,7 +80,7 @@ export function HomePage() {
       </div>
       <div className="home-row">
         <div className="home-column-full">
-          <div className="home-center-button">
+          <div className="button-center home-button-margin">
             <Link to="/about" className="learn-more">
               Learn more...
             </Link>

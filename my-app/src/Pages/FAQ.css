@@ -1,32 +1,21 @@
 .FAQ-header-main {
-  font-size: 2rem;
-  text-decoration: underline;
-  padding-top: 2rem;
-  padding-left: 1rem;
-  margin-bottom: 2.5rem;
-  @media (min-width: 961px) {
+  font-size: 3rem;
+  @media (--sm-desktop) {
     font-size: 5rem;
   }
 }
 
+
 .FAQ-question {
   font-size: 1.5rem;
-  @media (min-width: 961px) {
+  @media (--sm-desktop) {
     font-size: 2.5rem;
   }
 }
 
 .FAQ-answer {
   font-size: 1.2rem;
-  @media (min-width: 961px) {
+  @media (--sm-desktop) {
     font-size: 1.5rem;
-  }
-}
-
-.FAQ-container {
-  margin: 2%;
-  @media (min-width: 961px) {
-    max-width: 1200px;
-    margin: 0 auto;
   }
 }

@@ -1,9 +1,10 @@
 import { Footer } from '../Components/Footer';
+import './PagesCssInCommon.css';
 import './Testimonials.css';
 
 export function Testimonials() {
   return (
-    <div className="testimonial-container">
+    <div className="page-container">
       <div className="testimonial-row">
         <div className="testimonial-column-full">
           <h2 className="testimonials-header">Testimonials</h2>

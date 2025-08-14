@@ -1,27 +1,28 @@
 import { Footer } from '../Components/Footer';
 import { WorkWithMe } from '../Components/WorkWithMe - Form';
+import './PagesCssInCommon.css';
 import './Contact.css';
 
 export function ContactPage() {
   return (
-    <div className="contactPage-container">
+    <div className="page-container">
       <h2 className="workWMe-header">Hello.</h2>
       <h2 className="workWMe-header">Welcome.</h2>
       <div className="contact-row">
-        <div className="contact-column-full">
-          <h3 className="second-header">
+        <div className="column-full">
+          <h3 className="second-header text-center">
             Please enter your information below so we can discuss how I can
             help.
           </h3>
         </div>
         <div className="contact-row">
-          <div className="contact-column-full">
+          <div className="column-full">
             <WorkWithMe />
           </div>
         </div>
       </div>
       <div className="contact-row">
-        <div className="stylist-image-container">
+        <div className="image-center">
           <img
             src="/Gio-hotel-seated.jpg"
             alt="Giovanny Collazo - Professional Wardrobe Stylist"

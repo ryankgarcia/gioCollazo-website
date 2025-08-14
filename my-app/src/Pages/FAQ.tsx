@@ -1,10 +1,12 @@
 import { Footer } from '../Components/Footer';
+import './PagesCssInCommon.css';
 import './FAQ.css';
 
 export function FAQ() {
   return (
-    <div className="FAQ-container">
-      <h2 className="FAQ-header-main">Frequently Asked Questions</h2>
+    <div className="page-container">
+      <h2 className="FAQ-header-main">Frequently Asked</h2>
+      <h2 className="FAQ-header-main">Questions</h2>
       <p className="FAQ-question">Q: What is a Wardrobe Stylist?</p>
       <p className="FAQ-answer">
         A style expert is a wardrobe professional who helps clients uncover
@@ -49,6 +51,7 @@ export function FAQ() {
         Q: How much does it cost? What is the budget I should expect for new
         clothes?
       </p>
+      {/* the answer below needs to be rephrased */}
       <p className="FAQ-answer">
         My rates are reasonably priced and designed to be budget-friendly. As
         for your wardrobe budget, that’s completely up to you. It all depends on

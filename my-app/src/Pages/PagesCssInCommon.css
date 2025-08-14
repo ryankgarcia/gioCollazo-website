@@ -1,0 +1,54 @@
+/* this css ruleset sheet aims to make the css scalable and reduce changes on multiple pages
+when necessary */
+
+/* main container for each page is below */
+.page-container {
+  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
+  margin: 2%;
+
+  /* this class simulates: iPad Mini, Galaxy Tab S8 */
+  @media (--tablet) {
+    margin: 5%;
+  }
+
+  /* this class simulates: iPad Pro */
+  @media (--sm-desktop) {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* this class simulates: MacBook Air 13" */
+  @media (--desktop) {
+    max-width: 1200px;
+    margin: 2% auto;
+  }
+
+  /* this class simulates: iMac 24" */
+  @media (--lg-desktop) {
+    max-width: 1500px;
+  }
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+/* centering of any element on the site */
+.button-center,
+.image-center,
+.text-center {
+  display: flex;
+  justify-content: center;
+}
+
+/* all rows on the site */
+.flex-row {
+  display: flex;
+}
+
+/* all video element dimensions on the site */
+.video-H {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
