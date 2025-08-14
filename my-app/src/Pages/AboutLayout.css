@@ -51,9 +51,10 @@
   }
 }
 
-@media (--sm-desktop) {
+@media (--tablet) {
   .about-row {
     display: flex;
+    justify-content: center;
   }
 
   .about-column-full {
@@ -134,15 +135,19 @@
 } */
 
 .aboutMe-imageWrapper {
+  margin-top: 5%;
   width: 100%;
   max-width: 400px;
   /* aspect-ratio: 4 / 10; */
-  aspect-ratio: 4 / 10;
+  aspect-ratio: 5 / 12;
+  /* aspect-ratio: 3 / 8; */
   overflow: hidden;
   border-radius: 12px;
   display: flex;
   justify-content: center;
-  margin-left: 2%;
+  @media (--tablet) {
+    margin-left: 2%;
+  }
 }
 
 .aboutMe-image {
