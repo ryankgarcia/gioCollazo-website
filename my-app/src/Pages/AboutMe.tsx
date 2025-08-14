@@ -30,7 +30,7 @@ export function AboutMe() {
       <div className="about-row">
         <div className="aboutMe-imageWrapper">
           <img
-            className="aboutMe-image about-object-cover about-object-top"
+            className="aboutMe-image about-object-top"
             src="/Gio-purple-about-page.jpeg"
             alt="Professional Stylist - Giovanny Collazo - StyledByGio - image 1"
           />
@@ -44,7 +44,7 @@ export function AboutMe() {
         </div>
         <div className="aboutMe-imageWrapper">
           <img
-            className="aboutMe-image about-object-cover about-object-top"
+            className="aboutMe-image about-object-top"
             src="/Gio-w-shades.jpg"
             alt="Professional Stylist - Giovanny Collazo - StyledByGio - image 3"
           />

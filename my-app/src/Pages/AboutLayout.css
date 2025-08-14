@@ -98,49 +98,11 @@
   color: #610ad1;
 }
 
-/* .aboutMe-imageWrapper {
-  width: 100%;
-  height: auto;
-  padding-top: 1rem;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-
-  @media (--sm-desktop) {
-    padding-left: 2%;
-    padding-top: 3rem;
-    max-height: 600px;
-    max-width: 400px;
-  }
-  @media (--desktop) {
-  }
-}
-
-.aboutMe-image {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 12px;
-  display: block;
-}
-
-.about-object-fill {
-  object-position: top;
-  object-fit: fill;
-}
-
-.about-object-cover {
-  object-position: top;
-  object-fit: cover;
-} */
-
 .aboutMe-imageWrapper {
   margin-top: 5%;
   width: 100%;
   max-width: 400px;
-  /* aspect-ratio: 4 / 10; */
   aspect-ratio: 5 / 12;
-  /* aspect-ratio: 3 / 8; */
   overflow: hidden;
   border-radius: 12px;
   display: flex;
