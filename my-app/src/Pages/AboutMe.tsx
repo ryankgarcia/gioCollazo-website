@@ -30,21 +30,21 @@ export function AboutMe() {
       <div className="about-row">
         <div className="aboutMe-imageWrapper">
           <img
-            className="aboutMe-image"
+            className="aboutMe-image about-object-cover about-object-top"
             src="/Gio-purple-about-page.jpeg"
             alt="Professional Stylist - Giovanny Collazo - StyledByGio - image 1"
           />
         </div>
         <div className="aboutMe-imageWrapper">
           <img
-            className="aboutMe-image"
+            className="aboutMe-image about-object-fill"
             src="/Gio-stylist-bluebackground.jpg"
             alt="Professional Stylist - Giovanny Collazo - StyledByGio - image 2"
           />
         </div>
         <div className="aboutMe-imageWrapper">
           <img
-            className="aboutMe-image"
+            className="aboutMe-image about-object-cover about-object-top"
             src="/Gio-w-shades.jpg"
             alt="Professional Stylist - Giovanny Collazo - StyledByGio - image 3"
           />
