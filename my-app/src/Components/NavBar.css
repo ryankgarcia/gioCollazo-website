@@ -9,20 +9,10 @@
 }
 
 .navBarHeader {
-  /* background-color: #610ad1; */
-  /* original color is 610ad1*/
   background-color: #900fbf;
-  /* background-color: #ebcff8; */
-  /* background-color: #996cb7; */
-  /* background-color: #8256d0; */
-  /* background-color: #e0a3f8; */
-  /* background-color: #d7b8ec; */
   color: #fbfbfb;
-  /* width: 100%; */
   padding-top: 1rem;
   padding-bottom: 1rem;
-  /* display: flex; */
-  /* justify-content: space-evenly; */
   @media (min-width: 961px) {
     /* display: flex; */
     /* justify-content: space-evenly; */
@@ -31,8 +21,8 @@
 
 h2 {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   font-family: 'Dancing Script', cursive;
   color: #fbfbfb;
   @media (min-width: 481px) {
@@ -69,11 +59,6 @@ h2 {
   display: flex;
   justify-content: flex-end;
   flex-basis: 100%;
-  /* font-family: oswald;
-  font-size: 3.1rem;
-  @media (min-width: 481px) {
-    font-size: 5rem;
-  } */
 }
 
 .nav-column-quarter {
@@ -85,7 +70,6 @@ h2 {
 .services-link,
 .testimonials-link,
 .contact-link {
-  /* color: #610AD1; */
   color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.5rem;
@@ -102,7 +86,6 @@ h2 {
   max-height: 0;
   overflow: hidden;
   background-color: #900fbf;
-  /* background-color: #610ad1; */
   border-bottom: 8px solid white;
   transform: translateY(-20px);
   opacity: 0;

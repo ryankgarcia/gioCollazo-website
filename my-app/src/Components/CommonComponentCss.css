@@ -84,6 +84,14 @@
   transform: translateY(100px);
 }
 
+/* move these back into their respective locations in the footer component. do not delete them until that is complete. */
+/* .icon-center,
+.row-center,
+.link-center {
+  display: flex;
+  justify-content: center;
+} */
+
 /* image positioning on a card element */
 .object-fit-cover {
   object-fit: cover;
