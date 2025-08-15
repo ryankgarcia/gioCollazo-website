@@ -81,7 +81,7 @@ export function HomePage() {
       <div className="home-row">
         <div className="column-full">
           <div className="button-center home-button-margin">
-            <Link to="/about" className="learn-more text-center">
+            <Link to="/about" className="button text-center">
               Learn more...
             </Link>
           </div>

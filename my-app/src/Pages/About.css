@@ -1,14 +1,3 @@
-/* .hello-header {
-  this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro
-  font-size: 4rem;
-  color: #fbfbfb;
-
-  this class simulates: iPad Mini, Galaxy Tab S8
-  @media (--tablet) {
-    font-size: 5rem;
-  }
-} */
-
 .imGio-header {
   /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   font-size: 2.7rem;
@@ -31,33 +20,14 @@
   }
 }
 
-.about-button {
-  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
-  align-items: center;
-  background-color: #610ad1;
-  color: white;
-  width: 15rem;
-  height: 5rem;
-  font-size: 1.4rem;
-  border-radius: 3rem;
-  text-decoration: none;
+.about-button-margin {
   margin-top: 20%;
   margin-bottom: 20%;
-  cursor: pointer;
 
-  /* this class simulates: iPad Mini, Galaxy Tab S8 */
   @media (--tablet) {
-    width: 16rem;
-    height: 5.5rem;
-    font-size: 1.6rem;
     margin-top: 15%;
     margin-bottom: 15%;
   }
-}
-
-.about-button:hover {
-  background-color: white;
-  color: #610ad1;
 }
 
 .aboutMe-imageWrapper {

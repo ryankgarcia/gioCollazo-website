@@ -2,7 +2,6 @@ import { lazy, Suspense } from 'react';
 import { Footer } from '../Components/Footer';
 import Loading from '../Components/LoadingImage';
 import './PagesCssInCommon.css';
-import './Gallery.css';
 
 const LazyLoadGalleryImages = lazy(() => import('../Components/GalleryImages'));
 

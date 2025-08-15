@@ -1,11 +1,3 @@
-/* .workWMe-header {
-  font-size: 4rem;
-
-  @media (--sm-desktop) {
-    font-size: 5rem;
-  }
-} */
-
 .contact-row {
   @media (min-width: 481px){
     display: flex;
@@ -45,8 +37,6 @@
     transform: rotate(-3deg);
   }
 }
-
-
 
 .second-header {
   margin-top: 10%;

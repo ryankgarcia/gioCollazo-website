@@ -2,7 +2,7 @@
   font-size: 3rem;
   color: #fbfbfb;
   font-family: 'Dancing Script', cursive;
-  
+
   @media (--tablet) {
     font-size: 4rem;
   }

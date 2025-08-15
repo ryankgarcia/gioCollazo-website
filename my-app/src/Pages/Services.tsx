@@ -25,7 +25,7 @@ export function Services() {
       <p className="p-text">✅</p>
       <p className="p-text">✅</p>
       <div className="button-center">
-        <Link to="/contact" className="book-session text-center">
+        <Link to="/contact" className="button services-button-margin text-center">
           Book Your Session
         </Link>
       </div>
@@ -47,7 +47,7 @@ export function Services() {
       <p className="p-text">Ready for your wardrobe glow-up? </p> <p className="p-text">Let's make it personal.</p>
       <p className="p-text">Let's make it fashion. 💅</p>
       <div className="button-center">
-        <Link to="/contact" className="book-session text-center">
+        <Link to="/contact" className="button services-button-margin text-center">
           Book Your Session
         </Link>
       </div>
@@ -70,7 +70,7 @@ export function Services() {
       <p className="p-text">✅</p>
       <p className="p-text">✅</p>
       <div className="button-center">
-        <Link to="/contact" className="book-session text-center">
+        <Link to="/contact" className="button services-button-margin text-center">
           Book Your Session
         </Link>
       </div>

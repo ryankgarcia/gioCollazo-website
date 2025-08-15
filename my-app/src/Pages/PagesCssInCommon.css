@@ -1,5 +1,36 @@
 /* this css ruleset sheet aims to make the CSS scalable and reduce changes on multiple pages */
 
+/* call to action button design */
+.button {
+  align-items: center;
+  background-color: #610ad1;
+  color: white;
+  width: 15rem;
+  height: 5rem;
+  font-size: 1.4rem;
+  border-radius: 3rem;
+  text-decoration: none;
+  cursor: pointer;
+
+  @media (--tablet) {
+    width: 16rem;
+    height: 5.5rem;
+    font-size: 1.6rem;
+  }
+
+  @media (--sm-desktop) {
+    width: 18rem;
+    height: 6.5rem;
+    font-size: 1.8rem;
+    border-radius: 3.5rem;
+  }
+}
+
+.button:hover {
+  background-color: white;
+  color: #610ad1;
+}
+
 /* centering of any element on the site */
 .button-center,
 .image-center,
@@ -9,7 +40,7 @@
   justify-content: center;
 }
 
-/* width 100% of page */
+/* width 100% of space */
 .column-full {
   flex-basis: 100%;
 }
@@ -35,7 +66,7 @@
   }
 }
 
-/* the class that represents paragraphs or sentences of text */
+/* represents paragraphs or sentences of text */
 .p-text {
   font-size: 1.2rem;
 
@@ -48,7 +79,7 @@
   }
 }
 
-/* main container for each page is below */
+/* main container for each page */
 .page-container {
   /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   margin: 2%;
