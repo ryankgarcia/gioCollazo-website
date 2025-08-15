@@ -5,9 +5,21 @@
 .styleHighlights-card-margin {
   margin: 0 auto;
   margin-bottom: 4.5rem;
-  @media (min-width: 961px) {
+
+  @media (--tablet) {
+    margin-left: 7%;
+  }
+
+  @media (--sm-desktop) {
     margin-left: 10%;
-    padding-left: 6%;
+  }
+
+  @media (--desktop) {
+    margin-left: 15%;
+  }
+
+  @media (--lg-desktop){
+    padding-left: 3%;
   }
 }
 

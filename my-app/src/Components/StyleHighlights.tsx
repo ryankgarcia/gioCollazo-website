@@ -24,8 +24,7 @@ export function StyleHighlights() {
       id: 1,
       src: '/BlackDress-dressingRoom.jpg',
       alt: 'styleHighlights1',
-      // className: 'image-wrapper-1 object-fit-fill',
-      className: 'styleHighlights-card-margin-margin',
+      className: 'styleHighlights-card-margin',
       backsideText: 'Melrose Store Opening',
       linkTo: '/services',
       button: 'backside-btn',
@@ -35,7 +34,6 @@ export function StyleHighlights() {
       id: 2,
       src: '/Elegant-redDress.jpg',
       alt: 'styleHighlights2',
-      // className: 'image-wrapper-2 object-fit-fill',
       className: 'styleHighlights-card-margin',
       backsideText: 'Personal Photo Shoot',
       linkTo: '/services',
@@ -46,10 +44,6 @@ export function StyleHighlights() {
       id: 3,
       src: '/LC-EDC-BlacknYellow-1.jpeg',
       alt: 'styleHighlights3',
-      // className: 'image-wrapper-2 object-fit-fill',
-      // add in a class with object-position set to top.
-      // make sure this individual card element does not have
-      // object-fit: cover or fill
       className: 'styleHighlights-card-margin object-position-top',
       backsideText: 'Rave Fitting',
       linkTo: '/services',
@@ -60,7 +54,6 @@ export function StyleHighlights() {
       id: 4,
       src: '/RedCarpet-redQueen-longDress.jpg',
       alt: 'styleHighlights4',
-      // className: 'image-wrapper-1 object-fit-fill',
       className: 'styleHighlights-card-margin',
       backsideText: 'Red Carpet Gala',
       linkTo: '/services',
@@ -71,7 +64,6 @@ export function StyleHighlights() {
       id: 5,
       src: '/TealDress-blondeWoman.jpeg',
       alt: 'styleHighlights5',
-      // className: 'image-wrapper-1 image-object-cover',
       className: 'styleHighlights-card-margin',
       backsideText: 'Date Night',
       linkTo: '/services',
@@ -82,7 +74,6 @@ export function StyleHighlights() {
       id: 6,
       src: '/Louie-black-redBlazer.jpg',
       alt: 'styleHighlights6',
-      // className: 'image-wrapper-2 object-fit-fill',
       className: 'styleHighlights-card-margin',
       backsideText: 'Holiday Party',
       linkTo: '/services',
@@ -93,7 +84,6 @@ export function StyleHighlights() {
       id: 7,
       src: '/ClubMaverick-red-on-black.jpg',
       alt: 'styleHighlights7',
-      // className: 'image-wrapper-2 image-object-cover',
       className: 'styleHighlights-card-margin',
       backsideText: 'DJ Gig',
       linkTo: '/services',
@@ -104,7 +94,6 @@ export function StyleHighlights() {
       id: 8,
       src: '/LC-purple-EDC-fit.jpeg',
       alt: 'styleHighlights8',
-      // className: 'image-wrapper-1 object-fit-fill',
       className: 'styleHighlights-card-margin',
       backsideText: 'Rave Fitting',
       linkTo: '/services',
@@ -115,7 +104,6 @@ export function StyleHighlights() {
       id: 9,
       src: '/Nicole-pinkStyled.jpeg',
       alt: 'styleHighlights9',
-      // className: 'image-wrapper-1 object-fit-fill',
       className: 'styleHighlights-card-margin',
       backsideText: 'Vegas Business Trip',
       linkTo: '/services',
@@ -126,7 +114,6 @@ export function StyleHighlights() {
       id: 10,
       src: '/RedCarpet-tropicalDress.jpg',
       alt: 'styleHighlights10',
-      // className: 'image-wrapper-2 object-fit-fill',
       className: 'styleHighlights-card-margin',
       backsideText: 'Music Video Premier',
       linkTo: '/services',
@@ -144,10 +131,7 @@ export function StyleHighlights() {
               ? 'styleHighlights-shade-dark'
               : 'styleHighlights-shade-light';
           return (
-            <div
-              className={`card ${image.className}`}
-              key={image.id}
-            >
+            <div className={`card ${image.className}`} key={image.id}>
               <div className="card-inner">
                 <div
                   className={`card-front ${shadowClass} ${

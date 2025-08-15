@@ -130,7 +130,7 @@ export function BrandsWorkedWith() {
               }}
               src={image.src}
               alt={image.alt}
-              className={`${image.className} ${visibleStates[index] ? 'brands-fade-in' : 'brands-hidden'}`}
+              className={`${image.className} ${visibleStates[index] ? 'fade-in' : 'hidden'}`}
             />
           </div>
         ))
