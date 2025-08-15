@@ -6,8 +6,8 @@ import { Footer } from '../Components/Footer';
 export function AboutMe() {
   return (
     <div className="page-container">
-      <h2 className="hello-header">Hello.</h2>
-      <h2 className="imGio-header"> I'm Giovanny Collazo!</h2>
+      <h2 className="hello-header text-center">Hello.</h2>
+      <h2 className="imGio-header text-center"> I'm Giovanny Collazo!</h2>
       <p className="about-text">
         Born and raised in Los Angeles, Giovanny Collazo is a proud Latino
         personal stylist whose passion for fashion was ignited in the early
@@ -54,7 +54,7 @@ export function AboutMe() {
       <div className="about-row">
         <div className="about-column-full">
           <div className="button-center">
-            <Link className="about-button" to="/services">
+            <Link className="about-button text-center" to="/services">
               Learn More. . .
             </Link>
           </div>

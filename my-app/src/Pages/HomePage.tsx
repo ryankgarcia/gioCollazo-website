@@ -25,10 +25,10 @@ export function HomePage() {
           className="home-GC-mainCoverImage"
         />
         <div className="home-intro-row">
-          {/* <div className="home-column-full"> */}
-          <p className="gio-intro-name">Giovanny Collazo</p>
-          <p className="gio-intro-title">Personal Stylist</p>
-          <p className="gio-intro-est-2015">Styling men & women since 2015</p>
+          {/* <div className="column-full"> */}
+          <p className="gio-intro-name text-center">Giovanny Collazo</p>
+          <p className="gio-intro-title text-center">Personal Stylist</p>
+          <p className="gio-intro-est-2015 text-center">Styling men & women since 2015</p>
         </div>
         {/* </div> */}
       </div>
@@ -42,7 +42,7 @@ export function HomePage() {
         mensaje de WhatsApp. Al fin de la pagina encontraras el icono de
         WhatsApp para conectarnos.
       </p>
-      <div className="home-img-row">
+      <div className="image-center">
         <img
           src="/Gio-pink-suit.jpeg"
           alt="Giovanny Collazo Professional Stylist Image 2"
@@ -51,7 +51,7 @@ export function HomePage() {
       </div>
       <h2 className="home-bts-header">Behind The Scenes</h2>
       <div className="home-row">
-        {/* <div className="home-column-full"> */}
+        {/* <div className="column-full"> */}
         <div className="video-container-H">
           <video className="video-H" controls muted>
             <source src="/BTS-stylingForVideoShoot.mp4" type="video/mp4" />
@@ -60,8 +60,8 @@ export function HomePage() {
         </div>
       </div>
       <div className="home-row">
-        <div className="home-column-full">
-          <div className="video-container-V">
+        <div className="column-full">
+          <div className="video-container-V video-center">
             {/* adjust the vertical video to fit inside the container on mobile & desktop */}
             <video className="video-V" controls muted>
               <source src="/BTS-gioSprayPainting.mp4" type="video/mp4" />
@@ -79,9 +79,9 @@ export function HomePage() {
         </div>
       </div>
       <div className="home-row">
-        <div className="home-column-full">
+        <div className="column-full">
           <div className="button-center home-button-margin">
-            <Link to="/about" className="learn-more">
+            <Link to="/about" className="learn-more text-center">
               Learn more...
             </Link>
           </div>

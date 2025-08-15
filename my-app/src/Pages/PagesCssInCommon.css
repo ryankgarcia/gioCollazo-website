@@ -1,5 +1,23 @@
-/* this css ruleset sheet aims to make the css scalable and reduce changes on multiple pages
-when necessary */
+/* this css ruleset sheet aims to make the CSS scalable and reduce changes on multiple pages */
+
+/* centering of any element on the site */
+.button-center,
+.image-center,
+.text-center,
+.video-center {
+  display: flex;
+  justify-content: center;
+}
+
+/* width 100% of page */
+.column-full {
+  flex-basis: 100%;
+}
+
+/* all rows on the site */
+.flex-row {
+  display: flex;
+}
 
 /* main container for each page is below */
 .page-container {
@@ -29,24 +47,7 @@ when necessary */
   }
 }
 
-.column-full {
-  flex-basis: 100%;
-}
-
-/* centering of any element on the site */
-.button-center,
-.image-center,
-.text-center {
-  display: flex;
-  justify-content: center;
-}
-
-/* all rows on the site */
-.flex-row {
-  display: flex;
-}
-
-/* all video element dimensions on the site */
+/* all horizontal video element dimensions on the site */
 .video-H {
   width: 100%;
   height: auto;

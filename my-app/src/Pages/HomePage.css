@@ -12,12 +12,6 @@
   }
 }
 
-.home-img-row {
-  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
-  display: flex;
-  justify-content: center;
-}
-
 .home-row {
   /* this class simulates: iPad Pro */
   @media (--sm-desktop) {
@@ -29,8 +23,6 @@
   /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   font-size: 2rem;
   font-weight: bold;
-  display: flex;
-  justify-content: center;
 
   /* this class simulates: iPad Mini, Galaxy Tab S8 */
   @media (--tablet) {
@@ -57,8 +49,6 @@
   /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   font-size: 2.3rem;
   font-weight: bold;
-  display: flex;
-  justify-content: center;
 
   /* this class simulates: iPad Mini, Galaxy Tab S8 */
   @media (--tablet) {
@@ -85,8 +75,6 @@
   /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   font-size: 1.4rem;
   font-weight: bold;
-  display: flex;
-  justify-content: center;
 
   /* this class simulates: iPad Mini, Galaxy Tab S8 */
   @media (--tablet) {
@@ -109,13 +97,13 @@
   }
 }
 
+/* simplify this class across all text on the website */
 .home-text {
   /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   font-size: 1.4rem;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-style: normal;
-  /* font-optical-sizing: auto; */
 
   /* this class simulates: iPad Mini, Galaxy Tab S8 */
   @media (--tablet) {
@@ -136,10 +124,6 @@
   @media (--lg-desktop) {
     font-size: 2.5rem;
   }
-}
-
-.home-column-full {
-  flex-basis: 100%;
 }
 
 .home-GC-coverImage2 {
@@ -276,8 +260,6 @@
 .video-container-V {
   padding-top: 2rem;
   margin-bottom: 1.5rem;
-  display: flex;
-  justify-content: center;
 }
 
 .video-V {
@@ -301,8 +283,6 @@
 
 .learn-more {
   /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
-  display: flex;
-  justify-content: center;
   align-items: center;
   background-color: #610ad1;
   color: white;

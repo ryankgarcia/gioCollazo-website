@@ -2,8 +2,6 @@
   /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   font-size: 4rem;
   color: #fbfbfb;
-  display: flex;
-  justify-content: center;
 
   /* this class simulates: iPad Mini, Galaxy Tab S8 */
   @media (--tablet) {
@@ -15,8 +13,6 @@
   /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   font-size: 2.7rem;
   color: #fbfbfb;
-  display: flex;
-  justify-content: center;
 
   /* this class simulates: iPad Mini, Galaxy Tab S8 */
   @media (--tablet) {
@@ -37,8 +33,6 @@
 
 .about-button {
   /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
-  display: flex;
-  justify-content: center;
   align-items: center;
   background-color: #610ad1;
   color: white;
