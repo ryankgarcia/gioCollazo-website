@@ -1,3 +1,4 @@
+import './CommonComponentCss.css';
 import './Footer.css';
 import { PiInstagramLogo } from 'react-icons/pi';
 import { CgMail } from 'react-icons/cg';

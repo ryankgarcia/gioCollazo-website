@@ -1,6 +1,7 @@
 import { NavLink, Outlet } from 'react-router-dom';
 import { BiMenu } from 'react-icons/bi';
 import { useState } from 'react';
+import './CommonComponentCss.css';
 import './NavBar.css';
 
 export function NavBar() {

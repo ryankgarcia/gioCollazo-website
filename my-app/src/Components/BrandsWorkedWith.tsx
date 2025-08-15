@@ -1,4 +1,5 @@
 import { useIntersectionVisibleStates } from '../Hooks/GradientScroll';
+import './CommonComponentCss.css';
 import './BrandsWorkedWith.css';
 
 interface imageElement {
