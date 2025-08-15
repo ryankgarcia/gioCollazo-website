@@ -7,15 +7,15 @@ export function FAQ() {
     <div className="page-container">
       <h2 className="FAQ-header-main">Frequently Asked</h2>
       <h2 className="FAQ-header-main">Questions</h2>
-      <p className="FAQ-question">Q: What is a Wardrobe Stylist?</p>
-      <p className="FAQ-answer">
+      <p className="FAQ-question">What is a Wardrobe Stylist?</p>
+      <p className="p-text">
         A style expert is a wardrobe professional who helps clients uncover
         their unique aesthetic. Thoughtfully building wardrobes that reflect
         their lifestyle, aspirations, and essence, so they show up in the world
         as their most confident, elevated selves.
       </p>
-      <p className="FAQ-question">Q: What is your styling process?</p>
-      <p className="FAQ-answer">
+      <p className="FAQ-question">What is your styling process?</p>
+      <p className="p-text">
         I begin with a brief style questionnaire to get a deeper understanding
         of you, your lifestyle, and your style goals. From there, we move into a
         closet cleanse to assess what you currently have and what you may need.
@@ -25,34 +25,34 @@ export function FAQ() {
         specific event, I’m here to help you create a look that makes you feel
         confident, sexy, and fully aligned with the moment.
       </p>
-      <p className="FAQ-question">Q: What is included in your services? </p>
-      <p className="FAQ-answer">
+      <p className="FAQ-question">What is included in your services? </p>
+      <p className="p-text">
         I offer a range of <a href="/services">services</a> and packages
         tailored to fit your individual needs.
       </p>
-      <p className="FAQ-question">Q: Do you offer aftercare? </p>
-      <p className="FAQ-answer">
+      <p className="FAQ-question">Do you offer aftercare? </p>
+      <p className="p-text">
         Absolutely. Throughout our time working together, I’ll guide you in
         understanding your body and how to dress with confidence. My goal is to
         empower you with lasting knowledge so that you feel proud of your style,
         with or without my help.
       </p>
-      <p className="FAQ-question">Q: Do you offer services to men? </p>
-      <p className="FAQ-answer">
+      <p className="FAQ-question">Do you offer services to men? </p>
+      <p className="p-text">
         Yes, I offer services to men. Everyone is welcome.
       </p>
-      <p className="FAQ-question">Q: Do you offer virtual Styling? </p>
-      <p className="FAQ-answer">
+      <p className="FAQ-question">Do you offer virtual Styling? </p>
+      <p className="p-text">
         Yes, I offer virtual styling sessions through video chat or any
         camera-enabled device, allowing me to work with you from anywhere in the
         world.
       </p>
       <p className="FAQ-question">
-        Q: How much does it cost? What is the budget I should expect for new
+        How much does it cost? What is the budget I should expect for new
         clothes?
       </p>
-      {/* the answer below needs to be rephrased */}
-      <p className="FAQ-answer">
+      <p className="p-text">
+        {/* the answer below needs to be rephrased */}
         My rates are reasonably priced and designed to be budget-friendly. As
         for your wardrobe budget, that’s completely up to you. It all depends on
         what you need and what you’re comfortable spending. I’m here to work

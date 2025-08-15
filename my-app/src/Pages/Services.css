@@ -1,23 +1,17 @@
-.emoji-large {
-  font-size: 1.7rem;
-}
-
-.service-headerMain {
-  display: flex;
-  justify-content: center;
+/* .service-headerMain {
   font-family: 'Dancing Script', cursive;
-  font-size: 2.7rem;
-}
+  font-size: 5rem;
+} */
 
 .service-subheader {
-  display: flex;
-  justify-content: center;
   font-size: 2rem;
+
+  @media (--tablet) {
+    font-size: 4rem;
+  }
 }
 
 .book-session {
-  display: flex;
-  justify-content: center;
   align-items: center;
   background-color: #610ad1;
   color: white;
@@ -32,13 +26,6 @@
 }
 
 .book-session:hover {
-  transition-property: unset;
   background-color: white;
   color: #610ad1;
-}
-
-
-h2 {
-  color: white;
-  font-size: 1.8rem;
 }

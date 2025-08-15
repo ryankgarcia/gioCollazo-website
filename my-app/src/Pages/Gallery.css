@@ -1,22 +1,7 @@
-.gallery-container {
-  margin: 0 auto;
-  max-width: 370px;
-  font-size: 1.3rem;
-  @media (min-width: 481px) {
-    max-width: 1200px;
-    font-size: 2rem;
+/* .gallery-h2 {
+  font-size: 4rem;
+
+  @media (--tablet) {
+    font-size: 5rem;
   }
-}
-
-.gallery-row {
-  display: flex;
-}
-
-.gallery-column-full {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.gallery-h2 {
-  font-size: 5rem;
-}
+} */

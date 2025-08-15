@@ -1,13 +1,13 @@
-.hello-header {
-  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
+/* .hello-header {
+  this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro
   font-size: 4rem;
   color: #fbfbfb;
 
-  /* this class simulates: iPad Mini, Galaxy Tab S8 */
+  this class simulates: iPad Mini, Galaxy Tab S8
   @media (--tablet) {
     font-size: 5rem;
   }
-}
+} */
 
 .imGio-header {
   /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
@@ -82,33 +82,4 @@
 
 .about-object-top {
   object-position: top;
-}
-
-.about-text {
-  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
-  font-size: 1.4rem;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  /* font-optical-sizing: auto; */
-
-  /* this class simulates: iPad Mini, Galaxy Tab S8 */
-  @media (--tablet) {
-    font-size: 1.6rem;
-  }
-
-  /* this class simulates: iPad Pro */
-  @media (--sm-desktop) {
-    font-size: 1.8rem;
-  }
-
-  /* this class simulates: MacBook Air 13" */
-  @media (--desktop) {
-    font-size: 2.1rem;
-  }
-
-  /* this class simulates: iMac 24" */
-  @media (--lg-desktop) {
-    font-size: 2.5rem;
-  }
 }

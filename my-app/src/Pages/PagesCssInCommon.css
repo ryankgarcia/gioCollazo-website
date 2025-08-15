@@ -14,9 +14,38 @@
   flex-basis: 100%;
 }
 
+.display-flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* all rows on the site */
 .flex-row {
   display: flex;
+}
+
+/* the main header of each page */
+.header-element {
+  color: #fbfbfb;
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+
+  @media (--tablet) {
+    font-size: 5rem;
+  }
+}
+
+/* the class that represents paragraphs or sentences of text */
+.p-text {
+  font-size: 1.2rem;
+
+  @media (--tablet) {
+    font-size: 1.7rem;
+  }
+
+  @media (--sm-desktop) {
+    font-size: 2rem;
+  }
 }
 
 /* main container for each page is below */

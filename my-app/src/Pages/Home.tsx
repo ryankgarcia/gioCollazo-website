@@ -3,7 +3,7 @@ import { Footer } from '../Components/Footer';
 import Loading from '../Components/LoadingImage';
 import { Link } from 'react-router-dom';
 import './PagesCssInCommon.css';
-import './HomePage.css';
+import './Home.css';
 
 const LazyLoadStyleHighlights = lazy(
   () => import('../Components/StyleHighlights'),
@@ -32,11 +32,11 @@ export function HomePage() {
         </div>
         {/* </div> */}
       </div>
-      <p className="home-text">
-        Bringing the best out of YOU. Focusing on what is comfortable,
+      <p className="p-text">
+        Bringing the best out of <em>YOU</em>. Focusing on what is comfortable,
         fashionable, and makes you feel amazing in the clothes you're in.
       </p>
-      <p lang="es" className="home-text">
+      <p lang="es" className="p-text">
         Hablo español y ofrezco mis servicios desde WhatsApp. Si gustas mas
         información, puedes traducir la página al español y/o mandarme un
         mensaje de WhatsApp. Al fin de la pagina encontraras el icono de
@@ -70,7 +70,7 @@ export function HomePage() {
         </div>
       </div>
       <div className="home-row">
-        <div className="home-column-bts">
+        <div className="display-flex-wrap">
           {
             <Suspense fallback={<Loading />}>
               <LazyLoadBTS />
@@ -89,7 +89,7 @@ export function HomePage() {
       </div>
       <h2 className="home-style-highlights">Style Highlights</h2>
       <div className="home-row">
-        <div className="home-column-styleHighlights">
+        <div className="display-flex-wrap">
           {
             <Suspense fallback={<Loading />}>
               <LazyLoadStyleHighlights />
@@ -99,7 +99,7 @@ export function HomePage() {
       </div>
       <h2 className="home-brandsWorkedW">Brands I've Worked With</h2>
       <div className="home-row">
-        <div className="home-column-brands">
+        <div className="display-flex-wrap">
           {
             <Suspense fallback={<Loading />}>
               <LazyLoadBrands />

@@ -1,16 +1,17 @@
 import { lazy, Suspense } from 'react';
 import { Footer } from '../Components/Footer';
 import Loading from '../Components/LoadingImage';
+import './PagesCssInCommon.css';
 import './Gallery.css';
 
 const LazyLoadGalleryImages = lazy(() => import('../Components/GalleryImages'));
 
 export function Gallery() {
   return (
-    <div className="gallery-container">
-      <h2 className="gallery-h2">Gallery</h2>
-      <div className="gallery-row">
-        <div className="gallery-column-full">
+    <div className="page-container">
+      <h2 className="header-element">Gallery</h2>
+      <div className="flex-row">
+        <div className="display-flex-wrap">
           {
             <Suspense fallback={<Loading />}>
               <LazyLoadGalleryImages />

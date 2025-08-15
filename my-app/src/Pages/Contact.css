@@ -1,3 +1,11 @@
+/* .workWMe-header {
+  font-size: 4rem;
+
+  @media (--sm-desktop) {
+    font-size: 5rem;
+  }
+} */
+
 .contact-row {
   @media (min-width: 481px){
     display: flex;
@@ -38,24 +46,7 @@
   }
 }
 
-.workWMe-header {
-  display: flex;
-  justify-content: center;
-  font-size: 4rem;
-  /* margin-top: 10%; */
-  margin-bottom: 0%;
-  /* @media (min-width: 481px) {
-    font-size: 3.5rem;
-  } */
 
-  /* @media (--tablet) {
-    font-size: 8rem;
-  } */
-
-  @media (--sm-desktop) {
-    font-size: 5rem;
-  }
-}
 
 .second-header {
   margin-top: 10%;
