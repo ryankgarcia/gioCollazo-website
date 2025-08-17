@@ -1,6 +1,6 @@
 import { useIntersectionVisibleStates } from '../Hooks/GradientScroll';
-import './CommonComponentCss.css';
 import './GalleryImages.css';
+import './CommonComponentCss.css';
 
 interface galleryImage {
   id: number;
@@ -317,7 +317,9 @@ export function GalleryImages() {
               src={photo.src}
               alt={photo.alt}
               className={`${photo.className} ${
-                visibleStates[index] ? 'fade-in' : 'hidden'
+                visibleStates[index]
+                  ? 'gallery-img-fade-in'
+                  : 'gallery-img-hidden'
               }`}
             />
           </div>

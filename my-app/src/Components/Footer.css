@@ -1,6 +1,5 @@
 .insta-logo {
-  font-size: 3.5rem;
-  color: #e1446a;
+  width: 3rem;
 }
 
 .mail-logo {
@@ -9,8 +8,7 @@
 }
 
 .whatsapp-logo {
-  font-size: 3rem;
-  color: #53ed71;
+  width: 3rem;
 }
 
 .icon-group {
@@ -42,15 +40,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 4rem;
-  height: 4rem;
-  background-color: whitesmoke;
+  width: 3rem;
+  height: 3rem;
   border-radius: 32px;
-
-  @media (--sm-desktop) {
-    background-color: #080808;
-    border: 3px solid #fbfbfb;
-  }
+  background-color: #080808;
+  border: 3px solid #fbfbfb;
 }
 
 em {
