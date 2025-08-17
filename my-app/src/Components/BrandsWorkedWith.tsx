@@ -49,7 +49,7 @@ export function BrandsWorkedWith() {
     },
     {
       id: 7,
-      src: '/Brands-Gio-has-worked-with/GQ-germany-logo.jpeg',
+      src: '/Brands-Gio-has-worked-with/GQ-Germany-logo.jpeg',
       alt: 'GQ Germany Logo',
       className: 'brand-image',
     },

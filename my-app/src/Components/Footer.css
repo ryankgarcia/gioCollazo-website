@@ -53,6 +53,8 @@ em {
 
 .footer-h2 {
   font-size: 2.3rem;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
   @media (--tablet) {
     font-size: 2.8rem;
   }
