@@ -1,10 +1,5 @@
-p {
-  font-size: 1.3rem;
-}
-
 .insta-logo {
-  font-size: 3.5rem;
-  color: #e1446a;
+  width: 3rem;
 }
 
 .mail-logo {
@@ -13,44 +8,43 @@ p {
 }
 
 .whatsapp-logo {
-  font-size: 3rem;
-  color: #53ed71;
+  width: 3rem;
 }
 
-.link-group {
+.icon-group {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  @media (--sm-desktop) {
+    margin-top: 4.5rem;
+  }
+}
+
+.link-column-full {
+  flex-basis: 100%;
+}
+
+.text-margin-bottom {
+  margin-bottom: 1rem;
+}
+
+.flex-dir-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0.5rem;
 }
 
 .circle-icon {
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 4rem;
-  height: 4rem;
-  background-color: whitesmoke;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
   border-radius: 32px;
-}
-
-.copyright-footer {
-  font-size: 0.9rem;
-  padding-top: 0.5rem;
-  display: block;
-
-  @media (min-width: 481px) {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  @media (min-width: 482px) and (max-width: 960px) {
-    font-size: 1.3rem;
-  }
-
-  @media (min-width: 961px) {
-    font-size: 1.3rem;
-    display: flex;
-    justify-content: center;
-  }
+  background-color: #080808;
+  border: 3px solid #fbfbfb;
 }
 
 em {
@@ -58,22 +52,49 @@ em {
 }
 
 .footer-h2 {
-  font-size: 2.8rem;
+  font-size: 2.3rem;
+  @media (--tablet) {
+    font-size: 2.8rem;
+  }
 }
 
-.footer-row {
-  display: flex;
-  justify-content: center;
-}
-
-.contact-button,
-.FAQ-button,
-.gallery-button {
-  width: 4rem;
-  height: 1rem;
+.contact-footer,
+.FAQ-footer,
+.gallery-footer {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-decoration: underline;
   color: whitesmoke;
-  font-size: 1.6rem;
-  padding-bottom: 1.9rem;
+}
+
+.footer-flex-row {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+
+  @media (--sm-desktop) {
+    flex-direction: row;
+  }
+}
+
+.copyright-column-full {
+  flex-basis: 100%;
+}
+
+.copyright-text {
+  padding-top: 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #fbfbfb;
+
+  @media (--tablet) {
+    font-size: 1rem;
+  }
+
+  @media (--sm-desktop) {
+    font-size: 1.2rem;
+  }
+
+  @media (--desktop) {
+    font-size: 1.5rem;
+  }
 }

@@ -1,11 +1,24 @@
-h2 {
-  font-size: 2rem;
+.FAQ-header-main {
+  font-size: 3rem;
+  color: #fbfbfb;
+  font-family: 'Dancing Script', cursive;
+
+  @media (--tablet) {
+    font-size: 4rem;
+  }
 }
 
-.FAQ-container {
-  margin: 2%;
-  @media (min-width: 961px) {
-    max-width: 1200px;
-    margin: 0 auto;
+.FAQ-question {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 2.5rem;
+  margin-bottom: 2rem;
+
+  @media (--tablet) {
+    font-size: 2rem;
+  }
+
+  @media (--sm-desktop) {
+    font-size: 2.5rem;
   }
 }

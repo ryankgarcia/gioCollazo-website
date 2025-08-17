@@ -1,49 +1,10 @@
-.contactPage-container {
-  margin: 2%;
-  @media (min-width: 961px) {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-}
-
 .contact-row {
   @media (min-width: 481px) {
     display: flex;
   }
-  @media (min-width: 482px) and (max-width: 960px) {
+
+  @media (--tablet) {
     display: block;
-  }
-  @media (min-width: 961px) {
-    display: block;
-  }
-}
-
-.stylist-image-container {
-  display: flex;
-  justify-content: center;
-  @media (min-width: 481px) {
-    flex-basis: 50%;
-  }
-}
-
-.contact-column-full {
-  @media (min-width: 481px) {
-    flex-basis: 100%;
-  }
-  @media (min-width: 961px) {
-    flex-basis: 100%;
-  }
-}
-
-.contact-column-half {
-  @media (min-width: 961px) {
-    flex-basis: 50%;
-  }
-}
-
-.contact-column-third {
-  @media (min-width: 961px) {
-    flex-basis: calc(100% / 3);
   }
 }
 
@@ -77,43 +38,17 @@
   }
 }
 
-.contact-gio-collazo-image:hover {
-  animation: wiggle 4s ease-in-out infinite;
-  /* transform: translateY(-1.5rem) scale(1.03) rotateZ(-1deg);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); */
-}
-
-.workWMe-header {
-  display: flex;
-  justify-content: center;
-  font-size: 4rem;
-  /* margin-top: 10%; */
-  margin-bottom: 0%;
-  @media (min-width: 481px) {
-    font-size: 3.5rem;
-  }
-
-  @media (min-width: 482px) and (max-width: 960px) {
-    font-size: 8rem;
-  }
-
-  @media (min-width: 961px) {
-    /* font-size: 7rem; */
-    font-size: 5rem;
-  }
-}
-
 .second-header {
-  font-size: 1.5rem;
-  @media (min-width: 481px) {
-    font-size: 1.4rem;
+  padding-bottom: 10%;
+  font-size: 1.3rem;
+
+  @media (--tablet) {
+    font-size: 1.8rem;
+    margin: 2.5rem;
+    padding-bottom: 2rem;
   }
 
-  @media (min-width: 482px) and (max-width: 960px) {
+  @media (--sm-desktop) {
     font-size: 2rem;
-  }
-
-  @media (min-width: 961px) {
-    font-size: 2.3rem;
   }
 }

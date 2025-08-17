@@ -1,47 +1,16 @@
-.h2 {
-  font-family: oswald;
+.hamburger-menu {
   font-size: 3.1rem;
   display: flex;
-  justify-content: space-evenly;
-  @media (min-width: 481px) {
+  @media (--tablet) {
     font-size: 5rem;
   }
 }
 
 .navBarHeader {
-  /* background-color: #610ad1; */
-  /* original color is 610ad1*/
   background-color: #900fbf;
-  /* background-color: #ebcff8; */
-  /* background-color: #996cb7; */
-  /* background-color: #8256d0; */
-  /* background-color: #e0a3f8; */
-  /* background-color: #d7b8ec; */
   color: #fbfbfb;
-  /* width: 100%; */
   padding-top: 1rem;
   padding-bottom: 1rem;
-  /* display: flex; */
-  /* justify-content: space-evenly; */
-  @media (min-width: 961px) {
-    /* display: flex; */
-    /* justify-content: space-evenly; */
-  }
-}
-
-h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Dancing Script', cursive;
-  color: #fbfbfb;
-  @media (min-width: 481px) {
-    font-size: 5rem;
-  }
-}
-
-.nav-row {
-  display: flex;
 }
 
 .nav-column-full {
@@ -49,51 +18,31 @@ h2 {
   justify-content: center;
   flex-basis: 100%;
   font-family: oswald;
-  font-size: 3.1rem;
-  @media (min-width: 481px) {
-    font-size: 5rem;
-  }
-}
-
-.nav-logo-container {
-  width: 50px;
-  height: 50px;
-  @media (min-width: 961px) {
-    width: 100px;
-    height: 100px;
-    margin-right: 5%;
-  }
-}
-
-.nav-column-flex-end {
-  display: flex;
-  justify-content: flex-end;
-  flex-basis: 100%;
-  /* font-family: oswald;
-  font-size: 3.1rem;
-  @media (min-width: 481px) {
-    font-size: 5rem;
-  } */
-}
-
-.nav-column-quarter {
-  flex-basis: 5%;
 }
 
 .aboutMe-link,
 .home-link,
+.services-link,
 .testimonials-link,
 .contact-link {
-  /* color: #610AD1; */
   color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.5rem;
   padding-left: 0.8rem;
-
+  text-decoration: none;
   overflow: hidden;
-  @media (min-width: 481px) {
+  @media (--tablet) {
     font-size: 2rem;
   }
+}
+
+.aboutMe-link:hover,
+.home-link:hover,
+.services-link:hover,
+.testimonials-link:hover,
+.contact-link:hover {
+  text-decoration: underline;
+  color: #fbfbfb;
 }
 
 .allLinks {
@@ -101,7 +50,6 @@ h2 {
   max-height: 0;
   overflow: hidden;
   background-color: #900fbf;
-  /* background-color: #610ad1; */
   border-bottom: 8px solid white;
   transform: translateY(-20px);
   opacity: 0;
@@ -111,8 +59,17 @@ h2 {
     transform 0.5s ease-in-out,
     opacity 0.5s ease-in-out;
   color: white;
-  @media (min-width: 481px) {
+
+  @media (--tablet) {
+    padding-left: 15%;
+  }
+
+  @media (--sm-desktop) {
     padding-left: 25%;
+  }
+
+  @media (--lg-desktop) {
+    padding-left: 40%;
   }
 }
 

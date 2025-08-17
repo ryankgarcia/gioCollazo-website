@@ -1,7 +1,15 @@
 {
   "homepage": "https://ryankgarcia.github.io/gioCollazo-website",
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.4",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest": "^30.0.0",
     "gh-pages": "^6.3.0",
-    "prettier": "^3.6.1"
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^30.0.5",
+    "jest-environment-jsdom": "^30.0.5",
+    "prettier": "^3.6.1",
+    "ts-jest": "^29.4.1"
   }
 }

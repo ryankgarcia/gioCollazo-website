@@ -1,0 +1,115 @@
+/* this css ruleset sheet aims to make the CSS scalable and reduce changes on multiple pages */
+
+/* call to action button design */
+.button {
+  align-items: center;
+  background-color: #610ad1;
+  color: white;
+  width: 15rem;
+  height: 5rem;
+  font-size: 1.4rem;
+  border-radius: 3rem;
+  text-decoration: none;
+  cursor: pointer;
+
+  @media (--tablet) {
+    width: 16rem;
+    height: 5.5rem;
+    font-size: 1.6rem;
+  }
+
+  @media (--sm-desktop) {
+    width: 18rem;
+    height: 6.5rem;
+    font-size: 1.8rem;
+    border-radius: 3.5rem;
+  }
+}
+
+.button:hover {
+  background-color: white;
+  color: #610ad1;
+}
+
+/* centering of any element on the site */
+.button-center,
+.image-center,
+.text-center,
+.video-center {
+  display: flex;
+  justify-content: center;
+}
+
+/* width 100% of space */
+.column-full {
+  flex-basis: 100%;
+}
+
+.display-flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* all rows on the site */
+.flex-row {
+  display: flex;
+}
+
+/* the main header of each page */
+.header-element {
+  color: #fbfbfb;
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+
+  @media (--tablet) {
+    font-size: 5rem;
+  }
+}
+
+/* represents paragraphs or sentences of text */
+.p-text {
+  font-size: 1.2rem;
+
+  @media (--tablet) {
+    font-size: 1.7rem;
+  }
+
+  @media (--sm-desktop) {
+    font-size: 2rem;
+  }
+}
+
+/* main container for each page */
+.page-container {
+  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
+  margin: 2%;
+
+  /* this class simulates: iPad Mini, Galaxy Tab S8 */
+  @media (--tablet) {
+    margin: 5%;
+  }
+
+  /* this class simulates: iPad Pro */
+  @media (--sm-desktop) {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* this class simulates: MacBook Air 13" */
+  @media (--desktop) {
+    max-width: 1200px;
+    margin: 2% auto;
+  }
+
+  /* this class simulates: iMac 24" */
+  @media (--lg-desktop) {
+    max-width: 1500px;
+  }
+}
+
+/* all horizontal video element dimensions on the site */
+.video-H {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

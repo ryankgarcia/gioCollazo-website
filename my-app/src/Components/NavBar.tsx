@@ -1,6 +1,7 @@
 import { NavLink, Outlet } from 'react-router-dom';
 import { BiMenu } from 'react-icons/bi';
 import { useState } from 'react';
+import './CommonComponentCss.css';
 import './NavBar.css';
 
 export function NavBar() {
@@ -12,34 +13,34 @@ export function NavBar() {
 
   return (
     <div>
-      <div onClick={handleOpen} className="navBarHeader h2">
+      <div onClick={handleOpen} className="navBarHeader hamburger-menu">
         <BiMenu />
         <div className="nav-column-full"> StyledByGio</div>
       </div>
       <div className={`allLinks ${isOpen ? 'open' : ''}`}>
-        <div className="nav-row">
-          <NavLink to="/">
-            <span className="home-link">Home</span>
+        <div>
+          <NavLink to="/" className="home-link">
+            <span>Home</span>
           </NavLink>
         </div>
-        <div className="nav-row">
-          <NavLink to="/about">
-            <span className="aboutMe-link">About</span>
+        <div>
+          <NavLink to="/about" className="aboutMe-link">
+            <span>About</span>
           </NavLink>
         </div>
-        <div className="nav-row">
-          <NavLink to="/services">
-            <span className="aboutMe-link">Services</span>
+        <div>
+          <NavLink to="/services" className="services-link">
+            <span>Services</span>
           </NavLink>
         </div>
-        <div className="nav-row">
-          <NavLink to="/testimonials">
-            <span className="testimonials-link">Testimonials</span>
+        <div>
+          <NavLink to="/testimonials" className="testimonials-link">
+            <span>Testimonials</span>
           </NavLink>
         </div>
-        <div className="nav-row">
-          <NavLink to="/contact">
-            <span className="contact-link">Contact</span>
+        <div>
+          <NavLink to="/contact" className="contact-link">
+            <span>Contact</span>
           </NavLink>
         </div>
       </div>

@@ -1,73 +1,67 @@
 import { useIntersectionVisibleStates } from '../Hooks/GradientScroll';
+import './CommonComponentCss.css';
 import './BrandsWorkedWith.css';
 
 interface imageElement {
   id: number;
   src: string;
   alt: string;
-  className: string; // this component still requires the object-fit: fill or cover in CSS
+  className: string;
 }
 
 export function BrandsWorkedWith() {
-  const { imageRefs, visibleStates } = useIntersectionVisibleStates(
-    BrandsWorkedWith.length,
-  );
-
   const workedWithBrands: imageElement[] = [
     {
       id: 1,
-      src: '/Brands-Gio-has-worked-with/clubmaverick-logo.jpeg',
+      src: '/Brands-Gio-has-worked-with/Clubmaverick-logo.jpeg',
       alt: 'Club Maverick Logo',
       className: 'brand-image',
-      // add brand-image-fit or brand-image cover to make the aspect ratio better for this and
-      // all other elements on this page
     },
     {
       id: 2,
-      src: '/Brands-Gio-has-worked-with/couture-logo-cut.jpg',
+      src: '/Brands-Gio-has-worked-with/Couture-logo.jpg',
       alt: 'Couture Logo',
       className: 'brand-image',
     },
     {
       id: 3,
-      src: '/Brands-Gio-has-worked-with/Cyclone-Pictures.png',
+      src: '/Brands-Gio-has-worked-with/Cyclone-Pictures-logo.png',
       alt: 'Cyclone Pictures Logo',
       className: 'brand-image',
-      // brand-image-fill  add this add a class to the images that look better with either cover or fill
     },
     {
       id: 4,
-      src: '/Brands-Gio-has-worked-with/cynthia-Bach.png',
+      src: '/Brands-Gio-has-worked-with/Cynthia-Bach-logo.png',
       alt: 'Cynthia Bach Logo',
       className: 'brand-image',
     },
     {
       id: 5,
-      src: '/Brands-Gio-has-worked-with/dolls-logo.png',
+      src: '/Brands-Gio-has-worked-with/Dolls-Kill-logo.png',
       alt: 'Dolls Kill Logo',
       className: 'brand-image',
     },
     {
       id: 6,
-      src: '/Brands-Gio-has-worked-with/fashion-nova-logo.jpeg',
+      src: '/Brands-Gio-has-worked-with/Fashion-Nova-logo.jpeg',
       alt: 'Fashion Nova Logo',
       className: 'brand-image',
     },
     {
       id: 7,
-      src: '/Brands-Gio-has-worked-with/gq-germany-logo.jpeg',
+      src: '/Brands-Gio-has-worked-with/GQ-germany-logo.jpeg',
       alt: 'GQ Germany Logo',
       className: 'brand-image',
     },
     {
       id: 8,
-      src: '/Brands-Gio-has-worked-with/h-m-logo.png',
+      src: '/Brands-Gio-has-worked-with/HM-logo.png',
       alt: 'H&M Logo',
       className: 'brand-image',
     },
     {
       id: 9,
-      src: '/Brands-Gio-has-worked-with/la-llama-viajera-logo.png',
+      src: '/Brands-Gio-has-worked-with/La-Llama-Viajera-logo.png',
       alt: 'La Llama Viajera Logo',
       className: 'brand-image',
     },
@@ -79,47 +73,51 @@ export function BrandsWorkedWith() {
     },
     {
       id: 11,
-      src: '/Brands-Gio-has-worked-with/mother-plucker-logo.jpeg',
+      src: '/Brands-Gio-has-worked-with/Mother-Plucker-logo.jpeg',
       alt: 'Mother Plucker Feather Company, Inc. Logo',
       className: 'brand-image',
     },
     {
       id: 12,
-      src: '/Brands-Gio-has-worked-with/neiman-marcus-logo.jpeg',
+      src: '/Brands-Gio-has-worked-with/Neiman-Marcus-logo.jpeg',
       alt: 'Neiman Marcus Logo',
       className: 'brand-image',
     },
     {
       id: 13,
-      src: '/Brands-Gio-has-worked-with/out-logo.png',
+      src: '/Brands-Gio-has-worked-with/Out-logo.png',
       alt: 'Out Logo',
       className: 'brand-image',
     },
     {
       id: 14,
-      src: '/Brands-Gio-has-worked-with/pia-gladys-perey-logo.png',
+      src: '/Brands-Gio-has-worked-with/Pia-Gladys-Perey-logo.png',
       alt: 'Pia Gladys Perey Logo',
       className: 'brand-image',
     },
     {
       id: 15,
-      src: '/Brands-Gio-has-worked-with/teen-vogue-logo.jpeg',
+      src: '/Brands-Gio-has-worked-with/Teen-Vogue-logo.jpeg',
       alt: 'Teen Vogue Logo',
       className: 'brand-image',
     },
     {
       id: 16,
-      src: '/Brands-Gio-has-worked-with/viv-vitals-logo.jpeg',
+      src: '/Brands-Gio-has-worked-with/Viv-Vitals-logo.jpeg',
       alt: 'Viv Vitals Logo',
       className: 'brand-image',
     },
     {
       id: 17,
-      src: '/Brands-Gio-has-worked-with/zara.png',
+      src: '/Brands-Gio-has-worked-with/Zara-logo.png',
       alt: 'Zara Logo',
       className: 'brand-image',
     },
   ];
+
+  const { imageRefs, visibleStates } = useIntersectionVisibleStates(
+    workedWithBrands.length,
+  );
 
   return (
     <>
@@ -132,7 +130,7 @@ export function BrandsWorkedWith() {
               }}
               src={image.src}
               alt={image.alt}
-              className={`${image.className} ${visibleStates[index] ? 'brands-fade-in' : 'brands-hidden'}`}
+              className={`${image.className} ${visibleStates[index] ? 'fade-in' : 'hidden'}`}
             />
           </div>
         ))

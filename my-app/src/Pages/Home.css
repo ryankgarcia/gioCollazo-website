@@ -1,0 +1,222 @@
+.home-style-highlights,
+.home-bts-header {
+  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
+  color: #fbfbfb;
+  font-size: 3rem;
+
+  /* this class simulates: iPad Mini, Galaxy Tab S8 */
+  @media (--tablet) {
+    font-size: 4rem;
+  }
+
+  /* this class simulates: iPad Pro */
+  @media (--sm-desktop) {
+    font-size: 6.5rem;
+  }
+
+  /* this class simulates: iMac 24" */
+  @media (--lg-desktop) {
+    font-size: 8rem;
+  }
+}
+
+.home-brandsWorkedW {
+  font-size: 2.2rem;
+
+  @media (--tablet) {
+    font-size: 4rem;
+  }
+
+  @media (--sm-desktop) {
+    font-size: 5rem;
+  }
+
+  /* this class simulates: MacBook Air 13" */
+  @media (--desktop) {
+    font-size: 6.5rem;
+  }
+
+  @media (--lg-desktop) {
+    font-size: 8rem;
+  }
+}
+
+.home-intro-row {
+  @media (--sm-desktop) {
+    padding-left: 5%;
+  }
+
+  @media (--desktop) {
+    padding-left: 20%;
+    margin-top: 50px;
+  }
+}
+
+.home-row {
+  @media (--sm-desktop) {
+    display: flex;
+  }
+}
+
+.gio-intro-name {
+  font-size: 2rem;
+  font-weight: bold;
+
+  @media (--tablet) {
+    font-size: 2.3rem;
+  }
+
+  @media (--sm-desktop) {
+    font-size: 2.5rem;
+  }
+
+  @media (--desktop) {
+    font-size: 2.7rem;
+  }
+
+  @media (--lg-desktop) {
+    font-size: 3rem;
+  }
+}
+
+.gio-intro-title {
+  font-size: 2.3rem;
+  font-weight: bold;
+
+  @media (--tablet) {
+    font-size: 2.6rem;
+  }
+
+  @media (--sm-desktop) {
+    font-size: 2.8rem;
+  }
+
+  @media (--desktop) {
+    font-size: 3rem;
+  }
+
+  @media (--lg-desktop) {
+    font-size: 3.5rem;
+  }
+}
+
+.gio-intro-est-2015 {
+  font-size: 1.4rem;
+  font-weight: bold;
+
+  @media (--tablet) {
+    font-size: 1.7rem;
+  }
+
+  @media (--sm-desktop) {
+    font-size: 1.9rem;
+  }
+
+  @media (--desktop) {
+    font-size: 2.2rem;
+  }
+
+  @media (--lg-desktop) {
+    font-size: 2.5rem;
+  }
+}
+
+
+.home-GC-mainCoverImage {
+  width: 265px;
+  margin-left: 15%;
+  margin-bottom: 1.2rem;
+  transition: transform 0.5s ease;
+  border-radius: 8px;
+  margin-top: 1.4rem;
+  animation: breathe 4.5s ease-in-out infinite;
+
+  @media (--tablet) {
+    width: 275px;
+    margin-left: 30%;
+  }
+
+  @media (--sm-desktop) {
+    margin-left: 0%;
+  }
+
+  @media (--desktop) {
+    width: 325px;
+    margin-left: 2.5%;
+  }
+
+  @media (--lg-desktop) {
+    width: 400px;
+    margin-left: 5%;
+  }
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+.home-GC-coverImage2 {
+  width: 265px;
+  margin-top: 1.4rem;
+  margin-bottom: 1.2rem;
+  border-radius: 8px;
+
+  @media (--tablet) {
+    width: 300px;
+  }
+
+  @media (--sm-desktop) {
+    width: 345px;
+  }
+
+  @media (--desktop) {
+    width: 375px;
+  }
+
+  @media (--lg-desktop) {
+    width: 425px;
+  }
+}
+
+
+.video-container-H {
+  padding-top: 2rem;
+}
+
+.video-container-V {
+  padding-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.video-V {
+  width: 300px;
+  height: 500px;
+  object-fit: fill;
+  margin: 3.5rem 3.5rem;
+
+  @media (--tablet) {
+    width: 350px;
+    height: 700px;
+  }
+
+  @media (--sm-desktop) {
+    width: 450px;
+    height: 900px;
+  }
+}
+
+
+.home-button-margin {
+  margin-top: 7%;
+  margin-bottom: 17%;
+
+  @media (--sm-desktop) {
+    margin-bottom: 5%;
+  }
+}

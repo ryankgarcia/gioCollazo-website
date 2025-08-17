@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useIntersectionVisibleStates } from '../Hooks/GradientScroll';
+import './CommonComponentCss.css';
 import './StyleHighlights.css';
 
 interface topLooks {
@@ -10,7 +11,7 @@ interface topLooks {
   backsideText: string;
   linkTo: string;
   button: string;
-  fitStyle: 'image-object-fill' | 'image-object-cover';
+  fitStyle: 'object-fit-fill' | 'object-fit-cover';
 }
 
 export function StyleHighlights() {
@@ -21,113 +22,103 @@ export function StyleHighlights() {
   const top10Picks: topLooks[] = [
     {
       id: 1,
-      src: '/blackDress-dressingRoom.jpg',
+      src: '/BlackDress-dressingRoom.jpg',
       alt: 'styleHighlights1',
-      // className: 'image-wrapper-1 image-object-fill',
-      className: 'styleHighlights-card',
+      className: 'styleHighlights-card-margin',
       backsideText: 'Melrose Store Opening',
       linkTo: '/services',
       button: 'backside-btn',
-      fitStyle: 'image-object-fill',
+      fitStyle: 'object-fit-fill',
     },
     {
       id: 2,
-      src: '/elegant-redDress.jpg',
+      src: '/Elegant-redDress.jpg',
       alt: 'styleHighlights2',
-      // className: 'image-wrapper-2 image-object-fill',
-      className: 'styleHighlights-card',
+      className: 'styleHighlights-card-margin',
       backsideText: 'Personal Photo Shoot',
       linkTo: '/services',
       button: 'backside-btn',
-      fitStyle: 'image-object-fill',
+      fitStyle: 'object-fit-fill',
     },
     {
       id: 3,
       src: '/LC-EDC-BlacknYellow-1.jpeg',
       alt: 'styleHighlights3',
-      // className: 'image-wrapper-2 image-object-fill',
-      className: 'styleHighlights-card',
+      className: 'styleHighlights-card-margin object-position-top',
       backsideText: 'Rave Fitting',
       linkTo: '/services',
       button: 'backside-btn',
-      fitStyle: 'image-object-fill',
+      fitStyle: 'object-fit-fill',
     },
     {
       id: 4,
-      src: '/redCarpet-redQueen-longDress.jpg',
+      src: '/RedCarpet-redQueen-longDress.jpg',
       alt: 'styleHighlights4',
-      // className: 'image-wrapper-1 image-object-fill',
-      className: 'styleHighlights-card',
+      className: 'styleHighlights-card-margin',
       backsideText: 'Red Carpet Gala',
       linkTo: '/services',
       button: 'backside-btn',
-      fitStyle: 'image-object-fill',
+      fitStyle: 'object-fit-fill',
     },
     {
       id: 5,
-      src: '/tealDress-blondeWoman.jpeg',
+      src: '/TealDress-blondeWoman.jpeg',
       alt: 'styleHighlights5',
-      // className: 'image-wrapper-1 image-object-cover',
-      className: 'styleHighlights-card',
+      className: 'styleHighlights-card-margin',
       backsideText: 'Date Night',
       linkTo: '/services',
       button: 'backside-btn',
-      fitStyle: 'image-object-fill',
+      fitStyle: 'object-fit-fill',
     },
     {
       id: 6,
-      src: '/black-redBlazer.jpg',
+      src: '/Louie-black-redBlazer.jpg',
       alt: 'styleHighlights6',
-      // className: 'image-wrapper-2 image-object-fill',
-      className: 'styleHighlights-card',
+      className: 'styleHighlights-card-margin',
       backsideText: 'Holiday Party',
       linkTo: '/services',
       button: 'backside-btn',
-      fitStyle: 'image-object-fill',
+      fitStyle: 'object-fit-fill',
     },
     {
       id: 7,
-      src: '/club-maverick-red-on-black.jpg',
+      src: '/ClubMaverick-red-on-black.jpg',
       alt: 'styleHighlights7',
-      // className: 'image-wrapper-2 image-object-cover',
-      className: 'styleHighlights-card',
+      className: 'styleHighlights-card-margin',
       backsideText: 'DJ Gig',
       linkTo: '/services',
       button: 'backside-btn',
-      fitStyle: 'image-object-fill',
+      fitStyle: 'object-fit-fill',
     },
     {
       id: 8,
-      src: '/LC-purple-EDC-fit-cropped.jpeg',
+      src: '/LC-purple-EDC-fit.jpeg',
       alt: 'styleHighlights8',
-      // className: 'image-wrapper-1 image-object-fill',
-      className: 'styleHighlights-card',
+      className: 'styleHighlights-card-margin',
       backsideText: 'Rave Fitting',
       linkTo: '/services',
       button: 'backside-btn',
-      fitStyle: 'image-object-fill',
+      fitStyle: 'object-fit-fill',
     },
     {
       id: 9,
-      src: '/Nicole-pinkStyled-cropped.jpeg',
+      src: '/Nicole-pinkStyled.jpeg',
       alt: 'styleHighlights9',
-      // className: 'image-wrapper-1 image-object-fill',
-      className: 'styleHighlights-card',
+      className: 'styleHighlights-card-margin',
       backsideText: 'Vegas Business Trip',
       linkTo: '/services',
       button: 'backside-btn',
-      fitStyle: 'image-object-fill',
+      fitStyle: 'object-fit-fill',
     },
     {
       id: 10,
-      src: '/redCarpet-tropicalDress.jpg',
+      src: '/RedCarpet-tropicalDress.jpg',
       alt: 'styleHighlights10',
-      // className: 'image-wrapper-2 image-object-fill',
-      className: 'styleHighlights-card',
+      className: 'styleHighlights-card-margin',
       backsideText: 'Music Video Premier',
       linkTo: '/services',
       button: 'backside-btn',
-      fitStyle: 'image-object-fill',
+      fitStyle: 'object-fit-fill',
     },
   ];
 
@@ -140,16 +131,11 @@ export function StyleHighlights() {
               ? 'styleHighlights-shade-dark'
               : 'styleHighlights-shade-light';
           return (
-            <div
-              className={`styleHighlights-card ${image.className}`}
-              key={image.id}
-            >
-              <div className="styleHighlights-card-inner">
+            <div className={`card ${image.className}`} key={image.id}>
+              <div className="card-inner">
                 <div
-                  className={`styleHighlights-card-front ${shadowClass} ${
-                    visibleStates[index]
-                      ? 'style-highlights-fade-in'
-                      : 'style-highlights-hidden'
+                  className={`card-front ${shadowClass} ${
+                    visibleStates[index] ? 'fade-in' : 'hidden'
                   }`}
                 >
                   <img
@@ -161,9 +147,9 @@ export function StyleHighlights() {
                     className={`${image.fitStyle}`}
                   />
                 </div>
-                <div className="styleHighlights-card-back">
-                  <div className="styleHighlights-row">
-                    <div className="styleHighlights-column-full">
+                <div className="card-back">
+                  <div className="display-flex-column">
+                    <div className="text-padding">
                       <p>{image.backsideText}</p>
                     </div>
                     <Link to={image.linkTo} className={image.button}>

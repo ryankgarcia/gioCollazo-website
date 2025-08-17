@@ -10,31 +10,22 @@
   border-radius: 50%;
   width: 300px;
   height: 300px;
-  margin-left: 11%;
+  margin-left: 13%;
   border: 7px #610ad1 solid;
   margin-bottom: 1.5rem;
-  @media (min-width: 961px) {
+
+  @media (--tablet){
+    margin-left: 6%;
+  }
+  @media (--sm-desktop) {
+    margin-left: 15%;
+  }
+  
+  @media (--desktop) {
     margin-left: 25%;
   }
-}
 
-.brand-image-fill {
-  object-fit: fill;
-}
-
-.brand-image-cover {
-  object-fit: cover;
-}
-
-.brands-fade-in {
-  opacity: 1;
-  transform: translateY(0);
-  transition:
-    opacity 1.3s ease-out,
-    transform 1.5s ease-out;
-}
-
-.brands-hidden {
-  opacity: 0;
-  transform: translateY(100px);
+  @media (--lg-desktop){
+    margin-left: 30%;
+  }
 }

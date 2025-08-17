@@ -1,0 +1,55 @@
+.imGio-header {
+  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
+  font-size: 2.7rem;
+  color: #fbfbfb;
+
+  /* this class simulates: iPad Mini, Galaxy Tab S8 */
+  @media (--tablet) {
+    font-size: 4.5rem;
+  }
+}
+
+@media (--tablet) {
+  .about-row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-column-full {
+    flex-basis: 100%;
+  }
+}
+
+.about-button-margin {
+  margin-top: 20%;
+  margin-bottom: 20%;
+
+  @media (--tablet) {
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+}
+
+.aboutMe-imageWrapper {
+  margin-top: 5%;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 5 / 12;
+  overflow: hidden;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  @media (--tablet) {
+    margin-left: 2%;
+  }
+}
+
+.aboutMe-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-object-top {
+  object-position: top;
+}
