@@ -4,8 +4,22 @@
   margin: 0 auto;
   margin-bottom: 4rem;
 
+  @media (--tablet) {
+    margin-left: 7%;
+  }
+
   @media (--sm-desktop) {
+    margin-left: 9%;
+  }
+
+  @media (--desktop) {
     margin-left: 5%;
+    margin-bottom: 5rem;
+  }
+
+  @media(--lg-desktop) {
+    margin-left: 9%;
+    margin-bottom: 6rem;
   }
 }
 
@@ -13,7 +27,7 @@
   box-shadow: 2px 4px 32px #d7b8ec;
   border-radius: 3px;
   transition: transform 0.3s;
-  animation: spin 7s linear 7s;
+  animation: spin 5s linear 7s;
   animation-iteration-count: 1;
 }
 
@@ -21,12 +35,11 @@
   box-shadow: 2px 4px 32px #900fbf;
   border-radius: 3px;
   transition: transform 0.3s;
-  animation: spin 7.5s linear 7s;
+  animation: spin 4.8s linear 7s;
   animation-iteration-count: 1;
 
   @media (--desktop) {
     margin-left: 30%;
-    margin-bottom: 2rem;
   }
 }
 
@@ -40,4 +53,8 @@
   75% {
     transform: rotate(-360deg) scale(1.01);
   }
+}
+
+.object-position-top {
+  object-position: top;
 }

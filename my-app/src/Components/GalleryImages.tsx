@@ -10,7 +10,6 @@ interface galleryImage {
 }
 
 export function GalleryImages() {
-
   const images: galleryImage[] = [
     {
       id: 1,
@@ -82,7 +81,7 @@ export function GalleryImages() {
       id: 12,
       src: '/LC-red-romper-clean.png',
       alt: 'galleryImage12',
-      className: 'gallery-image-wrapper-2 object-fit-cover',
+      className: 'gallery-image-wrapper-2 object-fit-cover object-position-top',
     },
     {
       id: 13,
@@ -318,9 +317,7 @@ export function GalleryImages() {
               src={photo.src}
               alt={photo.alt}
               className={`${photo.className} ${
-                visibleStates[index]
-                  ? 'fade-in'
-                  : 'hidden'
+                visibleStates[index] ? 'fade-in' : 'hidden'
               }`}
             />
           </div>
