@@ -17,7 +17,7 @@
     margin-bottom: 5rem;
   }
 
-  @media(--lg-desktop) {
+  @media (--lg-desktop) {
     margin-left: 9%;
     margin-bottom: 6rem;
   }
