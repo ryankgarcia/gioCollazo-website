@@ -28,7 +28,9 @@ export function HomePage() {
           {/* <div className="column-full"> */}
           <p className="gio-intro-name text-center">Giovanny Collazo</p>
           <p className="gio-intro-title text-center">Personal Stylist</p>
-          <p className="gio-intro-est-2015 text-center">Styling men & women since 2015</p>
+          <p className="gio-intro-est-2015 text-center">
+            Styling men & women since 2015
+          </p>
         </div>
         {/* </div> */}
       </div>
@@ -49,7 +51,7 @@ export function HomePage() {
           className="home-GC-coverImage2"
         />
       </div>
-      <h2 className="home-bts-header">Behind The Scenes</h2>
+      <h2 className="home-bts-header text-center">Behind The Scenes</h2>
       <div className="home-row">
         {/* <div className="column-full"> */}
         <div className="video-container-H">
@@ -87,7 +89,7 @@ export function HomePage() {
           </div>
         </div>
       </div>
-      <h2 className="home-style-highlights">Style Highlights</h2>
+      <h2 className="home-style-highlights text-center">Style Highlights</h2>
       <div className="home-row">
         <div className="display-flex-wrap">
           {
@@ -97,7 +99,9 @@ export function HomePage() {
           }
         </div>
       </div>
-      <h2 className="home-brandsWorkedW">Brands I've Worked With</h2>
+      <h2 className="home-brandsWorkedW text-center">
+        Brands I've Worked With
+      </h2>
       <div className="home-row">
         <div className="display-flex-wrap">
           {

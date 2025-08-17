@@ -6,8 +6,8 @@ import './Contact.css';
 export function ContactPage() {
   return (
     <div className="page-container">
-      <h2 className="header-element">Hello.</h2>
-      <h2 className="header-element">Welcome.</h2>
+      <h2 className="header-element text-center">Hello.</h2>
+      <h2 className="header-element text-center">Welcome.</h2>
       <div className="contact-row">
         <div className="column-full">
           <h3 className="second-header text-center">

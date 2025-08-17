@@ -5,8 +5,8 @@ import './FAQ.css';
 export function FAQ() {
   return (
     <div className="page-container">
-      <h2 className="FAQ-header-main">Frequently Asked</h2>
-      <h2 className="FAQ-header-main">Questions</h2>
+      <h2 className="FAQ-header-main text-center">Frequently Asked</h2>
+      <h2 className="FAQ-header-main text-center">Questions</h2>
       <p className="FAQ-question">What is a Wardrobe Stylist?</p>
       <p className="p-text">
         A style expert is a wardrobe professional who helps clients uncover

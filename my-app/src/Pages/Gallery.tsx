@@ -8,7 +8,7 @@ const LazyLoadGalleryImages = lazy(() => import('../Components/GalleryImages'));
 export function Gallery() {
   return (
     <div className="page-container">
-      <h2 className="header-element">Gallery</h2>
+      <h2 className="header-element text-center">Gallery</h2>
       <div className="flex-row">
         <div className="display-flex-wrap">
           {
