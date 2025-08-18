@@ -133,9 +133,9 @@ export function GalleryImages() {
     },
     {
       id: 21,
-      src: '/Sophia-hookahLounge.jpg',
+      src: '/Sophia-hookahLounge.jpeg',
       alt: 'galleryImage21',
-      className: 'gallery-image-wrapper-1 object-fit-cover',
+      className: 'gallery-image-wrapper-1 object-fit-cover object-position-top',
     },
     {
       id: 22,
@@ -229,7 +229,7 @@ export function GalleryImages() {
     },
     {
       id: 37,
-      src: '/BlackTop-redNike.jpg', // crop this image later
+      src: '/BlackTop-redNike.jpg',
       alt: 'galleryImage37',
       className: 'gallery-image-wrapper-1 object-fit-fill',
     },

@@ -11,7 +11,7 @@ interface topLooks {
   backsideText: string;
   linkTo: string;
   button: string;
-  fitStyle: 'object-fit-fill' | 'object-fit-cover';
+  fitStyle: 'object-fit-fill';
 }
 
 export function StyleHighlights() {
