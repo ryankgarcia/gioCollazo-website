@@ -37,6 +37,8 @@ export function Footer() {
               <a
                 href="https://www.instagram.com/styledbygio?igsh=MTJwa2w4em1tZm84Zg=="
                 target="_blank"
+                rel='noopener noreferrer'
+                aria-label='Instagram'
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -95,6 +97,7 @@ export function Footer() {
                 href="https://wa.me/18186338346?text=Hola%20Giovanny%2C%20miré%20tu%20página%20de%20web.%20Envíame%20información%20sobre%20tus%20servicios%20profesionales."
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label='WhatsApp'
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -146,6 +149,8 @@ export function Footer() {
                 target="_blank"
                 className="circle-icon"
                 href="mailto:styledbygio4@gmail.com"
+                rel='noopener noreferrer'
+                aria-label='Email'
               >
                 <CgMail className="mail-logo" />
               </a>
