@@ -1,21 +1,17 @@
 .home-style-highlights,
 .home-bts-header {
-  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   color: #fbfbfb;
   font-size: 3rem;
   font-family: 'Dancing Script', cursive;
 
-  /* this class simulates: iPad Mini, Galaxy Tab S8 */
   @media (--tablet) {
     font-size: 4rem;
   }
 
-  /* this class simulates: iPad Pro */
   @media (--sm-desktop) {
     font-size: 6.5rem;
   }
 
-  /* this class simulates: iMac 24" */
   @media (--lg-desktop) {
     font-size: 8rem;
   }
@@ -33,7 +29,6 @@
     font-size: 5rem;
   }
 
-  /* this class simulates: MacBook Air 13" */
   @media (--desktop) {
     font-size: 6.5rem;
   }

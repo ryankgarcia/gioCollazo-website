@@ -3,7 +3,7 @@ import { WorkWithMe } from '../Components/WorkWithMe - Form';
 import './PagesCssInCommon.css';
 import './Contact.css';
 
-export function ContactPage() {
+export function Contact() {
   return (
     <div className="page-container">
       <h2 className="header-element text-center">Hello.</h2>

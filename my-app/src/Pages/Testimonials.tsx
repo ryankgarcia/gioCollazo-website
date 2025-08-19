@@ -77,7 +77,7 @@ export function Testimonials() {
         </p>
         <p className="p-text">
           We always feel confident and comfortable in his pieces, and he finds
-          that sweet spot where we coordinate well without looking too overdone.{' '}
+          that sweet spot where we coordinate well without looking too overdone.
           <em> Can’t recommend him enough.</em>
         </p>
         <p className="p-text flex-start">Alex - DJ, Producer, Socialite</p>
@@ -111,7 +111,7 @@ export function Testimonials() {
           brunch, rave fit…he does it all.
         </p>
         <p className="p-text flex-end">
-          LC - Entrepreneur, Influencer, Socialite{' '}
+          LC - Entrepreneur, Influencer, Socialite
         </p>
         <p className="p-text flex-end">Downey, California</p>
       </div>

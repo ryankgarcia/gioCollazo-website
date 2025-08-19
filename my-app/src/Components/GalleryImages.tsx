@@ -235,7 +235,7 @@ export function GalleryImages() {
     },
     {
       id: 38,
-      src: '/Gio-FlowerPedals.jpg', // crop this image so it fits better in frame
+      src: '/Gio-FlowerPedals.jpg',
       alt: 'galleryImage38',
       className: 'gallery-image-wrapper-2 object-fit-fill',
     },

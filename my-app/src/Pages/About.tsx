@@ -3,7 +3,7 @@ import './About.css';
 import { Link } from 'react-router-dom';
 import { Footer } from '../Components/Footer';
 
-export function AboutMe() {
+export function About() {
   return (
     <div className="page-container">
       <h2 className="header-element text-center">Hello.</h2>
