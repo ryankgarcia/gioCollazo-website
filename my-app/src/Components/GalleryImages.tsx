@@ -176,7 +176,7 @@ export function GalleryImages() {
     {
       id: 28,
       src: '/Indoor-pinkDress-whitebkgd.jpeg',
-      alt: 'galleryImage3',
+      alt: 'galleryImage28',
       className: 'gallery-image-wrapper-2 object-fit-cover',
     },
     {
