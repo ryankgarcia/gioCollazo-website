@@ -69,7 +69,7 @@ export function GalleryImages() {
       id: 10,
       src: '/LC-yeehaw-Cowgirl.jpeg',
       alt: 'galleryImage10',
-      className: 'gallery-image-wrapper-2 object-fit-fill',
+      className: 'gallery-image-wrapper-2 object-fit-cover object-position-top',
     },
     {
       id: 11,
