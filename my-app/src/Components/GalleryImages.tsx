@@ -69,7 +69,7 @@ export function GalleryImages() {
       id: 10,
       src: '/LC-yeehaw-Cowgirl.jpeg',
       alt: 'galleryImage10',
-      className: 'gallery-image-wrapper-2 object-fit-fill',
+      className: 'gallery-image-wrapper-2 object-fit-cover object-position-top',
     },
     {
       id: 11,
@@ -133,9 +133,9 @@ export function GalleryImages() {
     },
     {
       id: 21,
-      src: '/Sophia-hookahLounge.jpg',
+      src: '/Sophia-hookahLounge.jpeg',
       alt: 'galleryImage21',
-      className: 'gallery-image-wrapper-1 object-fit-cover',
+      className: 'gallery-image-wrapper-1 object-fit-cover object-position-top',
     },
     {
       id: 22,
@@ -229,13 +229,13 @@ export function GalleryImages() {
     },
     {
       id: 37,
-      src: '/BlackTop-redNike.jpg', // crop this image later
+      src: '/BlackTop-redNike.jpg',
       alt: 'galleryImage37',
       className: 'gallery-image-wrapper-1 object-fit-fill',
     },
     {
       id: 38,
-      src: '/Gio-FlowerPedals.jpg', // crop this image so it fits better in frame
+      src: '/Gio-FlowerPedals.jpg',
       alt: 'galleryImage38',
       className: 'gallery-image-wrapper-2 object-fit-fill',
     },

@@ -1,9 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
 import { NavBar } from './Components/NavBar';
-import { HomePage } from './Pages/Home';
-import { AboutMe } from './Pages/About';
+import { Home } from './Pages/Home';
+import { About } from './Pages/About';
 import { Testimonials } from './Pages/Testimonials';
-import { ContactPage } from './Pages/Contact';
+import { Contact } from './Pages/Contact';
 import { Services } from './Pages/Services';
 import { FAQ } from './Pages/FAQ';
 import { Gallery } from './Pages/Gallery';
@@ -13,11 +13,11 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<NavBar />}>
-        <Route index element={<HomePage />} />
-        <Route path="/about" element={<AboutMe />} />
+        <Route index element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/testimonials" element={<Testimonials />} />
-        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/FAQ" element={<FAQ />} />
         <Route path="/gallery" element={<Gallery />} />
       </Route>

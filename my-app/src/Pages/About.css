@@ -1,9 +1,7 @@
 .imGio-header {
-  /* this class simulates: Pixel 7, iPhone 5, iPhone 14 Pro */
   font-size: 2.7rem;
   color: #fbfbfb;
   font-family: 'Dancing Script', cursive;
-  /* this class simulates: iPad Mini, Galaxy Tab S8 */
   @media (--tablet) {
     font-size: 4.5rem;
   }
