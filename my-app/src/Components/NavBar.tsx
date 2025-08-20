@@ -13,13 +13,20 @@ export function NavBar() {
 
   return (
     <div>
-      <div onClick={handleOpen} className="navBarHeader hamburger-menu">
-        <BiMenu />
-        <div className="nav-column-full"> StyledByGio</div>
-      </div>
-      <div className={`allLinks ${isOpen ? 'open' : ''}`}>
+      <button
+        type="button"
+        onClick={handleOpen}
+        className="navBarHeader hamburger-menu"
+        aria-label="Toggle navigation"
+        aria-expanded={isOpen}
+        aria-controls="all-links"
+      >
+        <BiMenu aria-hidden="true" />
+        <div className="nav-column-full">StyledByGio</div>
+      </button>
+      <div id="all-links" className={`allLinks ${isOpen ? 'open' : ''}`}>
         <div>
-          <NavLink to="/" className="home-link">
+          <NavLink to="/" end className="home-link">
             <span>Home</span>
           </NavLink>
         </div>

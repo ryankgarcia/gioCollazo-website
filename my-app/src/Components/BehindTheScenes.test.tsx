@@ -1,7 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import BehindTheScenes from './BehindTheScenes';
-import './BehindTheScenes.css';
 
 jest.mock('../Hooks/GradientScroll', () => ({
   useIntersectionVisibleStates: (length: number) => ({
