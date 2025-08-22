@@ -25,7 +25,10 @@ export function Services() {
       <p className="p-text">✅</p>
       <p className="p-text">✅</p>
       <div className="button-center">
-        <Link to="/contact" className="button services-button-margin text-center">
+        <Link
+          to="/contact"
+          className="button services-button-margin text-center"
+        >
           Book Your Session
         </Link>
       </div>
@@ -44,10 +47,14 @@ export function Services() {
       <p className="p-text">✅ Styling tips as we shop</p>
       <p className="p-text">✅ Outfit building in real-time</p>
       <p className="p-text">✅ Feel-good vibes all day</p>
-      <p className="p-text">Ready for your wardrobe glow-up? </p> <p className="p-text">Let's make it personal.</p>
+      <p className="p-text">Ready for your wardrobe glow-up? </p>{' '}
+      <p className="p-text">Let's make it personal.</p>
       <p className="p-text">Let's make it fashion. 💅</p>
       <div className="button-center">
-        <Link to="/contact" className="button services-button-margin text-center">
+        <Link
+          to="/contact"
+          className="button services-button-margin text-center"
+        >
           Book Your Session
         </Link>
       </div>
@@ -70,7 +77,27 @@ export function Services() {
       <p className="p-text">✅</p>
       <p className="p-text">✅</p>
       <div className="button-center">
-        <Link to="/contact" className="button services-button-margin text-center">
+        <Link
+          to="/contact"
+          className="button services-button-margin text-center"
+        >
+          Book Your Session
+        </Link>
+      </div>
+      <h3 className="service-subheader text-center">⭐Extended Services⭐</h3>
+      <p className="p-text">
+        In addition to my styling expertise, I am delighted to offer Personal
+        Assistant services, available discreetly upon request.
+      </p>
+      <p className="p-text">
+        A service tailored for those who value elegance, efficiency, and
+        discretion.
+      </p>
+      <div className="button-center">
+        <Link
+          to="/contact"
+          className="button services-button-margin text-center"
+        >
           Book Your Session
         </Link>
       </div>
