@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { WorkWithMe } from './WorkWithMe - Form';
+import { WorkWithMe } from './WorkWithMe';
 
 describe('<WorkWithMe />', () => {
   test('renders the Google Form iframe with correct title, src, and class', () => {

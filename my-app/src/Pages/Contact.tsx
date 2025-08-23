@@ -1,5 +1,5 @@
 import { Footer } from '../Components/Footer';
-import { WorkWithMe } from '../Components/WorkWithMe - Form';
+import { WorkWithMe } from '../Components/WorkWithMe';
 import './PagesCssInCommon.css';
 import './Contact.css';
 

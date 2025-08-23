@@ -6,6 +6,10 @@ jest.mock('../Components/Footer', () => ({
   Footer: () => <footer data-testid="footer" />,
 }));
 
+jest.mock('../Components/WorkWithMe', () => ({
+  WorkWithMe: () => <div data-testid="work-with-me" />,
+}));
+
 describe('<Contact />', () => {
   function renderContactAt(pathname = '/contact') {
     return render(
@@ -17,24 +21,32 @@ describe('<Contact />', () => {
     );
   }
 
-  test('renders headings, paragraphs, iframe form, image, and footer', () => {
+  test('renders headings, the form area, image, and footer', () => {
     renderContactAt();
 
-    const h2hello = screen.getByRole('heading', { level: 2, name: /hello\./i });
-    expect(h2hello).toBeInTheDocument();
+    expect(screen.getAllByRole('heading', { level: 2 })).toHaveLength(2);
+    expect(
+      screen.getByRole('heading', { level: 2, name: /hello\./i }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { level: 2, name: /welcome\./i }),
+    ).toBeInTheDocument();
 
-    const h2Welcome = screen.getByRole('heading', {
-      level: 2,
-      name: /welcome\./i,
-    });
-    expect(h2Welcome).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', {
+        level: 3,
+        name: /please enter your information below so we can discuss how i can help\./i,
+      }),
+    ).toBeInTheDocument();
 
-    const enterInfo = screen.getByRole('heading', {
-      level: 3,
-      name: /Please enter your information below .*/i,
-    });
-    expect(enterInfo).toBeInTheDocument();
+    expect(screen.getByTestId('work-with-me')).toBeInTheDocument();
 
-    // left off writing the iframe portion...
+    expect(
+      screen.getByRole('img', {
+        name: /giovanny collazo - professional wardrobe stylist/i,
+      }),
+    ).toBeInTheDocument();
+
+    expect(screen.getByTestId('footer')).toBeInTheDocument();
   });
 });
