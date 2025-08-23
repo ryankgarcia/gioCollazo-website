@@ -52,12 +52,11 @@ export function FAQ() {
         clothes?
       </p>
       <p className="p-text">
-        {/* the answer below needs to be rephrased */}
-        My rates are reasonably priced and designed to be budget-friendly. As
-        for your wardrobe budget, that’s completely up to you. It all depends on
-        what you need and what you’re comfortable spending. I’m here to work
-        within your means and make sure you get the best value, no matter the
-        budget.
+        My services are designed to give you the polished, professional results
+        you’d expect from a top-tier stylist without the luxury price tag. I
+        provide expert guidance and consistency, ensuring every investment you
+        make in your wardrobe pays off. With a fair market value pricing model,
+        you’ll always receive lasting quality and exceptional value.
       </p>
       <Footer />
     </div>
