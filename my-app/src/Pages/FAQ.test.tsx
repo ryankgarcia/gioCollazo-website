@@ -6,10 +6,6 @@ jest.mock('../Components/Footer', () => ({
   Footer: () => <footer data-testid="footer" />,
 }));
 
-jest.mock('../Components/WorkWithMe', () => ({
-  WorkWithMe: () => <div data-testid="work-with-me" />,
-}));
-
 describe('<FAQ />', () => {
   function renderFAQAt(pathname = '/FAQ') {
     return render(

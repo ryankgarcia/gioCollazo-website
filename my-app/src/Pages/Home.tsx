@@ -50,7 +50,7 @@ export function Home() {
       <h2 className="home-bts-header text-center">Behind The Scenes</h2>
       <div className="home-row">
         <div className="video-container-H">
-          <video className="video-H" controls muted>
+          <video className="video-H" controls muted aria-label='BTS styling for video shoot'>
             <source src="/BTS-stylingForVideoShoot.mp4" type="video/mp4" />
           </video>
         </div>
@@ -58,7 +58,7 @@ export function Home() {
       <div className="home-row">
         <div className="column-full">
           <div className="video-container-V video-center">
-            <video className="video-V" controls muted>
+            <video className="video-V" controls muted aria-label='Gio spray painting'>
               <source src="/BTS-gioSprayPainting.mp4" type="video/mp4" />
             </video>
           </div>

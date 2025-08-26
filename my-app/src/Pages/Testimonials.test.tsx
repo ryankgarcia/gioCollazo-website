@@ -6,10 +6,6 @@ jest.mock('../Components/Footer', () => ({
   Footer: () => <footer data-testid="footer" />,
 }));
 
-jest.mock('../Components/WorkWithMe', () => ({
-  WorkWithMe: () => <div data-testid="work-with-me" />,
-}));
-
 describe('<Testimonials />', () => {
   function renderTestimonialsAt(pathname = '/testimonials') {
     return render(
@@ -77,7 +73,6 @@ describe('<Testimonials />', () => {
       ),
     ).toBeInTheDocument();
 
-
     expect(
       within(jimBlock).getByText(/jim mathews & cynthia bach/i),
     ).toBeInTheDocument();
@@ -87,7 +82,6 @@ describe('<Testimonials />', () => {
     expect(
       within(jimBlock).getByText(/los Angeles, california/i),
     ).toBeInTheDocument();
-
 
     const sophiaBlock = screen.getByTestId('t-sophia');
 
@@ -102,14 +96,12 @@ describe('<Testimonials />', () => {
       ),
     ).toBeInTheDocument();
 
-
     expect(
       within(sophiaBlock).getByText(/sophia - dj, business owner, socialite/i),
     ).toBeInTheDocument();
     expect(
       within(sophiaBlock).getByText(/los Angeles, california/i),
     ).toBeInTheDocument();
-
 
     const alexBlock = screen.getByTestId('t-alex');
 
@@ -126,7 +118,6 @@ describe('<Testimonials />', () => {
     expect(
       screen.getByText(/can’t recommend him enough\./i),
     ).toBeInTheDocument();
-
 
     expect(
       within(alexBlock).getByText(/alex - dj, producer, socialite/i),
@@ -150,8 +141,9 @@ describe('<Testimonials />', () => {
     expect(
       within(lcBlock).getByText(/lc - entrepreneur, influencer, socialite/i),
     ).toBeInTheDocument();
-    expect(within(lcBlock).getByText(/downey, california/i)).toBeInTheDocument();
-
+    expect(
+      within(lcBlock).getByText(/downey, california/i),
+    ).toBeInTheDocument();
 
     const louieBlock = screen.getByTestId('t-louie');
 
@@ -171,14 +163,12 @@ describe('<Testimonials />', () => {
       ),
     ).toBeInTheDocument();
 
-
     expect(
       within(louieBlock).getByText(/louie - husband, father, business owner/i),
     ).toBeInTheDocument();
     expect(
       within(louieBlock).getByText(/north orange county, california/i),
     ).toBeInTheDocument();
-
 
     const nicoleBlock = screen.getByTestId('t-nicole');
 
@@ -193,12 +183,12 @@ describe('<Testimonials />', () => {
       ),
     ).toBeInTheDocument();
 
-    
     expect(
-      within(nicoleBlock).getByText(/nicole - model, entrepreneur, make up artist/i),
+      within(nicoleBlock).getByText(
+        /nicole - model, entrepreneur, make up artist/i,
+      ),
     ).toBeInTheDocument();
     expect(within(nicoleBlock).getByText(/dallas, texas/i)).toBeInTheDocument();
-
 
     const ryanBlock = screen.getByTestId('t-ryan');
 
@@ -212,7 +202,6 @@ describe('<Testimonials />', () => {
         /he is fun to work with, professional, and an artist of his craft. gio is honest and keeps it real with me, which is why i love to work with him\. if i don’t like how i feel in my clothes, we make adjustments to make it feel “just right”\./i,
       ),
     ).toBeInTheDocument();
-
 
     expect(
       within(ryanBlock).getByText(/ryan - software developer/i),
