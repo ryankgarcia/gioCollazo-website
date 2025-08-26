@@ -1,4 +1,9 @@
-import { render, screen } from '@testing-library/react';
+import {
+  render,
+  screen,
+  waitForElementToBeRemoved,
+  within,
+} from '@testing-library/react';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { Home } from './Home';
 
@@ -17,7 +22,7 @@ describe('<Home />', () => {
     );
   }
 
-  test('renders headings, paragraphs, components, and footer', () => {
+  test('renders headings, paragraphs, intro imgs, and footer', () => {
     renderHomeAt();
 
     // image 1 & 2 to render
@@ -63,7 +68,7 @@ describe('<Home />', () => {
 
     expect(document.querySelectorAll('video')).toHaveLength(2);
 
-    // button to render 1
+    // button as a link to render 1
     expect(
       screen.getByRole('link', { name: /learn more/i }),
     ).toBeInTheDocument();
@@ -90,42 +95,50 @@ describe('<Home />', () => {
   test('render lazy load behind the scenes', async () => {
     renderHomeAt();
 
-    const fallback = screen.getByRole('status');
-    expect(fallback).toBeInTheDocument();
+    // const fallback = await screen.findAllByRole('status');
+    // expect(fallback.length).toBeGreaterThan(0);
+    const wrap = screen.getByTestId('bts-wrap');
 
-    const btsSection = await screen.findByRole('region', {
+    const localFallbacks = await within(wrap).findAllByRole('status');
+    expect(localFallbacks.length).toBeGreaterThan(0);
+
+    const btsSection = await within(wrap).findByRole('region', {
       name: /behind the scenes gallery/i,
     });
     expect(btsSection).toBeInTheDocument();
 
-    expect(screen.getByRole('status')).not.toBeInTheDocument();
+    await waitForElementToBeRemoved(() => within(wrap).queryAllByRole('status'));
   });
 
   test('render lazy load style highlights', async () => {
     renderHomeAt();
 
-    const fallback = screen.getByRole('status');
-    expect(fallback).toBeInTheDocument();
+    const wrap = screen.getByTestId('sh-wrap');
 
-    const shSection = await screen.findByRole('region', {
+    const localFallbacks = await within(wrap).findAllByRole('status');
+    expect(localFallbacks.length).toBeGreaterThan(0);
+
+    const shSection = await within(wrap).findByRole('region', {
       name: /stylehighlights gallery/i,
     });
     expect(shSection).toBeInTheDocument();
 
-    expect(screen.getByRole('status')).not.toBeInTheDocument();
+    await waitForElementToBeRemoved(() => within(wrap).queryAllByRole('status'));
   });
 
   test('render lazy load brands worked with', async () => {
     renderHomeAt();
 
-    const fallback = screen.getByRole('status');
-    expect(fallback).toBeInTheDocument();
+    const wrap = screen.getByTestId('brands-wrap');
 
-    const brandsSection = await screen.findByRole('region', {
+    const localFallback = await within(wrap).findAllByRole('status');
+    expect(localFallback.length).toBeGreaterThan(0);
+
+    const brandsSection = await within(wrap).findByRole('region', {
       name: /brands i've worked with gallery/i,
     });
     expect(brandsSection).toBeInTheDocument();
 
-    expect(screen.getByRole('status')).not.toBeInTheDocument();
+    await waitForElementToBeRemoved(() => within(wrap).queryAllByRole('status'));
   });
 });

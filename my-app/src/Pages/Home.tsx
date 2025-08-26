@@ -65,7 +65,7 @@ export function Home() {
         </div>
       </div>
       <div className="home-row">
-        <div className="display-flex-wrap">
+        <div className="display-flex-wrap" data-testid='bts-wrap'>
           {
             <Suspense fallback={<Loading />}>
               <LazyLoadBTS />
@@ -84,7 +84,7 @@ export function Home() {
       </div>
       <h2 className="home-style-highlights text-center">Style Highlights</h2>
       <div className="home-row">
-        <div className="display-flex-wrap">
+        <div className="display-flex-wrap" data-testid='sh-wrap'>
           {
             <Suspense fallback={<Loading />}>
               <LazyLoadStyleHighlights />
@@ -96,7 +96,7 @@ export function Home() {
         Brands I've Worked With
       </h2>
       <div className="home-row">
-        <div className="display-flex-wrap">
+        <div className="display-flex-wrap" data-testid='brands-wrap'>
           {
             <Suspense fallback={<Loading />}>
               <LazyLoadBrands />

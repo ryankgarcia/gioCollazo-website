@@ -15,7 +15,6 @@ interface imageElement {
 }
 
 export function BehindTheScenes() {
-  
   const behindTheScenesImage: imageElement[] = [
     {
       id: 1,
