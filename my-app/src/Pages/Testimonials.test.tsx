@@ -69,14 +69,14 @@ describe('<Testimonials />', () => {
     const laTexts = screen.getAllByText(/los angeles, california/i);
     expect(laTexts).toHaveLength(3);
 
+    const jimBlock = screen.getByTestId('t-jim-cynthia');
+
     expect(
       screen.getByText(
         /having worked with gio for over a decade, i can confidently say he has an exceptional eye for style and a natural flair for fashion\. his talent for layering and putting looks together allows him to create distinctive, personalized styles that truly bring out the individuality of each client\./i,
       ),
     ).toBeInTheDocument();
 
-    // modify this block (3 lines)
-    const jimBlock = screen.getByTestId('t-jim-cynthia');
 
     expect(
       within(jimBlock).getByText(/jim mathews & cynthia bach/i),
@@ -87,6 +87,9 @@ describe('<Testimonials />', () => {
     expect(
       within(jimBlock).getByText(/los Angeles, california/i),
     ).toBeInTheDocument();
+
+
+    const sophiaBlock = screen.getByTestId('t-sophia');
 
     expect(
       screen.getByText(
@@ -99,7 +102,6 @@ describe('<Testimonials />', () => {
       ),
     ).toBeInTheDocument();
 
-    const sophiaBlock = screen.getByTestId('t-sophia');
 
     expect(
       within(sophiaBlock).getByText(/sophia - dj, business owner, socialite/i),
@@ -107,6 +109,9 @@ describe('<Testimonials />', () => {
     expect(
       within(sophiaBlock).getByText(/los Angeles, california/i),
     ).toBeInTheDocument();
+
+
+    const alexBlock = screen.getByTestId('t-alex');
 
     expect(
       screen.getByText(
@@ -122,8 +127,6 @@ describe('<Testimonials />', () => {
       screen.getByText(/can’t recommend him enough\./i),
     ).toBeInTheDocument();
 
-    const alexBlock = screen.getByTestId('t-alex');
-    within(alexBlock);
 
     expect(
       within(alexBlock).getByText(/alex - dj, producer, socialite/i),
@@ -131,6 +134,8 @@ describe('<Testimonials />', () => {
     expect(
       within(alexBlock).getByText(/los Angeles, california/i),
     ).toBeInTheDocument();
+
+    const lcBlock = screen.getByTestId('t-lc');
 
     expect(
       screen.getByText(
@@ -143,9 +148,12 @@ describe('<Testimonials />', () => {
       ),
     ).toBeInTheDocument();
     expect(
-      screen.getByText(/lc - entrepreneur, influencer, socialite/i),
+      within(lcBlock).getByText(/lc - entrepreneur, influencer, socialite/i),
     ).toBeInTheDocument();
-    expect(screen.getByText(/downey, california/i)).toBeInTheDocument();
+    expect(within(lcBlock).getByText(/downey, california/i)).toBeInTheDocument();
+
+
+    const louieBlock = screen.getByTestId('t-louie');
 
     expect(
       screen.getByText(
@@ -163,7 +171,6 @@ describe('<Testimonials />', () => {
       ),
     ).toBeInTheDocument();
 
-    const louieBlock = screen.getByTestId('t-louie');
 
     expect(
       within(louieBlock).getByText(/louie - husband, father, business owner/i),
@@ -171,6 +178,9 @@ describe('<Testimonials />', () => {
     expect(
       within(louieBlock).getByText(/north orange county, california/i),
     ).toBeInTheDocument();
+
+
+    const nicoleBlock = screen.getByTestId('t-nicole');
 
     expect(
       screen.getByText(
@@ -182,10 +192,15 @@ describe('<Testimonials />', () => {
         /he makes me feel comfortable when working with him\. it’s always fun working with him\. and it doesn’t feel like it’s business, but more like a friend helping me\. he’s always my go-to stylist\./i,
       ),
     ).toBeInTheDocument();
+
+    
     expect(
-      screen.getByText(/nicole - model, entrepreneur, make up artist/i),
+      within(nicoleBlock).getByText(/nicole - model, entrepreneur, make up artist/i),
     ).toBeInTheDocument();
-    expect(screen.getByText(/dallas, texas/i)).toBeInTheDocument();
+    expect(within(nicoleBlock).getByText(/dallas, texas/i)).toBeInTheDocument();
+
+
+    const ryanBlock = screen.getByTestId('t-ryan');
 
     expect(
       screen.getByText(
@@ -198,7 +213,6 @@ describe('<Testimonials />', () => {
       ),
     ).toBeInTheDocument();
 
-    const ryanBlock = screen.getByTestId('t-ryan');
 
     expect(
       within(ryanBlock).getByText(/ryan - software developer/i),
