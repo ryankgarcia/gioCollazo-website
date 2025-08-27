@@ -113,7 +113,7 @@ export function BehindTheScenes() {
   );
 
   return (
-    <>
+    <section role="region" aria-label="Behind The Scenes Gallery">
       {behindTheScenesImage.length > 0 ? (
         behindTheScenesImage.map((image, index) => {
           const shadowClass =
@@ -154,7 +154,7 @@ export function BehindTheScenes() {
       ) : (
         <p>No images have loaded...</p>
       )}
-    </>
+    </section>
   );
 }
 

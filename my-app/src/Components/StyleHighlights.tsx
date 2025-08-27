@@ -123,7 +123,7 @@ export function StyleHighlights() {
   ];
 
   return (
-    <>
+    <section role="region" aria-label="StyleHighlights Gallery">
       {top10Picks.length > 0 ? (
         top10Picks.map((image, index) => {
           const shadowClass =
@@ -164,7 +164,7 @@ export function StyleHighlights() {
       ) : (
         <p>No images found . . .</p>
       )}
-    </>
+    </section>
   );
 }
 

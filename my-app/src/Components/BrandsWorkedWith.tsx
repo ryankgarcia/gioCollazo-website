@@ -120,7 +120,7 @@ export function BrandsWorkedWith() {
   );
 
   return (
-    <>
+    <section role="region" aria-label="Brands I've Worked With Gallery">
       {workedWithBrands.length > 0 ? (
         workedWithBrands.map((image, index) => (
           <div className="brand-circle" key={image.id}>
@@ -137,7 +137,7 @@ export function BrandsWorkedWith() {
       ) : (
         <p>No images have loaded...</p>
       )}
-    </>
+    </section>
   );
 }
 

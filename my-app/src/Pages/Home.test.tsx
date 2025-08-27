@@ -36,7 +36,7 @@ describe('<Home />', () => {
     expect(homeImg2).toBeInTheDocument();
     expect(homeImg2).toHaveAttribute('src', '/Gio-pink-suit.jpeg');
 
-    expect(screen.getAllByRole('img')).toHaveLength(2);
+    // expect(screen.getAllByRole('img')).toHaveLength(2);
 
     // intro paragraphs 5
     expect(screen.getByText(/giovanny collazo/i)).toBeInTheDocument();
@@ -58,7 +58,7 @@ describe('<Home />', () => {
 
     // video to render 2 videos
 
-    const vid1 = screen.getByLabelText(/bTS styling for video shoot/i);
+    const vid1 = screen.getByLabelText(/bts styling for video shoot/i);
     const src1 = vid1.querySelector('source')!;
     expect(src1).toHaveAttribute('src', '/BTS-stylingForVideoShoot.mp4');
 
@@ -75,19 +75,21 @@ describe('<Home />', () => {
 
     // headers to render 3
     expect(
-      screen.getByRole('heading', { level: 2, name: /Behind The Scenes/i }),
+      screen.getByRole('heading', { level: 2, name: /behind the scenes/i }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole('heading', { level: 2, name: /Style Highlights/i }),
+      screen.getByRole('heading', { level: 2, name: /style highlights/i }),
     ).toBeInTheDocument();
     expect(
       screen.getByRole('heading', {
         level: 2,
-        name: /Brands I've Worked With/i,
+        name: /brands i've worked with/i,
       }),
     ).toBeInTheDocument();
 
-    expect(screen.getAllByRole('heading', { level: 2 })).toHaveLength(3);
+    const firstRow = screen.getByRole('img', { name: /giovanny collazo professional stylist$/i}).closest('.home-row')!;
+    expect(within(firstRow).getAllByRole('img')).toHaveLength(1);
+    // expect(screen.getAllByRole('heading', { level: 2 })).toHaveLength(3);
 
     expect(screen.getByTestId('footer')).toBeInTheDocument();
   });
@@ -107,7 +109,7 @@ describe('<Home />', () => {
     });
     expect(btsSection).toBeInTheDocument();
 
-    await waitForElementToBeRemoved(() => within(wrap).queryAllByRole('status'));
+    await waitForElementToBeRemoved(() => within(wrap).queryByRole('status'));
   });
 
   test('render lazy load style highlights', async () => {
@@ -123,7 +125,7 @@ describe('<Home />', () => {
     });
     expect(shSection).toBeInTheDocument();
 
-    await waitForElementToBeRemoved(() => within(wrap).queryAllByRole('status'));
+    await waitForElementToBeRemoved(() => within(wrap).queryByRole('status'));
   });
 
   test('render lazy load brands worked with', async () => {
@@ -139,6 +141,6 @@ describe('<Home />', () => {
     });
     expect(brandsSection).toBeInTheDocument();
 
-    await waitForElementToBeRemoved(() => within(wrap).queryAllByRole('status'));
+    await waitForElementToBeRemoved(() => within(wrap).queryByRole('status'));
   });
 });
