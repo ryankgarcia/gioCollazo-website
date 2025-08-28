@@ -15,10 +15,6 @@ interface topLooks {
 }
 
 export function StyleHighlights() {
-  const { imageRefs, visibleStates } = useIntersectionVisibleStates(
-    StyleHighlights.length,
-  );
-
   const top10Picks: topLooks[] = [
     {
       id: 1,
@@ -122,8 +118,16 @@ export function StyleHighlights() {
     },
   ];
 
+  const { imageRefs, visibleStates } = useIntersectionVisibleStates(
+    StyleHighlights.length,
+  );
+
   return (
-    <section role="region" aria-label="StyleHighlights Gallery">
+    <div
+      className="display-flex-wrap"
+      role="region"
+      aria-label="StyleHighlights Gallery"
+    >
       {top10Picks.length > 0 ? (
         top10Picks.map((image, index) => {
           const shadowClass =
@@ -164,7 +168,7 @@ export function StyleHighlights() {
       ) : (
         <p>No images found . . .</p>
       )}
-    </section>
+    </div>
   );
 }
 
