@@ -16,14 +16,6 @@ export function Services() {
       <p className="p-text">
         No judgment. Just clarity, style, and a fresh perspective.
       </p>
-      <p className="p-text">Includes:</p>
-      <p className="p-text">
-        ✅ This is how the test will appear on this line. If the line continues
-        it will go to the next line
-      </p>
-      <p className="p-text">✅</p>
-      <p className="p-text">✅</p>
-      <p className="p-text">✅</p>
       <div className="button-center">
         <Link
           to="/contact"
@@ -42,11 +34,6 @@ export function Services() {
         We’ll shop smarter, not harder, and you’ll leave knowing how to dress
         with confidence. (2 hour-minimum)
       </p>
-      <p className="p-text">Includes:</p>
-      <p className="p-text">✅ Body type education</p>
-      <p className="p-text">✅ Styling tips as we shop</p>
-      <p className="p-text">✅ Outfit building in real-time</p>
-      <p className="p-text">✅ Feel-good vibes all day</p>
       <p className="p-text">Ready for your wardrobe glow-up? </p>{' '}
       <p className="p-text">Let's make it personal.</p>
       <p className="p-text">Let's make it fashion. 💅</p>
@@ -71,11 +58,6 @@ export function Services() {
         Let's get you all glam'ed up for your special occasion by helping you
         understand your body's best features.
       </p>
-      <p className="p-text">Includes:</p>
-      <p className="p-text">✅</p>
-      <p className="p-text">✅</p>
-      <p className="p-text">✅</p>
-      <p className="p-text">✅</p>
       <div className="button-center">
         <Link
           to="/contact"
