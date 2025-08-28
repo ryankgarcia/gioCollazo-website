@@ -306,7 +306,11 @@ export function GalleryImages() {
   );
 
   return (
-    <div role="region" aria-label="Gallery Photos">
+    <div
+      className="display-flex-wrap"
+      role="region"
+      aria-label="Gallery Photos"
+    >
       {images.length > 0 ? (
         images.map((photo, index) => (
           <div className="gallery-image" key={photo.id}>
