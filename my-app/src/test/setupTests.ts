@@ -143,16 +143,30 @@ Object.defineProperty(globalThis, 'IntersectionObserver', {
 });
 
 // Test helpers: these two functions below are functions tests can import to drive intersections or reset
+// these helpers were especially used in the GradientScroll.test.tsx to test the custom hook
 
-// function below simulates an intersection for one or many elements
-export function simulateIntersection(
+// function below simulates an IntersectionObserver event on the most recently created mock
+// observer instance.
+
+// - accepts one or many elements
+// - builds fake IntersectionObserverEntry objects with `isIntersecting` set to true/false
+// - invokes the captured callback so the hook updates its visibleStates array as if the
+// browser fired a real event
+
+// I used the 'latest' observer instance (list[list.length - 1]) so tests don't accidentally
+// emit to older observers left over from previous renders
+
+export function simulateOnLatestIO(
   targets: Element | Element[],
   isIntersecting = true,
 ) {
+  const list = globalThis.__IO_INSTANCES__ ?? [];
+  const io = list[list.length - 1];
+  if (!io) {
+    throw new Error('No IntersectionObserver instances captured yet.');
+  }
   const els = Array.isArray(targets) ? targets : [targets];
-  (globalThis.__IO_INSTANCES__ ?? []).forEach((io) => {
-    io._emit(els.map((el) => ({ target: el, isIntersecting })));
-  });
+  io._emit(els.map((el) => ({ target: el, isIntersecting })));
 }
 
 // function below clear captured IO instances between tests (if you wish)

@@ -4,7 +4,6 @@ const config: Config.InitialOptions = {
   preset: 'ts-jest/presets/default-esm',
   testEnvironment: 'jsdom',
   extensionsToTreatAsEsm: ['.ts', '.tsx'],
-  resolver: 'ts-jest-resolver',
   roots: ['<rootDir>/src'],
   transform: {
     '^.+\\.(ts|tsx)$': [
@@ -22,8 +21,6 @@ const config: Config.InitialOptions = {
     '\\.(css|scss|sass)$': 'identity-obj-proxy',
 
     '^@/(.*)$': '<rootDir>/src/$1',
-
-    '\\.(gif|ttf|eot|svg|png|jpe?g|webp)$': '<rootDir>/src/test/__mocks__/fileMock.cjs',
   },
 
   transformIgnorePatterns: [
@@ -32,7 +29,7 @@ const config: Config.InitialOptions = {
 
   testPathIgnorePatterns: ['/node_modules/', '/dist/'],
 
-  moduleFileExtensions: ['ts','tsx','js','jsx','json']
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
 };
 
 export default config;
