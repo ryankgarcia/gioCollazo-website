@@ -306,7 +306,7 @@ export function GalleryImages() {
   );
 
   return (
-    <>
+    <div role="region" aria-label="Gallery Photos">
       {images.length > 0 ? (
         images.map((photo, index) => (
           <div className="gallery-image" key={photo.id}>
@@ -327,7 +327,7 @@ export function GalleryImages() {
       ) : (
         <p>No images have been loaded.</p>
       )}
-    </>
+    </div>
   );
 }
 
