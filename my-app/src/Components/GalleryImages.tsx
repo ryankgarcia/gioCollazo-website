@@ -176,7 +176,7 @@ export function GalleryImages() {
     {
       id: 28,
       src: '/Indoor-pinkDress-whitebkgd.jpeg',
-      alt: 'galleryImage3',
+      alt: 'galleryImage28',
       className: 'gallery-image-wrapper-2 object-fit-cover',
     },
     {
@@ -306,7 +306,11 @@ export function GalleryImages() {
   );
 
   return (
-    <>
+    <div
+      className="display-flex-wrap"
+      role="region"
+      aria-label="Gallery Photos"
+    >
       {images.length > 0 ? (
         images.map((photo, index) => (
           <div className="gallery-image" key={photo.id}>
@@ -327,7 +331,7 @@ export function GalleryImages() {
       ) : (
         <p>No images have been loaded.</p>
       )}
-    </>
+    </div>
   );
 }
 

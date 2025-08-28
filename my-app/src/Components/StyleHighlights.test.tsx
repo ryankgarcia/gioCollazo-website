@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import BehindTheScenes from './BehindTheScenes';
+import StyleHighlights from './StyleHighlights';
 
 jest.mock('../Hooks/GradientScroll', () => ({
   useIntersectionVisibleStates: (length: number) => ({
@@ -9,29 +9,29 @@ jest.mock('../Hooks/GradientScroll', () => ({
   }),
 }));
 
-describe('<BehindTheScenes />', () => {
+describe('<StyleHighlights />', () => {
   test('renders all images from data', () => {
     render(
       <MemoryRouter>
-        <BehindTheScenes />
+        <StyleHighlights />
       </MemoryRouter>,
     );
 
     const images = screen.getAllByRole('img');
-    expect(images).toHaveLength(9);
+    expect(images).toHaveLength(10);
 
-    expect(images[0]).toHaveAttribute('alt', 'BTSImage1');
+    expect(images[0]).toHaveAttribute('alt', 'styleHighlights1');
   });
 
   test('all images have Book Now links', () => {
     render(
       <MemoryRouter>
-        <BehindTheScenes />
+        <StyleHighlights />
       </MemoryRouter>,
     );
 
     const links = screen.getAllByRole('link', { name: /book now/i });
-    expect(links).toHaveLength(9);
+    expect(links).toHaveLength(10);
     links.forEach((link) => {
       expect(link).toHaveAttribute('href', '/services');
     });

@@ -1,6 +1,12 @@
 .hamburger-menu {
   font-size: 3.1rem;
   display: flex;
+  background: none;
+  border: none;
+  align-items: center;
+  padding-left: 12px;
+  width: 100%;
+  cursor: pointer;
   @media (--tablet) {
     font-size: 5rem;
   }

@@ -120,7 +120,11 @@ export function BrandsWorkedWith() {
   );
 
   return (
-    <>
+    <div
+      className="display-flex-wrap"
+      role="region"
+      aria-label="Brands I've Worked With Gallery"
+    >
       {workedWithBrands.length > 0 ? (
         workedWithBrands.map((image, index) => (
           <div className="brand-circle" key={image.id}>
@@ -137,7 +141,7 @@ export function BrandsWorkedWith() {
       ) : (
         <p>No images have loaded...</p>
       )}
-    </>
+    </div>
   );
 }
 

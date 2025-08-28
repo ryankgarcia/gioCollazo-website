@@ -50,7 +50,12 @@ export function Home() {
       <h2 className="home-bts-header text-center">Behind The Scenes</h2>
       <div className="home-row">
         <div className="video-container-H">
-          <video className="video-H" controls muted>
+          <video
+            className="video-H"
+            controls
+            muted
+            aria-label="BTS styling for video shoot"
+          >
             <source src="/BTS-stylingForVideoShoot.mp4" type="video/mp4" />
           </video>
         </div>
@@ -58,14 +63,19 @@ export function Home() {
       <div className="home-row">
         <div className="column-full">
           <div className="video-container-V video-center">
-            <video className="video-V" controls muted>
+            <video
+              className="video-V"
+              controls
+              muted
+              aria-label="Gio spray painting"
+            >
               <source src="/BTS-gioSprayPainting.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
       </div>
       <div className="home-row">
-        <div className="display-flex-wrap">
+        <div data-testid="bts-wrap">
           {
             <Suspense fallback={<Loading />}>
               <LazyLoadBTS />
@@ -84,7 +94,7 @@ export function Home() {
       </div>
       <h2 className="home-style-highlights text-center">Style Highlights</h2>
       <div className="home-row">
-        <div className="display-flex-wrap">
+        <div data-testid="sh-wrap">
           {
             <Suspense fallback={<Loading />}>
               <LazyLoadStyleHighlights />
@@ -96,7 +106,7 @@ export function Home() {
         Brands I've Worked With
       </h2>
       <div className="home-row">
-        <div className="display-flex-wrap">
+        <div data-testid="brands-wrap">
           {
             <Suspense fallback={<Loading />}>
               <LazyLoadBrands />

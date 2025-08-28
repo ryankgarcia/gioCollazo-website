@@ -10,7 +10,7 @@ export function Testimonials() {
           <h2 className="header-element text-center">Testimonials</h2>
         </div>
       </div>
-      <div className="testimonial-row">
+      <div className="testimonial-row" data-testid="t-jim-cynthia">
         <div className="testimonial-column-flex-start">
           <div className="testimonial-wrapper">
             <img
@@ -31,7 +31,7 @@ export function Testimonials() {
         <p className="p-text flex-start">Jewelry Designers</p>
         <p className="p-text flex-start">Los Angeles, California</p>
       </div>
-      <div className="testimonial-row">
+      <div className="testimonial-row" data-testid="t-sophia">
         <div className="testimonial-column-flex-end">
           <div className="testimonial-wrapper">
             <img
@@ -59,7 +59,7 @@ export function Testimonials() {
         </p>
         <p className="p-text flex-end">Los Angeles, California</p>
       </div>
-      <div className="testimonial-row">
+      <div className="testimonial-row" data-testid="t-alex">
         <div className="testimonial-column-flex-start">
           <div className="testimonial-wrapper">
             <img
@@ -83,7 +83,7 @@ export function Testimonials() {
         <p className="p-text flex-start">Alex - DJ, Producer, Socialite</p>
         <p className="p-text flex-start">Los Angeles, California</p>
       </div>
-      <div className="testimonial-row">
+      <div className="testimonial-row" data-testid="t-lc">
         <div className="testimonial-column-flex-end">
           <div className="testimonial-wrapper">
             <img
@@ -115,7 +115,7 @@ export function Testimonials() {
         </p>
         <p className="p-text flex-end">Downey, California</p>
       </div>
-      <div className="testimonial-row">
+      <div className="testimonial-row" data-testid="t-louie">
         <div className="testimonial-column-flex-start">
           <div className="testimonial-wrapper">
             <img
@@ -152,7 +152,7 @@ export function Testimonials() {
         </p>
         <p className="p-text flex-start">North Orange County, California</p>
       </div>
-      <div className="testimonial-row">
+      <div className="testimonial-row" data-testid="t-nicole">
         <div className="testimonial-column-flex-end">
           <div className="testimonial-wrapper">
             <img
@@ -175,7 +175,7 @@ export function Testimonials() {
         </p>
         <p className="p-text flex-end">Dallas, Texas</p>
       </div>
-      <div className="testimonial-row">
+      <div className="testimonial-row" data-testid="t-ryan">
         <div className="testimonial-column-flex-start">
           <div className="testimonial-wrapper">
             <img

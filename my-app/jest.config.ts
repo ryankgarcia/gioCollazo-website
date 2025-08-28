@@ -4,8 +4,9 @@ const config: Config.InitialOptions = {
   preset: 'ts-jest/presets/default-esm',
   testEnvironment: 'jsdom',
   extensionsToTreatAsEsm: ['.ts', '.tsx'],
+  roots: ['<rootDir>/src'],
   transform: {
-    '^.+\\.tsx?$': [
+    '^.+\\.(ts|tsx)$': [
       'ts-jest',
       {
         useESM: true,
@@ -18,7 +19,17 @@ const config: Config.InitialOptions = {
 
   moduleNameMapper: {
     '\\.(css|scss|sass)$': 'identity-obj-proxy',
+
+    '^@/(.*)$': '<rootDir>/src/$1',
   },
+
+  transformIgnorePatterns: [
+    '/node_modules/(?!(lucide-react|class-variance-authority|@radix-ui|nanoid)/)',
+  ],
+
+  testPathIgnorePatterns: ['/node_modules/', '/dist/'],
+
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
 };
 
 export default config;

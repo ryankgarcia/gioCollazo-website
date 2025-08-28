@@ -37,6 +37,8 @@ export function Footer() {
               <a
                 href="https://www.instagram.com/styledbygio?igsh=MTJwa2w4em1tZm84Zg=="
                 target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -70,10 +72,10 @@ export function Footer() {
                         gradientTransform="matrix(0 -253.715 235.975 0 68 275.717)"
                         gradientUnits="userSpaceOnUse"
                       >
-                        <stop stop-color="#fd5" />
-                        <stop offset=".1" stop-color="#fd5" />
-                        <stop offset=".5" stop-color="#ff543e" />
-                        <stop offset="1" stop-color="#c837ab" />
+                        <stop stopColor="#fd5" />
+                        <stop offset=".1" stopColor="#fd5" />
+                        <stop offset=".5" stopColor="#ff543e" />
+                        <stop offset="1" stopColor="#c837ab" />
                       </radialGradient>
                       <radialGradient
                         id="SVGfkNpldMH"
@@ -83,9 +85,9 @@ export function Footer() {
                         gradientTransform="matrix(22.25952 111.2061 -458.39518 91.75449 -42.881 18.441)"
                         gradientUnits="userSpaceOnUse"
                       >
-                        <stop stop-color="#3771c8" />
-                        <stop offset=".128" stop-color="#3771c8" />
-                        <stop offset="1" stop-color="#60f" stop-opacity="0" />
+                        <stop stopColor="#3771c8" />
+                        <stop offset=".128" stopColor="#3771c8" />
+                        <stop offset="1" stopColor="#60f" stopOpacity="0" />
                       </radialGradient>
                     </defs>
                   </g>
@@ -95,6 +97,7 @@ export function Footer() {
                 href="https://wa.me/18186338346?text=Hola%20Giovanny%2C%20miré%20tu%20página%20de%20web.%20Envíame%20información%20sobre%20tus%20servicios%20profesionales."
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="WhatsApp"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -110,8 +113,8 @@ export function Footer() {
                       y1="100%"
                       y2="0%"
                     >
-                      <stop offset="0%" stop-color="#1faf38" />
-                      <stop offset="100%" stop-color="#60d669" />
+                      <stop offset="0%" stopColor="#1faf38" />
+                      <stop offset="100%" stopColor="#60d669" />
                     </linearGradient>
                     <linearGradient
                       id="SVGHW6lecxh"
@@ -120,8 +123,8 @@ export function Footer() {
                       y1="100%"
                       y2="0%"
                     >
-                      <stop offset="0%" stop-color="#f9f9f9" />
-                      <stop offset="100%" stop-color="#fff" />
+                      <stop offset="0%" stopColor="#f9f9f9" />
+                      <stop offset="100%" stopColor="#fff" />
                     </linearGradient>
                   </defs>
                   <path
@@ -146,6 +149,8 @@ export function Footer() {
                 target="_blank"
                 className="circle-icon"
                 href="mailto:styledbygio4@gmail.com"
+                rel="noopener noreferrer"
+                aria-label="Email"
               >
                 <CgMail className="mail-logo" />
               </a>
@@ -155,7 +160,7 @@ export function Footer() {
       </div>
       <div className="footer-flex-row">
         <div className="copyright-column-full">
-          <p className="copyright-text">
+          <p className="copyright-text" data-testid="copyright">
             © 2025 <em> Giovanny Collazo</em>. All Rights Reserved. Website
             Design by <em>Ryan Garcia</em>.
           </p>
