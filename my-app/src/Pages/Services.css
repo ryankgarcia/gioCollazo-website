@@ -1,5 +1,20 @@
+.bold-underline-text {
+  text-decoration: underline;
+  font-weight: bold;
+  padding-left: 0.3rem;
+  padding-right: 0.1rem;
+}
+
 .service-subheader {
   font-size: 2rem;
+
+  @media (--tablet) {
+    font-size: 4rem;
+  }
+}
+
+.ext-service-subheader {
+  font-size: 1.7rem;
 
   @media (--tablet) {
     font-size: 4rem;
@@ -14,7 +29,7 @@
     margin-bottom: 10%;
   }
 
-  @media (--sm-desktop){
+  @media (--sm-desktop) {
     margin-bottom: 15%;
   }
 }
