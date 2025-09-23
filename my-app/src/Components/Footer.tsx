@@ -162,13 +162,9 @@ export function Footer() {
       </div>
       <div className="footer-flex-row">
         <div className="copyright-column-full">
-          <p
-            id="current-year"
-            className="copyright-text"
-            data-testid="copyright"
-          >
-            © {currentYear} <em> Giovanny Collazo</em>. All Rights Reserved.
-            Website Design by <em>Ryan Garcia</em>.
+          <p className="copyright-text" data-testid="copyright">
+            &copy; {currentYear} <em> Giovanny Collazo</em>. All Rights
+            Reserved. Website Design by <em>Ryan Garcia</em>.
           </p>
         </div>
       </div>
