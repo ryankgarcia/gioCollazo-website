@@ -18,7 +18,7 @@ export function Home() {
     <div className="page-container">
       <div className="home-row">
         <img
-          src="/Gio-white-squaredImage.jpeg"
+          src="/GiovannyCollazo-closeUp-intro.jpeg"
           alt="Giovanny Collazo Professional Stylist"
           className="home-GC-mainCoverImage"
         />
