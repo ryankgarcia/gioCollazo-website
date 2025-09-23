@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom';
 // the mailto should change to a more legitimate email (with the domain after the @ symbol)
 
 export function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <>
       <div className="link-icon-container">
@@ -160,9 +162,13 @@ export function Footer() {
       </div>
       <div className="footer-flex-row">
         <div className="copyright-column-full">
-          <p className="copyright-text" data-testid="copyright">
-            © 2025 <em> Giovanny Collazo</em>. All Rights Reserved. Website
-            Design by <em>Ryan Garcia</em>.
+          <p
+            id="current-year"
+            className="copyright-text"
+            data-testid="copyright"
+          >
+            © {currentYear} <em> Giovanny Collazo</em>. All Rights Reserved.
+            Website Design by <em>Ryan Garcia</em>.
           </p>
         </div>
       </div>
