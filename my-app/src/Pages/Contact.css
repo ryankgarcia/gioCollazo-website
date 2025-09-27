@@ -14,14 +14,12 @@
   border-radius: 8px;
   animation: wiggle 4s ease-in-out infinite;
   margin-top: 3rem;
-  @media (min-width: 961px) {
-    transition:
-      transform 0.8s ease,
-      box-shadow 0.8s ease;
-    box-shadow:
-      8px 8px #0287dd,
-      -1em 0 0.5em #daa32a;
-  }
+  transition:
+    transform 0.8s ease,
+    box-shadow 0.8s ease;
+  box-shadow:
+    8px 8px #0287dd,
+    -1em 0 0.5em #daa32a;
 }
 
 @keyframes wiggle {
