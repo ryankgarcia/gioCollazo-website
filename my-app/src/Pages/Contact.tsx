@@ -24,7 +24,7 @@ export function Contact() {
       <div className="contact-row">
         <div className="image-center">
           <img
-            src="/Gio-hotel-seated.jpg"
+            src="/Gio-Contact-blueoutfit.jpeg"
             alt="Giovanny Collazo - Professional Wardrobe Stylist"
             className="contact-gio-collazo-image"
           />
