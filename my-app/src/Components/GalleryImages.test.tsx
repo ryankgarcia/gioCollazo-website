@@ -13,7 +13,7 @@ describe('<GalleryImages />', () => {
     render(<GalleryImages />);
 
     const images = screen.getAllByRole('img');
-    expect(images).toHaveLength(48);
+    expect(images).toHaveLength(49);
 
     expect(images[0]).toHaveAttribute('alt', 'galleryImage1');
 
@@ -34,6 +34,6 @@ describe('<GalleryImages />', () => {
     });
 
     const cards = document.querySelectorAll('.gallery-image');
-    expect(cards).toHaveLength(48);
+    expect(cards).toHaveLength(49);
   });
 });
