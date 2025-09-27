@@ -25,11 +25,17 @@ describe('<Home />', () => {
       /giovanny collazo professional stylist$/i,
     );
     expect(homeImg1).toBeInTheDocument();
-    expect(homeImg1).toHaveAttribute('src', '/Gio-white-squaredImage.jpeg');
+    expect(homeImg1).toHaveAttribute(
+      'src',
+      '/GiovannyCollazo-closeUp-intro.jpeg',
+    );
 
     const homeImg2 = screen.getByAltText(/professional stylist image 2/i);
     expect(homeImg2).toBeInTheDocument();
-    expect(homeImg2).toHaveAttribute('src', '/Gio-pink-suit.jpeg');
+    expect(homeImg2).toHaveAttribute(
+      'src',
+      '/GiovannyCollazo-homepage-final.jpg',
+    );
 
     // intro paragraphs 5
     expect(screen.getByText(/giovanny collazo/i)).toBeInTheDocument();

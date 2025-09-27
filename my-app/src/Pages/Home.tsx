@@ -18,7 +18,7 @@ export function Home() {
     <div className="page-container">
       <div className="home-row">
         <img
-          src="/Gio-white-squaredImage.jpeg"
+          src="/GiovannyCollazo-closeUp-intro.jpeg"
           alt="Giovanny Collazo Professional Stylist"
           className="home-GC-mainCoverImage"
         />
@@ -42,7 +42,7 @@ export function Home() {
       </p>
       <div className="image-center">
         <img
-          src="/Gio-pink-suit.jpeg"
+          src="/GiovannyCollazo-homepage-final.jpg"
           alt="Giovanny Collazo Professional Stylist Image 2"
           className="home-GC-coverImage2"
         />

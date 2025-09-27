@@ -6,6 +6,31 @@ import './Services.css';
 export function Services() {
   return (
     <div className="page-container">
+      <img
+        src="/Gio-Garment-Rack-allPink.jpeg"
+        alt="Gio Garment Rack Image"
+        className="intro-img-garment image-center"
+      />
+      <h3 className="header-element text-center">My Mission</h3>
+      <p className="p-text">
+        Your style is a reflection of who you are and my role is to
+        <span className="bold-underline-text">refine</span> and
+        <span className="bold-underline-text">elevate</span> it.
+      </p>
+      <p className="p-text">
+        I offer a seamless experience designed around your unique needs whether
+        it’s a grand occasion, an every day upgrade, or a last minute request.
+      </p>
+      <p className="p-text">
+        In-person or virtually, I ensure that every detail is thoughtfully
+        curated so you step out as the most confident, polished version of
+        yourself.
+      </p>
+      <img
+        src="/Gio-Mannequin-styling-services.jpeg"
+        alt="Gio Styling A Mannequin"
+        className="intro-img-second image-center"
+      />
       <h3 className="header-element text-center">A La Carte</h3>
       <h3 className="service-subheader text-center">👗 Closet Clean-Outs</h3>
       <p className="p-text">
@@ -66,7 +91,9 @@ export function Services() {
           Book Your Session
         </Link>
       </div>
-      <h3 className="service-subheader text-center">⭐Extended Services⭐</h3>
+      <h3 className="ext-service-subheader text-center">
+        ⭐Extended Services⭐
+      </h3>
       <p className="p-text">
         In addition to my styling expertise, I am delighted to offer Personal
         Assistant services, available discreetly upon request.

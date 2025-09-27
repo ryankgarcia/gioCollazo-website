@@ -22,10 +22,13 @@ describe('<Services />', () => {
 
     // likely going to add images. if they are added, test for them here...
 
-    // 5 headings elements (level => h3)
+    // 6 headings elements (level => h3)
     const h3Elements = screen.getAllByRole('heading', { level: 3 });
-    expect(h3Elements).toHaveLength(5);
+    expect(h3Elements).toHaveLength(6);
 
+    expect(
+      screen.getByRole('heading', { level: 3, name: /my mission/i }),
+    ).toBeInTheDocument();
     expect(
       screen.getByRole('heading', { level: 3, name: /a la carte/i }),
     ).toBeInTheDocument();
@@ -42,7 +45,20 @@ describe('<Services />', () => {
       screen.getByRole('heading', { level: 3, name: /extended services/i }),
     ).toBeInTheDocument();
 
-    // test 12 paragraphs text
+    // paragraph element tests
+    expect(
+      screen.getByText(/your style is a reflection of who you are/i),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        /i offer a seamless experience designed around your unique needs/i,
+      ),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        /in-person or virtually, i ensure that every detail is thoughtfully curated so you step out/i,
+      ),
+    ).toBeInTheDocument();
     expect(
       screen.getByText(
         /let[’']s detox your wardrobe and make space for who you are now/i,

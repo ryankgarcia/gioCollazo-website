@@ -1,5 +1,20 @@
+.bold-underline-text {
+  text-decoration: underline;
+  font-weight: bold;
+  padding-left: 0.3rem;
+  padding-right: 0.1rem;
+}
+
 .service-subheader {
   font-size: 2rem;
+
+  @media (--tablet) {
+    font-size: 4rem;
+  }
+}
+
+.ext-service-subheader {
+  font-size: 1.7rem;
 
   @media (--tablet) {
     font-size: 4rem;
@@ -14,7 +29,33 @@
     margin-bottom: 10%;
   }
 
-  @media (--sm-desktop){
+  @media (--sm-desktop) {
     margin-bottom: 15%;
+  }
+}
+
+.intro-img-garment,
+.intro-img-second {
+  width: 300px;
+  margin-left: 8%;
+  border-radius: 8px;
+  margin-top: 2.4rem;
+
+  @media (--tablet) {
+    width: 325px;
+    margin-left: 25%;
+  }
+
+  @media (--sm-desktop) {
+    margin-left: 28%;
+  }
+
+  @media (--desktop) {
+    margin-left: 35%;
+  }
+
+  @media (--lg-desktop) {
+    width: 400px;
+    margin-left: 36%;
   }
 }

@@ -29,25 +29,25 @@ export function About() {
         themselves.
       </p>
       <div className="about-row">
-        <div className="aboutMe-imageWrapper">
+        <div className="aboutMe-imageWrapper-1">
           <img
             className="aboutMe-image about-object-top"
-            src="/Gio-purple-about-page.jpeg"
+            src="/Gio-About-firstImg.jpeg"
             alt="Professional Stylist - Giovanny Collazo - StyledByGio - image 1"
           />
         </div>
-        <div className="aboutMe-imageWrapper">
-          <img
-            className="aboutMe-image about-object-fill"
-            src="/Gio-stylist-bluebackground.jpg"
-            alt="Professional Stylist - Giovanny Collazo - StyledByGio - image 2"
-          />
-        </div>
-        <div className="aboutMe-imageWrapper">
+        <div className="aboutMe-imageWrapper-2">
           <img
             className="aboutMe-image about-object-top"
-            src="/Gio-w-shades.jpg"
+            src="/Gio-purple-about-page.jpeg"
             alt="Professional Stylist - Giovanny Collazo - StyledByGio - image 3"
+          />
+        </div>
+        <div className="aboutMe-imageWrapper-1">
+          <img
+            className="aboutMe-image about-object-fill"
+            src="/Gio-About-Img2.jpeg"
+            alt="Professional Stylist - Giovanny Collazo - StyledByGio - image 2"
           />
         </div>
       </div>
