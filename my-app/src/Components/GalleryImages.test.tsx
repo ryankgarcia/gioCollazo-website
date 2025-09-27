@@ -9,7 +9,7 @@ jest.mock('../Hooks/GradientScroll', () => ({
 }));
 
 describe('<GalleryImages />', () => {
-  test('renders all 48 images with proper alt text and visibility classes', () => {
+  test('renders all 49 images with proper alt text and visibility classes', () => {
     render(<GalleryImages />);
 
     const images = screen.getAllByRole('img');
