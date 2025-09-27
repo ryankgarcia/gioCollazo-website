@@ -6,6 +6,11 @@ import './Services.css';
 export function Services() {
   return (
     <div className="page-container">
+      <img
+        src="/Gio-Garment-Rack-allPink.jpeg"
+        alt="Gio Garment Rack Image"
+        className="intro-img-garment image-center"
+      />
       <h3 className="header-element text-center">My Mission</h3>
       <p className="p-text">
         Your style is a reflection of who you are and my role is to
@@ -21,6 +26,11 @@ export function Services() {
         curated so you step out as the most confident, polished version of
         yourself.
       </p>
+      <img
+        src="/Gio-Mannequin-styling-services.jpeg"
+        alt="Gio Styling A Mannequin"
+        className="intro-img-second image-center"
+      />
       <h3 className="header-element text-center">A La Carte</h3>
       <h3 className="service-subheader text-center">👗 Closet Clean-Outs</h3>
       <p className="p-text">

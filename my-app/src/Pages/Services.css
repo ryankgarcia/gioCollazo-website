@@ -33,3 +33,29 @@
     margin-bottom: 15%;
   }
 }
+
+.intro-img-garment,
+.intro-img-second {
+  width: 300px;
+  margin-left: 8%;
+  border-radius: 8px;
+  margin-top: 2.4rem;
+
+  @media (--tablet) {
+    width: 325px;
+    margin-left: 25%;
+  }
+
+  @media (--sm-desktop) {
+    margin-left: 28%;
+  }
+
+  @media (--desktop) {
+    margin-left: 35%;
+  }
+
+  @media (--lg-desktop) {
+    width: 400px;
+    margin-left: 36%;
+  }
+}
