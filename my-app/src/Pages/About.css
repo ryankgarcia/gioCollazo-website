@@ -28,7 +28,21 @@
   }
 }
 
-.aboutMe-imageWrapper {
+.aboutMe-imageWrapper-1 {
+  margin-top: 5%;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 6 / 8;
+  overflow: hidden;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  @media (--tablet) {
+    margin-left: 2%;
+  }
+}
+
+.aboutMe-imageWrapper-2 {
   margin-top: 5%;
   width: 100%;
   max-width: 400px;
