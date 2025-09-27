@@ -42,7 +42,7 @@ export function Home() {
       </p>
       <div className="image-center">
         <img
-          src="/GiovannyCollazo-homepage-final.jpg"
+          src="/giovannyCollazo-homepage-final.jpg"
           alt="Giovanny Collazo Professional Stylist Image 2"
           className="home-GC-coverImage2"
         />
