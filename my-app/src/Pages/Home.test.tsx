@@ -30,11 +30,13 @@ describe('<Home />', () => {
       '/GiovannyCollazo-closeUp-intro.jpeg',
     );
 
-    const homeImg2 = screen.getByAltText(/professional stylist image 2/i);
+    const homeImg2 = screen.getByAltText(
+      /giovanny collazo professional stylist image 2/i,
+    );
     expect(homeImg2).toBeInTheDocument();
     expect(homeImg2).toHaveAttribute(
       'src',
-      '/GiovannyCollazo-homepage-final.jpg',
+      '/giovannyCollazo-homepage-final.jpg',
     );
 
     // intro paragraphs 5
