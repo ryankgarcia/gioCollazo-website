@@ -27,7 +27,7 @@ describe('<Gallery />', () => {
     // video
     const video = screen.getByLabelText(/red carpet spanish interview/i);
     const src = video.querySelector('source')!;
-    expect(src).toHaveAttribute('src', '/Gio-redcarpet-spanish.interview.mp4');
+    expect(src).toHaveAttribute('src', '/Gio-redcarpet-spanish-interview.mp4');
     expect(document.querySelectorAll('video')).toHaveLength(1);
 
     // footer
