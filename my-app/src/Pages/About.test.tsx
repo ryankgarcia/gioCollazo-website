@@ -43,22 +43,19 @@ describe('<About />', () => {
     const allImages = screen.getAllByRole('img');
     expect(allImages).toHaveLength(3);
 
-    // this expect function will likely change if Gio wants to change the images of him across the site...
     expect(screen.getByAltText(/image 1/i)).toHaveAttribute(
+      'src',
+      '/Gio-About-firstImg.jpeg',
+    );
+
+    expect(screen.getByAltText(/image 3/i)).toHaveAttribute(
       'src',
       '/Gio-purple-about-page.jpeg',
     );
 
-    // the same goes for this function...
     expect(screen.getByAltText(/image 2/i)).toHaveAttribute(
       'src',
-      '/Gio-stylist-bluebackground.jpg',
-    );
-
-    // also this one...
-    expect(screen.getByAltText(/image 3/i)).toHaveAttribute(
-      'src',
-      '/Gio-w-shades.jpg',
+      '/Gio-About-Img2.jpeg',
     );
 
     expect(screen.getByTestId('footer')).toBeInTheDocument();
