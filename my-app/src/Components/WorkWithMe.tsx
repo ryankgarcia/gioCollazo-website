@@ -1,6 +1,8 @@
 import './WorkWithMe.css';
 
 export function WorkWithMe() {
+  // the SRC value of the google form is going to change to gio's email address & forms
+  // be sure to test a few results
   return (
     <>
       <iframe
