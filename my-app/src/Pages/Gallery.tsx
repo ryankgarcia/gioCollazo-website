@@ -26,7 +26,7 @@ export function Gallery() {
           aria-label="Red Carpet Spanish Interview"
         >
           <source
-            src="/Gio-redcarpet-spanish.interview.mp4"
+            src="/Gio-redcarpet-spanish-interview.mp4"
             type="video/mp4"
             className="bts-video"
           />
