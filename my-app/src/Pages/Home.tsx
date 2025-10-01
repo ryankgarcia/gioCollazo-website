@@ -54,7 +54,6 @@ export function Home() {
           <video
             className="video-H"
             controls
-            preload="none"
             muted
             aria-label="BTS styling for video shoot"
           >
@@ -68,7 +67,6 @@ export function Home() {
             <video
               className="video-V"
               controls
-              preload="none"
               muted
               aria-label="Gio spray painting"
             >

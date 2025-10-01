@@ -22,7 +22,6 @@ export function Gallery() {
         <video
           className="video-H"
           controls
-          preload="none"
           muted
           aria-label="Red Carpet Spanish Interview"
         >
