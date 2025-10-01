@@ -30,6 +30,7 @@ export function Services() {
         src="/Gio-Mannequin-styling-services.jpeg"
         alt="Gio Styling A Mannequin"
         className="intro-img-second image-center"
+        loading="lazy"
       />
       <h3 className="header-element text-center">A La Carte</h3>
       <h3 className="service-subheader text-center">👗 Closet Clean-Outs</h3>
