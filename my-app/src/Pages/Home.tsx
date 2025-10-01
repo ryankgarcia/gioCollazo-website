@@ -45,6 +45,7 @@ export function Home() {
           src="/giovannyCollazo-homepage-final.jpg"
           alt="Giovanny Collazo Professional Stylist Image 2"
           className="home-GC-coverImage2"
+          loading="lazy"
         />
       </div>
       <h2 className="home-bts-header text-center">Behind The Scenes</h2>
@@ -53,6 +54,7 @@ export function Home() {
           <video
             className="video-H"
             controls
+            preload="none"
             muted
             aria-label="BTS styling for video shoot"
           >
@@ -66,6 +68,7 @@ export function Home() {
             <video
               className="video-V"
               controls
+              preload="none"
               muted
               aria-label="Gio spray painting"
             >

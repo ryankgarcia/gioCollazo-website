@@ -38,6 +38,7 @@ export function Testimonials() {
               src="/testimonials-images/Sophia-portrait-image.jpeg"
               alt="Sophia-testimonial2"
               className="testimonial-portrait-img"
+              loading="lazy"
             />
           </div>
         </div>
@@ -66,6 +67,7 @@ export function Testimonials() {
               src="/testimonials-images/Alex-portrait-closeUp-main.jpeg"
               alt="Alex-testimonial3"
               className="testimonial-portrait-img"
+              loading="lazy"
             />
           </div>
         </div>
@@ -90,6 +92,7 @@ export function Testimonials() {
               src="/testimonials-images/LC-portrait-closeUp.jpeg"
               alt="LC-testimonial4"
               className="testimonial-portrait-img"
+              loading="lazy"
             />
           </div>
         </div>
@@ -122,6 +125,7 @@ export function Testimonials() {
               src="/testimonials-images/Louie-portrait-closeUp.jpeg"
               alt="Louie-testimonial5"
               className="testimonial-portrait-img"
+              loading="lazy"
             />
           </div>
         </div>
@@ -159,6 +163,7 @@ export function Testimonials() {
               src="/testimonials-images/Nicole-portrait-closeUp.jpeg"
               alt="Nicole-testimonial6"
               className="testimonial-portrait-img"
+              loading="lazy"
             />
           </div>
         </div>
@@ -182,6 +187,7 @@ export function Testimonials() {
               src="/testimonials-images/Ryan-portrait-closeUp.jpg"
               alt="Ryan-testimonial7"
               className="testimonial-portrait-img"
+              loading="lazy"
             />
           </div>
         </div>

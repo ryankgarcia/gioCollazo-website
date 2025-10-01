@@ -34,6 +34,7 @@ export function About() {
             className="aboutMe-image about-object-top"
             src="/Gio-About-firstImg.jpeg"
             alt="Professional Stylist - Giovanny Collazo - StyledByGio - image 1"
+            loading="lazy"
           />
         </div>
         <div className="aboutMe-imageWrapper-2">
@@ -41,6 +42,7 @@ export function About() {
             className="aboutMe-image about-object-top"
             src="/Gio-purple-about-page.jpeg"
             alt="Professional Stylist - Giovanny Collazo - StyledByGio - image 3"
+            loading="lazy"
           />
         </div>
         <div className="aboutMe-imageWrapper-1">
@@ -48,6 +50,7 @@ export function About() {
             className="aboutMe-image about-object-fill"
             src="/Gio-About-Img2.jpeg"
             alt="Professional Stylist - Giovanny Collazo - StyledByGio - image 2"
+            loading="lazy"
           />
         </div>
       </div>

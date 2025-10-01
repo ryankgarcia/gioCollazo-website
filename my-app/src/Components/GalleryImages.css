@@ -27,19 +27,22 @@
   box-shadow: 2px 4px 32px #d7b8ec;
   border-radius: 3px;
   transition: transform 0.3s;
-  animation: spin 5s linear 7s;
-  animation-iteration-count: 1;
+
+  @media (--desktop) {
+    animation: spin 5s linear 7s;
+    animation-iteration-count: 1;
+  }
 }
 
 .gallery-image-wrapper-2 {
   box-shadow: 2px 4px 32px #900fbf;
   border-radius: 3px;
   transition: transform 0.3s;
-  animation: spin 4.8s linear 7s;
-  animation-iteration-count: 1;
 
   @media (--desktop) {
     margin-left: 30%;
+    animation: spin 4.8s linear 7s;
+    animation-iteration-count: 1;
   }
 }
 

@@ -27,6 +27,7 @@ export function Contact() {
             src="/Gio-Contact-blueoutfit.jpeg"
             alt="Giovanny Collazo - Professional Wardrobe Stylist"
             className="contact-gio-collazo-image"
+            loading="lazy"
           />
         </div>
       </div>
