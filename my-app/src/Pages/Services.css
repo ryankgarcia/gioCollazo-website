@@ -13,7 +13,8 @@
   }
 }
 
-.ext-service-subheader {
+.ext-service-subheader,
+.styling-pkgs-subheader {
   font-size: 1.7rem;
 
   @media (--tablet) {

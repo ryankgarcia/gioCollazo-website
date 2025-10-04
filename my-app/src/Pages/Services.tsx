@@ -4,6 +4,29 @@ import './PagesCssInCommon.css';
 import './Services.css';
 
 export function Services() {
+  // this function was created to properly format a prepopulated message for people interested in Gio's
+  // services for this and any other message that may occur in the future
+
+  function createMailToLink(subject: string, body: string): string {
+    const encodedSubject = encodeURIComponent(subject);
+    const encodedBody = encodeURIComponent(body);
+    return `mailto:styledbygio4@gmail.com?subject=${encodedSubject}&body=${encodedBody}`;
+  }
+
+  // the next two variables are related in sending this email at the click of the 'book your session' button
+  // in the styling packages section
+  const stylingPackageBody = `Hello Giovanny,
+
+I pressed the “Book Your Session” button under your Styling Packages service. 
+
+Can you give me more details about this package?
+
+Thanks.`;
+
+  const sendStylingPackagesEmail = createMailToLink(
+    'I would like more in-depth information about your ⭐Styling Packages⭐ Service',
+    stylingPackageBody,
+  );
   return (
     <div className="page-container">
       <img
@@ -91,6 +114,27 @@ export function Services() {
         >
           Book Your Session
         </Link>
+      </div>
+      <h3 className="styling-pkgs-subheader text-center">
+        ⭐Styling Packages⭐
+      </h3>
+      <p className="p-text">
+        For those who value refinement and individuality, I now offer exclusive
+        styling packages tailored to elevate your personal image with
+        sophistication and ease.
+      </p>
+      <p className="p-text">
+        Each experience is designed with intention. Seamless, discreet, and
+        entirely devoted to presenting you as your most polished and confident
+        self.
+      </p>
+      <div className="button-center">
+        <a
+          href={sendStylingPackagesEmail}
+          className="button services-button-margin text-center"
+        >
+          Book Your Session
+        </a>
       </div>
       <h3 className="ext-service-subheader text-center">
         ⭐Extended Services⭐
