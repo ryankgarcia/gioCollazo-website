@@ -1,0 +1,6 @@
+[[headers]]
+for = "/*"
+[headers.values]
+    Basic-Auth = "${STAGING_AUTH_USER}:${STAGING_AUTH_PASS}"
+[headers.conditions]
+    Host = "staging.styledbygio.com"
