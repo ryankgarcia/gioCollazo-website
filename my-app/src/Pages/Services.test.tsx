@@ -35,7 +35,7 @@ describe('<Services />', () => {
 
     // 6 headings elements (level => h3)
     const h3Elements = screen.getAllByRole('heading', { level: 3 });
-    expect(h3Elements).toHaveLength(6);
+    expect(h3Elements).toHaveLength(7);
 
     expect(
       screen.getByRole('heading', { level: 3, name: /my mission/i }),
@@ -53,10 +53,14 @@ describe('<Services />', () => {
       screen.getByRole('heading', { level: 3, name: /trips\s*&\s*events/i }),
     ).toBeInTheDocument();
     expect(
+      screen.getByRole('heading', { level: 3, name: /styling packages/i }),
+    ).toBeInTheDocument();
+    expect(
       screen.getByRole('heading', { level: 3, name: /extended services/i }),
     ).toBeInTheDocument();
 
     // paragraph element tests
+    // add in the tests for the new service (paragraph and header)
     expect(
       screen.getByText(/your style is a reflection of who you are/i),
     ).toBeInTheDocument();
@@ -90,15 +94,40 @@ describe('<Services />', () => {
       screen.getByText(/getting ready to travel somewhere new\?/i),
     ).toBeInTheDocument();
     expect(
+      screen.getByText(/for those who value refinement and individuality/i),
+    ).toBeInTheDocument();
+    expect(
       screen.getByText(/in addition to my styling expertise/i),
     ).toBeInTheDocument();
 
-    // button as a link to render 4
-    const links = screen.getAllByRole('link', { name: /book your session/i });
-    expect(links).toHaveLength(4);
-    links.forEach((a) => {
+    // button as a link to render 5. 1 of them as an anchor tag
+    const allLinks = screen.getAllByRole('link', {
+      name: /book your session/i,
+    });
+    expect(allLinks).toHaveLength(5);
+
+    const contactLinks = allLinks.filter(
+      (a) => a.getAttribute('href') === '/contact',
+    );
+
+    expect(contactLinks).toHaveLength(4);
+    contactLinks.forEach((a) => {
       expect(a).toHaveAttribute('href', '/contact');
     });
+
+    const mailtoLink = allLinks.find((a) =>
+      a.getAttribute('href')?.startsWith('mailto:'),
+    );
+    expect(mailtoLink).toBeDefined();
+
+    expect(mailtoLink).toHaveAttribute(
+      'href',
+      expect.stringContaining('mailto:styledbygio4@gmail.com'),
+    );
+    expect(mailtoLink).toHaveAttribute(
+      'href',
+      expect.stringMatching(/styling/i),
+    );
 
     // testing footer
     expect(screen.getByTestId('footer')).toBeInTheDocument();
