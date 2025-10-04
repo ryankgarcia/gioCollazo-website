@@ -4,6 +4,29 @@ import './PagesCssInCommon.css';
 import './Services.css';
 
 export function Services() {
+  // this function was created to properly format a prepopulated message for people interested in Gio's
+  // services for this and any other message that may occur in the future
+
+  function createMailToLink(subject: string, body: string): string {
+    const encodedSubject = encodeURIComponent(subject);
+    const encodedBody = encodeURIComponent(body);
+    return `mailto:styledbygio4@gmail.com?subject=${encodedSubject}&body=${encodedBody}`;
+  }
+
+  // the next two variables are related in sending this email at the click of the book your session button
+  // in the styling packages section
+  const stylingPackageBody = `Hello Giovanny,
+
+I pressed the “Book Your Session” button under your Styling Packages services page. 
+
+Can you give me more details about this package?
+
+Thanks.`;
+
+  const sendStylingPackagesEmail = createMailToLink(
+    'I would like more in-depth information about your ⭐Styling Packages⭐ Service',
+    stylingPackageBody,
+  );
   return (
     <div className="page-container">
       <img
@@ -107,7 +130,7 @@ export function Services() {
       </p>
       <div className="button-center">
         <a
-          href="mailto:styledbygio4@gmail.com?subject=I would like more in-depth information about your ⭐Styling Packages⭐ Service&body=Hello Giovanny,%0D%0A%0D%0AI pressed the “Book Your Session” button under your Styling Packages services page.%0D%0A%0D%0A Can you give me more details about this package?%0D%0A%0D%0AThanks."
+          href={sendStylingPackagesEmail}
           className="button services-button-margin text-center"
         >
           Book Your Session
