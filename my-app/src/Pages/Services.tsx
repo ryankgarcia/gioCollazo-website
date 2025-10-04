@@ -107,13 +107,7 @@ export function Services() {
       </p>
       <div className="button-center">
         <a
-          href="mailto:styledbygio4@gmail.com?subject=I would like more in-depth information about your ⭐Styling Packages⭐ Service&body=Hello Giovanny,
-
-I pressed the “Book Your Session” button under your Styling Packages services page. 
-
-Can you give me more details about this package?
-
-Thanks."
+          href="mailto:styledbygio4@gmail.com?subject=I would like more in-depth information about your ⭐Styling Packages⭐ Service&body=Hello Giovanny,%0D%0A%0D%0AI pressed the “Book Your Session” button under your Styling Packages services page.%0D%0A%0D%0A Can you give me more details about this package?%0D%0A%0D%0AThanks."
           className="button services-button-margin text-center"
         >
           Book Your Session
