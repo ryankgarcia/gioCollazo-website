@@ -13,11 +13,11 @@ export function Services() {
     return `mailto:styledbygio4@gmail.com?subject=${encodedSubject}&body=${encodedBody}`;
   }
 
-  // the next two variables are related in sending this email at the click of the book your session button
+  // the next two variables are related in sending this email at the click of the 'book your session' button
   // in the styling packages section
   const stylingPackageBody = `Hello Giovanny,
 
-I pressed the “Book Your Session” button under your Styling Packages services page. 
+I pressed the “Book Your Session” button under your Styling Packages service. 
 
 Can you give me more details about this package?
 
