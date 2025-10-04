@@ -92,6 +92,33 @@ export function Services() {
           Book Your Session
         </Link>
       </div>
+      <h3 className="styling-pkgs-subheader text-center">
+        ⭐Styling Packages⭐
+      </h3>
+      <p className="p-text">
+        For those who value refinement and individuality, I now offer exclusive
+        styling packages tailored to elevate your personal image with
+        sophistication and ease.
+      </p>
+      <p className="p-text">
+        Each experience is designed with intention. Seamless, discreet, and
+        entirely devoted to presenting you as your most polished and confident
+        self.
+      </p>
+      <div className="button-center">
+        <a
+          href="mailto:styledbygio4@gmail.com?subject=I would like more in-depth information about your ⭐Styling Packages⭐ Service&body=Hello Giovanny,
+
+I pressed the “Book Your Session” button under your Styling Packages services page. 
+
+Can you give me more details about this package?
+
+Thanks."
+          className="button services-button-margin text-center"
+        >
+          Book Your Session
+        </a>
+      </div>
       <h3 className="ext-service-subheader text-center">
         ⭐Extended Services⭐
       </h3>

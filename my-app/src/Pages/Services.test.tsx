@@ -20,17 +20,14 @@ describe('<Services />', () => {
   test('renders images, headings, paragraphs, links, and footer', () => {
     renderServicesAt();
 
-    // likely going to add images. if they are added, test for them here...
     const images = screen.getAllByRole('img');
     expect(images).toHaveLength(2);
 
-    // this expect function will likely change if Gio wants to change the images of him across the site...
     expect(screen.getByAltText(/gio garment rack image/i)).toHaveAttribute(
       'src',
       '/Gio-Garment-Rack-allPink.jpeg',
     );
 
-    // the same goes for this function...
     expect(screen.getByAltText(/gio styling a mannequin/i)).toHaveAttribute(
       'src',
       '/Gio-Mannequin-styling-services.jpeg',
